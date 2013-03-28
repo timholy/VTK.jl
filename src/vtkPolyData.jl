@@ -1,0 +1,33 @@
+@scall Ptr{Void} New () _ZN11vtkPolyData3NewEv "libvtkCommon"
+@vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN11vtkPolyData8IsTypeOfEPKc "libvtkCommon"
+@vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{Void} SafeDownCast (Ptr{Void},) _ZN11vtkPolyData12SafeDownCastEP13vtkObjectBase "libvtkCommon"
+@vcall 15 Ptr{Void} NewInstanceInternal ()
+@vcall 4 None PrintSelf (Void, Void)
+@vcall 44 Int32 GetDataObjectType ()
+@vcall 77 None CopyStructure (Ptr{Void},)
+@vcall 80 vtkIdType GetNumberOfCells ()
+@vcall 83 Ptr{Void} GetCell (vtkIdType,)
+@vcall 84 None GetCell (vtkIdType, Ptr{Void})
+@vcall 86 Int32 GetCellType (vtkIdType,)
+@vcall 85 None GetCellBounds (vtkIdType, Ptr{Float64})
+@vcall 90 None GetCellNeighbors (vtkIdType, Ptr{Void}, Ptr{Void})
+@vcall 88 None GetCellPoints (vtkIdType, Ptr{Void})
+@vcall 89 None GetPointCells (vtkIdType, Ptr{Void})
+@vcall 96 None ComputeBounds ()
+@vcall 95 None Squeeze ()
+@vcall 98 Int32 GetMaxCellSize ()
+@vcall 26 None Initialize ()
+@vcall 41 Ptr{Int32} GetUpdateExtent ()
+@vcall 42 None GetUpdateExtent (Void, Void, Void, Void, Void, Void)
+@vcall 43 None GetUpdateExtent (Ptr{Int32},)
+@vcall 103 Int32 GetPiece ()
+@vcall 104 Int32 GetNumberOfPieces ()
+@vcall 105 Int32 GetGhostLevel ()
+@vcall 45 Uint64 GetActualMemorySize ()
+@vcall 69 None ShallowCopy (Ptr{Void},)
+@vcall 70 None DeepCopy (Ptr{Void},)
+@scall Ptr{Void} GetData (Ptr{Void},) _ZN11vtkPolyData7GetDataEP14vtkInformation "libvtkCommon"
+@scall Ptr{Void} GetData (Ptr{Void}, Int32) _ZN11vtkPolyData7GetDataEP20vtkInformationVectori "libvtkCommon"
+@vcall 72 None Crop ()

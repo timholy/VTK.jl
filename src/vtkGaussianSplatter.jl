@@ -3,11 +3,11 @@
 @vcall 1 Int32 IsA (Ptr{Uint8},)
 @scall Ptr{Void} SafeDownCast (Ptr{Void},) _ZN19vtkGaussianSplatter12SafeDownCastEP13vtkObjectBase "libvtkImaging"
 @vcall 15 Ptr{Void} NewInstanceInternal ()
-@scall Ptr{Void} NewInstance () _ZNK19vtkGaussianSplatter11NewInstanceEv "libvtkImaging"
+@mcall Ptr{Void} NewInstance () _ZNK19vtkGaussianSplatter11NewInstanceEv "libvtkImaging"
 @vcall 4 None PrintSelf (Void, Void)
 @scall Ptr{Void} New () _ZN19vtkGaussianSplatter3NewEv "libvtkImaging"
-@scall None SetSampleDimensions (Int32, Int32, Int32) _ZN19vtkGaussianSplatter19SetSampleDimensionsEiii "libvtkImaging"
-@scall None SetSampleDimensions (Ptr{Int32},) _ZN19vtkGaussianSplatter19SetSampleDimensionsEPi "libvtkImaging"
+@mcall None SetSampleDimensions (Int32, Int32, Int32) _ZN19vtkGaussianSplatter19SetSampleDimensionsEiii "libvtkImaging"
+@mcall None SetSampleDimensions (Ptr{Int32},) _ZN19vtkGaussianSplatter19SetSampleDimensionsEPi "libvtkImaging"
 @vcall 71 Ptr{Int32} GetSampleDimensions ()
 @vcall 72 None GetSampleDimensions (Ptr{Int32},)
 @vcall 73 None SetModelBounds (Float64, Float64, Float64, Float64, Float64, Float64)
@@ -46,19 +46,19 @@
 @vcall 106 Int32 GetAccumulationModeMinValue ()
 @vcall 107 Int32 GetAccumulationModeMaxValue ()
 @vcall 108 Int32 GetAccumulationMode ()
-@scall None SetAccumulationModeToMin () _ZN19vtkGaussianSplatter24SetAccumulationModeToMinEv "libvtkImaging"
-@scall None SetAccumulationModeToMax () _ZN19vtkGaussianSplatter24SetAccumulationModeToMaxEv "libvtkImaging"
-@scall None SetAccumulationModeToSum () _ZN19vtkGaussianSplatter24SetAccumulationModeToSumEv "libvtkImaging"
-@scall Ptr{Uint8} GetAccumulationModeAsString () _ZN19vtkGaussianSplatter27GetAccumulationModeAsStringEv "libvtkImaging"
+@mcall None SetAccumulationModeToMin () _ZN19vtkGaussianSplatter24SetAccumulationModeToMinEv "libvtkImaging"
+@mcall None SetAccumulationModeToMax () _ZN19vtkGaussianSplatter24SetAccumulationModeToMaxEv "libvtkImaging"
+@mcall None SetAccumulationModeToSum () _ZN19vtkGaussianSplatter24SetAccumulationModeToSumEv "libvtkImaging"
+@mcall Ptr{Uint8} GetAccumulationModeAsString () _ZN19vtkGaussianSplatter27GetAccumulationModeAsStringEv "libvtkImaging"
 @vcall 109 None SetNullValue (Float64,)
 @vcall 110 Float64 GetNullValue ()
-@scall None ComputeModelBounds (Ptr{Void}, Ptr{Void}, Ptr{Void}) _ZN19vtkGaussianSplatter18ComputeModelBoundsEP10vtkDataSetP12vtkImageDataP14vtkInformation "libvtkImaging"
+@mcall None ComputeModelBounds (Ptr{Void}, Ptr{Void}, Ptr{Void}) _ZN19vtkGaussianSplatter18ComputeModelBoundsEP10vtkDataSetP12vtkImageDataP14vtkInformation "libvtkImaging"
 @vcall 51 Int32 FillInputPortInformation (Int32, Ptr{Void})
 @vcall 62 Int32 RequestInformation (Ptr{Void}, Ptr{Ptr{Void}}, Ptr{Void})
 @vcall 65 Int32 RequestData (Ptr{Void}, Ptr{Ptr{Void}}, Ptr{Void})
-@scall None Cap (Ptr{Void},) _ZN19vtkGaussianSplatter3CapEP14vtkDoubleArray "libvtkImaging"
-@scall Float64 Gaussian (Ptr{Float64},) _ZN19vtkGaussianSplatter8GaussianEPd "libvtkImaging"
-@scall Float64 EccentricGaussian (Ptr{Float64},) _ZN19vtkGaussianSplatter17EccentricGaussianEPd "libvtkImaging"
-@scall Float64 ScalarSampling (Float64,) _ZN19vtkGaussianSplatter14ScalarSamplingEd "libvtkImaging"
-@scall Float64 PositionSampling (Float64,) _ZN19vtkGaussianSplatter16PositionSamplingEd "libvtkImaging"
-@scall None SetScalar (Int32, Float64, Ptr{Void}) _ZN19vtkGaussianSplatter9SetScalarEidP14vtkDoubleArray "libvtkImaging"
+@mcall None Cap (Ptr{Void},) _ZN19vtkGaussianSplatter3CapEP14vtkDoubleArray "libvtkImaging"
+@mcall Float64 Gaussian (Ptr{Float64},) _ZN19vtkGaussianSplatter8GaussianEPd "libvtkImaging"
+@mcall Float64 EccentricGaussian (Ptr{Float64},) _ZN19vtkGaussianSplatter17EccentricGaussianEPd "libvtkImaging"
+@mcall Float64 ScalarSampling (Float64,) _ZN19vtkGaussianSplatter14ScalarSamplingEd "libvtkImaging"
+@mcall Float64 PositionSampling (Float64,) _ZN19vtkGaussianSplatter16PositionSamplingEd "libvtkImaging"
+@mcall None SetScalar (Int32, Float64, Ptr{Void}) _ZN19vtkGaussianSplatter9SetScalarEidP14vtkDoubleArray "libvtkImaging"

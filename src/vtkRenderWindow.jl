@@ -3,14 +3,14 @@
 @vcall 1 Int32 IsA (Ptr{Uint8},)
 @scall Ptr{Void} SafeDownCast (Ptr{Void},) _ZN15vtkRenderWindow12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{Void} NewInstanceInternal ()
-@scall Ptr{Void} NewInstance () _ZNK15vtkRenderWindow11NewInstanceEv "libvtkRendering"
+@mcall Ptr{Void} NewInstance () _ZNK15vtkRenderWindow11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, Void)
 @scall Ptr{Void} New () _ZN15vtkRenderWindow3NewEv "libvtkRendering"
 @vcall 72 None AddRenderer (Ptr{Void},)
-@scall None RemoveRenderer (Ptr{Void},) _ZN15vtkRenderWindow14RemoveRendererEP11vtkRenderer "libvtkRendering"
-@scall Int32 HasRenderer (Ptr{Void},) _ZN15vtkRenderWindow11HasRendererEP11vtkRenderer "libvtkRendering"
+@mcall None RemoveRenderer (Ptr{Void},) _ZN15vtkRenderWindow14RemoveRendererEP11vtkRenderer "libvtkRendering"
+@mcall Int32 HasRenderer (Ptr{Void},) _ZN15vtkRenderWindow11HasRendererEP11vtkRenderer "libvtkRendering"
 @scall Ptr{Uint8} GetRenderLibrary () _ZN15vtkRenderWindow16GetRenderLibraryEv "libvtkRendering"
-@scall Ptr{Void} GetRenderers () _ZN15vtkRenderWindow12GetRenderersEv "libvtkRendering"
+@mcall Ptr{Void} GetRenderers () _ZN15vtkRenderWindow12GetRenderersEv "libvtkRendering"
 @vcall 51 None Render ()
 @vcall 73 None Start ()
 @vcall 74 None Finalize ()
@@ -36,7 +36,7 @@
 @vcall 94 None StereoCapableWindowOff ()
 @vcall 95 None SetStereoCapableWindow (Int32,)
 @vcall 96 Int32 GetStereoRender ()
-@scall None SetStereoRender (Int32,) _ZN15vtkRenderWindow15SetStereoRenderEi "libvtkRendering"
+@mcall None SetStereoRender (Int32,) _ZN15vtkRenderWindow15SetStereoRenderEi "libvtkRendering"
 @vcall 97 None StereoRenderOn ()
 @vcall 98 None StereoRenderOff ()
 @vcall 99 None SetAlphaBitPlanes (Int32,)
@@ -57,15 +57,15 @@
 @vcall 114 None PolygonSmoothingOff ()
 @vcall 115 Int32 GetStereoType ()
 @vcall 116 None SetStereoType (Int32,)
-@scall None SetStereoTypeToCrystalEyes () _ZN15vtkRenderWindow26SetStereoTypeToCrystalEyesEv "libvtkRendering"
-@scall None SetStereoTypeToRedBlue () _ZN15vtkRenderWindow22SetStereoTypeToRedBlueEv "libvtkRendering"
-@scall None SetStereoTypeToInterlaced () _ZN15vtkRenderWindow25SetStereoTypeToInterlacedEv "libvtkRendering"
-@scall None SetStereoTypeToLeft () _ZN15vtkRenderWindow19SetStereoTypeToLeftEv "libvtkRendering"
-@scall None SetStereoTypeToRight () _ZN15vtkRenderWindow20SetStereoTypeToRightEv "libvtkRendering"
-@scall None SetStereoTypeToDresden () _ZN15vtkRenderWindow22SetStereoTypeToDresdenEv "libvtkRendering"
-@scall None SetStereoTypeToAnaglyph () _ZN15vtkRenderWindow23SetStereoTypeToAnaglyphEv "libvtkRendering"
-@scall None SetStereoTypeToCheckerboard () _ZN15vtkRenderWindow27SetStereoTypeToCheckerboardEv "libvtkRendering"
-@scall Ptr{Uint8} GetStereoTypeAsString () _ZN15vtkRenderWindow21GetStereoTypeAsStringEv "libvtkRendering"
+@mcall None SetStereoTypeToCrystalEyes () _ZN15vtkRenderWindow26SetStereoTypeToCrystalEyesEv "libvtkRendering"
+@mcall None SetStereoTypeToRedBlue () _ZN15vtkRenderWindow22SetStereoTypeToRedBlueEv "libvtkRendering"
+@mcall None SetStereoTypeToInterlaced () _ZN15vtkRenderWindow25SetStereoTypeToInterlacedEv "libvtkRendering"
+@mcall None SetStereoTypeToLeft () _ZN15vtkRenderWindow19SetStereoTypeToLeftEv "libvtkRendering"
+@mcall None SetStereoTypeToRight () _ZN15vtkRenderWindow20SetStereoTypeToRightEv "libvtkRendering"
+@mcall None SetStereoTypeToDresden () _ZN15vtkRenderWindow22SetStereoTypeToDresdenEv "libvtkRendering"
+@mcall None SetStereoTypeToAnaglyph () _ZN15vtkRenderWindow23SetStereoTypeToAnaglyphEv "libvtkRendering"
+@mcall None SetStereoTypeToCheckerboard () _ZN15vtkRenderWindow27SetStereoTypeToCheckerboardEv "libvtkRendering"
+@mcall Ptr{Uint8} GetStereoTypeAsString () _ZN15vtkRenderWindow21GetStereoTypeAsStringEv "libvtkRendering"
 @vcall 117 None StereoUpdate ()
 @vcall 118 None StereoMidpoint ()
 @vcall 119 None StereoRenderComplete ()
@@ -74,7 +74,7 @@
 @vcall 122 Float32 GetAnaglyphColorSaturationMaxValue ()
 @vcall 123 Float32 GetAnaglyphColorSaturation ()
 @vcall 124 None SetAnaglyphColorMask (Int32, Int32)
-@scall None SetAnaglyphColorMask (Ptr{Int32},) _ZN15vtkRenderWindow20SetAnaglyphColorMaskEPi "libvtkRendering"
+@mcall None SetAnaglyphColorMask (Ptr{Int32},) _ZN15vtkRenderWindow20SetAnaglyphColorMaskEPi "libvtkRendering"
 @vcall 125 Ptr{Int32} GetAnaglyphColorMask ()
 @vcall 126 None GetAnaglyphColorMask (Ptr{Int32},)
 @vcall 127 None WindowRemap ()
@@ -98,7 +98,7 @@
 @vcall 145 Int32 GetZbufferData (Int32, Int32, Int32, Int32, Ptr{Void})
 @vcall 146 Int32 SetZbufferData (Int32, Int32, Int32, Int32, Ptr{Float32})
 @vcall 147 Int32 SetZbufferData (Int32, Int32, Int32, Int32, Ptr{Void})
-@scall Float32 GetZbufferDataAtPoint (Int32, Int32) _ZN15vtkRenderWindow21GetZbufferDataAtPointEii "libvtkRendering"
+@mcall Float32 GetZbufferDataAtPoint (Int32, Int32) _ZN15vtkRenderWindow21GetZbufferDataAtPointEii "libvtkRendering"
 @vcall 148 Int32 GetAAFrames ()
 @vcall 149 None SetAAFrames (Int32,)
 @vcall 150 Int32 GetFDFrames ()
@@ -125,7 +125,7 @@
 @vcall 171 Int32 GetNumberOfLayersMinValue ()
 @vcall 172 Int32 GetNumberOfLayersMaxValue ()
 @vcall 173 Ptr{Void} GetInteractor ()
-@scall None SetInteractor (Ptr{Void},) _ZN15vtkRenderWindow13SetInteractorEP25vtkRenderWindowInteractor "libvtkRendering"
+@mcall None SetInteractor (Ptr{Void},) _ZN15vtkRenderWindow13SetInteractorEP25vtkRenderWindowInteractor "libvtkRendering"
 @vcall 8 None UnRegister (Ptr{Void},)
 @vcall 20 None SetDisplayId (Ptr{None},)
 @vcall 21 None SetWindowId (Ptr{None},)

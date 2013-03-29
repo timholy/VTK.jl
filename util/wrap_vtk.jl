@@ -92,7 +92,7 @@ function wrap_header(clsname, hmap, liblist)
     elseif (is_stat)
       println(ostrm, "@scall $ret_type $fname $args $mname \"$shlib\"")
     else
-      println(ostrm, "@scall $ret_type $fname $args $mname \"$shlib\"")
+      println(ostrm, "@mcall $ret_type $fname $args $mname \"$shlib\"")
     end
   end
   close(ostrm)

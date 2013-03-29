@@ -4,12 +4,12 @@
 @vcall 1 Int32 IsA (Ptr{Uint8},)
 @scall Ptr{Void} SafeDownCast (Ptr{Void},) _ZN17vtkPolyDataMapper12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{Void} NewInstanceInternal ()
-@scall Ptr{Void} NewInstance () _ZNK17vtkPolyDataMapper11NewInstanceEv "libvtkRendering"
+@mcall Ptr{Void} NewInstance () _ZNK17vtkPolyDataMapper11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, Void)
 @vcall 102 None RenderPiece (Ptr{Void}, Ptr{Void})
 @vcall 67 None Render (Ptr{Void}, Ptr{Void})
-@scall None SetInput (Ptr{Void},) _ZN17vtkPolyDataMapper8SetInputEP11vtkPolyData "libvtkRendering"
-@scall Ptr{Void} GetInput () _ZN17vtkPolyDataMapper8GetInputEv "libvtkRendering"
+@mcall None SetInput (Ptr{Void},) _ZN17vtkPolyDataMapper8SetInputEP11vtkPolyData "libvtkRendering"
+@mcall Ptr{Void} GetInput () _ZN17vtkPolyDataMapper8GetInputEv "libvtkRendering"
 @vcall 45 None Update ()
 @vcall 103 None SetPiece (Int32,)
 @vcall 104 Int32 GetPiece ()
@@ -21,7 +21,7 @@
 @vcall 110 Int32 GetGhostLevel ()
 @vcall 63 Ptr{Float64} GetBounds ()
 @vcall 64 None GetBounds (Ptr{Float64},)
-@scall None ShallowCopy (Ptr{Void},) _ZN17vtkPolyDataMapper11ShallowCopyEP17vtkAbstractMapper "libvtkRendering"
+@mcall None ShallowCopy (Ptr{Void},) _ZN17vtkPolyDataMapper11ShallowCopyEP17vtkAbstractMapper "libvtkRendering"
 @vcall 111 None MapDataArrayToVertexAttribute (Ptr{Uint8}, Ptr{Uint8}, Int32, Int32)
 @vcall 112 None MapDataArrayToMultiTextureAttribute (Int32, Ptr{Uint8}, Int32, Int32)
 @vcall 113 None RemoveVertexAttributeMapping (Ptr{Uint8},)

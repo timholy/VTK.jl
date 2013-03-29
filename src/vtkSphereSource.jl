@@ -1,10 +1,11 @@
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
-@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN15vtkSphereSource8IsTypeOfEPKc "libvtkFiltering"
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN15vtkSphereSource8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
-@scall Ptr{Void} SafeDownCast (Ptr{Void},) _ZN15vtkSphereSource12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
+@scall Ptr{Void} SafeDownCast (Ptr{Void},) _ZN15vtkSphereSource12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{Void} NewInstanceInternal ()
+@scall Ptr{Void} NewInstance () _ZNK15vtkSphereSource11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, Void)
-@scall Ptr{Void} New () _ZN15vtkSphereSource3NewEv "libvtkFiltering"
+@scall Ptr{Void} New () _ZN15vtkSphereSource3NewEv "libvtkGraphics"
 @vcall 65 None SetRadius (Float64,)
 @vcall 66 Float64 GetRadiusMinValue ()
 @vcall 67 Float64 GetRadiusMaxValue ()

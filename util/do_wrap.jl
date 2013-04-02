@@ -1,8 +1,8 @@
 require("../util/wrap_vtk.jl")
 
-vtklibs = [splitdir(splitext(chomp(x))[1])[2] for x in readlines(`sh -c "ls /usr/lib/libvtk*.so | egrep [A-Z]"`)]
+vtklibs = [splitdir(splitext(chomp(x))[1])[2] for x in readlines(`sh -c "ls /cmn/git/VTK5101-build/bin/libvtk*.so | egrep [A-Z]"`)]
 
-hdrs = [splitdir(chomp(h)) for h in readlines(`find /cmn/git/VTK/ -name "*.h" -prune -o -name Testing -prune -o -name Examples`)]
+hdrs = [splitdir(chomp(h)) for h in readlines(`find /cmn/git/VTK -name "*.h" -prune -o -name Testing -prune -o -name Examples`)]
 hmap = Dict{ASCIIString,ASCIIString}()
 map(x-> setindex!(hmap, x[1], x[2]), hdrs)
 

@@ -14,15 +14,20 @@ ren = vtkR.New()
 renWin = vtkRW.New()
 vtkRW.AddRenderer(renWin, ren)
 
+println("ren: ", ren)
+println("renWin: ", renWin)
+return
 println("Checking virtual call: what kind of renderWindow is this?")
 println("  ", bytestring(vtkRW.GetClassNameInternal(renWin)))
+
+println("trying irenwin")
 
 renWinI = vtkRWI.New()
 vtkRWI.SetRenderWindow(renWinI, renWin)
 
 println("setting actor")
 vtkR.AddActor(ren, ac)
-println("setting background")
+#println("setting background")
 #vtkR.SetBackground(ren, .3, .6, .3)
 
 vtkR.Render(ren)

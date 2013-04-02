@@ -1,21 +1,17 @@
 using Clang.wrap_cpp, Clang.cindex, Clang.wrap_c
 
-import Clang.wrap_cpp.@vcall, Clang.wrap_cpp.@scall
 import Clang.cindex.CurKind
-
-vtkincpath = "/usr/include/vtk-5.8"
 
 function wrap_header(clsname, hmap, liblist)
   hfile = clsname*".h"
+  hbase = hmap[hfile]
   hpath = joinpath(hmap[hfile],hfile)
   println(hpath)
-  
-  #hpath = joinpath(vtkincpath,hfile)
 
   idx = cindex.idx_create(0,1)
   tu = cindex.tu_parse(idx, hpath,
     ["-x", "c++",
-     "-I/usr/include/vtk-5.8",
+     "-I/cmn/git/VTK5101-build/includes",
      "-I/cmn/git/julia/deps/llvm-3.2/build/Release/lib/clang/3.2/include",
      "-c"])
 
@@ -85,8 +81,8 @@ function wrap_header(clsname, hmap, liblist)
     end
 
     args = wrap_c.rep_args([wrap_c.rep_type(wrap_c.ctype_to_julia(x)) for x in wrap_c.function_args(cu)])
-
     ret_type = wrap_c.rep_type(wrap_c.ctype_to_julia(cindex.return_type(cu)))
+
     if (is_virt)
       println(ostrm, "@vcall $vtidx $ret_type $fname $args")
     elseif (is_stat)

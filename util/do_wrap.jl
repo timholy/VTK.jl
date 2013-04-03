@@ -7,7 +7,7 @@ hmap = Dict{ASCIIString,ASCIIString}()
 map(x-> setindex!(hmap, x[1], x[2]), hdrs)
 
 wrap_header("vtkPolyData", hmap, vtklibs)
-
+wrap_header("vtkViewport", hmap, vtklibs)
 wrap_header("vtkSphereSource", hmap, vtklibs)
 wrap_header("vtkContourFilter", hmap, vtklibs)
 wrap_header("vtkGaussianSplatter", hmap, vtklibs)

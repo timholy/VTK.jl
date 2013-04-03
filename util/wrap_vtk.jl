@@ -108,12 +108,13 @@ function wrap_header(clsname, hmap, liblist)
     args = wrap_c.rep_args([wrap_c.rep_type(wrap_c.ctype_to_julia(x)) for x in wrap_c.function_args(cu)])
     ret_type = wrap_c.rep_type(wrap_c.ctype_to_julia(cindex.return_type(cu, false)))
 
+
     if (is_virt)
       println(ostrm, "@vcall $vtidx $ret_type $fname $args $clsname")
     elseif (is_stat)
       println(ostrm, "@scall $ret_type $fname $args $mname \"$shlib\"")
     else
-      println(ostrm, "@mcall $ret_type $fname $args $mname \"$shlib\"")
+      println(ostrm, "@mcall $ret_type $fname $args $clsname $mname \"$shlib\"")
     end
   end
   close(ostrm)

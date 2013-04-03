@@ -28,8 +28,8 @@ SetRenderWindow(renWinI, renWin)
 println("setting actor")
 AddActor(ren, ac)
 
-#println("setting background")
-#vtkR.SetBackground(ren, .3, .6, .3)
+println("setting background")
+SetBackground(ren, .3, .6, .3)
 
 Render(ren)
 Start(renWinI)

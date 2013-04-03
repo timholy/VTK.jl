@@ -5,10 +5,10 @@ abstract vtkRenderWindowInteractor <: vtkObject
 @vcall 1 Int32 IsA (Ptr{Uint8},) vtkRenderWindowInteractor
 @scall Ptr{vtkRenderWindowInteractor} SafeDownCast (Ptr{vtkObjectBase},) _ZN25vtkRenderWindowInteractor12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal () vtkRenderWindowInteractor
-@mcall Ptr{vtkRenderWindowInteractor} NewInstance () _ZNK25vtkRenderWindowInteractor11NewInstanceEv "libvtkRendering"
+@mcall Ptr{vtkRenderWindowInteractor} NewInstance () vtkRenderWindowInteractor _ZNK25vtkRenderWindowInteractor11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent) vtkRenderWindowInteractor
 @vcall 20 None Initialize () vtkRenderWindowInteractor
-@mcall None ReInitialize () _ZN25vtkRenderWindowInteractor12ReInitializeEv "libvtkRendering"
+@mcall None ReInitialize () vtkRenderWindowInteractor _ZN25vtkRenderWindowInteractor12ReInitializeEv "libvtkRendering"
 @vcall 8 None UnRegister (Ptr{vtkObjectBase},) vtkRenderWindowInteractor
 @vcall 21 None Start () vtkRenderWindowInteractor
 @vcall 22 None Enable () vtkRenderWindowInteractor
@@ -18,17 +18,17 @@ abstract vtkRenderWindowInteractor <: vtkObject
 @vcall 26 None EnableRenderOff () vtkRenderWindowInteractor
 @vcall 27 None SetEnableRender (Bool,) vtkRenderWindowInteractor
 @vcall 28 Bool GetEnableRender () vtkRenderWindowInteractor
-@mcall None SetRenderWindow (Ptr{vtkRenderWindow},) _ZN25vtkRenderWindowInteractor15SetRenderWindowEP15vtkRenderWindow "libvtkRendering"
+@mcall None SetRenderWindow (Ptr{vtkRenderWindow},) vtkRenderWindowInteractor _ZN25vtkRenderWindowInteractor15SetRenderWindowEP15vtkRenderWindow "libvtkRendering"
 @vcall 29 Ptr{vtkRenderWindow} GetRenderWindow () vtkRenderWindowInteractor
 @vcall 30 None UpdateSize (Int32, Int32) vtkRenderWindowInteractor
 @vcall 31 Int32 CreateTimer (Int32,) vtkRenderWindowInteractor
 @vcall 32 Int32 DestroyTimer () vtkRenderWindowInteractor
-@mcall Int32 CreateRepeatingTimer (Uint64,) _ZN25vtkRenderWindowInteractor20CreateRepeatingTimerEm "libvtkRendering"
-@mcall Int32 CreateOneShotTimer (Uint64,) _ZN25vtkRenderWindowInteractor18CreateOneShotTimerEm "libvtkRendering"
-@mcall Int32 IsOneShotTimer (Int32,) _ZN25vtkRenderWindowInteractor14IsOneShotTimerEi "libvtkRendering"
-@mcall Uint64 GetTimerDuration (Int32,) _ZN25vtkRenderWindowInteractor16GetTimerDurationEi "libvtkRendering"
-@mcall Int32 ResetTimer (Int32,) _ZN25vtkRenderWindowInteractor10ResetTimerEi "libvtkRendering"
-@mcall Int32 DestroyTimer (Int32,) _ZN25vtkRenderWindowInteractor12DestroyTimerEi "libvtkRendering"
+@mcall Int32 CreateRepeatingTimer (Uint64,) vtkRenderWindowInteractor _ZN25vtkRenderWindowInteractor20CreateRepeatingTimerEm "libvtkRendering"
+@mcall Int32 CreateOneShotTimer (Uint64,) vtkRenderWindowInteractor _ZN25vtkRenderWindowInteractor18CreateOneShotTimerEm "libvtkRendering"
+@mcall Int32 IsOneShotTimer (Int32,) vtkRenderWindowInteractor _ZN25vtkRenderWindowInteractor14IsOneShotTimerEi "libvtkRendering"
+@mcall Uint64 GetTimerDuration (Int32,) vtkRenderWindowInteractor _ZN25vtkRenderWindowInteractor16GetTimerDurationEi "libvtkRendering"
+@mcall Int32 ResetTimer (Int32,) vtkRenderWindowInteractor _ZN25vtkRenderWindowInteractor10ResetTimerEi "libvtkRendering"
+@mcall Int32 DestroyTimer (Int32,) vtkRenderWindowInteractor _ZN25vtkRenderWindowInteractor12DestroyTimerEi "libvtkRendering"
 @vcall 33 Int32 GetVTKTimerId (Int32,) vtkRenderWindowInteractor
 @vcall 34 None SetTimerDuration (Uint64,) vtkRenderWindowInteractor
 @vcall 35 Uint64 GetTimerDurationMinValue () vtkRenderWindowInteractor
@@ -66,13 +66,13 @@ abstract vtkRenderWindowInteractor <: vtkObject
 @vcall 67 None StartPickCallback () vtkRenderWindowInteractor
 @vcall 68 None EndPickCallback () vtkRenderWindowInteractor
 @vcall 69 None GetMousePosition (Ptr{Int32}, Ptr{Int32}) vtkRenderWindowInteractor
-@mcall None HideCursor () _ZN25vtkRenderWindowInteractor10HideCursorEv "libvtkRendering"
-@mcall None ShowCursor () _ZN25vtkRenderWindowInteractor10ShowCursorEv "libvtkRendering"
+@mcall None HideCursor () vtkRenderWindowInteractor _ZN25vtkRenderWindowInteractor10HideCursorEv "libvtkRendering"
+@mcall None ShowCursor () vtkRenderWindowInteractor _ZN25vtkRenderWindowInteractor10ShowCursorEv "libvtkRendering"
 @vcall 70 None Render () vtkRenderWindowInteractor
-@mcall None FlyTo (Ptr{vtkRenderer}, Float64, Float64, Float64) _ZN25vtkRenderWindowInteractor5FlyToEP11vtkRendererddd "libvtkRendering"
-@mcall None FlyTo (Ptr{vtkRenderer}, Ptr{Float64}) _ZN25vtkRenderWindowInteractor5FlyToEP11vtkRendererPd "libvtkRendering"
-@mcall None FlyToImage (Ptr{vtkRenderer}, Float64, Float64) _ZN25vtkRenderWindowInteractor10FlyToImageEP11vtkRendererdd "libvtkRendering"
-@mcall None FlyToImage (Ptr{vtkRenderer}, Ptr{Float64}) _ZN25vtkRenderWindowInteractor10FlyToImageEP11vtkRendererPd "libvtkRendering"
+@mcall None FlyTo (Ptr{vtkRenderer}, Float64, Float64, Float64) vtkRenderWindowInteractor _ZN25vtkRenderWindowInteractor5FlyToEP11vtkRendererddd "libvtkRendering"
+@mcall None FlyTo (Ptr{vtkRenderer}, Ptr{Float64}) vtkRenderWindowInteractor _ZN25vtkRenderWindowInteractor5FlyToEP11vtkRendererPd "libvtkRendering"
+@mcall None FlyToImage (Ptr{vtkRenderer}, Float64, Float64) vtkRenderWindowInteractor _ZN25vtkRenderWindowInteractor10FlyToImageEP11vtkRendererdd "libvtkRendering"
+@mcall None FlyToImage (Ptr{vtkRenderer}, Ptr{Float64}) vtkRenderWindowInteractor _ZN25vtkRenderWindowInteractor10FlyToImageEP11vtkRendererPd "libvtkRendering"
 @vcall 71 None SetNumberOfFlyFrames (Int32,) vtkRenderWindowInteractor
 @vcall 72 Int32 GetNumberOfFlyFramesMinValue () vtkRenderWindowInteractor
 @vcall 73 Int32 GetNumberOfFlyFramesMaxValue () vtkRenderWindowInteractor
@@ -86,7 +86,7 @@ abstract vtkRenderWindowInteractor <: vtkObject
 @vcall 81 None GetLastEventPosition (Void, Void) vtkRenderWindowInteractor
 @vcall 82 None GetLastEventPosition (Ptr{Int32},) vtkRenderWindowInteractor
 @vcall 83 None SetLastEventPosition (Int32, Int32) vtkRenderWindowInteractor
-@mcall None SetLastEventPosition (Ptr{Int32},) _ZN25vtkRenderWindowInteractor20SetLastEventPositionEPi "libvtkRendering"
+@mcall None SetLastEventPosition (Ptr{Int32},) vtkRenderWindowInteractor _ZN25vtkRenderWindowInteractor20SetLastEventPositionEPi "libvtkRendering"
 @vcall 84 None SetEventPosition (Int32, Int32) vtkRenderWindowInteractor
 @vcall 85 None SetEventPosition (Ptr{Int32},) vtkRenderWindowInteractor
 @vcall 86 None SetEventPositionFlipY (Int32, Int32) vtkRenderWindowInteractor
@@ -103,21 +103,21 @@ abstract vtkRenderWindowInteractor <: vtkObject
 @vcall 97 Int32 GetRepeatCount () vtkRenderWindowInteractor
 @vcall 98 None SetKeySym (Ptr{Uint8},) vtkRenderWindowInteractor
 @vcall 99 Ptr{Uint8} GetKeySym () vtkRenderWindowInteractor
-@mcall None SetEventInformation (Int32, Int32, Int32, Int32, Uint8, Int32, Ptr{Uint8}) _ZN25vtkRenderWindowInteractor19SetEventInformationEiiiiciPKc "libvtkRendering"
-@mcall None SetEventInformationFlipY (Int32, Int32, Int32, Int32, Uint8, Int32, Ptr{Uint8}) _ZN25vtkRenderWindowInteractor24SetEventInformationFlipYEiiiiciPKc "libvtkRendering"
-@mcall None SetKeyEventInformation (Int32, Int32, Uint8, Int32, Ptr{Uint8}) _ZN25vtkRenderWindowInteractor22SetKeyEventInformationEiiciPKc "libvtkRendering"
+@mcall None SetEventInformation (Int32, Int32, Int32, Int32, Uint8, Int32, Ptr{Uint8}) vtkRenderWindowInteractor _ZN25vtkRenderWindowInteractor19SetEventInformationEiiiiciPKc "libvtkRendering"
+@mcall None SetEventInformationFlipY (Int32, Int32, Int32, Int32, Uint8, Int32, Ptr{Uint8}) vtkRenderWindowInteractor _ZN25vtkRenderWindowInteractor24SetEventInformationFlipYEiiiiciPKc "libvtkRendering"
+@mcall None SetKeyEventInformation (Int32, Int32, Uint8, Int32, Ptr{Uint8}) vtkRenderWindowInteractor _ZN25vtkRenderWindowInteractor22SetKeyEventInformationEiiciPKc "libvtkRendering"
 @vcall 100 None SetSize (Int32, Int32) vtkRenderWindowInteractor
-@mcall None SetSize (Ptr{Int32},) _ZN25vtkRenderWindowInteractor7SetSizeEPi "libvtkRendering"
+@mcall None SetSize (Ptr{Int32},) vtkRenderWindowInteractor _ZN25vtkRenderWindowInteractor7SetSizeEPi "libvtkRendering"
 @vcall 101 Ptr{Int32} GetSize () vtkRenderWindowInteractor
 @vcall 102 None GetSize (Void, Void) vtkRenderWindowInteractor
 @vcall 103 None GetSize (Ptr{Int32},) vtkRenderWindowInteractor
 @vcall 104 None SetEventSize (Int32, Int32) vtkRenderWindowInteractor
-@mcall None SetEventSize (Ptr{Int32},) _ZN25vtkRenderWindowInteractor12SetEventSizeEPi "libvtkRendering"
+@mcall None SetEventSize (Ptr{Int32},) vtkRenderWindowInteractor _ZN25vtkRenderWindowInteractor12SetEventSizeEPi "libvtkRendering"
 @vcall 105 Ptr{Int32} GetEventSize () vtkRenderWindowInteractor
 @vcall 106 None GetEventSize (Void, Void) vtkRenderWindowInteractor
 @vcall 107 None GetEventSize (Ptr{Int32},) vtkRenderWindowInteractor
 @vcall 108 Ptr{vtkRenderer} FindPokedRenderer (Int32, Int32) vtkRenderWindowInteractor
-@mcall Ptr{vtkObserverMediator} GetObserverMediator () _ZN25vtkRenderWindowInteractor19GetObserverMediatorEv "libvtkRendering"
+@mcall Ptr{vtkObserverMediator} GetObserverMediator () vtkRenderWindowInteractor _ZN25vtkRenderWindowInteractor19GetObserverMediatorEv "libvtkRendering"
 @vcall 109 None SetUseTDx (Bool,) vtkRenderWindowInteractor
 @vcall 110 Bool GetUseTDx () vtkRenderWindowInteractor
 @vcall 111 None MouseMoveEvent () vtkRenderWindowInteractor
@@ -137,9 +137,9 @@ abstract vtkRenderWindowInteractor <: vtkObject
 @vcall 125 None KeyReleaseEvent () vtkRenderWindowInteractor
 @vcall 126 None CharEvent () vtkRenderWindowInteractor
 @vcall 127 None ExitEvent () vtkRenderWindowInteractor
-@mcall None GrabFocus (Ptr{vtkCommand}, Ptr{vtkCommand}) _ZN25vtkRenderWindowInteractor9GrabFocusEP10vtkCommandS1_ "libvtkRendering"
-@mcall None ReleaseFocus () _ZN25vtkRenderWindowInteractor12ReleaseFocusEv "libvtkRendering"
+@mcall None GrabFocus (Ptr{vtkCommand}, Ptr{vtkCommand}) vtkRenderWindowInteractor _ZN25vtkRenderWindowInteractor9GrabFocusEP10vtkCommandS1_ "libvtkRendering"
+@mcall None ReleaseFocus () vtkRenderWindowInteractor _ZN25vtkRenderWindowInteractor12ReleaseFocusEv "libvtkRendering"
 @vcall 128 Int32 InternalCreateTimer (Int32, Int32, Uint64) vtkRenderWindowInteractor
 @vcall 129 Int32 InternalDestroyTimer (Int32,) vtkRenderWindowInteractor
-@mcall Int32 GetCurrentTimerId () _ZN25vtkRenderWindowInteractor17GetCurrentTimerIdEv "libvtkRendering"
-@mcall None vtkRenderWindowInteractor_eq (Void,) _ZN25vtkRenderWindowInteractoraSERKS_ "libvtkRendering"
+@mcall Int32 GetCurrentTimerId () vtkRenderWindowInteractor _ZN25vtkRenderWindowInteractor17GetCurrentTimerIdEv "libvtkRendering"
+@mcall None vtkRenderWindowInteractor_eq (Void,) vtkRenderWindowInteractor _ZN25vtkRenderWindowInteractoraSERKS_ "libvtkRendering"

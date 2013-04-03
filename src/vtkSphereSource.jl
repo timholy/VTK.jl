@@ -4,7 +4,7 @@ abstract vtkSphereSource <: vtkPolyDataAlgorithm
 @vcall 1 Int32 IsA (Ptr{Uint8},) vtkSphereSource
 @scall Ptr{vtkSphereSource} SafeDownCast (Ptr{vtkObjectBase},) _ZN15vtkSphereSource12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal () vtkSphereSource
-@mcall Ptr{vtkSphereSource} NewInstance () _ZNK15vtkSphereSource11NewInstanceEv "libvtkGraphics"
+@mcall Ptr{vtkSphereSource} NewInstance () vtkSphereSource _ZNK15vtkSphereSource11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent) vtkSphereSource
 @scall Ptr{vtkSphereSource} vtkSphereSourceNew () _ZN15vtkSphereSource3NewEv "libvtkGraphics"
 @vcall 65 None SetRadius (Float64,) vtkSphereSource
@@ -45,4 +45,4 @@ abstract vtkSphereSource <: vtkPolyDataAlgorithm
 @vcall 100 None LatLongTessellationOff () vtkSphereSource
 @vcall 61 Int32 RequestData (Ptr{vtkInformation}, Ptr{Ptr{vtkInformationVector}}, Ptr{vtkInformationVector}) vtkSphereSource
 @vcall 60 Int32 RequestInformation (Ptr{vtkInformation}, Ptr{Ptr{vtkInformationVector}}, Ptr{vtkInformationVector}) vtkSphereSource
-@mcall None vtkSphereSource_eq (Void,) _ZN15vtkSphereSourceaSERKS_ "libvtkGraphics"
+@mcall None vtkSphereSource_eq (Void,) vtkSphereSource _ZN15vtkSphereSourceaSERKS_ "libvtkGraphics"

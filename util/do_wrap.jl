@@ -6,6 +6,8 @@ hdrs = [splitdir(chomp(h)) for h in readlines(`find /cmn/git/VTK -name "*.h" -pr
 hmap = Dict{ASCIIString,ASCIIString}()
 map(x-> setindex!(hmap, x[1], x[2]), hdrs)
 
+classmap = Dict{ASCIIString,  Array{ASCIIString, 1}}()
+
 wrap_header("vtkPolyData", hmap, vtklibs)
 wrap_header("vtkViewport", hmap, vtklibs)
 wrap_header("vtkSphereSource", hmap, vtklibs)

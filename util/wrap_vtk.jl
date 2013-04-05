@@ -2,6 +2,7 @@ using Clang.wrap_cpp, Clang.cindex, Clang.wrap_c
 
 import Clang.cindex.CurKind
 
+
 function wrap_header(clsname, hmap, liblist)
   hfile = clsname*".h"
   hbase = hmap[hfile]
@@ -52,7 +53,15 @@ function wrap_header(clsname, hmap, liblist)
   ostrm = open(clsname*".jl", "w")
 
   ### Class hierarchy membership
+  # add to global classmap
+  if (!has(classmap, basename))
+    classmap[basename] = ASCIIString[]
+  end
+  push!(ref(classmap, basename), clsname)
+  # print to wrapper
   println(ostrm, "abstract $clsname <: $basename")
+
+
 
   cl = children(clscu)
 

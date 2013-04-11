@@ -2,6 +2,8 @@ using Clang.wrap_cpp, Clang.cindex, Clang.wrap_c
 
 import Clang.cindex.CurKind
 
+const debug = false
+const idx = cindex.idx_create(0,1)
 
 function wrap_header(clsname, hmap, liblist)
   hfile = clsname*".h"
@@ -11,12 +13,13 @@ function wrap_header(clsname, hmap, liblist)
   
   ### Instantiate parser
 
-  idx = cindex.idx_create(0,1)
   tu = cindex.tu_parse(idx, hpath,
     ["-x", "c++",
+     map(x->"-I"*x, vtksubdirs)...,
+     extra_inc_paths...,
      "-I/cmn/git/VTK5101-build/includes",
      "-I/cmn/git/julia/deps/llvm-3.2/build/Release/lib/clang/3.2/include",
-     "-c"])
+     "-c", "-v"])
 
 
   ### Get translation unit
@@ -46,22 +49,26 @@ function wrap_header(clsname, hmap, liblist)
   ### Get the base class name
 
   basecu = wrap_cpp.base_class(clscu)
-  basename = name(basecu)
+  if (basecu == None)
+    println("No base for class: $clsname, skipping")
+    return
+  end
 
+  basename = name(basecu)
   println("Wrapping: ", name(clscu), " base: ", basename)
 
   ostrm = open(clsname*".jl", "w")
 
   ### Class hierarchy membership
   # add to global classmap
-  if (!has(classmap, basename))
-    classmap[basename] = ASCIIString[]
+  if (basename != None)
+    if (!has(classmap, basename))
+      classmap[basename] = ASCIIString[]
+    end
+    push!(ref(classmap, basename), clsname)
   end
-  push!(ref(classmap, basename), clsname)
   # print to wrapper
   println(ostrm, "abstract $clsname <: $basename")
-
-
 
   cl = children(clscu)
 
@@ -80,9 +87,10 @@ function wrap_header(clsname, hmap, liblist)
   ### Global variables for run
   first_stat = true
   shlib = ""
-
+  
   for i=1:cl.size
     cu = cl[i]
+    debug && println(name(cu))
     if (ty_kind(cu_type(cu)) != cindex.TypKind.FUNCTIONPROTO)
       continue
     end
@@ -107,7 +115,11 @@ function wrap_header(clsname, hmap, liblist)
       first_stat = false
     end
 
-    vtidx = wrap_cpp.method_vt_index(cu)
+    vtidx = -1
+    if (!is_stat)
+      vtidx = wrap_cpp.method_vt_index(cu)
+    end
+    
     # Skip anything with bad vt index. Should only be ctor/dtor
     if (vtidx < 0)
       warn("  bad vt index, skipping $fname")
@@ -125,6 +137,8 @@ function wrap_header(clsname, hmap, liblist)
     else
       println(ostrm, "@mcall $ret_type $fname $args $clsname $mname \"$shlib\"")
     end
-  end
+  end # big for loop
+ 
+  cindex.cl_dispose(cl)
   close(ostrm)
 end

@@ -1,21 +1,48 @@
-require("../util/wrap_vtk.jl")
+const extra_inc_dirs =["Common", "Utilities", "VolumeRendering", "Rendering"]
+const extra_inc_paths=map(x -> joinpath("-I/cmn/git/VTK5101-build/", x), extra_inc_dirs)
+insert!(extra_inc_paths, 1, "-I/cmn/git/VTK5101-build/")
+
+const vtksubdirs = map(x->joinpath("/cmn/git/VTK/", x), split("""Common
+Filtering
+GenericFiltering
+Charts
+Geovis
+Graphics
+Imaging
+IO
+Rendering
+VolumeRendering
+Views
+Widgets"""))
 
 vtklibs = [splitdir(splitext(chomp(x))[1])[2] for x in readlines(`sh -c "ls /cmn/git/VTK5101-build/bin/libvtk*.so | egrep [A-Z]"`)]
 
-hdrs = [splitdir(chomp(h)) for h in readlines(`find /cmn/git/VTK -name "*.h" -prune -o -name Testing -prune -o -name Examples`)]
-hmap = Dict{ASCIIString,ASCIIString}()
+findhdrs(dir) =
+  [splitdir(chomp(h)) for h in readlines(`find $dir -type f -name "vtk*.h"`)]
+hdrs = vcat(map(findhdrs, vtksubdirs)...)
+
+const hmap = Dict{ASCIIString,ASCIIString}()
 map(x-> setindex!(hmap, x[1], x[2]), hdrs)
 
 classmap = Dict{ASCIIString,  Array{ASCIIString, 1}}()
 
-wrap_header("vtkPolyData", hmap, vtklibs)
-wrap_header("vtkViewport", hmap, vtklibs)
-wrap_header("vtkSphereSource", hmap, vtklibs)
-wrap_header("vtkContourFilter", hmap, vtklibs)
-wrap_header("vtkGaussianSplatter", hmap, vtklibs)
-wrap_header("vtkPolyDataMapper", hmap, vtklibs)
-wrap_header("vtkActor", hmap, vtklibs)
-wrap_header("vtkRenderer", hmap, vtklibs)
-wrap_header("vtkRenderWindowInteractor", hmap, vtklibs)
-wrap_header("vtkRenderWindow", hmap, vtklibs)
-wrap_header("vtkPolyDataAlgorithm", hmap, vtklibs)
+const skiplist = "Private|String"
+
+
+require("../util/wrap_vtk.jl")
+if (wraptrue)
+
+for (dir,hdr) in hdrs
+  println(hdr)
+  hdrcls = split(hdr, ".")[1]
+  if (match(r"Private|String", hdrcls) != nothing)
+    continue
+  end
+  outjl = hdrcls*".jl"
+  if (!isfile(outjl) || filesize(outjl) == 0)
+    wrap_header(hdrcls, hmap, vtklibs)
+  end
+  gc()
+end
+
+end

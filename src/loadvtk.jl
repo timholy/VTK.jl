@@ -48,8 +48,9 @@ tree = [Set{ASCIIString}() for i in 1:20]
 getrelatives(c::ASCIIString) = begin
          tmp = ASCIIString[]
          nxt = classmap[c]
-         lst = ""
          push!(tmp, c)
+         push!(tmp,nxt)
+         lst = ""
          while (nxt != lst)
            lst = nxt
            nxt = get(classmap, lst, "")
@@ -68,7 +69,24 @@ macro vtkload(libs)
   for l in vlibs
     parents = reverse(getrelatives(l))
     for i=1:length(parents)
-      add!(tree[i+1], parents[i])
+      add!(tree[i], parents[i])
+    end
+  end
+  @gensym s
+  @gensym c
+  @gensym l
+  @gensym i
+  quote
+    for ($s) in $(esc(tree))
+      for (($i),($c)) in enumerate($(s))
+        if ($i == 1)
+          eval(Expr(:abstract, symbol($c)))
+        else
+          $l = classmap[$c]
+          eval(Expr(:abstract, Expr(:<:, symbol($c), symbol($l)) ))
+        end
+      end
     end
   end
 end
+

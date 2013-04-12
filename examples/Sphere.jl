@@ -1,5 +1,14 @@
 require("loadvtk.jl")
 
+@vtkload begin
+  vtkSphereSource
+  vtkPolyDataMapper
+  vtkRenderer
+  vtkRenderWindow
+  vtkRenderWindowInteractor
+  vtkActor
+end
+
 spsrc = vtkSphereSourceNew()
 SetCenter(spsrc, Float64[0,0,0])
 SetRadius(spsrc, 5.0)

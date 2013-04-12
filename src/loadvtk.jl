@@ -21,7 +21,7 @@ macro mcall(ret_type, func, arg_types, classname, sym, lib)
   hdl = dlopen(string(lib))
   fptr = dlsym_e(hdl,sym)
   quote
-    function $(esc(func)){T <: $(esc(classname))}(thisptr::Ptr{T}, $(_args_in...))
+    function $(esc(func)){T <: $classname}(thisptr::Ptr{T}, $(_args_in...))
       ccall( $(fptr), thiscall, $(esc(ret_type)), $(esc(larg_types)), thisptr, $(_args_in...) )
     end
   end
@@ -32,7 +32,7 @@ macro vcall(vtidx, ret_type, func, arg_types, classname)
   local _args_in = Any[ symbol(string('a',x)) for x in 1:length(arg_types.args) ]
   larg_types = :((Ptr{$(classname)}, $(arg_types.args...)))
   quote
-    function $(esc(func)){T <: $(esc(classname))}(thisptr::Ptr{T}, $(_args_in...))
+    function $(esc(func)){T <: $classname}(thisptr::Ptr{T}, $(_args_in...))
       local fptr =  unsafe_ref(unsafe_ref(pointer(Ptr{Ptr{Void}},thisptr)), $(vtidx)+1)
       println("fptr: ", fptr, "\n")
       ccall( fptr, thiscall, $(esc(ret_type)), $(esc(larg_types)), thisptr, $(_args_in...) )
@@ -40,24 +40,35 @@ macro vcall(vtidx, ret_type, func, arg_types, classname)
   end
 end
 
-abstract vtkProp3D
-abstract vtkImageAlgorithm
-abstract vtkAlgorithm
-abstract vtkPointSet
-abstract vtkMapper
-abstract vtkObject
-abstract vtkWindow
-abstract vtkDataObject
-abstract vtkProp
+const classmap = Dict{ASCIIString,ASCIIString}()
+map( x -> setindex!(classmap, x[2], x[1]), [ split(chomp(y)) for y in readlines(open("vtk_classes.txt", "r")) ])
 
-  include("vtkPolyData.jl")
-  include("vtkRenderWindowInteractor.jl")
-  include("vtkGaussianSplatter.jl")
-  include("vtkPolyDataMapper.jl")
-  include("vtkActor.jl")
-  include("vtkViewport.jl")
-  include("vtkRenderer.jl")
-  include("vtkRenderWindow.jl")
-  include("vtkPolyDataAlgorithm.jl")
-  include("vtkSphereSource.jl")
-  include("vtkContourFilter.jl")
+tree = [Set{ASCIIString}() for i in 1:20]
+
+getrelatives(c::ASCIIString) = begin
+         tmp = ASCIIString[]
+         nxt = classmap[c]
+         lst = ""
+         push!(tmp, c)
+         while (nxt != lst)
+           lst = nxt
+           nxt = get(classmap, lst, "")
+           nxt != "" && push!(tmp, nxt)
+         end
+         tmp
+       end
+
+macro vtkload(libs)
+  vlibs = ASCIIString[]
+  for l in libs.args
+    if(isa(l,Symbol))
+      push!(vlibs, string(l))
+    end
+  end
+  for l in vlibs
+    parents = reverse(getrelatives(l))
+    for i=1:length(parents)
+      add!(tree[i+1], parents[i])
+    end
+  end
+end

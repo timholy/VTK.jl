@@ -1,0 +1,9 @@
+cur_class = vtkExtractSelectedPolyDataIds
+@vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@vcall 1 Int32 IsA (Ptr{Uint8},)
+@vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
+@mcall Ptr{vtkExtractSelectedPolyDataIds} NewInstance () _ZNK29vtkExtractSelectedPolyDataIds11NewInstanceEv "libvtkGraphics"
+@vcall 4 None PrintSelf (Void, vtkIndent)
+@vcall 51 Int32 FillInputPortInformation (Int32, Ptr{vtkInformation})
+@vcall 61 Int32 RequestData (Ptr{vtkInformation}, Ptr{Ptr{vtkInformationVector}}, Ptr{vtkInformationVector})
+@mcall None vtkExtractSelectedPolyDataIds_eq (Void,) _ZN29vtkExtractSelectedPolyDataIdsaSERKS_ "libvtkGraphics"

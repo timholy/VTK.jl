@@ -1,0 +1,40 @@
+cur_class = vtkCellArray
+@vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@vcall 1 Int32 IsA (Ptr{Uint8},)
+@vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
+@mcall Ptr{vtkCellArray} NewInstance () _ZNK12vtkCellArray11NewInstanceEv "libvtkFiltering"
+@vcall 4 None PrintSelf (Void, vtkIndent)
+@mcall Int32 Allocate (vtkIdType, Int32) _ZN12vtkCellArray8AllocateExi "libvtkFiltering"
+@mcall None Initialize () _ZN12vtkCellArray10InitializeEv "libvtkFiltering"
+@vcall 20 vtkIdType GetNumberOfCells ()
+@vcall 21 None SetNumberOfCells (vtkIdType,)
+@mcall vtkIdType EstimateSize (vtkIdType, Int32) _ZN12vtkCellArray12EstimateSizeExi "libvtkFiltering"
+@mcall None InitTraversal () _ZN12vtkCellArray13InitTraversalEv "libvtkFiltering"
+@mcall Int32 GetNextCell (Void, Void) _ZN12vtkCellArray11GetNextCellERxRPx "libvtkFiltering"
+@mcall Int32 GetNextCell (Ptr{vtkIdList},) _ZN12vtkCellArray11GetNextCellEP9vtkIdList "libvtkFiltering"
+@mcall vtkIdType GetSize () _ZN12vtkCellArray7GetSizeEv "libvtkFiltering"
+@mcall vtkIdType GetNumberOfConnectivityEntries () _ZN12vtkCellArray30GetNumberOfConnectivityEntriesEv "libvtkFiltering"
+@mcall None GetCell (vtkIdType, Void, Void) _ZN12vtkCellArray7GetCellExRxRPx "libvtkFiltering"
+@mcall None GetCell (vtkIdType, Ptr{vtkIdList}) _ZN12vtkCellArray7GetCellExP9vtkIdList "libvtkFiltering"
+@mcall vtkIdType InsertNextCell (Ptr{vtkCell},) _ZN12vtkCellArray14InsertNextCellEP7vtkCell "libvtkFiltering"
+@mcall vtkIdType InsertNextCell (vtkIdType, Ptr{vtkIdType}) _ZN12vtkCellArray14InsertNextCellExPKx "libvtkFiltering"
+@mcall vtkIdType InsertNextCell (Ptr{vtkIdList},) _ZN12vtkCellArray14InsertNextCellEP9vtkIdList "libvtkFiltering"
+@mcall vtkIdType InsertNextCell (Int32,) _ZN12vtkCellArray14InsertNextCellEi "libvtkFiltering"
+@mcall None InsertCellPoint (vtkIdType,) _ZN12vtkCellArray15InsertCellPointEx "libvtkFiltering"
+@mcall None UpdateCellCount (Int32,) _ZN12vtkCellArray15UpdateCellCountEi "libvtkFiltering"
+@mcall vtkIdType GetInsertLocation (Int32,) _ZN12vtkCellArray17GetInsertLocationEi "libvtkFiltering"
+@mcall vtkIdType GetTraversalLocation () _ZN12vtkCellArray20GetTraversalLocationEv "libvtkFiltering"
+@mcall None SetTraversalLocation (vtkIdType,) _ZN12vtkCellArray20SetTraversalLocationEx "libvtkFiltering"
+@mcall vtkIdType GetTraversalLocation (vtkIdType,) _ZN12vtkCellArray20GetTraversalLocationEx "libvtkFiltering"
+@mcall None ReverseCell (vtkIdType,) _ZN12vtkCellArray11ReverseCellEx "libvtkFiltering"
+@mcall None ReplaceCell (vtkIdType, Int32, Ptr{vtkIdType}) _ZN12vtkCellArray11ReplaceCellExiPKx "libvtkFiltering"
+@mcall Int32 GetMaxCellSize () _ZN12vtkCellArray14GetMaxCellSizeEv "libvtkFiltering"
+@mcall Ptr{vtkIdType} GetPointer () _ZN12vtkCellArray10GetPointerEv "libvtkFiltering"
+@mcall Ptr{vtkIdType} WritePointer (vtkIdType, vtkIdType) _ZN12vtkCellArray12WritePointerExx "libvtkFiltering"
+@mcall None SetCells (vtkIdType, Ptr{vtkIdTypeArray}) _ZN12vtkCellArray8SetCellsExP14vtkIdTypeArray "libvtkFiltering"
+@mcall None DeepCopy (Ptr{vtkCellArray},) _ZN12vtkCellArray8DeepCopyEPS_ "libvtkFiltering"
+@mcall Ptr{vtkIdTypeArray} GetData () _ZN12vtkCellArray7GetDataEv "libvtkFiltering"
+@mcall None Reset () _ZN12vtkCellArray5ResetEv "libvtkFiltering"
+@mcall None Squeeze () _ZN12vtkCellArray7SqueezeEv "libvtkFiltering"
+@mcall Uint64 GetActualMemorySize () _ZN12vtkCellArray19GetActualMemorySizeEv "libvtkFiltering"
+@mcall None vtkCellArray_eq (Void,) _ZN12vtkCellArrayaSERKS_ "libvtkFiltering"

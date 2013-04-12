@@ -1,0 +1,30 @@
+cur_class = vtkMatrix3x3
+@vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@vcall 1 Int32 IsA (Ptr{Uint8},)
+@vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
+@mcall Ptr{vtkMatrix3x3} NewInstance () _ZNK12vtkMatrix3x311NewInstanceEv "libvtkCommon"
+@vcall 4 None PrintSelf (Void, vtkIndent)
+@mcall None DeepCopy (Ptr{vtkMatrix3x3},) _ZN12vtkMatrix3x38DeepCopyEPS_ "libvtkCommon"
+@mcall None DeepCopy (Ptr{Float64},) _ZN12vtkMatrix3x38DeepCopyEPKd "libvtkCommon"
+@mcall None Zero () _ZN12vtkMatrix3x34ZeroEv "libvtkCommon"
+@mcall None Identity () _ZN12vtkMatrix3x38IdentityEv "libvtkCommon"
+@mcall None Invert () _ZN12vtkMatrix3x36InvertEv "libvtkCommon"
+@mcall None Transpose () _ZN12vtkMatrix3x39TransposeEv "libvtkCommon"
+@mcall None MultiplyPoint (Ptr{Float32}, Ptr{Float32}) _ZN12vtkMatrix3x313MultiplyPointEPKfPf "libvtkCommon"
+@mcall None MultiplyPoint (Ptr{Float64}, Ptr{Float64}) _ZN12vtkMatrix3x313MultiplyPointEPKdPd "libvtkCommon"
+@mcall None Adjoint (Ptr{vtkMatrix3x3}, Ptr{vtkMatrix3x3}) _ZN12vtkMatrix3x37AdjointEPS_S0_ "libvtkCommon"
+@mcall Float64 Determinant () _ZN12vtkMatrix3x311DeterminantEv "libvtkCommon"
+@mcall None SetElement (Int32, Int32, Float64) _ZN12vtkMatrix3x310SetElementEiid "libvtkCommon"
+@mcall Float64 GetElement (Int32, Int32) _ZNK12vtkMatrix3x310GetElementEii "libvtkCommon"
+@mcall Ptr{Float64} operator[] (Uint32,) _ZN12vtkMatrix3x3ixEj "libvtkCommon"
+@mcall Ptr{Float64} operator[] (Uint32,) _ZNK12vtkMatrix3x3ixEj "libvtkCommon"
+@mcall Bool operator== (Void,) _ZN12vtkMatrix3x3eqERKS_ "libvtkCommon"
+@mcall Bool operator!= (Void,) _ZN12vtkMatrix3x3neERKS_ "libvtkCommon"
+@mcall None Adjoint (Void, Void) _ZN12vtkMatrix3x37AdjointERS_S0_ "libvtkCommon"
+@mcall Float64 Determinant (Void,) _ZN12vtkMatrix3x311DeterminantERS_ "libvtkCommon"
+@mcall Float64 Determinant (Ptr{vtkMatrix3x3},) _ZN12vtkMatrix3x311DeterminantEPS_ "libvtkCommon"
+@mcall None Invert (Void, Void) _ZN12vtkMatrix3x36InvertERS_S0_ "libvtkCommon"
+@mcall None Transpose (Void, Void) _ZN12vtkMatrix3x39TransposeERS_S0_ "libvtkCommon"
+@mcall Bool IsIdentity () _ZN12vtkMatrix3x310IsIdentityEv "libvtkCommon"
+@mcall Ptr{Float64} GetData () _ZN12vtkMatrix3x37GetDataEv "libvtkCommon"
+@mcall None vtkMatrix3x3_eq (Void,) _ZN12vtkMatrix3x3aSERKS_ "libvtkCommon"

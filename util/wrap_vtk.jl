@@ -6,6 +6,7 @@ const debug = false
 const idx = cindex.idx_create(0,1)
 
 function wrap_header(clsname, hmap, liblist)
+  class_strm = open("vtk_classes.txt", "a")
   hfile = clsname*".h"
   hbase = hmap[hfile]
   hpath = joinpath(hmap[hfile],hfile)
@@ -19,7 +20,7 @@ function wrap_header(clsname, hmap, liblist)
      extra_inc_paths...,
      "-I/cmn/git/VTK5101-build/includes",
      "-I/cmn/git/julia/deps/llvm-3.2/build/Release/lib/clang/3.2/include",
-     "-c", "-v"])
+     "-c"])
 
 
   ### Get translation unit
@@ -68,7 +69,9 @@ function wrap_header(clsname, hmap, liblist)
     push!(ref(classmap, basename), clsname)
   end
   # print to wrapper
-  println(ostrm, "abstract $clsname <: $basename")
+  println(class_strm, "$clsname $basename")
+#  println(ostrm, "abstract $clsname <: $basename")
+  println(ostrm, "cur_class = $clsname")
 
   cl = children(clscu)
 
@@ -131,14 +134,16 @@ function wrap_header(clsname, hmap, liblist)
 
 
     if (is_virt)
-      println(ostrm, "@vcall $vtidx $ret_type $fname $args $clsname")
+      println(ostrm, "@vcall $vtidx $ret_type $fname $args")
     elseif (is_stat)
       println(ostrm, "@scall $ret_type $fname $args $mname \"$shlib\"")
     else
-      println(ostrm, "@mcall $ret_type $fname $args $clsname $mname \"$shlib\"")
+      println(ostrm, "@mcall $ret_type $fname $args $mname \"$shlib\"")
     end
   end # big for loop
  
   cindex.cl_dispose(cl)
   close(ostrm)
+  close(class_strm)
+  cindex.tu_dispose(tu)
 end

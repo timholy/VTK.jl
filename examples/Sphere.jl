@@ -2,6 +2,7 @@ require("loadvtk.jl")
 
 @vtkload begin
   vtkSphereSource
+  vtkPolyData
   vtkPolyDataMapper
   vtkRenderer
   vtkRenderWindow

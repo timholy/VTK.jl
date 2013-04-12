@@ -1,6 +1,3 @@
-#  import Clang.wrap_cpp.@vcall, Clang.wrap_cpp.@scall, Clang.wrap_cpp.@mcall
-
-
 # Static method call
 macro scall(ret_type, func, arg_types, sym, lib)
   local _args_in = Any[ symbol(string('a',x)) for x in 1:length(arg_types.args) ]
@@ -15,24 +12,24 @@ macro scall(ret_type, func, arg_types, sym, lib)
 end
 
 # Member function call (takes this* but is not virtual)
-macro mcall(ret_type, func, arg_types, classname, sym, lib)
+macro mcall(ret_type, func, arg_types, sym, lib)
   local _args_in = Any[ symbol(string('a',x)) for x in 1:length(arg_types.args) ]
   larg_types = :((Ptr{Void}, $(arg_types.args...)))
   hdl = dlopen(string(lib))
   fptr = dlsym_e(hdl,sym)
   quote
-    function $(esc(func)){T <: $classname}(thisptr::Ptr{T}, $(_args_in...))
+    function $(esc(func)){T <: $cur_class}(thisptr::Ptr{T}, $(_args_in...))
       ccall( $(fptr), thiscall, $(esc(ret_type)), $(esc(larg_types)), thisptr, $(_args_in...) )
     end
   end
 end
 
 # Virtual table call
-macro vcall(vtidx, ret_type, func, arg_types, classname)
+macro vcall(vtidx, ret_type, func, arg_types)
   local _args_in = Any[ symbol(string('a',x)) for x in 1:length(arg_types.args) ]
-  larg_types = :((Ptr{$(classname)}, $(arg_types.args...)))
+  larg_types = :((Ptr{$(cur_class)}, $(arg_types.args...)))
   quote
-    function $(esc(func)){T <: $classname}(thisptr::Ptr{T}, $(_args_in...))
+    function $(esc(func)){T <: $cur_class}(thisptr::Ptr{T}, $(_args_in...))
       local fptr =  unsafe_ref(unsafe_ref(pointer(Ptr{Ptr{Void}},thisptr)), $(vtidx)+1)
       println("fptr: ", fptr, "\n")
       ccall( fptr, thiscall, $(esc(ret_type)), $(esc(larg_types)), thisptr, $(_args_in...) )
@@ -67,7 +64,7 @@ macro vtkload(libs)
     end
   end
   for l in vlibs
-    parents = reverse(getrelatives(l))
+    parents = reverse!(getrelatives(l))
     for i=1:length(parents)
       add!(tree[i], parents[i])
     end
@@ -80,11 +77,30 @@ macro vtkload(libs)
     for ($s) in $(esc(tree))
       for (($i),($c)) in enumerate($(s))
         if ($i == 1)
-          eval(Expr(:abstract, symbol($c)))
+          try
+            eval(Expr(:abstract, symbol($c)))
+           catch
+            # Must have been defined already. Skip.
+           end
         else
           $l = classmap[$c]
-          eval(Expr(:abstract, Expr(:<:, symbol($c), symbol($l)) ))
+          try
+            eval(Expr(:abstract, Expr(:<:, symbol($c), symbol($l)) ))
+          catch
+            # Must have been defined already. Skip
+          end
         end
+      end
+    end
+
+    # Import necessary class files
+    # Run this after the abstract type definitions due to inter-dependencies
+    for ($s) in $(esc(tree))
+      for ($c) in $(s)
+        if ($c == "vtkObjectBase")
+          continue
+        end
+        require($c)
       end
     end
   end

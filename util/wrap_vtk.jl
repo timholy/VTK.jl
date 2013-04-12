@@ -123,8 +123,8 @@ function wrap_header(clsname, hmap, liblist)
       vtidx = wrap_cpp.method_vt_index(cu)
     end
     
-    # Skip anything with bad vt index. Should only be ctor/dtor
-    if (vtidx < 0)
+    # Skip any virtual functions with bad vt index. Should only be ctor/dtor
+    if (!is_stat && vtidx < 0)
       warn("  bad vt index, skipping $fname")
       continue
     end

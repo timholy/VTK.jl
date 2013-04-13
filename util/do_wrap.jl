@@ -5,14 +5,14 @@ insert!(extra_inc_paths, 1, "-I/cmn/git/VTK5101-build/")
 const vtksubdirs = map(x->joinpath("/cmn/git/VTK/", x), ["Common",
 "Filtering",
 "GenericFiltering",
-#"Charts",
-#"Geovis",
+"Charts",
+"Geovis",
 "Graphics",
-#"Imaging",
-#"IO",
+"Imaging",
+"IO",
 "Rendering",
-#"VolumeRendering",
-#"Views",
+"VolumeRendering",
+"Views",
 #"Widgets"
 ] )
 

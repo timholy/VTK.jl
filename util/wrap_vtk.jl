@@ -50,19 +50,20 @@ function wrap_header(clsname, hmap, liblist)
   ### Get the base class name
 
   basecu = wrap_cpp.base_class(clscu)
+  basename = ""
   if (basecu == None)
-    println("No base for class: $clsname, skipping")
-    return
+    println("No base for class: $clsname")
+  else
+    basename = name(basecu)
   end
 
-  basename = name(basecu)
   println("Wrapping: ", name(clscu), " base: ", basename)
 
   ostrm = open(clsname*".jl", "w")
 
   ### Class hierarchy membership
   # add to global classmap
-  if (basename != None)
+  if (basename != "")
     if (!has(classmap, basename))
       classmap[basename] = ASCIIString[]
     end

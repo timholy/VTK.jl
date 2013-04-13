@@ -31,30 +31,33 @@ macro vcall(vtidx, ret_type, func, arg_types)
   quote
     function $(esc(func)){T <: $cur_class}(thisptr::Ptr{T}, $(_args_in...))
       local fptr =  unsafe_ref(unsafe_ref(pointer(Ptr{Ptr{Void}},thisptr)), $(vtidx)+1)
-      println("fptr: ", fptr, "\n")
       ccall( fptr, thiscall, $(esc(ret_type)), $(esc(larg_types)), thisptr, $(_args_in...) )
     end
   end
 end
 
+# Root of type tree
+abstract vtkObjectBase
+
+# Map of class inheritance
 const classmap = Dict{ASCIIString,ASCIIString}()
 map( x -> setindex!(classmap, x[2], x[1]), [ split(chomp(y)) for y in readlines(open("vtk_classes.txt", "r")) ])
 
 tree = [Set{ASCIIString}() for i in 1:20]
 
 getrelatives(c::ASCIIString) = begin
-         tmp = ASCIIString[]
-         nxt = classmap[c]
-         push!(tmp, c)
-         push!(tmp,nxt)
-         lst = ""
-         while (nxt != lst)
-           lst = nxt
-           nxt = get(classmap, lst, "")
-           nxt != "" && push!(tmp, nxt)
-         end
-         tmp
-       end
+  tmp = ASCIIString[]
+  nxt = classmap[c]
+  push!(tmp, c)
+  push!(tmp,nxt)
+  lst = ""
+  while (nxt != lst)
+    lst = nxt
+    nxt = get(classmap, lst, "")
+    nxt != "" && push!(tmp, nxt)
+  end
+  tmp
+end
 
 macro vtkload(libs)
   vlibs = ASCIIString[]
@@ -69,38 +72,31 @@ macro vtkload(libs)
       add!(tree[i], parents[i])
     end
   end
-  @gensym s
-  @gensym c
-  @gensym l
+  @gensym set_
+  @gensym klass
+  @gensym parent
   @gensym i
   quote
-    for ($s) in $(esc(tree))
-      for (($i),($c)) in enumerate($(s))
-        if ($i == 1)
-          try
-            eval(Expr(:abstract, symbol($c)))
-           catch
-            # Must have been defined already. Skip.
-           end
-        else
-          $l = classmap[$c]
-          try
-            eval(Expr(:abstract, Expr(:<:, symbol($c), symbol($l)) ))
-          catch
-            # Must have been defined already. Skip
+    # Resolve superclasses
+    for ($set_) in $(esc(tree))
+      for (($i),($klass)) in enumerate($(set_))
+        $parent = get(classmap, $klass, None)
+        try
+          if ($parent == None)
+            eval(Expr(:abstract, $klass))
+          else
+            eval(Expr(:abstract, Expr(:<:, symbol($klass), symbol($parent)) ))
           end
+        catch
+          # Must have been defined already. Skip
         end
       end
     end
-
-    # Import necessary class files
-    # Run this after the abstract type definitions due to inter-dependencies
-    for ($s) in $(esc(tree))
-      for ($c) in $(s)
-        if ($c == "vtkObjectBase")
-          continue
-        end
-        require($c)
+    # Import necessary wrapper files
+    # (Run this after the abstract type definitions due to inter-dependencies)
+    for ($set_) in $(esc(tree))
+      for ($klass) in $(set_)
+        require($klass)
       end
     end
   end

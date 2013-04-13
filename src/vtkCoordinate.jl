@@ -1,9 +1,12 @@
 cur_class = vtkCoordinate
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN13vtkCoordinate8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkCoordinate} SafeDownCast (Ptr{vtkObjectBase},) _ZN13vtkCoordinate12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkCoordinate} NewInstance () _ZNK13vtkCoordinate11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkCoordinate} vtkCoordinateNew () _ZN13vtkCoordinate3NewEv "libvtkFiltering"
 @vcall 20 None SetCoordinateSystem (Int32,)
 @vcall 21 Int32 GetCoordinateSystem ()
 @mcall None SetCoordinateSystemToDisplay () _ZN13vtkCoordinate28SetCoordinateSystemToDisplayEv "libvtkFiltering"

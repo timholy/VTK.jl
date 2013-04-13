@@ -1,9 +1,12 @@
 cur_class = vtkRectangularButtonSource
 @vcall 4 None PrintSelf (Void, vtkIndent)
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN26vtkRectangularButtonSource8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkRectangularButtonSource} SafeDownCast (Ptr{vtkObjectBase},) _ZN26vtkRectangularButtonSource12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkRectangularButtonSource} NewInstance () _ZNK26vtkRectangularButtonSource11NewInstanceEv "libvtkGraphics"
+@scall Ptr{vtkRectangularButtonSource} vtkRectangularButtonSourceNew () _ZN26vtkRectangularButtonSource3NewEv "libvtkGraphics"
 @vcall 85 None SetWidth (Float64,)
 @vcall 86 Float64 GetWidthMinValue ()
 @vcall 87 Float64 GetWidthMaxValue ()

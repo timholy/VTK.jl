@@ -1,6 +1,9 @@
 cur_class = vtkExtractVectorComponents
+@scall Ptr{vtkExtractVectorComponents} vtkExtractVectorComponentsNew () _ZN26vtkExtractVectorComponents3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN26vtkExtractVectorComponents8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkExtractVectorComponents} SafeDownCast (Ptr{vtkObjectBase},) _ZN26vtkExtractVectorComponents12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkExtractVectorComponents} NewInstance () _ZNK26vtkExtractVectorComponents11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

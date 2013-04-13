@@ -1,6 +1,8 @@
 cur_class = vtkProp
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN7vtkProp8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkProp} SafeDownCast (Ptr{vtkObjectBase},) _ZN7vtkProp12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkProp} NewInstance () _ZNK7vtkProp11NewInstanceEv "libvtkCommon"
 @vcall 4 None PrintSelf (Void, vtkIndent)

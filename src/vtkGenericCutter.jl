@@ -1,9 +1,12 @@
 cur_class = vtkGenericCutter
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN16vtkGenericCutter8IsTypeOfEPKc "libvtkGenericFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkGenericCutter} SafeDownCast (Ptr{vtkObjectBase},) _ZN16vtkGenericCutter12SafeDownCastEP13vtkObjectBase "libvtkGenericFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkGenericCutter} NewInstance () _ZNK16vtkGenericCutter11NewInstanceEv "libvtkGenericFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkGenericCutter} vtkGenericCutterNew () _ZN16vtkGenericCutter3NewEv "libvtkGenericFiltering"
 @mcall None SetValue (Int32, Float64) _ZN16vtkGenericCutter8SetValueEid "libvtkGenericFiltering"
 @mcall Float64 GetValue (Int32,) _ZN16vtkGenericCutter8GetValueEi "libvtkGenericFiltering"
 @mcall Ptr{Float64} GetValues () _ZN16vtkGenericCutter9GetValuesEv "libvtkGenericFiltering"

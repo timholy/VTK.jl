@@ -1,6 +1,9 @@
 cur_class = vtkConvexPointSet
+@scall Ptr{vtkConvexPointSet} vtkConvexPointSetNew () _ZN17vtkConvexPointSet3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN17vtkConvexPointSet8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkConvexPointSet} SafeDownCast (Ptr{vtkObjectBase},) _ZN17vtkConvexPointSet12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkConvexPointSet} NewInstance () _ZNK17vtkConvexPointSet11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

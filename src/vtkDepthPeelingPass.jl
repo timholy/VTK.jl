@@ -1,6 +1,9 @@
 cur_class = vtkDepthPeelingPass
+@scall Ptr{vtkDepthPeelingPass} vtkDepthPeelingPassNew () _ZN19vtkDepthPeelingPass3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN19vtkDepthPeelingPass8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkDepthPeelingPass} SafeDownCast (Ptr{vtkObjectBase},) _ZN19vtkDepthPeelingPass12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkDepthPeelingPass} NewInstance () _ZNK19vtkDepthPeelingPass11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

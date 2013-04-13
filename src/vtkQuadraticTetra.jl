@@ -1,6 +1,9 @@
 cur_class = vtkQuadraticTetra
+@scall Ptr{vtkQuadraticTetra} vtkQuadraticTetraNew () _ZN17vtkQuadraticTetra3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN17vtkQuadraticTetra8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkQuadraticTetra} SafeDownCast (Ptr{vtkObjectBase},) _ZN17vtkQuadraticTetra12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkQuadraticTetra} NewInstance () _ZNK17vtkQuadraticTetra11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -21,7 +24,11 @@ cur_class = vtkQuadraticTetra
 @vcall 40 Int32 IntersectWithLine (Ptr{Float64}, Ptr{Float64}, Float64, Void, Ptr{Float64}, Ptr{Float64}, Void)
 @vcall 43 Int32 GetParametricCenter (Ptr{Float64},)
 @vcall 44 Float64 GetParametricDistance (Ptr{Float64},)
+@scall None InterpolationFunctions (Ptr{Float64}, Ptr{Float64}) _ZN17vtkQuadraticTetra22InterpolationFunctionsEPdS0_ "libvtkFiltering"
+@scall None InterpolationDerivs (Ptr{Float64}, Ptr{Float64}) _ZN17vtkQuadraticTetra19InterpolationDerivsEPdS0_ "libvtkFiltering"
 @vcall 47 None InterpolateFunctions (Ptr{Float64}, Ptr{Float64})
 @vcall 48 None InterpolateDerivs (Ptr{Float64}, Ptr{Float64})
+@scall Ptr{Int32} GetEdgeArray (Int32,) _ZN17vtkQuadraticTetra12GetEdgeArrayEi "libvtkFiltering"
+@scall Ptr{Int32} GetFaceArray (Int32,) _ZN17vtkQuadraticTetra12GetFaceArrayEi "libvtkFiltering"
 @mcall None JacobianInverse (Ptr{Float64}, Ptr{Ptr{Float64}}, Ptr{Float64}) _ZN17vtkQuadraticTetra15JacobianInverseEPdPS0_S0_ "libvtkFiltering"
 @mcall None vtkQuadraticTetra_eq (Void,) _ZN17vtkQuadraticTetraaSERKS_ "libvtkFiltering"

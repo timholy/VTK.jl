@@ -1,9 +1,12 @@
 cur_class = vtkBoxClipDataSet
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN17vtkBoxClipDataSet8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkBoxClipDataSet} SafeDownCast (Ptr{vtkObjectBase},) _ZN17vtkBoxClipDataSet12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkBoxClipDataSet} NewInstance () _ZNK17vtkBoxClipDataSet11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkBoxClipDataSet} vtkBoxClipDataSetNew () _ZN17vtkBoxClipDataSet3NewEv "libvtkGraphics"
 @mcall None SetBoxClip (Float64, Float64, Float64, Float64, Float64, Float64) _ZN17vtkBoxClipDataSet10SetBoxClipEdddddd "libvtkGraphics"
 @mcall None SetBoxClip (Ptr{Float64}, Ptr{Float64}, Ptr{Float64}, Ptr{Float64}, Ptr{Float64}, Ptr{Float64}, Ptr{Float64}, Ptr{Float64}, Ptr{Float64}, Ptr{Float64}, Ptr{Float64}, Ptr{Float64}) _ZN17vtkBoxClipDataSet10SetBoxClipEPKdS1_S1_S1_S1_S1_S1_S1_S1_S1_S1_S1_ "libvtkGraphics"
 @vcall 65 None SetGenerateClipScalars (Int32,)
@@ -22,6 +25,7 @@ cur_class = vtkBoxClipDataSet
 @vcall 19 Uint64 GetMTime ()
 @vcall 75 Uint32 GetOrientation ()
 @vcall 76 None SetOrientation (Uint32,)
+@scall None InterpolateEdge (Ptr{vtkDataSetAttributes}, vtkIdType, vtkIdType, vtkIdType, Float64) _ZN17vtkBoxClipDataSet15InterpolateEdgeEP20vtkDataSetAttributesxxxd "libvtkGraphics"
 @mcall None MinEdgeF (Ptr{Uint32}, Ptr{vtkIdType}, Ptr{Uint32}) _ZN17vtkBoxClipDataSet8MinEdgeFEPKjPKxPj "libvtkGraphics"
 @mcall None PyramidToTetra (Ptr{vtkIdType}, Ptr{vtkIdType}, Ptr{vtkCellArray}) _ZN17vtkBoxClipDataSet14PyramidToTetraEPKxS1_P12vtkCellArray "libvtkGraphics"
 @mcall None WedgeToTetra (Ptr{vtkIdType}, Ptr{vtkIdType}, Ptr{vtkCellArray}) _ZN17vtkBoxClipDataSet12WedgeToTetraEPKxS1_P12vtkCellArray "libvtkGraphics"

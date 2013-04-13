@@ -1,9 +1,12 @@
 cur_class = vtkIdentColoredPainter
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN22vtkIdentColoredPainter8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkIdentColoredPainter} SafeDownCast (Ptr{vtkObjectBase},) _ZN22vtkIdentColoredPainter12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkIdentColoredPainter} NewInstance () _ZNK22vtkIdentColoredPainter11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkIdentColoredPainter} vtkIdentColoredPainterNew () _ZN22vtkIdentColoredPainter3NewEv "libvtkRendering"
 @mcall None ResetCurrentId () _ZN22vtkIdentColoredPainter14ResetCurrentIdEv "libvtkRendering"
 @mcall None ColorByConstant (Uint32,) _ZN22vtkIdentColoredPainter15ColorByConstantEj "libvtkRendering"
 @mcall None ColorByIncreasingIdent (Uint32,) _ZN22vtkIdentColoredPainter22ColorByIncreasingIdentEj "libvtkRendering"

@@ -1,6 +1,9 @@
 cur_class = vtkActor2DCollection
+@scall Ptr{vtkActor2DCollection} vtkActor2DCollectionNew () _ZN20vtkActor2DCollection3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN20vtkActor2DCollection8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkActor2DCollection} SafeDownCast (Ptr{vtkObjectBase},) _ZN20vtkActor2DCollection12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkActor2DCollection} NewInstance () _ZNK20vtkActor2DCollection11NewInstanceEv "libvtkFiltering"
 @mcall None Sort () _ZN20vtkActor2DCollection4SortEv "libvtkFiltering"

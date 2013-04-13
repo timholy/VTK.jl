@@ -1,6 +1,9 @@
 cur_class = vtkDistancePolyDataFilter
+@scall Ptr{vtkDistancePolyDataFilter} vtkDistancePolyDataFilterNew () _ZN25vtkDistancePolyDataFilter3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN25vtkDistancePolyDataFilter8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkDistancePolyDataFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN25vtkDistancePolyDataFilter12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkDistancePolyDataFilter} NewInstance () _ZNK25vtkDistancePolyDataFilter11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

@@ -1,6 +1,9 @@
 cur_class = vtkDataSetSurfaceFilter
+@scall Ptr{vtkDataSetSurfaceFilter} vtkDataSetSurfaceFilterNew () _ZN23vtkDataSetSurfaceFilter3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN23vtkDataSetSurfaceFilter8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkDataSetSurfaceFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN23vtkDataSetSurfaceFilter12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkDataSetSurfaceFilter} NewInstance () _ZNK23vtkDataSetSurfaceFilter11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

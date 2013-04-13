@@ -1,9 +1,12 @@
 cur_class = vtkScalarsToColors
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN18vtkScalarsToColors8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkScalarsToColors} SafeDownCast (Ptr{vtkObjectBase},) _ZN18vtkScalarsToColors12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkScalarsToColors} NewInstance () _ZNK18vtkScalarsToColors11NewInstanceEv "libvtkCommon"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkScalarsToColors} vtkScalarsToColorsNew () _ZN18vtkScalarsToColors3NewEv "libvtkCommon"
 @vcall 20 Int32 IsOpaque ()
 @vcall 21 None Build ()
 @vcall 22 Ptr{Float64} GetRange ()

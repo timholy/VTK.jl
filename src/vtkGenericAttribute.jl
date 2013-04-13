@@ -1,6 +1,8 @@
 cur_class = vtkGenericAttribute
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN19vtkGenericAttribute8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkGenericAttribute} SafeDownCast (Ptr{vtkObjectBase},) _ZN19vtkGenericAttribute12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkGenericAttribute} NewInstance () _ZNK19vtkGenericAttribute11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

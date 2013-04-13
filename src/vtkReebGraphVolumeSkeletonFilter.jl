@@ -1,6 +1,9 @@
 cur_class = vtkReebGraphVolumeSkeletonFilter
+@scall Ptr{vtkReebGraphVolumeSkeletonFilter} vtkReebGraphVolumeSkeletonFilterNew () _ZN32vtkReebGraphVolumeSkeletonFilter3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN32vtkReebGraphVolumeSkeletonFilter8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkReebGraphVolumeSkeletonFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN32vtkReebGraphVolumeSkeletonFilter12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkReebGraphVolumeSkeletonFilter} NewInstance () _ZNK32vtkReebGraphVolumeSkeletonFilter11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

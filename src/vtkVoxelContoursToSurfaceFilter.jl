@@ -1,6 +1,9 @@
 cur_class = vtkVoxelContoursToSurfaceFilter
+@scall Ptr{vtkVoxelContoursToSurfaceFilter} vtkVoxelContoursToSurfaceFilterNew () _ZN31vtkVoxelContoursToSurfaceFilter3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN31vtkVoxelContoursToSurfaceFilter8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkVoxelContoursToSurfaceFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN31vtkVoxelContoursToSurfaceFilter12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkVoxelContoursToSurfaceFilter} NewInstance () _ZNK31vtkVoxelContoursToSurfaceFilter11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

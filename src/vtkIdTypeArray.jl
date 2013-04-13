@@ -1,6 +1,9 @@
 cur_class = vtkIdTypeArray
+@scall Ptr{vtkIdTypeArray} vtkIdTypeArrayNew () _ZN14vtkIdTypeArray3NewEv "libvtkCommon"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN14vtkIdTypeArray8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkIdTypeArray} SafeDownCast (Ptr{vtkObjectBase},) _ZN14vtkIdTypeArray12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkIdTypeArray} NewInstance () _ZNK14vtkIdTypeArray11NewInstanceEv "libvtkCommon"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -18,6 +21,8 @@ cur_class = vtkIdTypeArray
 @mcall None GetValueRange (Ptr{vtkIdType}, Int32) _ZN14vtkIdTypeArray13GetValueRangeEPxi "libvtkCommon"
 @mcall Ptr{vtkIdType} GetValueRange () _ZN14vtkIdTypeArray13GetValueRangeEv "libvtkCommon"
 @mcall None GetValueRange (Ptr{vtkIdType},) _ZN14vtkIdTypeArray13GetValueRangeEPx "libvtkCommon"
+@scall vtkIdType GetDataTypeValueMin () _ZN14vtkIdTypeArray19GetDataTypeValueMinEv "libvtkCommon"
+@scall vtkIdType GetDataTypeValueMax () _ZN14vtkIdTypeArray19GetDataTypeValueMaxEv "libvtkCommon"
 @mcall Ptr{vtkIdType} WritePointer (vtkIdType, vtkIdType) _ZN14vtkIdTypeArray12WritePointerExx "libvtkCommon"
 @mcall Ptr{vtkIdType} GetPointer (vtkIdType,) _ZN14vtkIdTypeArray10GetPointerEx "libvtkCommon"
 @mcall None SetArray (Ptr{vtkIdType}, vtkIdType, Int32) _ZN14vtkIdTypeArray8SetArrayEPxxi "libvtkCommon"

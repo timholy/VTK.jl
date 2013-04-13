@@ -1,6 +1,9 @@
 cur_class = vtkMaskPoints
+@scall Ptr{vtkMaskPoints} vtkMaskPointsNew () _ZN13vtkMaskPoints3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN13vtkMaskPoints8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkMaskPoints} SafeDownCast (Ptr{vtkObjectBase},) _ZN13vtkMaskPoints12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkMaskPoints} NewInstance () _ZNK13vtkMaskPoints11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

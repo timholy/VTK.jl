@@ -1,6 +1,9 @@
 cur_class = vtkObserverMediator
+@scall Ptr{vtkObserverMediator} vtkObserverMediatorNew () _ZN19vtkObserverMediator3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN19vtkObserverMediator8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkObserverMediator} SafeDownCast (Ptr{vtkObjectBase},) _ZN19vtkObserverMediator12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkObserverMediator} NewInstance () _ZNK19vtkObserverMediator11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

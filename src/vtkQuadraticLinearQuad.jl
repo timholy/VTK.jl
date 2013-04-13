@@ -1,6 +1,9 @@
 cur_class = vtkQuadraticLinearQuad
+@scall Ptr{vtkQuadraticLinearQuad} vtkQuadraticLinearQuadNew () _ZN22vtkQuadraticLinearQuad3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN22vtkQuadraticLinearQuad8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkQuadraticLinearQuad} SafeDownCast (Ptr{vtkObjectBase},) _ZN22vtkQuadraticLinearQuad12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkQuadraticLinearQuad} NewInstance () _ZNK22vtkQuadraticLinearQuad11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -20,6 +23,9 @@ cur_class = vtkQuadraticLinearQuad
 @vcall 39 None Clip (Float64, Ptr{vtkDataArray}, Ptr{vtkIncrementalPointLocator}, Ptr{vtkCellArray}, Ptr{vtkPointData}, Ptr{vtkPointData}, Ptr{vtkCellData}, vtkIdType, Ptr{vtkCellData}, Int32)
 @vcall 40 Int32 IntersectWithLine (Ptr{Float64}, Ptr{Float64}, Float64, Void, Ptr{Float64}, Ptr{Float64}, Void)
 @vcall 43 Int32 GetParametricCenter (Ptr{Float64},)
+@scall None InterpolationFunctions (Ptr{Float64}, Ptr{Float64}) _ZN22vtkQuadraticLinearQuad22InterpolationFunctionsEPdS0_ "libvtkFiltering"
+@scall None InterpolationDerivs (Ptr{Float64}, Ptr{Float64}) _ZN22vtkQuadraticLinearQuad19InterpolationDerivsEPdS0_ "libvtkFiltering"
 @vcall 47 None InterpolateFunctions (Ptr{Float64}, Ptr{Float64})
 @vcall 48 None InterpolateDerivs (Ptr{Float64}, Ptr{Float64})
+@scall Ptr{Int32} GetEdgeArray (Int32,) _ZN22vtkQuadraticLinearQuad12GetEdgeArrayEi "libvtkFiltering"
 @mcall None vtkQuadraticLinearQuad_eq (Void,) _ZN22vtkQuadraticLinearQuadaSERKS_ "libvtkFiltering"

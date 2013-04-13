@@ -1,9 +1,12 @@
 cur_class = vtkOctreePointLocator
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN21vtkOctreePointLocator8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkOctreePointLocator} SafeDownCast (Ptr{vtkObjectBase},) _ZN21vtkOctreePointLocator12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkOctreePointLocator} NewInstance () _ZNK21vtkOctreePointLocator11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkOctreePointLocator} vtkOctreePointLocatorNew () _ZN21vtkOctreePointLocator3NewEv "libvtkFiltering"
 @vcall 47 None SetMaximumPointsPerRegion (Int32,)
 @vcall 48 Int32 GetMaximumPointsPerRegion ()
 @vcall 49 None SetCreateCubicOctants (Int32,)
@@ -31,6 +34,8 @@ cur_class = vtkOctreePointLocator
 @mcall None BuildLeafNodeList (Ptr{vtkOctreePointLocatorNode}, Void) _ZN21vtkOctreePointLocator17BuildLeafNodeListEP25vtkOctreePointLocatorNodeRi "libvtkFiltering"
 @mcall Int32 FindRegion (Ptr{vtkOctreePointLocatorNode}, Float32, Float32, Float32) _ZN21vtkOctreePointLocator10FindRegionEP25vtkOctreePointLocatorNodefff "libvtkFiltering"
 @mcall Int32 FindRegion (Ptr{vtkOctreePointLocatorNode}, Float64, Float64, Float64) _ZN21vtkOctreePointLocator10FindRegionEP25vtkOctreePointLocatorNodeddd "libvtkFiltering"
+@scall None SetDataBoundsToSpatialBounds (Ptr{vtkOctreePointLocatorNode},) _ZN21vtkOctreePointLocator28SetDataBoundsToSpatialBoundsEP25vtkOctreePointLocatorNode "libvtkFiltering"
+@scall None DeleteAllDescendants (Ptr{vtkOctreePointLocatorNode},) _ZN21vtkOctreePointLocator20DeleteAllDescendantsEP25vtkOctreePointLocatorNode "libvtkFiltering"
 @mcall None FindPointsWithinRadius (Ptr{vtkOctreePointLocatorNode}, Float64, Ptr{Float64}, Ptr{vtkIdList}) _ZN21vtkOctreePointLocator22FindPointsWithinRadiusEP25vtkOctreePointLocatorNodedPKdP9vtkIdList "libvtkFiltering"
 @mcall None AddAllPointsInRegion (Ptr{vtkOctreePointLocatorNode}, Ptr{vtkIdList}) _ZN21vtkOctreePointLocator20AddAllPointsInRegionEP25vtkOctreePointLocatorNodeP9vtkIdList "libvtkFiltering"
 @mcall None FindPointsInArea (Ptr{vtkOctreePointLocatorNode}, Ptr{Float64}, Ptr{vtkIdTypeArray}) _ZN21vtkOctreePointLocator16FindPointsInAreaEP25vtkOctreePointLocatorNodePdP14vtkIdTypeArray "libvtkFiltering"

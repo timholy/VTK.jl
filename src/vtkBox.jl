@@ -1,9 +1,12 @@
 cur_class = vtkBox
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN6vtkBox8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkBox} SafeDownCast (Ptr{vtkObjectBase},) _ZN6vtkBox12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkBox} NewInstance () _ZNK6vtkBox11NewInstanceEv "libvtkCommon"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkBox} vtkBoxNew () _ZN6vtkBox3NewEv "libvtkCommon"
 @vcall 23 Float64 EvaluateFunction (Ptr{Float64},)
 @mcall Float64 EvaluateFunction (Float64, Float64, Float64) _ZN6vtkBox16EvaluateFunctionEddd "libvtkCommon"
 @vcall 24 None EvaluateGradient (Ptr{Float64}, Ptr{Float64})
@@ -21,4 +24,6 @@ cur_class = vtkBox
 @mcall None GetBounds (Ptr{Float64},) _ZN6vtkBox9GetBoundsEPd "libvtkCommon"
 @mcall Ptr{Float64} GetBounds () _ZN6vtkBox9GetBoundsEv "libvtkCommon"
 @mcall None AddBounds (Ptr{Float64},) _ZN6vtkBox9AddBoundsEPd "libvtkCommon"
+@scall Uint8 IntersectBox (Ptr{Float64}, Ptr{Float64}, Ptr{Float64}, Ptr{Float64}, Void) _ZN6vtkBox12IntersectBoxEPdS0_S0_S0_Rd "libvtkCommon"
+@scall Int32 IntersectWithLine (Ptr{Float64}, Ptr{Float64}, Ptr{Float64}, Void, Void, Ptr{Float64}, Ptr{Float64}, Void, Void) _ZN6vtkBox17IntersectWithLineEPKdS1_S1_RdS2_PdS3_RiS4_ "libvtkCommon"
 @mcall None vtkBox_eq (Void,) _ZN6vtkBoxaSERKS_ "libvtkCommon"

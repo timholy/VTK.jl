@@ -1,6 +1,8 @@
 cur_class = vtkGenericDataSet
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN17vtkGenericDataSet8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkGenericDataSet} SafeDownCast (Ptr{vtkObjectBase},) _ZN17vtkGenericDataSet12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkGenericDataSet} NewInstance () _ZNK17vtkGenericDataSet11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -27,4 +29,6 @@ cur_class = vtkGenericDataSet
 @vcall 45 Uint64 GetActualMemorySize ()
 @vcall 44 Int32 GetDataObjectType ()
 @vcall 95 vtkIdType GetEstimatedSize ()
+@scall Ptr{vtkGenericDataSet} GetData (Ptr{vtkInformation},) _ZN17vtkGenericDataSet7GetDataEP14vtkInformation "libvtkFiltering"
+@scall Ptr{vtkGenericDataSet} GetData (Ptr{vtkInformationVector}, Int32) _ZN17vtkGenericDataSet7GetDataEP20vtkInformationVectori "libvtkFiltering"
 @mcall None vtkGenericDataSet_eq (Void,) _ZN17vtkGenericDataSetaSERKS_ "libvtkFiltering"

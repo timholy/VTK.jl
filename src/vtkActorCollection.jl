@@ -1,6 +1,9 @@
 cur_class = vtkActorCollection
+@scall Ptr{vtkActorCollection} vtkActorCollectionNew () _ZN18vtkActorCollection3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN18vtkActorCollection8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkActorCollection} SafeDownCast (Ptr{vtkObjectBase},) _ZN18vtkActorCollection12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkActorCollection} NewInstance () _ZNK18vtkActorCollection11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

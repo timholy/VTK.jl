@@ -1,6 +1,9 @@
 cur_class = vtkRendererSource
+@scall Ptr{vtkRendererSource} vtkRendererSourceNew () _ZN17vtkRendererSource3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN17vtkRendererSource8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkRendererSource} SafeDownCast (Ptr{vtkObjectBase},) _ZN17vtkRendererSource12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkRendererSource} NewInstance () _ZNK17vtkRendererSource11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

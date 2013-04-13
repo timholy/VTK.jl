@@ -1,6 +1,9 @@
 cur_class = vtkVolumeContourSpectrumFilter
+@scall Ptr{vtkVolumeContourSpectrumFilter} vtkVolumeContourSpectrumFilterNew () _ZN30vtkVolumeContourSpectrumFilter3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN30vtkVolumeContourSpectrumFilter8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkVolumeContourSpectrumFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN30vtkVolumeContourSpectrumFilter12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkVolumeContourSpectrumFilter} NewInstance () _ZNK30vtkVolumeContourSpectrumFilter11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

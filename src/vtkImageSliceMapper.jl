@@ -1,6 +1,9 @@
 cur_class = vtkImageSliceMapper
+@scall Ptr{vtkImageSliceMapper} vtkImageSliceMapperNew () _ZN19vtkImageSliceMapper3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN19vtkImageSliceMapper8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkImageSliceMapper} SafeDownCast (Ptr{vtkObjectBase},) _ZN19vtkImageSliceMapper12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkImageSliceMapper} NewInstance () _ZNK19vtkImageSliceMapper11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -39,4 +42,5 @@ cur_class = vtkImageSliceMapper
 @mcall None SetDisplayExtent (Ptr{Int32},) _ZN19vtkImageSliceMapper16SetDisplayExtentEPi "libvtkRendering"
 @mcall Int32 GetOrientationFromCamera (Ptr{vtkMatrix4x4}, Ptr{vtkCamera}) _ZN19vtkImageSliceMapper24GetOrientationFromCameraEP12vtkMatrix4x4P9vtkCamera "libvtkRendering"
 @mcall Int32 GetSliceFromCamera (Ptr{vtkMatrix4x4}, Ptr{vtkCamera}) _ZN19vtkImageSliceMapper18GetSliceFromCameraEP12vtkMatrix4x4P9vtkCamera "libvtkRendering"
+@scall None GetDimensionIndices (Int32, Void, Void) _ZN19vtkImageSliceMapper19GetDimensionIndicesEiRiS0_ "libvtkRendering"
 @mcall None vtkImageSliceMapper_eq (Void,) _ZN19vtkImageSliceMapperaSERKS_ "libvtkRendering"

@@ -1,6 +1,9 @@
 cur_class = vtkTemporalPathLineFilter
+@scall Ptr{vtkTemporalPathLineFilter} vtkTemporalPathLineFilterNew () _ZN25vtkTemporalPathLineFilter3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN25vtkTemporalPathLineFilter8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkTemporalPathLineFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN25vtkTemporalPathLineFilter12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkTemporalPathLineFilter} NewInstance () _ZNK25vtkTemporalPathLineFilter11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

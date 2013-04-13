@@ -1,6 +1,8 @@
 cur_class = vtkLinearTransform
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN18vtkLinearTransform8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkLinearTransform} SafeDownCast (Ptr{vtkObjectBase},) _ZN18vtkLinearTransform12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkLinearTransform} NewInstance () _ZNK18vtkLinearTransform11NewInstanceEv "libvtkCommon"
 @vcall 4 None PrintSelf (Void, vtkIndent)

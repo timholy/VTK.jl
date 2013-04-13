@@ -1,9 +1,12 @@
 cur_class = vtkExtractUnstructuredGrid
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN26vtkExtractUnstructuredGrid8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkExtractUnstructuredGrid} SafeDownCast (Ptr{vtkObjectBase},) _ZN26vtkExtractUnstructuredGrid12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkExtractUnstructuredGrid} NewInstance () _ZNK26vtkExtractUnstructuredGrid11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkExtractUnstructuredGrid} vtkExtractUnstructuredGridNew () _ZN26vtkExtractUnstructuredGrid3NewEv "libvtkGraphics"
 @vcall 65 None SetPointClipping (Int32,)
 @vcall 66 Int32 GetPointClipping ()
 @vcall 67 None PointClippingOn ()

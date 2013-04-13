@@ -1,6 +1,8 @@
 cur_class = vtkAbstractCellLocator
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN22vtkAbstractCellLocator8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkAbstractCellLocator} SafeDownCast (Ptr{vtkObjectBase},) _ZN22vtkAbstractCellLocator12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkAbstractCellLocator} NewInstance () _ZNK22vtkAbstractCellLocator11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

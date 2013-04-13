@@ -1,6 +1,9 @@
 cur_class = vtkSectorSource
+@scall Ptr{vtkSectorSource} vtkSectorSourceNew () _ZN15vtkSectorSource3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN15vtkSectorSource8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkSectorSource} SafeDownCast (Ptr{vtkObjectBase},) _ZN15vtkSectorSource12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkSectorSource} NewInstance () _ZNK15vtkSectorSource11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

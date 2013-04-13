@@ -1,6 +1,9 @@
 cur_class = vtkUnstructuredGridToReebGraphFilter
+@scall Ptr{vtkUnstructuredGridToReebGraphFilter} vtkUnstructuredGridToReebGraphFilterNew () _ZN36vtkUnstructuredGridToReebGraphFilter3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN36vtkUnstructuredGridToReebGraphFilter8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkUnstructuredGridToReebGraphFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN36vtkUnstructuredGridToReebGraphFilter12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkUnstructuredGridToReebGraphFilter} NewInstance () _ZNK36vtkUnstructuredGridToReebGraphFilter11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

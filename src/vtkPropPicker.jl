@@ -1,6 +1,9 @@
 cur_class = vtkPropPicker
+@scall Ptr{vtkPropPicker} vtkPropPickerNew () _ZN13vtkPropPicker3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN13vtkPropPicker8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkPropPicker} SafeDownCast (Ptr{vtkObjectBase},) _ZN13vtkPropPicker12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkPropPicker} NewInstance () _ZNK13vtkPropPicker11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

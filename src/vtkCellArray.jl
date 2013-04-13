@@ -1,9 +1,12 @@
 cur_class = vtkCellArray
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN12vtkCellArray8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkCellArray} SafeDownCast (Ptr{vtkObjectBase},) _ZN12vtkCellArray12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkCellArray} NewInstance () _ZNK12vtkCellArray11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkCellArray} vtkCellArrayNew () _ZN12vtkCellArray3NewEv "libvtkFiltering"
 @mcall Int32 Allocate (vtkIdType, Int32) _ZN12vtkCellArray8AllocateExi "libvtkFiltering"
 @mcall None Initialize () _ZN12vtkCellArray10InitializeEv "libvtkFiltering"
 @vcall 20 vtkIdType GetNumberOfCells ()

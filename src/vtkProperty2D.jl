@@ -1,9 +1,12 @@
 cur_class = vtkProperty2D
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN13vtkProperty2D8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkProperty2D} SafeDownCast (Ptr{vtkObjectBase},) _ZN13vtkProperty2D12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkProperty2D} NewInstance () _ZNK13vtkProperty2D11NewInstanceEv "libvtkCommon"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkProperty2D} vtkProperty2DNew () _ZN13vtkProperty2D3NewEv "libvtkCommon"
 @mcall None DeepCopy (Ptr{vtkProperty2D},) _ZN13vtkProperty2D8DeepCopyEPS_ "libvtkCommon"
 @vcall 20 None SetColor (Float64, Float64, Float64)
 @vcall 21 None SetColor (Ptr{Float64},)

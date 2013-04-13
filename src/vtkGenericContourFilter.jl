@@ -1,9 +1,12 @@
 cur_class = vtkGenericContourFilter
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN23vtkGenericContourFilter8IsTypeOfEPKc "libvtkGenericFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkGenericContourFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN23vtkGenericContourFilter12SafeDownCastEP13vtkObjectBase "libvtkGenericFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkGenericContourFilter} NewInstance () _ZNK23vtkGenericContourFilter11NewInstanceEv "libvtkGenericFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkGenericContourFilter} vtkGenericContourFilterNew () _ZN23vtkGenericContourFilter3NewEv "libvtkGenericFiltering"
 @mcall None SetValue (Int32, Float32) _ZN23vtkGenericContourFilter8SetValueEif "libvtkGenericFiltering"
 @mcall Float64 GetValue (Int32,) _ZN23vtkGenericContourFilter8GetValueEi "libvtkGenericFiltering"
 @mcall Ptr{Float64} GetValues () _ZN23vtkGenericContourFilter9GetValuesEv "libvtkGenericFiltering"

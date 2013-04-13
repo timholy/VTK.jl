@@ -1,8 +1,11 @@
 cur_class = vtkOpenGLExtensionManager
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN25vtkOpenGLExtensionManager8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkOpenGLExtensionManager} SafeDownCast (Ptr{vtkObjectBase},) _ZN25vtkOpenGLExtensionManager12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkOpenGLExtensionManager} NewInstance () _ZNK25vtkOpenGLExtensionManager11NewInstanceEv "libvtkRendering"
+@scall Ptr{vtkOpenGLExtensionManager} vtkOpenGLExtensionManagerNew () _ZN25vtkOpenGLExtensionManager3NewEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
 @mcall Ptr{vtkRenderWindow} GetRenderWindow () _ZN25vtkOpenGLExtensionManager15GetRenderWindowEv "libvtkRendering"
 @vcall 20 None SetRenderWindow (Ptr{vtkRenderWindow},)

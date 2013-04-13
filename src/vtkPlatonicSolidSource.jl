@@ -1,6 +1,9 @@
 cur_class = vtkPlatonicSolidSource
+@scall Ptr{vtkPlatonicSolidSource} vtkPlatonicSolidSourceNew () _ZN22vtkPlatonicSolidSource3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN22vtkPlatonicSolidSource8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkPlatonicSolidSource} SafeDownCast (Ptr{vtkObjectBase},) _ZN22vtkPlatonicSolidSource12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkPlatonicSolidSource} NewInstance () _ZNK22vtkPlatonicSolidSource11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

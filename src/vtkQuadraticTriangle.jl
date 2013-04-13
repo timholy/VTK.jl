@@ -1,6 +1,9 @@
 cur_class = vtkQuadraticTriangle
+@scall Ptr{vtkQuadraticTriangle} vtkQuadraticTriangleNew () _ZN20vtkQuadraticTriangle3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN20vtkQuadraticTriangle8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkQuadraticTriangle} SafeDownCast (Ptr{vtkObjectBase},) _ZN20vtkQuadraticTriangle12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkQuadraticTriangle} NewInstance () _ZNK20vtkQuadraticTriangle11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -21,6 +24,8 @@ cur_class = vtkQuadraticTriangle
 @vcall 40 Int32 IntersectWithLine (Ptr{Float64}, Ptr{Float64}, Float64, Void, Ptr{Float64}, Ptr{Float64}, Void)
 @vcall 43 Int32 GetParametricCenter (Ptr{Float64},)
 @vcall 44 Float64 GetParametricDistance (Ptr{Float64},)
+@scall None InterpolationFunctions (Ptr{Float64}, Ptr{Float64}) _ZN20vtkQuadraticTriangle22InterpolationFunctionsEPdS0_ "libvtkFiltering"
+@scall None InterpolationDerivs (Ptr{Float64}, Ptr{Float64}) _ZN20vtkQuadraticTriangle19InterpolationDerivsEPdS0_ "libvtkFiltering"
 @vcall 47 None InterpolateFunctions (Ptr{Float64}, Ptr{Float64})
 @vcall 48 None InterpolateDerivs (Ptr{Float64}, Ptr{Float64})
 @mcall None vtkQuadraticTriangle_eq (Void,) _ZN20vtkQuadraticTriangleaSERKS_ "libvtkFiltering"

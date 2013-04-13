@@ -1,9 +1,12 @@
 cur_class = vtkParametricTorus
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN18vtkParametricTorus8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkParametricTorus} SafeDownCast (Ptr{vtkObjectBase},) _ZN18vtkParametricTorus12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkParametricTorus} NewInstance () _ZNK18vtkParametricTorus11NewInstanceEv "libvtkCommon"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkParametricTorus} vtkParametricTorusNew () _ZN18vtkParametricTorus3NewEv "libvtkCommon"
 @vcall 59 None SetRingRadius (Float64,)
 @vcall 60 Float64 GetRingRadius ()
 @vcall 61 None SetCrossSectionRadius (Float64,)

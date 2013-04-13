@@ -1,6 +1,9 @@
 cur_class = vtkMultiBlockDataSetAlgorithm
+@scall Ptr{vtkMultiBlockDataSetAlgorithm} vtkMultiBlockDataSetAlgorithmNew () _ZN29vtkMultiBlockDataSetAlgorithm3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN29vtkMultiBlockDataSetAlgorithm8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkMultiBlockDataSetAlgorithm} SafeDownCast (Ptr{vtkObjectBase},) _ZN29vtkMultiBlockDataSetAlgorithm12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkMultiBlockDataSetAlgorithm} NewInstance () _ZNK29vtkMultiBlockDataSetAlgorithm11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

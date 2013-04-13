@@ -1,6 +1,9 @@
 cur_class = vtkGL2PSExporter
+@scall Ptr{vtkGL2PSExporter} vtkGL2PSExporterNew () _ZN16vtkGL2PSExporter3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN16vtkGL2PSExporter8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkGL2PSExporter} SafeDownCast (Ptr{vtkObjectBase},) _ZN16vtkGL2PSExporter12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkGL2PSExporter} NewInstance () _ZNK16vtkGL2PSExporter11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -64,5 +67,9 @@ cur_class = vtkGL2PSExporter
 @vcall 71 Int32 GetWrite3DPropsAsRasterImage ()
 @vcall 72 None Write3DPropsAsRasterImageOn ()
 @vcall 73 None Write3DPropsAsRasterImageOff ()
+@scall None SetGlobalPointSizeFactor (Float32,) _ZN16vtkGL2PSExporter24SetGlobalPointSizeFactorEf "libvtkRendering"
+@scall Float32 GetGlobalPointSizeFactor () _ZN16vtkGL2PSExporter24GetGlobalPointSizeFactorEv "libvtkRendering"
+@scall None SetGlobalLineWidthFactor (Float32,) _ZN16vtkGL2PSExporter24SetGlobalLineWidthFactorEf "libvtkRendering"
+@scall Float32 GetGlobalLineWidthFactor () _ZN16vtkGL2PSExporter24GetGlobalLineWidthFactorEv "libvtkRendering"
 @vcall 23 None WriteData ()
 @mcall None vtkGL2PSExporter_eq (Void,) _ZN16vtkGL2PSExporteraSERKS_ "libvtkRendering"

@@ -1,6 +1,9 @@
 cur_class = vtkHull
+@scall Ptr{vtkHull} vtkHullNew () _ZN7vtkHull3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN7vtkHull8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkHull} SafeDownCast (Ptr{vtkObjectBase},) _ZN7vtkHull12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkHull} NewInstance () _ZNK7vtkHull11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

@@ -1,9 +1,12 @@
 cur_class = vtkGenericGlyph3DFilter
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN23vtkGenericGlyph3DFilter8IsTypeOfEPKc "libvtkGenericFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkGenericGlyph3DFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN23vtkGenericGlyph3DFilter12SafeDownCastEP13vtkObjectBase "libvtkGenericFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkGenericGlyph3DFilter} NewInstance () _ZNK23vtkGenericGlyph3DFilter11NewInstanceEv "libvtkGenericFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkGenericGlyph3DFilter} vtkGenericGlyph3DFilterNew () _ZN23vtkGenericGlyph3DFilter3NewEv "libvtkGenericFiltering"
 @mcall None SetSource (Ptr{vtkPolyData},) _ZN23vtkGenericGlyph3DFilter9SetSourceEP11vtkPolyData "libvtkGenericFiltering"
 @mcall None SetSource (Int32, Ptr{vtkPolyData}) _ZN23vtkGenericGlyph3DFilter9SetSourceEiP11vtkPolyData "libvtkGenericFiltering"
 @mcall Ptr{vtkPolyData} GetSource (Int32,) _ZN23vtkGenericGlyph3DFilter9GetSourceEi "libvtkGenericFiltering"

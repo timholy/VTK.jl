@@ -1,6 +1,9 @@
 cur_class = vtkBlankStructuredGrid
+@scall Ptr{vtkBlankStructuredGrid} vtkBlankStructuredGridNew () _ZN22vtkBlankStructuredGrid3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN22vtkBlankStructuredGrid8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkBlankStructuredGrid} SafeDownCast (Ptr{vtkObjectBase},) _ZN22vtkBlankStructuredGrid12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkBlankStructuredGrid} NewInstance () _ZNK22vtkBlankStructuredGrid11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

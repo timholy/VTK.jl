@@ -1,6 +1,9 @@
 cur_class = vtkInformationIterator
+@scall Ptr{vtkInformationIterator} vtkInformationIteratorNew () _ZN22vtkInformationIterator3NewEv "libvtkCommon"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN22vtkInformationIterator8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkInformationIterator} SafeDownCast (Ptr{vtkObjectBase},) _ZN22vtkInformationIterator12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkInformationIterator} NewInstance () _ZNK22vtkInformationIterator11NewInstanceEv "libvtkCommon"
 @vcall 4 None PrintSelf (Void, vtkIndent)

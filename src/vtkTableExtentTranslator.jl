@@ -1,9 +1,12 @@
 cur_class = vtkTableExtentTranslator
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN24vtkTableExtentTranslator8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkTableExtentTranslator} SafeDownCast (Ptr{vtkObjectBase},) _ZN24vtkTableExtentTranslator12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkTableExtentTranslator} NewInstance () _ZNK24vtkTableExtentTranslator11NewInstanceEv "libvtkCommon"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkTableExtentTranslator} vtkTableExtentTranslatorNew () _ZN24vtkTableExtentTranslator3NewEv "libvtkCommon"
 @vcall 32 None SetNumberOfPieces (Int32,)
 @mcall None SetNumberOfPiecesInTable (Int32,) _ZN24vtkTableExtentTranslator24SetNumberOfPiecesInTableEi "libvtkCommon"
 @vcall 40 Int32 GetNumberOfPiecesInTable ()

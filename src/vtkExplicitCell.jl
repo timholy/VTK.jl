@@ -1,6 +1,8 @@
 cur_class = vtkExplicitCell
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN15vtkExplicitCell8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkExplicitCell} SafeDownCast (Ptr{vtkObjectBase},) _ZN15vtkExplicitCell12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkExplicitCell} NewInstance () _ZNK15vtkExplicitCell11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

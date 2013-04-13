@@ -1,6 +1,9 @@
 cur_class = vtkTimeSourceExample
+@scall Ptr{vtkTimeSourceExample} vtkTimeSourceExampleNew () _ZN20vtkTimeSourceExample3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN20vtkTimeSourceExample8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkTimeSourceExample} SafeDownCast (Ptr{vtkObjectBase},) _ZN20vtkTimeSourceExample12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkTimeSourceExample} NewInstance () _ZNK20vtkTimeSourceExample11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

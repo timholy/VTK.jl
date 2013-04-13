@@ -1,9 +1,14 @@
 cur_class = vtkTesting
+@scall Ptr{vtkTesting} vtkTestingNew () _ZN10vtkTesting3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN10vtkTesting8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkTesting} SafeDownCast (Ptr{vtkObjectBase},) _ZN10vtkTesting12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkTesting} NewInstance () _ZNK10vtkTesting11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Int32 Test (Int32, Ptr{Ptr{Uint8}}, Ptr{vtkRenderWindow}, Float64) _ZN10vtkTesting4TestEiPPcP15vtkRenderWindowd "libvtkRendering"
+@scall Int32 InteractorEventLoop (Int32, Ptr{Ptr{Uint8}}, Ptr{vtkRenderWindowInteractor}, Ptr{Uint8}) _ZN10vtkTesting19InteractorEventLoopEiPPcP25vtkRenderWindowInteractorPKc "libvtkRendering"
 @vcall 20 None SetFrontBuffer (Int32,)
 @vcall 21 Int32 GetFrontBufferMinValue ()
 @vcall 22 Int32 GetFrontBufferMaxValue ()
@@ -36,4 +41,6 @@ cur_class = vtkTesting
 @vcall 37 Int32 GetBorderOffset ()
 @vcall 38 None SetVerbose (Int32,)
 @vcall 39 Int32 GetVerbose ()
+@scall Ptr{Uint8} IncrementFileName (Ptr{Uint8}, Int32) _ZN10vtkTesting17IncrementFileNameEPKci "libvtkRendering"
+@scall Int32 LookForFile (Ptr{Uint8},) _ZN10vtkTesting11LookForFileEPKc "libvtkRendering"
 @mcall None vtkTesting_eq (Void,) _ZN10vtkTestingaSERKS_ "libvtkRendering"

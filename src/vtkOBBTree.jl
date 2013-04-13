@@ -1,9 +1,12 @@
 cur_class = vtkOBBTree
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN10vtkOBBTree8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkOBBTree} SafeDownCast (Ptr{vtkObjectBase},) _ZN10vtkOBBTree12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkOBBTree} NewInstance () _ZNK10vtkOBBTree11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkOBBTree} vtkOBBTreeNew () _ZN10vtkOBBTree3NewEv "libvtkGraphics"
 @vcall 61 Int32 IntersectWithLine (Ptr{Float64}, Ptr{Float64}, Float64, Void, Ptr{Float64}, Ptr{Float64}, Void)
 @vcall 62 Int32 IntersectWithLine (Ptr{Float64}, Ptr{Float64}, Float64, Void, Ptr{Float64}, Ptr{Float64}, Void, Void)
 @vcall 64 Int32 IntersectWithLine (Ptr{Float64}, Ptr{Float64}, Ptr{vtkPoints}, Ptr{vtkIdList})
@@ -13,6 +16,7 @@ cur_class = vtkOBBTree
 @vcall 67 vtkIdType FindClosestPointWithinRadius (Ptr{Float64}, Float64, Ptr{Float64}, Void, Void, Void)
 @vcall 68 vtkIdType FindClosestPointWithinRadius (Ptr{Float64}, Float64, Ptr{Float64}, Ptr{vtkGenericCell}, Void, Void, Void)
 @vcall 69 vtkIdType FindClosestPointWithinRadius (Ptr{Float64}, Float64, Ptr{Float64}, Ptr{vtkGenericCell}, Void, Void, Void, Void)
+@scall None ComputeOBB (Ptr{vtkPoints}, Ptr{Float64}, Ptr{Float64}, Ptr{Float64}, Ptr{Float64}, Ptr{Float64}) _ZN10vtkOBBTree10ComputeOBBEP9vtkPointsPdS2_S2_S2_S2_ "libvtkGraphics"
 @mcall None ComputeOBB (Ptr{vtkDataSet}, Ptr{Float64}, Ptr{Float64}, Ptr{Float64}, Ptr{Float64}, Ptr{Float64}) _ZN10vtkOBBTree10ComputeOBBEP10vtkDataSetPdS2_S2_S2_S2_ "libvtkGraphics"
 @mcall Int32 InsideOrOutside (Ptr{Float64},) _ZN10vtkOBBTree15InsideOrOutsideEPKd "libvtkGraphics"
 @mcall Int32 DisjointOBBNodes (Ptr{vtkOBBNode}, Ptr{vtkOBBNode}, Ptr{vtkMatrix4x4}) _ZN10vtkOBBTree16DisjointOBBNodesEP10vtkOBBNodeS1_P12vtkMatrix4x4 "libvtkGraphics"

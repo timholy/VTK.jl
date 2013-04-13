@@ -1,6 +1,9 @@
 cur_class = vtkEdgeTable
+@scall Ptr{vtkEdgeTable} vtkEdgeTableNew () _ZN12vtkEdgeTable3NewEv "libvtkCommon"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN12vtkEdgeTable8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkEdgeTable} SafeDownCast (Ptr{vtkObjectBase},) _ZN12vtkEdgeTable12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkEdgeTable} NewInstance () _ZNK12vtkEdgeTable11NewInstanceEv "libvtkCommon"
 @vcall 4 None PrintSelf (Void, vtkIndent)

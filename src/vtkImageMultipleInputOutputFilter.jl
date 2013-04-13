@@ -1,6 +1,8 @@
 cur_class = vtkImageMultipleInputOutputFilter
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN33vtkImageMultipleInputOutputFilter8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkImageMultipleInputOutputFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN33vtkImageMultipleInputOutputFilter12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkImageMultipleInputOutputFilter} NewInstance () _ZNK33vtkImageMultipleInputOutputFilter11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

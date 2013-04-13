@@ -1,6 +1,9 @@
 cur_class = vtkExtractDataOverTime
+@scall Ptr{vtkExtractDataOverTime} vtkExtractDataOverTimeNew () _ZN22vtkExtractDataOverTime3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN22vtkExtractDataOverTime8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkExtractDataOverTime} SafeDownCast (Ptr{vtkObjectBase},) _ZN22vtkExtractDataOverTime12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkExtractDataOverTime} NewInstance () _ZNK22vtkExtractDataOverTime11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

@@ -1,6 +1,9 @@
 cur_class = vtkPolyDataPointSampler
+@scall Ptr{vtkPolyDataPointSampler} vtkPolyDataPointSamplerNew () _ZN23vtkPolyDataPointSampler3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN23vtkPolyDataPointSampler8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkPolyDataPointSampler} SafeDownCast (Ptr{vtkObjectBase},) _ZN23vtkPolyDataPointSampler12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkPolyDataPointSampler} NewInstance () _ZNK23vtkPolyDataPointSampler11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

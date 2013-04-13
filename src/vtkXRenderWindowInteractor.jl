@@ -1,6 +1,9 @@
 cur_class = vtkXRenderWindowInteractor
+@scall Ptr{vtkXRenderWindowInteractor} vtkXRenderWindowInteractorNew () _ZN26vtkXRenderWindowInteractor3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN26vtkXRenderWindowInteractor8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkXRenderWindowInteractor} SafeDownCast (Ptr{vtkObjectBase},) _ZN26vtkXRenderWindowInteractor12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkXRenderWindowInteractor} NewInstance () _ZNK26vtkXRenderWindowInteractor11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

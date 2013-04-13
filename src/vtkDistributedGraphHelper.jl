@@ -1,6 +1,8 @@
 cur_class = vtkDistributedGraphHelper
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN25vtkDistributedGraphHelper8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkDistributedGraphHelper} SafeDownCast (Ptr{vtkObjectBase},) _ZN25vtkDistributedGraphHelper12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkDistributedGraphHelper} NewInstance () _ZNK25vtkDistributedGraphHelper11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -13,6 +15,8 @@ cur_class = vtkDistributedGraphHelper
 @mcall vtkIdType GetVertexOwnerByPedigreeId (Void,) _ZN25vtkDistributedGraphHelper26GetVertexOwnerByPedigreeIdERK10vtkVariant "libvtkFiltering"
 @vcall 20 None Synchronize ()
 @vcall 21 Ptr{vtkDistributedGraphHelper} Clone ()
+@scall Ptr{vtkInformationIntegerKey} DISTRIBUTEDVERTEXIDS () _ZN25vtkDistributedGraphHelper20DISTRIBUTEDVERTEXIDSEv "libvtkFiltering"
+@scall Ptr{vtkInformationIntegerKey} DISTRIBUTEDEDGEIDS () _ZN25vtkDistributedGraphHelper18DISTRIBUTEDEDGEIDSEv "libvtkFiltering"
 @vcall 22 None AddVertexInternal (Ptr{vtkVariantArray}, Ptr{vtkIdType})
 @vcall 23 None AddVertexInternal (Void, Ptr{vtkIdType})
 @vcall 24 None AddEdgeInternal (vtkIdType, vtkIdType, Bool, Ptr{vtkVariantArray}, Ptr{vtkEdgeType})

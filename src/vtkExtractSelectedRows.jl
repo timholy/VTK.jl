@@ -1,6 +1,9 @@
 cur_class = vtkExtractSelectedRows
+@scall Ptr{vtkExtractSelectedRows} vtkExtractSelectedRowsNew () _ZN22vtkExtractSelectedRows3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN22vtkExtractSelectedRows8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkExtractSelectedRows} SafeDownCast (Ptr{vtkObjectBase},) _ZN22vtkExtractSelectedRows12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkExtractSelectedRows} NewInstance () _ZNK22vtkExtractSelectedRows11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

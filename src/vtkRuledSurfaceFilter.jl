@@ -1,9 +1,12 @@
 cur_class = vtkRuledSurfaceFilter
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN21vtkRuledSurfaceFilter8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkRuledSurfaceFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN21vtkRuledSurfaceFilter12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkRuledSurfaceFilter} NewInstance () _ZNK21vtkRuledSurfaceFilter11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkRuledSurfaceFilter} vtkRuledSurfaceFilterNew () _ZN21vtkRuledSurfaceFilter3NewEv "libvtkGraphics"
 @vcall 65 None SetDistanceFactor (Float64,)
 @vcall 66 Float64 GetDistanceFactorMinValue ()
 @vcall 67 Float64 GetDistanceFactorMaxValue ()

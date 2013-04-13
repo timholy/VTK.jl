@@ -1,9 +1,12 @@
 cur_class = vtkAxisActor2D
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN14vtkAxisActor2D8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkAxisActor2D} SafeDownCast (Ptr{vtkObjectBase},) _ZN14vtkAxisActor2D12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkAxisActor2D} NewInstance () _ZNK14vtkAxisActor2D11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkAxisActor2D} vtkAxisActor2DNew () _ZN14vtkAxisActor2D3NewEv "libvtkRendering"
 @vcall 87 Ptr{vtkCoordinate} GetPoint1Coordinate ()
 @vcall 88 None SetPoint1 (Ptr{Float64},)
 @vcall 89 None SetPoint1 (Float64, Float64)
@@ -91,11 +94,15 @@ cur_class = vtkAxisActor2D
 @vcall 52 Int32 RenderTranslucentPolygonalGeometry (Ptr{vtkViewport},)
 @vcall 59 Int32 HasTranslucentPolygonalGeometry ()
 @vcall 60 None ReleaseGraphicsResources (Ptr{vtkWindow},)
+@scall None ComputeRange (Ptr{Float64}, Ptr{Float64}, Int32, Void, Void) _ZN14vtkAxisActor2D12ComputeRangeEPdS0_iRiRd "libvtkRendering"
+@scall Int32 SetMultipleFontSize (Ptr{vtkViewport}, Ptr{Ptr{vtkTextMapper}}, Int32, Ptr{Int32}, Float64, Ptr{Int32}) _ZN14vtkAxisActor2D19SetMultipleFontSizeEP11vtkViewportPP13vtkTextMapperiPidS5_ "libvtkRendering"
 @vcall 168 None SetSizeFontRelativeToAxis (Int32,)
 @vcall 169 Int32 GetSizeFontRelativeToAxis ()
 @vcall 170 None SizeFontRelativeToAxisOn ()
 @vcall 171 None SizeFontRelativeToAxisOff ()
 @vcall 42 None ShallowCopy (Ptr{vtkProp},)
 @vcall 172 None BuildAxis (Ptr{vtkViewport},)
+@scall Float64 ComputeStringOffset (Float64, Float64, Float64) _ZN14vtkAxisActor2D19ComputeStringOffsetEddd "libvtkRendering"
+@scall None SetOffsetPosition (Ptr{Float64}, Float64, Int32, Int32, Int32, Ptr{vtkActor2D}) _ZN14vtkAxisActor2D17SetOffsetPositionEPddiiiP10vtkActor2D "libvtkRendering"
 @vcall 173 None UpdateAdjustedRange ()
 @mcall None vtkAxisActor2D_eq (Void,) _ZN14vtkAxisActor2DaSERKS_ "libvtkRendering"

@@ -1,9 +1,12 @@
 cur_class = vtkModifiedBSPTree
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN18vtkModifiedBSPTree8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkModifiedBSPTree} SafeDownCast (Ptr{vtkObjectBase},) _ZN18vtkModifiedBSPTree12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkModifiedBSPTree} NewInstance () _ZNK18vtkModifiedBSPTree11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkModifiedBSPTree} vtkModifiedBSPTreeNew () _ZN18vtkModifiedBSPTree3NewEv "libvtkGraphics"
 @vcall 38 None FreeSearchStructure ()
 @vcall 37 None BuildLocator ()
 @vcall 39 None GenerateRepresentation (Int32, Ptr{vtkPolyData})

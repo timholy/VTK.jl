@@ -1,9 +1,12 @@
 cur_class = vtkCurvatures
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN13vtkCurvatures8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkCurvatures} SafeDownCast (Ptr{vtkObjectBase},) _ZN13vtkCurvatures12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkCurvatures} NewInstance () _ZNK13vtkCurvatures11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkCurvatures} vtkCurvaturesNew () _ZN13vtkCurvatures3NewEv "libvtkGraphics"
 @vcall 65 None SetCurvatureType (Int32,)
 @vcall 66 Int32 GetCurvatureType ()
 @mcall None SetCurvatureTypeToGaussian () _ZN13vtkCurvatures26SetCurvatureTypeToGaussianEv "libvtkGraphics"

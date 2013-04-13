@@ -1,6 +1,9 @@
 cur_class = vtkUnsignedLongLongArray
+@scall Ptr{vtkUnsignedLongLongArray} vtkUnsignedLongLongArrayNew () _ZN24vtkUnsignedLongLongArray3NewEv "libvtkCommon"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN24vtkUnsignedLongLongArray8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkUnsignedLongLongArray} SafeDownCast (Ptr{vtkObjectBase},) _ZN24vtkUnsignedLongLongArray12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkUnsignedLongLongArray} NewInstance () _ZNK24vtkUnsignedLongLongArray11NewInstanceEv "libvtkCommon"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -18,6 +21,8 @@ cur_class = vtkUnsignedLongLongArray
 @mcall None GetValueRange (Ptr{Uint64}, Int32) _ZN24vtkUnsignedLongLongArray13GetValueRangeEPyi "libvtkCommon"
 @mcall Ptr{Uint64} GetValueRange () _ZN24vtkUnsignedLongLongArray13GetValueRangeEv "libvtkCommon"
 @mcall None GetValueRange (Ptr{Uint64},) _ZN24vtkUnsignedLongLongArray13GetValueRangeEPy "libvtkCommon"
+@scall Uint64 GetDataTypeValueMin () _ZN24vtkUnsignedLongLongArray19GetDataTypeValueMinEv "libvtkCommon"
+@scall Uint64 GetDataTypeValueMax () _ZN24vtkUnsignedLongLongArray19GetDataTypeValueMaxEv "libvtkCommon"
 @mcall Ptr{Uint64} WritePointer (vtkIdType, vtkIdType) _ZN24vtkUnsignedLongLongArray12WritePointerExx "libvtkCommon"
 @mcall Ptr{Uint64} GetPointer (vtkIdType,) _ZN24vtkUnsignedLongLongArray10GetPointerEx "libvtkCommon"
 @mcall None SetArray (Ptr{Uint64}, vtkIdType, Int32) _ZN24vtkUnsignedLongLongArray8SetArrayEPyxi "libvtkCommon"

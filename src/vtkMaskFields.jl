@@ -1,9 +1,12 @@
 cur_class = vtkMaskFields
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN13vtkMaskFields8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkMaskFields} SafeDownCast (Ptr{vtkObjectBase},) _ZN13vtkMaskFields12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkMaskFields} NewInstance () _ZNK13vtkMaskFields11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkMaskFields} vtkMaskFieldsNew () _ZN13vtkMaskFields3NewEv "libvtkGraphics"
 @mcall None CopyFieldOn (Int32, Ptr{Uint8}) _ZN13vtkMaskFields11CopyFieldOnEiPKc "libvtkGraphics"
 @mcall None CopyFieldOff (Int32, Ptr{Uint8}) _ZN13vtkMaskFields12CopyFieldOffEiPKc "libvtkGraphics"
 @mcall None CopyAttributeOn (Int32, Int32) _ZN13vtkMaskFields15CopyAttributeOnEii "libvtkGraphics"

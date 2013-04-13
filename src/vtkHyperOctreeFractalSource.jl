@@ -1,9 +1,12 @@
 cur_class = vtkHyperOctreeFractalSource
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN27vtkHyperOctreeFractalSource8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkHyperOctreeFractalSource} SafeDownCast (Ptr{vtkObjectBase},) _ZN27vtkHyperOctreeFractalSource12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkHyperOctreeFractalSource} NewInstance () _ZNK27vtkHyperOctreeFractalSource11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkHyperOctreeFractalSource} vtkHyperOctreeFractalSourceNew () _ZN27vtkHyperOctreeFractalSource3NewEv "libvtkGraphics"
 @mcall Int32 GetMaximumLevel () _ZN27vtkHyperOctreeFractalSource15GetMaximumLevelEv "libvtkGraphics"
 @mcall None SetMaximumLevel (Int32,) _ZN27vtkHyperOctreeFractalSource15SetMaximumLevelEi "libvtkGraphics"
 @mcall None SetMinimumLevel (Int32,) _ZN27vtkHyperOctreeFractalSource15SetMinimumLevelEi "libvtkGraphics"

@@ -1,6 +1,9 @@
 cur_class = vtkGraphLayoutFilter
+@scall Ptr{vtkGraphLayoutFilter} vtkGraphLayoutFilterNew () _ZN20vtkGraphLayoutFilter3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN20vtkGraphLayoutFilter8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkGraphLayoutFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN20vtkGraphLayoutFilter12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkGraphLayoutFilter} NewInstance () _ZNK20vtkGraphLayoutFilter11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

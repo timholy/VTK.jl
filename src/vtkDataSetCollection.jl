@@ -1,6 +1,9 @@
 cur_class = vtkDataSetCollection
+@scall Ptr{vtkDataSetCollection} vtkDataSetCollectionNew () _ZN20vtkDataSetCollection3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN20vtkDataSetCollection8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkDataSetCollection} SafeDownCast (Ptr{vtkObjectBase},) _ZN20vtkDataSetCollection12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkDataSetCollection} NewInstance () _ZNK20vtkDataSetCollection11NewInstanceEv "libvtkFiltering"
 @mcall None AddItem (Ptr{vtkDataSet},) _ZN20vtkDataSetCollection7AddItemEP10vtkDataSet "libvtkFiltering"

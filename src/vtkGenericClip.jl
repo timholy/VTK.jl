@@ -1,9 +1,12 @@
 cur_class = vtkGenericClip
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN14vtkGenericClip8IsTypeOfEPKc "libvtkGenericFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkGenericClip} SafeDownCast (Ptr{vtkObjectBase},) _ZN14vtkGenericClip12SafeDownCastEP13vtkObjectBase "libvtkGenericFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkGenericClip} NewInstance () _ZNK14vtkGenericClip11NewInstanceEv "libvtkGenericFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkGenericClip} vtkGenericClipNew () _ZN14vtkGenericClip3NewEv "libvtkGenericFiltering"
 @vcall 65 None SetValue (Float64,)
 @vcall 66 Float64 GetValue ()
 @vcall 67 None SetInsideOut (Int32,)

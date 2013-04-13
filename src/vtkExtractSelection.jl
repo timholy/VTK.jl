@@ -1,6 +1,9 @@
 cur_class = vtkExtractSelection
+@scall Ptr{vtkExtractSelection} vtkExtractSelectionNew () _ZN19vtkExtractSelection3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN19vtkExtractSelection8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkExtractSelection} SafeDownCast (Ptr{vtkObjectBase},) _ZN19vtkExtractSelection12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkExtractSelection} NewInstance () _ZNK19vtkExtractSelection11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

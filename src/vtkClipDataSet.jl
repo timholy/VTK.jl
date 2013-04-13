@@ -1,9 +1,12 @@
 cur_class = vtkClipDataSet
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN14vtkClipDataSet8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkClipDataSet} SafeDownCast (Ptr{vtkObjectBase},) _ZN14vtkClipDataSet12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkClipDataSet} NewInstance () _ZNK14vtkClipDataSet11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkClipDataSet} vtkClipDataSetNew () _ZN14vtkClipDataSet3NewEv "libvtkGraphics"
 @vcall 65 None SetValue (Float64,)
 @vcall 66 Float64 GetValue ()
 @vcall 67 None SetUseValueAsOffset (Bool,)
@@ -36,6 +39,7 @@ cur_class = vtkClipDataSet
 @vcall 21 Int32 ProcessRequest (Ptr{vtkInformation}, Ptr{Ptr{vtkInformationVector}}, Ptr{vtkInformationVector})
 @vcall 61 Int32 RequestData (Ptr{vtkInformation}, Ptr{Ptr{vtkInformationVector}}, Ptr{vtkInformationVector})
 @vcall 51 Int32 FillInputPortInformation (Int32, Ptr{vtkInformation})
+@scall None InternalProgressCallbackFunction (Ptr{vtkObject}, Uint64, Ptr{None}, Ptr{None}) _ZN14vtkClipDataSet32InternalProgressCallbackFunctionEP9vtkObjectmPvS2_ "libvtkGraphics"
 @mcall None InternalProgressCallback (Ptr{vtkAlgorithm},) _ZN14vtkClipDataSet24InternalProgressCallbackEP12vtkAlgorithm "libvtkGraphics"
 @mcall None ClipVolume (Ptr{vtkDataSet}, Ptr{vtkUnstructuredGrid}) _ZN14vtkClipDataSet10ClipVolumeEP10vtkDataSetP19vtkUnstructuredGrid "libvtkGraphics"
 @mcall Int32 ClipPoints (Ptr{vtkDataSet}, Ptr{vtkUnstructuredGrid}, Ptr{Ptr{vtkInformationVector}}) _ZN14vtkClipDataSet10ClipPointsEP10vtkDataSetP19vtkUnstructuredGridPP20vtkInformationVector "libvtkGraphics"

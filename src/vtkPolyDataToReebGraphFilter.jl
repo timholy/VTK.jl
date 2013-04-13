@@ -1,6 +1,9 @@
 cur_class = vtkPolyDataToReebGraphFilter
+@scall Ptr{vtkPolyDataToReebGraphFilter} vtkPolyDataToReebGraphFilterNew () _ZN28vtkPolyDataToReebGraphFilter3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN28vtkPolyDataToReebGraphFilter8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkPolyDataToReebGraphFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN28vtkPolyDataToReebGraphFilter12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkPolyDataToReebGraphFilter} NewInstance () _ZNK28vtkPolyDataToReebGraphFilter11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

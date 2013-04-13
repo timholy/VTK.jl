@@ -1,9 +1,12 @@
 cur_class = vtkImageDataGeometryFilter
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN26vtkImageDataGeometryFilter8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkImageDataGeometryFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN26vtkImageDataGeometryFilter12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkImageDataGeometryFilter} NewInstance () _ZNK26vtkImageDataGeometryFilter11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkImageDataGeometryFilter} vtkImageDataGeometryFilterNew () _ZN26vtkImageDataGeometryFilter3NewEv "libvtkGraphics"
 @mcall None SetExtent (Ptr{Int32},) _ZN26vtkImageDataGeometryFilter9SetExtentEPi "libvtkGraphics"
 @mcall None SetExtent (Int32, Int32, Int32, Int32, Int32, Int32) _ZN26vtkImageDataGeometryFilter9SetExtentEiiiiii "libvtkGraphics"
 @mcall Ptr{Int32} GetExtent () _ZN26vtkImageDataGeometryFilter9GetExtentEv "libvtkGraphics"

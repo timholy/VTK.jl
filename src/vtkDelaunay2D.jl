@@ -1,9 +1,12 @@
 cur_class = vtkDelaunay2D
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN13vtkDelaunay2D8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkDelaunay2D} SafeDownCast (Ptr{vtkObjectBase},) _ZN13vtkDelaunay2D12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkDelaunay2D} NewInstance () _ZNK13vtkDelaunay2D11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkDelaunay2D} vtkDelaunay2DNew () _ZN13vtkDelaunay2D3NewEv "libvtkGraphics"
 @mcall None SetSource (Ptr{vtkPolyData},) _ZN13vtkDelaunay2D9SetSourceEP11vtkPolyData "libvtkGraphics"
 @mcall None SetSourceConnection (Ptr{vtkAlgorithmOutput},) _ZN13vtkDelaunay2D19SetSourceConnectionEP18vtkAlgorithmOutput "libvtkGraphics"
 @mcall Ptr{vtkPolyData} GetSource () _ZN13vtkDelaunay2D9GetSourceEv "libvtkGraphics"

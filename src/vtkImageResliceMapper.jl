@@ -1,6 +1,9 @@
 cur_class = vtkImageResliceMapper
+@scall Ptr{vtkImageResliceMapper} vtkImageResliceMapperNew () _ZN21vtkImageResliceMapper3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN21vtkImageResliceMapper8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkImageResliceMapper} SafeDownCast (Ptr{vtkObjectBase},) _ZN21vtkImageResliceMapper12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkImageResliceMapper} NewInstance () _ZNK21vtkImageResliceMapper11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

@@ -1,6 +1,8 @@
 cur_class = vtkImageTwoInputFilter
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN22vtkImageTwoInputFilter8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkImageTwoInputFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN22vtkImageTwoInputFilter12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkImageTwoInputFilter} NewInstance () _ZNK22vtkImageTwoInputFilter11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

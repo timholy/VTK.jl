@@ -1,6 +1,9 @@
 cur_class = vtkEdgeListIterator
+@scall Ptr{vtkEdgeListIterator} vtkEdgeListIteratorNew () _ZN19vtkEdgeListIterator3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN19vtkEdgeListIterator8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkEdgeListIterator} SafeDownCast (Ptr{vtkObjectBase},) _ZN19vtkEdgeListIterator12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkEdgeListIterator} NewInstance () _ZNK19vtkEdgeListIterator11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

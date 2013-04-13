@@ -1,6 +1,9 @@
 cur_class = vtkLightActor
+@scall Ptr{vtkLightActor} vtkLightActorNew () _ZN13vtkLightActor3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN13vtkLightActor8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkLightActor} SafeDownCast (Ptr{vtkObjectBase},) _ZN13vtkLightActor12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkLightActor} NewInstance () _ZNK13vtkLightActor11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

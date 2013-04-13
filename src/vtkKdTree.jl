@@ -1,9 +1,12 @@
 cur_class = vtkKdTree
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN9vtkKdTree8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkKdTree} SafeDownCast (Ptr{vtkObjectBase},) _ZN9vtkKdTree12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkKdTree} NewInstance () _ZNK9vtkKdTree11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkKdTree} vtkKdTreeNew () _ZN9vtkKdTree3NewEv "libvtkFiltering"
 @vcall 41 None TimingOn ()
 @vcall 42 None TimingOff ()
 @vcall 43 None SetTiming (Int32,)
@@ -95,16 +98,19 @@ cur_class = vtkKdTree
 @vcall 69 Int32 NewGeometry ()
 @vcall 70 Int32 NewGeometry (Ptr{Ptr{vtkDataSet}}, Int32)
 @vcall 71 None InvalidateGeometry ()
+@scall Ptr{vtkKdNode} CopyTree (Ptr{vtkKdNode},) _ZN9vtkKdTree8CopyTreeEP9vtkKdNode "libvtkFiltering"
 @mcall None FindPointsInArea (Ptr{Float64}, Ptr{vtkIdTypeArray}, Bool) _ZN9vtkKdTree16FindPointsInAreaEPdP14vtkIdTypeArrayb "libvtkFiltering"
 @mcall None SetCalculator (Ptr{vtkKdNode},) _ZN9vtkKdTree13SetCalculatorEP9vtkKdNode "libvtkFiltering"
 @mcall Int32 ProcessUserDefinedCuts (Ptr{Float64},) _ZN9vtkKdTree22ProcessUserDefinedCutsEPd "libvtkFiltering"
 @mcall None SetCuts (Ptr{vtkBSPCuts}, Int32) _ZN9vtkKdTree7SetCutsEP10vtkBSPCutsi "libvtkFiltering"
 @mcall None UpdateBuildTime () _ZN9vtkKdTree15UpdateBuildTimeEv "libvtkFiltering"
 @mcall Int32 DivideTest (Int32, Int32) _ZN9vtkKdTree10DivideTestEii "libvtkFiltering"
+@scall None DeleteAllDescendants (Ptr{vtkKdNode},) _ZN9vtkKdTree20DeleteAllDescendantsEP9vtkKdNode "libvtkFiltering"
 @mcall None BuildRegionList () _ZN9vtkKdTree15BuildRegionListEv "libvtkFiltering"
 @vcall 72 Int32 SelectCutDirection (Ptr{vtkKdNode},)
 @mcall None SetActualLevel () _ZN9vtkKdTree14SetActualLevelEv "libvtkFiltering"
 @mcall None GetRegionsAtLevel (Int32, Ptr{Ptr{vtkKdNode}}) _ZN9vtkKdTree17GetRegionsAtLevelEiPP9vtkKdNode "libvtkFiltering"
+@scall None GetLeafNodeIds (Ptr{vtkKdNode}, Ptr{vtkIntArray}) _ZN9vtkKdTree14GetLeafNodeIdsEP9vtkKdNodeP11vtkIntArray "libvtkFiltering"
 @mcall Int32 GetNumberOfCells () _ZN9vtkKdTree16GetNumberOfCellsEv "libvtkFiltering"
 @mcall Int32 GetDataSetsNumberOfCells (Int32, Int32) _ZN9vtkKdTree24GetDataSetsNumberOfCellsEii "libvtkFiltering"
 @mcall None ComputeCellCenter (Ptr{vtkDataSet}, Int32, Ptr{Float32}) _ZN9vtkKdTree17ComputeCellCenterEP10vtkDataSetiPf "libvtkFiltering"
@@ -119,6 +125,11 @@ cur_class = vtkKdTree
 @vcall 75 Float64 GetProgressMaxValue ()
 @vcall 76 Float64 GetProgress ()
 @mcall None UpdateSubOperationProgress (Float64,) _ZN9vtkKdTree26UpdateSubOperationProgressEd "libvtkFiltering"
+@scall None _SetNewBounds (Ptr{vtkKdNode}, Ptr{Float64}, Ptr{Int32}) _ZN9vtkKdTree13_SetNewBoundsEP9vtkKdNodePdPi "libvtkFiltering"
+@scall None CopyChildNodes (Ptr{vtkKdNode}, Ptr{vtkKdNode}) _ZN9vtkKdTree14CopyChildNodesEP9vtkKdNodeS1_ "libvtkFiltering"
+@scall None CopyKdNode (Ptr{vtkKdNode}, Ptr{vtkKdNode}) _ZN9vtkKdTree10CopyKdNodeEP9vtkKdNodeS1_ "libvtkFiltering"
+@scall None SetDataBoundsToSpatialBounds (Ptr{vtkKdNode},) _ZN9vtkKdTree28SetDataBoundsToSpatialBoundsEP9vtkKdNode "libvtkFiltering"
+@scall None ZeroNumberOfPoints (Ptr{vtkKdNode},) _ZN9vtkKdTree18ZeroNumberOfPointsEP9vtkKdNode "libvtkFiltering"
 @mcall None FindPointsWithinRadius (Ptr{vtkKdNode}, Float64, Ptr{Float64}, Ptr{vtkIdList}) _ZN9vtkKdTree22FindPointsWithinRadiusEP9vtkKdNodedPKdP9vtkIdList "libvtkFiltering"
 @mcall None AddAllPointsInRegion (Ptr{vtkKdNode}, Ptr{vtkIdList}) _ZN9vtkKdTree20AddAllPointsInRegionEP9vtkKdNodeP9vtkIdList "libvtkFiltering"
 @mcall None FindPointsInArea (Ptr{vtkKdNode}, Ptr{Float64}, Ptr{vtkIdTypeArray}) _ZN9vtkKdTree16FindPointsInAreaEP9vtkKdNodePdP14vtkIdTypeArray "libvtkFiltering"
@@ -140,10 +151,25 @@ cur_class = vtkKdTree
 @mcall Int32 _FindClosestPointInRegion (Int32, Float64, Float64, Float64, Void) _ZN9vtkKdTree25_FindClosestPointInRegionEidddRd "libvtkFiltering"
 @mcall Int32 FindClosestPointInSphere (Float64, Float64, Float64, Float64, Int32, Void) _ZN9vtkKdTree24FindClosestPointInSphereEddddiRd "libvtkFiltering"
 @mcall Int32 _ViewOrderRegionsInDirection (Ptr{vtkIntArray}, Ptr{Float64}, Ptr{vtkIntArray}) _ZN9vtkKdTree28_ViewOrderRegionsInDirectionEP11vtkIntArrayPKdS1_ "libvtkFiltering"
+@scall Int32 __ViewOrderRegionsInDirection (Ptr{vtkKdNode}, Ptr{vtkIntArray}, Ptr{vtkIntArray}, Ptr{Float64}, Int32) _ZN9vtkKdTree29__ViewOrderRegionsInDirectionEP9vtkKdNodeP11vtkIntArrayS3_PKdi "libvtkFiltering"
 @mcall Int32 _ViewOrderRegionsFromPosition (Ptr{vtkIntArray}, Ptr{Float64}, Ptr{vtkIntArray}) _ZN9vtkKdTree29_ViewOrderRegionsFromPositionEP11vtkIntArrayPKdS1_ "libvtkFiltering"
+@scall Int32 __ViewOrderRegionsFromPosition (Ptr{vtkKdNode}, Ptr{vtkIntArray}, Ptr{vtkIntArray}, Ptr{Float64}, Int32) _ZN9vtkKdTree30__ViewOrderRegionsFromPositionEP9vtkKdNodeP11vtkIntArrayS3_PKdi "libvtkFiltering"
+@scall Int32 __ConvexSubRegions (Ptr{Int32}, Int32, Ptr{vtkKdNode}, Ptr{Ptr{vtkKdNode}}) _ZN9vtkKdTree18__ConvexSubRegionsEPiiP9vtkKdNodePS2_ "libvtkFiltering"
+@scall Int32 FoundId (Ptr{vtkIntArray}, Int32) _ZN9vtkKdTree7FoundIdEP11vtkIntArrayi "libvtkFiltering"
 @mcall None NewParitioningRequest (Int32,) _ZN9vtkKdTree21NewParitioningRequestEi "libvtkFiltering"
 @mcall None SetInputDataInfo (Int32, Ptr{Int32}, Ptr{Float64}, Ptr{Float64}) _ZN9vtkKdTree16SetInputDataInfoEiPiPdS1_ "libvtkFiltering"
 @mcall Int32 CheckInputDataInfo (Int32, Ptr{Int32}, Ptr{Float64}, Ptr{Float64}) _ZN9vtkKdTree18CheckInputDataInfoEiPiPdS1_ "libvtkFiltering"
 @mcall None ClearLastBuildCache () _ZN9vtkKdTree19ClearLastBuildCacheEv "libvtkFiltering"
+@scall None __printTree (Ptr{vtkKdNode}, Int32, Int32) _ZN9vtkKdTree11__printTreeEP9vtkKdNodeii "libvtkFiltering"
+@scall Int32 MidValue (Int32, Ptr{Float32}, Int32, Void) _ZN9vtkKdTree8MidValueEiPfiRd "libvtkFiltering"
+@scall Int32 Select (Int32, Ptr{Float32}, Ptr{Int32}, Int32, Void) _ZN9vtkKdTree6SelectEiPfPiiRd "libvtkFiltering"
+@scall Float32 FindMaxLeftHalf (Int32, Ptr{Float32}, Int32) _ZN9vtkKdTree15FindMaxLeftHalfEiPfi "libvtkFiltering"
+@scall None _Select (Int32, Ptr{Float32}, Ptr{Int32}, Int32, Int32, Int32) _ZN9vtkKdTree7_SelectEiPfPiiii "libvtkFiltering"
+@scall Int32 ComputeLevel (Ptr{vtkKdNode},) _ZN9vtkKdTree12ComputeLevelEP9vtkKdNode "libvtkFiltering"
+@scall Int32 SelfOrder (Int32, Ptr{vtkKdNode}) _ZN9vtkKdTree9SelfOrderEiP9vtkKdNode "libvtkFiltering"
+@scall Int32 findRegion (Ptr{vtkKdNode}, Float32, Float32, Float32) _ZN9vtkKdTree10findRegionEP9vtkKdNodefff "libvtkFiltering"
+@scall Int32 findRegion (Ptr{vtkKdNode}, Float64, Float64, Float64) _ZN9vtkKdTree10findRegionEP9vtkKdNodeddd "libvtkFiltering"
+@scall Ptr{Ptr{vtkKdNode}} _GetRegionsAtLevel (Int32, Ptr{Ptr{vtkKdNode}}, Ptr{vtkKdNode}) _ZN9vtkKdTree18_GetRegionsAtLevelEiPP9vtkKdNodeS1_ "libvtkFiltering"
+@scall None AddNewRegions (Ptr{vtkKdNode}, Ptr{Float32}, Int32, Int32, Float64) _ZN9vtkKdTree13AddNewRegionsEP9vtkKdNodePfiid "libvtkFiltering"
 @mcall None NewPartitioningRequest (Int32,) _ZN9vtkKdTree22NewPartitioningRequestEi "libvtkFiltering"
 @mcall None vtkKdTree_eq (Void,) _ZN9vtkKdTreeaSERKS_ "libvtkFiltering"

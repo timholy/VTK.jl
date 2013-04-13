@@ -1,6 +1,9 @@
 cur_class = vtkElevationFilter
+@scall Ptr{vtkElevationFilter} vtkElevationFilterNew () _ZN18vtkElevationFilter3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN18vtkElevationFilter8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkElevationFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN18vtkElevationFilter12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkElevationFilter} NewInstance () _ZNK18vtkElevationFilter11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

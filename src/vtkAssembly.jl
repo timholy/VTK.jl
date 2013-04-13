@@ -1,6 +1,9 @@
 cur_class = vtkAssembly
+@scall Ptr{vtkAssembly} vtkAssemblyNew () _ZN11vtkAssembly3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN11vtkAssembly8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkAssembly} SafeDownCast (Ptr{vtkObjectBase},) _ZN11vtkAssembly12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkAssembly} NewInstance () _ZNK11vtkAssembly11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

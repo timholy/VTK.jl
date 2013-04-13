@@ -1,9 +1,12 @@
 cur_class = vtkConnectivityFilter
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN21vtkConnectivityFilter8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkConnectivityFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN21vtkConnectivityFilter12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkConnectivityFilter} NewInstance () _ZNK21vtkConnectivityFilter11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkConnectivityFilter} vtkConnectivityFilterNew () _ZN21vtkConnectivityFilter3NewEv "libvtkGraphics"
 @vcall 65 None SetScalarConnectivity (Int32,)
 @vcall 66 Int32 GetScalarConnectivity ()
 @vcall 67 None ScalarConnectivityOn ()

@@ -1,6 +1,9 @@
 cur_class = vtkExtractSelectedFrustum
+@scall Ptr{vtkExtractSelectedFrustum} vtkExtractSelectedFrustumNew () _ZN25vtkExtractSelectedFrustum3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN25vtkExtractSelectedFrustum8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkExtractSelectedFrustum} SafeDownCast (Ptr{vtkObjectBase},) _ZN25vtkExtractSelectedFrustum12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkExtractSelectedFrustum} NewInstance () _ZNK25vtkExtractSelectedFrustum11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

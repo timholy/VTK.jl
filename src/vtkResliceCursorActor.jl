@@ -1,6 +1,9 @@
 cur_class = vtkResliceCursorActor
+@scall Ptr{vtkResliceCursorActor} vtkResliceCursorActorNew () _ZN21vtkResliceCursorActor3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN21vtkResliceCursorActor8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkResliceCursorActor} SafeDownCast (Ptr{vtkObjectBase},) _ZN21vtkResliceCursorActor12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkResliceCursorActor} NewInstance () _ZNK21vtkResliceCursorActor11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

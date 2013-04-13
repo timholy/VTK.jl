@@ -1,6 +1,9 @@
 cur_class = vtkBitArray
+@scall Ptr{vtkBitArray} vtkBitArrayNew () _ZN11vtkBitArray3NewEv "libvtkCommon"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN11vtkBitArray8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkBitArray} SafeDownCast (Ptr{vtkObjectBase},) _ZN11vtkBitArray12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkBitArray} NewInstance () _ZNK11vtkBitArray11NewInstanceEv "libvtkCommon"
 @vcall 4 None PrintSelf (Void, vtkIndent)

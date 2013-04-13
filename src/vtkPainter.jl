@@ -1,9 +1,14 @@
 cur_class = vtkPainter
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN10vtkPainter8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkPainter} SafeDownCast (Ptr{vtkObjectBase},) _ZN10vtkPainter12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkPainter} NewInstance () _ZNK10vtkPainter11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkInformationIntegerKey} STATIC_DATA () _ZN10vtkPainter11STATIC_DATAEv "libvtkRendering"
+@scall Ptr{vtkInformationIntegerKey} CONSERVE_MEMORY () _ZN10vtkPainter15CONSERVE_MEMORYEv "libvtkRendering"
+@scall Ptr{vtkInformationIntegerKey} HIGH_QUALITY () _ZN10vtkPainter12HIGH_QUALITYEv "libvtkRendering"
 @vcall 20 Ptr{vtkInformation} GetInformation ()
 @vcall 21 None SetInformation (Ptr{vtkInformation},)
 @vcall 22 Ptr{vtkPainter} GetDelegatePainter ()

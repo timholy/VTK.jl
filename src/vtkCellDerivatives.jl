@@ -1,9 +1,12 @@
 cur_class = vtkCellDerivatives
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN18vtkCellDerivatives8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkCellDerivatives} SafeDownCast (Ptr{vtkObjectBase},) _ZN18vtkCellDerivatives12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkCellDerivatives} NewInstance () _ZNK18vtkCellDerivatives11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkCellDerivatives} vtkCellDerivativesNew () _ZN18vtkCellDerivatives3NewEv "libvtkGraphics"
 @vcall 63 None SetVectorMode (Int32,)
 @vcall 64 Int32 GetVectorMode ()
 @mcall None SetVectorModeToPassVectors () _ZN18vtkCellDerivatives26SetVectorModeToPassVectorsEv "libvtkGraphics"

@@ -1,6 +1,9 @@
 cur_class = vtkMesaImageSliceMapper
+@scall Ptr{vtkMesaImageSliceMapper} vtkMesaImageSliceMapperNew () _ZN23vtkMesaImageSliceMapper3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN23vtkMesaImageSliceMapper8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkMesaImageSliceMapper} SafeDownCast (Ptr{vtkObjectBase},) _ZN23vtkMesaImageSliceMapper12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkMesaImageSliceMapper} NewInstance () _ZNK23vtkMesaImageSliceMapper11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

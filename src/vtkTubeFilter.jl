@@ -1,9 +1,12 @@
 cur_class = vtkTubeFilter
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN13vtkTubeFilter8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkTubeFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN13vtkTubeFilter12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkTubeFilter} NewInstance () _ZNK13vtkTubeFilter11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkTubeFilter} vtkTubeFilterNew () _ZN13vtkTubeFilter3NewEv "libvtkGraphics"
 @vcall 65 None SetRadius (Float64,)
 @vcall 66 Float64 GetRadiusMinValue ()
 @vcall 67 Float64 GetRadiusMaxValue ()

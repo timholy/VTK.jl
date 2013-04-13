@@ -1,9 +1,12 @@
 cur_class = vtkGenericStreamTracer
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN22vtkGenericStreamTracer8IsTypeOfEPKc "libvtkGenericFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkGenericStreamTracer} SafeDownCast (Ptr{vtkObjectBase},) _ZN22vtkGenericStreamTracer12SafeDownCastEP13vtkObjectBase "libvtkGenericFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkGenericStreamTracer} NewInstance () _ZNK22vtkGenericStreamTracer11NewInstanceEv "libvtkGenericFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkGenericStreamTracer} vtkGenericStreamTracerNew () _ZN22vtkGenericStreamTracer3NewEv "libvtkGenericFiltering"
 @vcall 65 None SetStartPosition (Float64, Float64, Float64)
 @vcall 66 None SetStartPosition (Ptr{Float64},)
 @vcall 67 Ptr{Float64} GetStartPosition ()
@@ -86,6 +89,10 @@ cur_class = vtkGenericStreamTracer
 @vcall 88 None SetInputVectorsSelection (Ptr{Uint8},)
 @mcall None SetIntervalInformation (Int32, Float64, Void) _ZN22vtkGenericStreamTracer22SetIntervalInformationEidRNS_19IntervalInformationE "libvtkGenericFiltering"
 @mcall None SetIntervalInformation (Int32, Void) _ZN22vtkGenericStreamTracer22SetIntervalInformationEiRNS_19IntervalInformationE "libvtkGenericFiltering"
+@scall Float64 ConvertToTime (Void, Float64, Float64) _ZN22vtkGenericStreamTracer13ConvertToTimeERNS_19IntervalInformationEdd "libvtkGenericFiltering"
+@scall Float64 ConvertToLength (Void, Float64, Float64) _ZN22vtkGenericStreamTracer15ConvertToLengthERNS_19IntervalInformationEdd "libvtkGenericFiltering"
+@scall Float64 ConvertToCellLength (Void, Float64, Float64) _ZN22vtkGenericStreamTracer19ConvertToCellLengthERNS_19IntervalInformationEdd "libvtkGenericFiltering"
+@scall Float64 ConvertToUnit (Void, Int32, Float64, Float64) _ZN22vtkGenericStreamTracer13ConvertToUnitERNS_19IntervalInformationEidd "libvtkGenericFiltering"
 @mcall None ConvertIntervals (Void, Void, Void, Int32, Float64, Float64) _ZN22vtkGenericStreamTracer16ConvertIntervalsERdS0_S0_idd "libvtkGenericFiltering"
 @mcall None InitializeSeeds (Void, Void, Void) _ZN22vtkGenericStreamTracer15InitializeSeedsERP12vtkDataArrayRP9vtkIdListRP11vtkIntArray "libvtkGenericFiltering"
 @mcall None vtkGenericStreamTracer_eq (Void,) _ZN22vtkGenericStreamTraceraSERKS_ "libvtkGenericFiltering"

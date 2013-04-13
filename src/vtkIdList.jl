@@ -1,8 +1,11 @@
 cur_class = vtkIdList
+@scall Ptr{vtkIdList} vtkIdListNew () _ZN9vtkIdList3NewEv "libvtkCommon"
 @mcall None Initialize () _ZN9vtkIdList10InitializeEv "libvtkCommon"
 @mcall Int32 Allocate (vtkIdType, Int32) _ZN9vtkIdList8AllocateExi "libvtkCommon"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN9vtkIdList8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkIdList} SafeDownCast (Ptr{vtkObjectBase},) _ZN9vtkIdList12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkIdList} NewInstance () _ZNK9vtkIdList11NewInstanceEv "libvtkCommon"
 @vcall 4 None PrintSelf (Void, vtkIndent)

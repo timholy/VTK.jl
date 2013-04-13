@@ -1,9 +1,12 @@
 cur_class = vtkModelMetadata
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN16vtkModelMetadata8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkModelMetadata} SafeDownCast (Ptr{vtkObjectBase},) _ZN16vtkModelMetadata12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkModelMetadata} NewInstance () _ZNK16vtkModelMetadata11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkModelMetadata} vtkModelMetadataNew () _ZN16vtkModelMetadata3NewEv "libvtkGraphics"
 @vcall 20 None PrintGlobalInformation ()
 @vcall 21 None PrintLocalInformation ()
 @vcall 22 None SetTitle (Ptr{Uint8},)
@@ -123,6 +126,8 @@ cur_class = vtkModelMetadata
 @mcall Ptr{Int32} GetMapToOriginalNodeVariableNames () _ZNK16vtkModelMetadata33GetMapToOriginalNodeVariableNamesEv "libvtkGraphics"
 @mcall Ptr{Uint8} FindOriginalElementVariableName (Ptr{Uint8}, Int32) _ZN16vtkModelMetadata31FindOriginalElementVariableNameEPKci "libvtkGraphics"
 @mcall Ptr{Uint8} FindOriginalNodeVariableName (Ptr{Uint8}, Int32) _ZN16vtkModelMetadata28FindOriginalNodeVariableNameEPKci "libvtkGraphics"
+@scall Int32 HasMetadata (Ptr{vtkDataSet},) _ZN16vtkModelMetadata11HasMetadataEP10vtkDataSet "libvtkGraphics"
+@scall None RemoveMetadata (Ptr{vtkDataSet},) _ZN16vtkModelMetadata14RemoveMetadataEP10vtkDataSet "libvtkGraphics"
 @mcall None Pack (Ptr{vtkDataSet},) _ZN16vtkModelMetadata4PackEP10vtkDataSet "libvtkGraphics"
 @mcall Int32 Unpack (Ptr{vtkDataSet}, Int32) _ZN16vtkModelMetadata6UnpackEP10vtkDataSeti "libvtkGraphics"
 @mcall Int32 AddUGridElementVariable (Ptr{Uint8}, Ptr{Uint8}, Int32) _ZN16vtkModelMetadata23AddUGridElementVariableEPcS0_i "libvtkGraphics"
@@ -163,6 +168,12 @@ cur_class = vtkModelMetadata
 @mcall Ptr{vtkCharArray} PackCharArray (Int32, Int32) _ZN16vtkModelMetadata13PackCharArrayEii "libvtkGraphics"
 @mcall Int32 InitializeFromFloatArray (Ptr{vtkFloatArray},) _ZN16vtkModelMetadata24InitializeFromFloatArrayEP13vtkFloatArray "libvtkGraphics"
 @mcall Ptr{vtkFloatArray} PackFloatArray () _ZN16vtkModelMetadata14PackFloatArrayEv "libvtkGraphics"
+@scall Ptr{Uint8} StrDupWithNew (Ptr{Uint8},) _ZN16vtkModelMetadata13StrDupWithNewEPKc "libvtkGraphics"
+@scall Ptr{Uint8} WriteLines (Ptr{Uint8}, Int32, Int32, Ptr{Ptr{Uint8}}) _ZN16vtkModelMetadata10WriteLinesEPciiPS0_ "libvtkGraphics"
+@scall Ptr{Uint8} ReadLines (Ptr{Ptr{Ptr{Uint8}}}, Int32, Int32, Ptr{Uint8}) _ZN16vtkModelMetadata9ReadLinesEPPPciiS0_ "libvtkGraphics"
+@scall Ptr{Ptr{Uint8}} CopyLines (Ptr{Ptr{Uint8}}, Int32) _ZN16vtkModelMetadata9CopyLinesEPPci "libvtkGraphics"
+@scall Ptr{Int32} CopyInts (Ptr{Int32}, Int32) _ZN16vtkModelMetadata8CopyIntsEPii "libvtkGraphics"
+@scall Int32 FindNameOnList (Ptr{Uint8}, Ptr{Ptr{Uint8}}, Int32) _ZN16vtkModelMetadata14FindNameOnListEPcPS0_i "libvtkGraphics"
 @mcall Int32 MergeIdLists (Int32, Ptr{Int32}, Ptr{Int32}, Int32, Ptr{Float32}, Ptr{Int32}, Int32, Ptr{Int32}, Ptr{Int32}, Int32, Ptr{Float32}, Ptr{Int32}, Int32, Ptr{Ptr{Int32}}, Ptr{Ptr{Int32}}, Ptr{Int32}, Ptr{Ptr{Float32}}, Ptr{Ptr{Int32}}, Ptr{Int32}) _ZN16vtkModelMetadata12MergeIdListsEiPiS0_iPfS0_iS0_S0_iS1_S0_iPS0_S2_S0_PS1_S2_S0_ "libvtkGraphics"
 @mcall Int32 AppendFloatLists (Int32, Ptr{Float32}, Ptr{Int32}, Int32, Ptr{Float32}, Ptr{Int32}, Int32, Ptr{Ptr{Float32}}, Ptr{Ptr{Int32}}, Ptr{Int32}) _ZN16vtkModelMetadata16AppendFloatListsEiPfPiiS0_S1_iPS0_PS1_S1_ "libvtkGraphics"
 @mcall Int32 AppendIntegerLists (Int32, Ptr{Int32}, Ptr{Int32}, Int32, Ptr{Int32}, Ptr{Int32}, Int32, Ptr{Ptr{Int32}}, Ptr{Ptr{Int32}}, Ptr{Int32}) _ZN16vtkModelMetadata18AppendIntegerListsEiPiS0_iS0_S0_iPS0_S1_S0_ "libvtkGraphics"

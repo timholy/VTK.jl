@@ -1,6 +1,9 @@
 cur_class = vtkPassInputTypeAlgorithm
+@scall Ptr{vtkPassInputTypeAlgorithm} vtkPassInputTypeAlgorithmNew () _ZN25vtkPassInputTypeAlgorithm3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN25vtkPassInputTypeAlgorithm8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkPassInputTypeAlgorithm} SafeDownCast (Ptr{vtkObjectBase},) _ZN25vtkPassInputTypeAlgorithm12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkPassInputTypeAlgorithm} NewInstance () _ZNK25vtkPassInputTypeAlgorithm11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

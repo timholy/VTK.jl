@@ -1,9 +1,12 @@
 cur_class = vtkParametricSuperToroid
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN24vtkParametricSuperToroid8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkParametricSuperToroid} SafeDownCast (Ptr{vtkObjectBase},) _ZN24vtkParametricSuperToroid12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkParametricSuperToroid} NewInstance () _ZNK24vtkParametricSuperToroid11NewInstanceEv "libvtkCommon"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkParametricSuperToroid} vtkParametricSuperToroidNew () _ZN24vtkParametricSuperToroid3NewEv "libvtkCommon"
 @vcall 20 Int32 GetDimension ()
 @vcall 59 None SetRingRadius (Float64,)
 @vcall 60 Float64 GetRingRadius ()

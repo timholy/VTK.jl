@@ -1,6 +1,9 @@
 cur_class = vtkExtentTranslator
+@scall Ptr{vtkExtentTranslator} vtkExtentTranslatorNew () _ZN19vtkExtentTranslator3NewEv "libvtkCommon"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN19vtkExtentTranslator8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkExtentTranslator} SafeDownCast (Ptr{vtkObjectBase},) _ZN19vtkExtentTranslator12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkExtentTranslator} NewInstance () _ZNK19vtkExtentTranslator11NewInstanceEv "libvtkCommon"
 @vcall 4 None PrintSelf (Void, vtkIndent)

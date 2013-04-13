@@ -1,9 +1,12 @@
 cur_class = vtkRotationalExtrusionFilter
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN28vtkRotationalExtrusionFilter8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkRotationalExtrusionFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN28vtkRotationalExtrusionFilter12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkRotationalExtrusionFilter} NewInstance () _ZNK28vtkRotationalExtrusionFilter11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkRotationalExtrusionFilter} vtkRotationalExtrusionFilterNew () _ZN28vtkRotationalExtrusionFilter3NewEv "libvtkGraphics"
 @vcall 65 None SetResolution (Int32,)
 @vcall 66 Int32 GetResolutionMinValue ()
 @vcall 67 Int32 GetResolutionMaxValue ()

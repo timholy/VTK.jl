@@ -1,9 +1,12 @@
 cur_class = vtkLinearExtrusionFilter
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN24vtkLinearExtrusionFilter8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkLinearExtrusionFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN24vtkLinearExtrusionFilter12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkLinearExtrusionFilter} NewInstance () _ZNK24vtkLinearExtrusionFilter11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkLinearExtrusionFilter} vtkLinearExtrusionFilterNew () _ZN24vtkLinearExtrusionFilter3NewEv "libvtkGraphics"
 @vcall 65 None SetExtrusionType (Int32,)
 @vcall 66 Int32 GetExtrusionTypeMinValue ()
 @vcall 67 Int32 GetExtrusionTypeMaxValue ()

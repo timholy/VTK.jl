@@ -1,9 +1,12 @@
 cur_class = vtkProperty
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN11vtkProperty8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkProperty} SafeDownCast (Ptr{vtkObjectBase},) _ZN11vtkProperty12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkProperty} NewInstance () _ZNK11vtkProperty11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkProperty} vtkPropertyNew () _ZN11vtkProperty3NewEv "libvtkRendering"
 @mcall None DeepCopy (Ptr{vtkProperty},) _ZN11vtkProperty8DeepCopyEPS_ "libvtkRendering"
 @vcall 20 None Render (Ptr{vtkActor}, Ptr{vtkRenderer})
 @vcall 21 None BackfaceRender (Ptr{vtkActor}, Ptr{vtkRenderer})

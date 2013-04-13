@@ -1,6 +1,9 @@
 cur_class = vtkCarbonRenderWindow
+@scall Ptr{vtkCarbonRenderWindow} vtkCarbonRenderWindowNew () _ZN21vtkCarbonRenderWindow3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN21vtkCarbonRenderWindow8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkCarbonRenderWindow} SafeDownCast (Ptr{vtkObjectBase},) _ZN21vtkCarbonRenderWindow12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkCarbonRenderWindow} NewInstance () _ZNK21vtkCarbonRenderWindow11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -53,6 +56,7 @@ cur_class = vtkCarbonRenderWindow
 @vcall 80 None ShowCursor ()
 @mcall None UpdateSizeAndPosition (Int32, Int32, Int32, Int32) _ZN21vtkCarbonRenderWindow21UpdateSizeAndPositionEiiii "libvtkRendering"
 @mcall None UpdateGLRegion () _ZN21vtkCarbonRenderWindow14UpdateGLRegionEv "libvtkRendering"
+@scall Int32 RegionEventProcessor (Int32, Int32, Ptr{None}) _ZN21vtkCarbonRenderWindow20RegionEventProcessorEiiPv "libvtkRendering"
 @mcall None InitializeApplication () _ZN21vtkCarbonRenderWindow21InitializeApplicationEv "libvtkRendering"
 @vcall 204 None CreateAWindow ()
 @vcall 205 None DestroyWindow ()

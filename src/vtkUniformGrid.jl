@@ -1,6 +1,9 @@
 cur_class = vtkUniformGrid
+@scall Ptr{vtkUniformGrid} vtkUniformGridNew () _ZN14vtkUniformGrid3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN14vtkUniformGrid8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkUniformGrid} SafeDownCast (Ptr{vtkObjectBase},) _ZN14vtkUniformGrid12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkUniformGrid} NewInstance () _ZNK14vtkUniformGrid11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -35,6 +38,8 @@ cur_class = vtkUniformGrid
 @vcall 161 Uint8 GetPointBlanking ()
 @vcall 162 Uint8 GetCellBlanking ()
 @vcall 163 Ptr{vtkImageData} NewImageDataCopy ()
+@scall Ptr{vtkUniformGrid} GetData (Ptr{vtkInformation},) _ZN14vtkUniformGrid7GetDataEP14vtkInformation "libvtkFiltering"
+@scall Ptr{vtkUniformGrid} GetData (Ptr{vtkInformationVector}, Int32) _ZN14vtkUniformGrid7GetDataEP20vtkInformationVectori "libvtkFiltering"
 @vcall 100 None ComputeScalarRange ()
 @mcall None SetPointVisibility (Ptr{vtkStructuredVisibilityConstraint},) _ZN14vtkUniformGrid18SetPointVisibilityEP33vtkStructuredVisibilityConstraint "libvtkFiltering"
 @vcall 164 Ptr{vtkStructuredVisibilityConstraint} GetPointVisibility ()

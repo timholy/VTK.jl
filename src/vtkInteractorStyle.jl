@@ -1,6 +1,9 @@
 cur_class = vtkInteractorStyle
+@scall Ptr{vtkInteractorStyle} vtkInteractorStyleNew () _ZN18vtkInteractorStyle3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN18vtkInteractorStyle8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkInteractorStyle} SafeDownCast (Ptr{vtkObjectBase},) _ZN18vtkInteractorStyle12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkInteractorStyle} NewInstance () _ZNK18vtkInteractorStyle11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -81,4 +84,5 @@ cur_class = vtkInteractorStyle
 @vcall 110 Ptr{vtkTDxInteractorStyle} GetTDxStyle ()
 @vcall 111 None SetTDxStyle (Ptr{vtkTDxInteractorStyle},)
 @mcall None DelegateTDxEvent (Uint64, Ptr{None}) _ZN18vtkInteractorStyle16DelegateTDxEventEmPv "libvtkRendering"
+@scall None ProcessEvents (Ptr{vtkObject}, Uint64, Ptr{None}, Ptr{None}) _ZN18vtkInteractorStyle13ProcessEventsEP9vtkObjectmPvS2_ "libvtkRendering"
 @mcall None vtkInteractorStyle_eq (Void,) _ZN18vtkInteractorStyleaSERKS_ "libvtkRendering"

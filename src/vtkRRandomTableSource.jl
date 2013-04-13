@@ -1,6 +1,9 @@
 cur_class = vtkRRandomTableSource
+@scall Ptr{vtkRRandomTableSource} vtkRRandomTableSourceNew () _ZN21vtkRRandomTableSource3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN21vtkRRandomTableSource8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkRRandomTableSource} SafeDownCast (Ptr{vtkObjectBase},) _ZN21vtkRRandomTableSource12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkRRandomTableSource} NewInstance () _ZNK21vtkRRandomTableSource11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

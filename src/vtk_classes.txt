@@ -1,3 +1,4 @@
+vtkObject vtkObjectBase
 vtkPropCollection vtkCollection
 vtkBitArrayIterator vtkArrayIterator
 vtkShortArray vtkDataArrayTemplate<short>
@@ -44,7 +45,6 @@ vtkOverrideInformationCollection vtkCollection
 vtkMultiThreader vtkObject
 vtkWindow vtkObject
 vtkFastNumericConversion vtkObject
-vtkObject vtkObjectBase
 vtkHomogeneousTransform vtkAbstractTransform
 vtkAnimationCue vtkObject
 vtkTimerLog vtkObject

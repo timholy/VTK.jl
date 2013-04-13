@@ -1,6 +1,9 @@
 cur_class = vtkGenericDataSetTessellator
+@scall Ptr{vtkGenericDataSetTessellator} vtkGenericDataSetTessellatorNew () _ZN28vtkGenericDataSetTessellator3NewEv "libvtkGenericFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN28vtkGenericDataSetTessellator8IsTypeOfEPKc "libvtkGenericFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkGenericDataSetTessellator} SafeDownCast (Ptr{vtkObjectBase},) _ZN28vtkGenericDataSetTessellator12SafeDownCastEP13vtkObjectBase "libvtkGenericFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkGenericDataSetTessellator} NewInstance () _ZNK28vtkGenericDataSetTessellator11NewInstanceEv "libvtkGenericFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

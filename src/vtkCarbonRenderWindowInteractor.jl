@@ -1,6 +1,9 @@
 cur_class = vtkCarbonRenderWindowInteractor
+@scall Ptr{vtkCarbonRenderWindowInteractor} vtkCarbonRenderWindowInteractorNew () _ZN31vtkCarbonRenderWindowInteractor3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN31vtkCarbonRenderWindowInteractor8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkCarbonRenderWindowInteractor} SafeDownCast (Ptr{vtkObjectBase},) _ZN31vtkCarbonRenderWindowInteractor12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkCarbonRenderWindowInteractor} NewInstance () _ZNK31vtkCarbonRenderWindowInteractor11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -13,6 +16,8 @@ cur_class = vtkCarbonRenderWindowInteractor
 @vcall 132 None InstallMessageProcOn ()
 @vcall 133 None InstallMessageProcOff ()
 @vcall 46 None TerminateApp ()
+@scall None SetClassExitMethod (Ptr{Void}, Ptr{None}) _ZN31vtkCarbonRenderWindowInteractor18SetClassExitMethodEPFvPvES0_ "libvtkRendering"
+@scall None SetClassExitMethodArgDelete (Ptr{Void},) _ZN31vtkCarbonRenderWindowInteractor27SetClassExitMethodArgDeleteEPFvPvE "libvtkRendering"
 @vcall 65 None ExitCallback ()
 @mcall None GetLastMouseDelta (Ptr{Int32},) _ZN31vtkCarbonRenderWindowInteractor17GetLastMouseDeltaEPi "libvtkRendering"
 @mcall None SetLastMouseDelta (Int32, Int32) _ZN31vtkCarbonRenderWindowInteractor17SetLastMouseDeltaEii "libvtkRendering"

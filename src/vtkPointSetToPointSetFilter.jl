@@ -1,6 +1,8 @@
 cur_class = vtkPointSetToPointSetFilter
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN27vtkPointSetToPointSetFilter8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkPointSetToPointSetFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN27vtkPointSetToPointSetFilter12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkPointSetToPointSetFilter} NewInstance () _ZNK27vtkPointSetToPointSetFilter11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

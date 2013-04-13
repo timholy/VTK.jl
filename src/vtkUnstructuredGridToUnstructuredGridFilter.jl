@@ -1,6 +1,8 @@
 cur_class = vtkUnstructuredGridToUnstructuredGridFilter
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN43vtkUnstructuredGridToUnstructuredGridFilter8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkUnstructuredGridToUnstructuredGridFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN43vtkUnstructuredGridToUnstructuredGridFilter12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkUnstructuredGridToUnstructuredGridFilter} NewInstance () _ZNK43vtkUnstructuredGridToUnstructuredGridFilter11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

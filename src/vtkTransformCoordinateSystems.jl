@@ -1,9 +1,12 @@
 cur_class = vtkTransformCoordinateSystems
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN29vtkTransformCoordinateSystems8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkTransformCoordinateSystems} SafeDownCast (Ptr{vtkObjectBase},) _ZN29vtkTransformCoordinateSystems12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkTransformCoordinateSystems} NewInstance () _ZNK29vtkTransformCoordinateSystems11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkTransformCoordinateSystems} vtkTransformCoordinateSystemsNew () _ZN29vtkTransformCoordinateSystems3NewEv "libvtkGraphics"
 @vcall 63 None SetInputCoordinateSystem (Int32,)
 @vcall 64 Int32 GetInputCoordinateSystem ()
 @mcall None SetInputCoordinateSystemToDisplay () _ZN29vtkTransformCoordinateSystems33SetInputCoordinateSystemToDisplayEv "libvtkGraphics"

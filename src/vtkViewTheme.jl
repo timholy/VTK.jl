@@ -1,6 +1,9 @@
 cur_class = vtkViewTheme
+@scall Ptr{vtkViewTheme} vtkViewThemeNew () _ZN12vtkViewTheme3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN12vtkViewTheme8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkViewTheme} SafeDownCast (Ptr{vtkObjectBase},) _ZN12vtkViewTheme12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkViewTheme} NewInstance () _ZNK12vtkViewTheme11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -117,6 +120,9 @@ cur_class = vtkViewTheme
 @vcall 130 Ptr{Float64} GetEdgeLabelColor ()
 @vcall 131 None GetEdgeLabelColor (Void, Void, Void)
 @vcall 132 None GetEdgeLabelColor (Ptr{Float64},)
+@scall Ptr{vtkViewTheme} CreateOceanTheme () _ZN12vtkViewTheme16CreateOceanThemeEv "libvtkRendering"
+@scall Ptr{vtkViewTheme} CreateMellowTheme () _ZN12vtkViewTheme17CreateMellowThemeEv "libvtkRendering"
+@scall Ptr{vtkViewTheme} CreateNeonTheme () _ZN12vtkViewTheme15CreateNeonThemeEv "libvtkRendering"
 @mcall Bool LookupMatchesPointTheme (Ptr{vtkScalarsToColors},) _ZN12vtkViewTheme23LookupMatchesPointThemeEP18vtkScalarsToColors "libvtkRendering"
 @mcall Bool LookupMatchesCellTheme (Ptr{vtkScalarsToColors},) _ZN12vtkViewTheme22LookupMatchesCellThemeEP18vtkScalarsToColors "libvtkRendering"
 @mcall None vtkViewTheme_eq (Void,) _ZN12vtkViewThemeaSERKS_ "libvtkRendering"

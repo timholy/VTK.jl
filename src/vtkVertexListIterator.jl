@@ -1,6 +1,9 @@
 cur_class = vtkVertexListIterator
+@scall Ptr{vtkVertexListIterator} vtkVertexListIteratorNew () _ZN21vtkVertexListIterator3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN21vtkVertexListIterator8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkVertexListIterator} SafeDownCast (Ptr{vtkObjectBase},) _ZN21vtkVertexListIterator12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkVertexListIterator} NewInstance () _ZNK21vtkVertexListIterator11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

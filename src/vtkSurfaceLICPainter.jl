@@ -1,6 +1,9 @@
 cur_class = vtkSurfaceLICPainter
+@scall Ptr{vtkSurfaceLICPainter} vtkSurfaceLICPainterNew () _ZN20vtkSurfaceLICPainter3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN20vtkSurfaceLICPainter8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkSurfaceLICPainter} SafeDownCast (Ptr{vtkObjectBase},) _ZN20vtkSurfaceLICPainter12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkSurfaceLICPainter} NewInstance () _ZNK20vtkSurfaceLICPainter11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -26,6 +29,7 @@ cur_class = vtkSurfaceLICPainter
 @vcall 55 Float64 GetLICIntensity ()
 @mcall Int32 GetRenderingPreparationSuccess () _ZN20vtkSurfaceLICPainter30GetRenderingPreparationSuccessEv "libvtkRendering"
 @mcall Int32 GetLICSuccess () _ZN20vtkSurfaceLICPainter13GetLICSuccessEv "libvtkRendering"
+@scall Bool IsSupported (Ptr{vtkRenderWindow},) _ZN20vtkSurfaceLICPainter11IsSupportedEP15vtkRenderWindow "libvtkRendering"
 @mcall None GetBounds (Ptr{vtkDataObject}, Ptr{Float64}) _ZN20vtkSurfaceLICPainter9GetBoundsEP13vtkDataObjectPd "libvtkRendering"
 @vcall 14 None ReportReferences (Ptr{vtkGarbageCollector},)
 @vcall 35 None PrepareForRendering (Ptr{vtkRenderer}, Ptr{vtkActor})

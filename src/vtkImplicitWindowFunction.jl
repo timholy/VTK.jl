@@ -1,9 +1,12 @@
 cur_class = vtkImplicitWindowFunction
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN25vtkImplicitWindowFunction8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkImplicitWindowFunction} SafeDownCast (Ptr{vtkObjectBase},) _ZN25vtkImplicitWindowFunction12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkImplicitWindowFunction} NewInstance () _ZNK25vtkImplicitWindowFunction11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkImplicitWindowFunction} vtkImplicitWindowFunctionNew () _ZN25vtkImplicitWindowFunction3NewEv "libvtkFiltering"
 @vcall 23 Float64 EvaluateFunction (Ptr{Float64},)
 @mcall Float64 EvaluateFunction (Float64, Float64, Float64) _ZN25vtkImplicitWindowFunction16EvaluateFunctionEddd "libvtkFiltering"
 @vcall 24 None EvaluateGradient (Ptr{Float64}, Ptr{Float64})

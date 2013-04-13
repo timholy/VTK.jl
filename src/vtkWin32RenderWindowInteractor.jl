@@ -1,6 +1,9 @@
 cur_class = vtkWin32RenderWindowInteractor
+@scall Ptr{vtkWin32RenderWindowInteractor} vtkWin32RenderWindowInteractorNew () _ZN30vtkWin32RenderWindowInteractor3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN30vtkWin32RenderWindowInteractor8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkWin32RenderWindowInteractor} SafeDownCast (Ptr{vtkObjectBase},) _ZN30vtkWin32RenderWindowInteractor12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkWin32RenderWindowInteractor} NewInstance () _ZNK30vtkWin32RenderWindowInteractor11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -30,6 +33,8 @@ cur_class = vtkWin32RenderWindowInteractor
 @vcall 148 None OnMouseWheelBackward (Int32, Int32, Int32, Int32)
 @vcall 149 None OnFocus (Int32, Int32)
 @vcall 150 None OnKillFocus (Int32, Int32)
+@scall None SetClassExitMethod (Ptr{Void}, Ptr{None}) _ZN30vtkWin32RenderWindowInteractor18SetClassExitMethodEPFvPvES0_ "libvtkRendering"
+@scall None SetClassExitMethodArgDelete (Ptr{Void},) _ZN30vtkWin32RenderWindowInteractor27SetClassExitMethodArgDeleteEPFvPvE "libvtkRendering"
 @vcall 65 None ExitCallback ()
 @vcall 128 Int32 InternalCreateTimer (Int32, Int32, Uint64)
 @vcall 129 Int32 InternalDestroyTimer (Int32,)

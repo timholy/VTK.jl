@@ -1,6 +1,9 @@
 cur_class = vtkHeap
+@scall Ptr{vtkHeap} vtkHeapNew () _ZN7vtkHeap3NewEv "libvtkCommon"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN7vtkHeap8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkHeap} SafeDownCast (Ptr{vtkObjectBase},) _ZN7vtkHeap12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkHeap} NewInstance () _ZNK7vtkHeap11NewInstanceEv "libvtkCommon"
 @vcall 4 None PrintSelf (Void, vtkIndent)

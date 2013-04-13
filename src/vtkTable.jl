@@ -1,6 +1,9 @@
 cur_class = vtkTable
+@scall Ptr{vtkTable} vtkTableNew () _ZN8vtkTable3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN8vtkTable8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkTable} SafeDownCast (Ptr{vtkObjectBase},) _ZN8vtkTable12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkTable} NewInstance () _ZNK8vtkTable11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -29,6 +32,8 @@ cur_class = vtkTable
 @mcall None SetValue (vtkIdType, vtkIdType, vtkVariant) _ZN8vtkTable8SetValueExx10vtkVariant "libvtkFiltering"
 @mcall None SetValueByName (vtkIdType, Ptr{Uint8}, vtkVariant) _ZN8vtkTable14SetValueByNameExPKc10vtkVariant "libvtkFiltering"
 @vcall 26 None Initialize ()
+@scall Ptr{vtkTable} GetData (Ptr{vtkInformation},) _ZN8vtkTable7GetDataEP14vtkInformation "libvtkFiltering"
+@scall Ptr{vtkTable} GetData (Ptr{vtkInformationVector}, Int32) _ZN8vtkTable7GetDataEP20vtkInformationVectori "libvtkFiltering"
 @vcall 69 None ShallowCopy (Ptr{vtkDataObject},)
 @vcall 70 None DeepCopy (Ptr{vtkDataObject},)
 @vcall 74 Ptr{vtkFieldData} GetAttributesAsFieldData (Int32,)

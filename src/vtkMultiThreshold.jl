@@ -1,8 +1,11 @@
 cur_class = vtkMultiThreshold
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN17vtkMultiThreshold8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkMultiThreshold} SafeDownCast (Ptr{vtkObjectBase},) _ZN17vtkMultiThreshold12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkMultiThreshold} NewInstance () _ZNK17vtkMultiThreshold11NewInstanceEv "libvtkGraphics"
+@scall Ptr{vtkMultiThreshold} vtkMultiThresholdNew () _ZN17vtkMultiThreshold3NewEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
 @mcall Int32 AddIntervalSet (Float64, Float64, Int32, Int32, Int32, Ptr{Uint8}, Int32, Int32) _ZN17vtkMultiThreshold14AddIntervalSetEddiiiPKcii "libvtkGraphics"
 @mcall Int32 AddIntervalSet (Float64, Float64, Int32, Int32, Int32, Int32, Int32, Int32) _ZN17vtkMultiThreshold14AddIntervalSetEddiiiiii "libvtkGraphics"

@@ -1,9 +1,12 @@
 cur_class = vtkWindowedSincPolyDataFilter
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN29vtkWindowedSincPolyDataFilter8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkWindowedSincPolyDataFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN29vtkWindowedSincPolyDataFilter12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkWindowedSincPolyDataFilter} NewInstance () _ZNK29vtkWindowedSincPolyDataFilter11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkWindowedSincPolyDataFilter} vtkWindowedSincPolyDataFilterNew () _ZN29vtkWindowedSincPolyDataFilter3NewEv "libvtkGraphics"
 @vcall 65 None SetNumberOfIterations (Int32,)
 @vcall 66 Int32 GetNumberOfIterationsMinValue ()
 @vcall 67 Int32 GetNumberOfIterationsMaxValue ()

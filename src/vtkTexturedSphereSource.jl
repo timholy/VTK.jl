@@ -1,9 +1,12 @@
 cur_class = vtkTexturedSphereSource
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN23vtkTexturedSphereSource8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkTexturedSphereSource} SafeDownCast (Ptr{vtkObjectBase},) _ZN23vtkTexturedSphereSource12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkTexturedSphereSource} NewInstance () _ZNK23vtkTexturedSphereSource11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkTexturedSphereSource} vtkTexturedSphereSourceNew () _ZN23vtkTexturedSphereSource3NewEv "libvtkGraphics"
 @vcall 65 None SetRadius (Float64,)
 @vcall 66 Float64 GetRadiusMinValue ()
 @vcall 67 Float64 GetRadiusMaxValue ()

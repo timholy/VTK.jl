@@ -1,6 +1,9 @@
 cur_class = vtkFrameBufferObject
+@scall Ptr{vtkFrameBufferObject} vtkFrameBufferObjectNew () _ZN20vtkFrameBufferObject3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN20vtkFrameBufferObject8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkFrameBufferObject} SafeDownCast (Ptr{vtkObjectBase},) _ZN20vtkFrameBufferObject12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkFrameBufferObject} NewInstance () _ZNK20vtkFrameBufferObject11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -28,6 +31,7 @@ cur_class = vtkFrameBufferObject
 @vcall 23 Ptr{Int32} GetLastSize ()
 @vcall 24 None GetLastSize (Void, Void)
 @vcall 25 None GetLastSize (Ptr{Int32},)
+@scall Bool IsSupported (Ptr{vtkRenderWindow},) _ZN20vtkFrameBufferObject11IsSupportedEP15vtkRenderWindow "libvtkRendering"
 @mcall None CheckFrameBufferStatus () _ZN20vtkFrameBufferObject22CheckFrameBufferStatusEv "libvtkRendering"
 @mcall None DisplayFrameBufferAttachments () _ZN20vtkFrameBufferObject29DisplayFrameBufferAttachmentsEv "libvtkRendering"
 @mcall None DisplayFrameBufferAttachment (Uint32,) _ZN20vtkFrameBufferObject28DisplayFrameBufferAttachmentEj "libvtkRendering"

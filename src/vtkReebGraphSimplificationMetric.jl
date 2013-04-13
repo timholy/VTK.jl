@@ -1,6 +1,9 @@
 cur_class = vtkReebGraphSimplificationMetric
+@scall Ptr{vtkReebGraphSimplificationMetric} vtkReebGraphSimplificationMetricNew () _ZN32vtkReebGraphSimplificationMetric3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN32vtkReebGraphSimplificationMetric8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkReebGraphSimplificationMetric} SafeDownCast (Ptr{vtkObjectBase},) _ZN32vtkReebGraphSimplificationMetric12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkReebGraphSimplificationMetric} NewInstance () _ZNK32vtkReebGraphSimplificationMetric11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

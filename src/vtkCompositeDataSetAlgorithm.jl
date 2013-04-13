@@ -1,6 +1,9 @@
 cur_class = vtkCompositeDataSetAlgorithm
+@scall Ptr{vtkCompositeDataSetAlgorithm} vtkCompositeDataSetAlgorithmNew () _ZN28vtkCompositeDataSetAlgorithm3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN28vtkCompositeDataSetAlgorithm8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkCompositeDataSetAlgorithm} SafeDownCast (Ptr{vtkObjectBase},) _ZN28vtkCompositeDataSetAlgorithm12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkCompositeDataSetAlgorithm} NewInstance () _ZNK28vtkCompositeDataSetAlgorithm11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

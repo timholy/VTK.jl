@@ -1,6 +1,9 @@
 cur_class = vtkImplicitPolyDataDistance
+@scall Ptr{vtkImplicitPolyDataDistance} vtkImplicitPolyDataDistanceNew () _ZN27vtkImplicitPolyDataDistance3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN27vtkImplicitPolyDataDistance8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkImplicitPolyDataDistance} SafeDownCast (Ptr{vtkObjectBase},) _ZN27vtkImplicitPolyDataDistance12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkImplicitPolyDataDistance} NewInstance () _ZNK27vtkImplicitPolyDataDistance11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

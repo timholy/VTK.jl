@@ -1,6 +1,8 @@
 cur_class = vtkVisibilitySort
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN17vtkVisibilitySort8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkVisibilitySort} SafeDownCast (Ptr{vtkObjectBase},) _ZN17vtkVisibilitySort12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkVisibilitySort} NewInstance () _ZNK17vtkVisibilitySort11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

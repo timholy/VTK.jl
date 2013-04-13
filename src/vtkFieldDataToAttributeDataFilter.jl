@@ -1,9 +1,12 @@
 cur_class = vtkFieldDataToAttributeDataFilter
 @vcall 4 None PrintSelf (Void, vtkIndent)
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN33vtkFieldDataToAttributeDataFilter8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkFieldDataToAttributeDataFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN33vtkFieldDataToAttributeDataFilter12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkFieldDataToAttributeDataFilter} NewInstance () _ZNK33vtkFieldDataToAttributeDataFilter11NewInstanceEv "libvtkGraphics"
+@scall Ptr{vtkFieldDataToAttributeDataFilter} vtkFieldDataToAttributeDataFilterNew () _ZN33vtkFieldDataToAttributeDataFilter3NewEv "libvtkGraphics"
 @vcall 63 None SetInputField (Int32,)
 @vcall 64 Int32 GetInputField ()
 @mcall None SetInputFieldToDataObjectField () _ZN33vtkFieldDataToAttributeDataFilter30SetInputFieldToDataObjectFieldEv "libvtkGraphics"
@@ -52,6 +55,11 @@ cur_class = vtkFieldDataToAttributeDataFilter
 @vcall 68 Int32 GetDefaultNormalize ()
 @vcall 69 None DefaultNormalizeOn ()
 @vcall 70 None DefaultNormalizeOff ()
+@scall Int32 GetComponentsType (Int32, Ptr{Ptr{vtkDataArray}}) _ZN33vtkFieldDataToAttributeDataFilter17GetComponentsTypeEiPP12vtkDataArray "libvtkGraphics"
+@scall Int32 ConstructArray (Ptr{vtkDataArray}, Int32, Ptr{vtkDataArray}, Int32, vtkIdType, vtkIdType, Int32) _ZN33vtkFieldDataToAttributeDataFilter14ConstructArrayEP12vtkDataArrayiS1_ixxi "libvtkGraphics"
+@scall Ptr{vtkDataArray} GetFieldArray (Ptr{vtkFieldData}, Ptr{Uint8}, Int32) _ZN33vtkFieldDataToAttributeDataFilter13GetFieldArrayEP12vtkFieldDataPci "libvtkGraphics"
+@scall None SetArrayName (Ptr{vtkObject}, Void, Ptr{Uint8}) _ZN33vtkFieldDataToAttributeDataFilter12SetArrayNameEP9vtkObjectRPcPKc "libvtkGraphics"
+@scall Int32 UpdateComponentRange (Ptr{vtkDataArray}, Ptr{vtkIdType}) _ZN33vtkFieldDataToAttributeDataFilter20UpdateComponentRangeEP12vtkDataArrayPx "libvtkGraphics"
 @vcall 60 Int32 RequestUpdateExtent (Ptr{vtkInformation}, Ptr{Ptr{vtkInformationVector}}, Ptr{vtkInformationVector})
 @vcall 62 Int32 RequestData (Ptr{vtkInformation}, Ptr{Ptr{vtkInformationVector}}, Ptr{vtkInformationVector})
 @mcall None ConstructScalars (Int32, Ptr{vtkFieldData}, Ptr{vtkDataSetAttributes}, Ptr{Void}, Ptr{Ptr{Uint8}}, Ptr{Int32}, Ptr{Int32}, Int32) _ZN33vtkFieldDataToAttributeDataFilter16ConstructScalarsEiP12vtkFieldDataP20vtkDataSetAttributesPA2_xPPcPiS8_i "libvtkGraphics"

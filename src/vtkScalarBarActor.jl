@@ -1,9 +1,12 @@
 cur_class = vtkScalarBarActor
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN17vtkScalarBarActor8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkScalarBarActor} SafeDownCast (Ptr{vtkObjectBase},) _ZN17vtkScalarBarActor12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkScalarBarActor} NewInstance () _ZNK17vtkScalarBarActor11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkScalarBarActor} vtkScalarBarActorNew () _ZN17vtkScalarBarActor3NewEv "libvtkRendering"
 @vcall 51 Int32 RenderOpaqueGeometry (Ptr{vtkViewport},)
 @vcall 52 Int32 RenderTranslucentPolygonalGeometry (Ptr{vtkViewport},)
 @vcall 54 Int32 RenderOverlay (Ptr{vtkViewport},)

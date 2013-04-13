@@ -1,6 +1,9 @@
 cur_class = vtkQtTreeRingLabelMapper
+@scall Ptr{vtkQtTreeRingLabelMapper} vtkQtTreeRingLabelMapperNew () _ZN24vtkQtTreeRingLabelMapper3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN24vtkQtTreeRingLabelMapper8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkQtTreeRingLabelMapper} SafeDownCast (Ptr{vtkObjectBase},) _ZN24vtkQtTreeRingLabelMapper12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkQtTreeRingLabelMapper} NewInstance () _ZNK24vtkQtTreeRingLabelMapper11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

@@ -1,6 +1,9 @@
 cur_class = vtkHyperOctreeSurfaceFilter
+@scall Ptr{vtkHyperOctreeSurfaceFilter} vtkHyperOctreeSurfaceFilterNew () _ZN27vtkHyperOctreeSurfaceFilter3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN27vtkHyperOctreeSurfaceFilter8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkHyperOctreeSurfaceFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN27vtkHyperOctreeSurfaceFilter12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkHyperOctreeSurfaceFilter} NewInstance () _ZNK27vtkHyperOctreeSurfaceFilter11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

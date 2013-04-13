@@ -1,6 +1,9 @@
 cur_class = vtkClearZPass
+@scall Ptr{vtkClearZPass} vtkClearZPassNew () _ZN13vtkClearZPass3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN13vtkClearZPass8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkClearZPass} SafeDownCast (Ptr{vtkObjectBase},) _ZN13vtkClearZPass12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkClearZPass} NewInstance () _ZNK13vtkClearZPass11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

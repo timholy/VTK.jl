@@ -1,6 +1,9 @@
 cur_class = vtkNonMergingPointLocator
+@scall Ptr{vtkNonMergingPointLocator} vtkNonMergingPointLocatorNew () _ZN25vtkNonMergingPointLocator3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN25vtkNonMergingPointLocator8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkNonMergingPointLocator} SafeDownCast (Ptr{vtkObjectBase},) _ZN25vtkNonMergingPointLocator12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkNonMergingPointLocator} NewInstance () _ZNK25vtkNonMergingPointLocator11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

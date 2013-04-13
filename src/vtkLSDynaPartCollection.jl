@@ -1,0 +1,30 @@
+cur_class = vtkLSDynaPartCollection
+@scall Ptr{vtkLSDynaPartCollection} vtkLSDynaPartCollectionNew () _ZN23vtkLSDynaPartCollection3NewEv "libvtkIO"
+@vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN23vtkLSDynaPartCollection8IsTypeOfEPKc "libvtkIO"
+@vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkLSDynaPartCollection} SafeDownCast (Ptr{vtkObjectBase},) _ZN23vtkLSDynaPartCollection12SafeDownCastEP13vtkObjectBase "libvtkIO"
+@vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
+@mcall Ptr{vtkLSDynaPartCollection} NewInstance () _ZNK23vtkLSDynaPartCollection11NewInstanceEv "libvtkIO"
+@vcall 4 None PrintSelf (Void, vtkIndent)
+@mcall None InitCollection (Ptr{Int32}, Ptr{vtkIdType}, Ptr{vtkIdType}) _ZN23vtkLSDynaPartCollection14InitCollectionEPiPxS1_ "libvtkIO"
+@mcall None GetPartReadInfo (Void, Void, Void, Void) _ZNK23vtkLSDynaPartCollection15GetPartReadInfoERKiRxS2_S2_ "libvtkIO"
+@mcall None FinalizeTopology () _ZN23vtkLSDynaPartCollection16FinalizeTopologyEv "libvtkIO"
+@mcall None RegisterCellIndexToPart (Void, Void, Void, Void) _ZN23vtkLSDynaPartCollection23RegisterCellIndexToPartERKiRKxS3_S3_ "libvtkIO"
+@mcall None InitCellInsertion () _ZN23vtkLSDynaPartCollection17InitCellInsertionEv "libvtkIO"
+@mcall None AllocateParts () _ZN23vtkLSDynaPartCollection13AllocatePartsEv "libvtkIO"
+@mcall None InsertCell (Void, Void, Void, Void, Ptr{vtkIdType}) _ZN23vtkLSDynaPartCollection10InsertCellERKiRKxS1_S3_Px "libvtkIO"
+@mcall None SetCellDeadFlags (Void, Ptr{vtkUnsignedCharArray}, Void) _ZN23vtkLSDynaPartCollection16SetCellDeadFlagsERKiP20vtkUnsignedCharArrayS1_ "libvtkIO"
+@mcall Bool IsActivePart (Void,) _ZNK23vtkLSDynaPartCollection12IsActivePartERKi "libvtkIO"
+@mcall Ptr{vtkUnstructuredGrid} GetGridForPart (Void,) _ZNK23vtkLSDynaPartCollection14GetGridForPartERKi "libvtkIO"
+@mcall Int32 GetNumberOfParts () _ZNK23vtkLSDynaPartCollection16GetNumberOfPartsEv "libvtkIO"
+@mcall None DisbleDeadCells () _ZN23vtkLSDynaPartCollection15DisbleDeadCellsEv "libvtkIO"
+@mcall None ReadPointUserIds (Void, Ptr{Uint8}) _ZN23vtkLSDynaPartCollection16ReadPointUserIdsERKxPKc "libvtkIO"
+@mcall None ReadPointProperty (Void, Void, Ptr{Uint8}, Void, Void, Void) _ZN23vtkLSDynaPartCollection17ReadPointPropertyERKxS1_PKcRKbS5_S5_ "libvtkIO"
+@mcall None AddProperty (Void, Ptr{Uint8}, Void, Void) _ZN23vtkLSDynaPartCollection11AddPropertyERKiPKcS1_S1_ "libvtkIO"
+@mcall None FillCellProperties (Ptr{Float32}, Void, Void, Void, Void) _ZN23vtkLSDynaPartCollection18FillCellPropertiesEPfRKiRKxS4_S2_ "libvtkIO"
+@mcall None FillCellProperties (Ptr{Float64}, Void, Void, Void, Void) _ZN23vtkLSDynaPartCollection18FillCellPropertiesEPdRKiRKxS4_S2_ "libvtkIO"
+@mcall None ReadCellUserIds (Void, Void) _ZN23vtkLSDynaPartCollection15ReadCellUserIdsERKiS1_ "libvtkIO"
+@mcall None BuildPartInfo () _ZN23vtkLSDynaPartCollection13BuildPartInfoEv "libvtkIO"
+@mcall None SetupPointPropertyForReading (Void, Void, Ptr{Uint8}, Void, Void, Void, Void) _ZN23vtkLSDynaPartCollection28SetupPointPropertyForReadingERKxS1_PKcRKbS5_S5_S5_ "libvtkIO"
+@mcall None vtkLSDynaPartCollection_eq (Void,) _ZN23vtkLSDynaPartCollectionaSERKS_ "libvtkIO"

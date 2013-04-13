@@ -1,6 +1,9 @@
 cur_class = vtkTransform2D
+@scall Ptr{vtkTransform2D} vtkTransform2DNew () _ZN14vtkTransform2D3NewEv "libvtkCommon"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN14vtkTransform2D8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkTransform2D} SafeDownCast (Ptr{vtkObjectBase},) _ZN14vtkTransform2D12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkTransform2D} NewInstance () _ZNK14vtkTransform2D11NewInstanceEv "libvtkCommon"
 @vcall 4 None PrintSelf (Void, vtkIndent)

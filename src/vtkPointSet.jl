@@ -1,6 +1,8 @@
 cur_class = vtkPointSet
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN11vtkPointSet8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkPointSet} SafeDownCast (Ptr{vtkObjectBase},) _ZN11vtkPointSet12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkPointSet} NewInstance () _ZNK11vtkPointSet11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -21,6 +23,8 @@ cur_class = vtkPointSet
 @vcall 45 Uint64 GetActualMemorySize ()
 @vcall 69 None ShallowCopy (Ptr{vtkDataObject},)
 @vcall 70 None DeepCopy (Ptr{vtkDataObject},)
+@scall Ptr{vtkPointSet} GetData (Ptr{vtkInformation},) _ZN11vtkPointSet7GetDataEP14vtkInformation "libvtkFiltering"
+@scall Ptr{vtkPointSet} GetData (Ptr{vtkInformationVector}, Int32) _ZN11vtkPointSet7GetDataEP20vtkInformationVectori "libvtkFiltering"
 @vcall 14 None ReportReferences (Ptr{vtkGarbageCollector},)
 @mcall None Cleanup () _ZN11vtkPointSet7CleanupEv "libvtkFiltering"
 @mcall None vtkPointSet_eq (Void,) _ZN11vtkPointSetaSERKS_ "libvtkFiltering"

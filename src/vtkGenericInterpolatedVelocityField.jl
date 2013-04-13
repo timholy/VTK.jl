@@ -1,9 +1,12 @@
 cur_class = vtkGenericInterpolatedVelocityField
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN35vtkGenericInterpolatedVelocityField8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkGenericInterpolatedVelocityField} SafeDownCast (Ptr{vtkObjectBase},) _ZN35vtkGenericInterpolatedVelocityField12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkGenericInterpolatedVelocityField} NewInstance () _ZNK35vtkGenericInterpolatedVelocityField11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkGenericInterpolatedVelocityField} vtkGenericInterpolatedVelocityFieldNew () _ZN35vtkGenericInterpolatedVelocityField3NewEv "libvtkFiltering"
 @vcall 20 Int32 FunctionValues (Ptr{Float64}, Ptr{Float64})
 @vcall 23 None AddDataSet (Ptr{vtkGenericDataSet},)
 @mcall None ClearLastCell () _ZN35vtkGenericInterpolatedVelocityField13ClearLastCellEv "libvtkFiltering"

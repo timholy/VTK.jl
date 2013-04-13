@@ -1,6 +1,9 @@
 cur_class = vtkGenericGeometryFilter
+@scall Ptr{vtkGenericGeometryFilter} vtkGenericGeometryFilterNew () _ZN24vtkGenericGeometryFilter3NewEv "libvtkGenericFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN24vtkGenericGeometryFilter8IsTypeOfEPKc "libvtkGenericFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkGenericGeometryFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN24vtkGenericGeometryFilter12SafeDownCastEP13vtkObjectBase "libvtkGenericFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkGenericGeometryFilter} NewInstance () _ZNK24vtkGenericGeometryFilter11NewInstanceEv "libvtkGenericFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

@@ -1,6 +1,9 @@
 cur_class = vtkSuperquadric
+@scall Ptr{vtkSuperquadric} vtkSuperquadricNew () _ZN15vtkSuperquadric3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN15vtkSuperquadric8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkSuperquadric} SafeDownCast (Ptr{vtkObjectBase},) _ZN15vtkSuperquadric12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkSuperquadric} NewInstance () _ZNK15vtkSuperquadric11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

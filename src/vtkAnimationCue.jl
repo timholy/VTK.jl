@@ -1,9 +1,12 @@
 cur_class = vtkAnimationCue
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN15vtkAnimationCue8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkAnimationCue} SafeDownCast (Ptr{vtkObjectBase},) _ZN15vtkAnimationCue12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkAnimationCue} NewInstance () _ZNK15vtkAnimationCue11NewInstanceEv "libvtkCommon"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkAnimationCue} vtkAnimationCueNew () _ZN15vtkAnimationCue3NewEv "libvtkCommon"
 @vcall 20 None SetTimeMode (Int32,)
 @vcall 21 Int32 GetTimeMode ()
 @mcall None SetTimeModeToRelative () _ZN15vtkAnimationCue21SetTimeModeToRelativeEv "libvtkCommon"

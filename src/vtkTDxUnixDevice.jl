@@ -1,6 +1,9 @@
 cur_class = vtkTDxUnixDevice
+@scall Ptr{vtkTDxUnixDevice} vtkTDxUnixDeviceNew () _ZN16vtkTDxUnixDevice3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN16vtkTDxUnixDevice8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkTDxUnixDevice} SafeDownCast (Ptr{vtkObjectBase},) _ZN16vtkTDxUnixDevice12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkTDxUnixDevice} NewInstance () _ZNK16vtkTDxUnixDevice11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

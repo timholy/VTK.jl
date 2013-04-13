@@ -1,6 +1,8 @@
 cur_class = vtkExecutive
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN12vtkExecutive8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkExecutive} SafeDownCast (Ptr{vtkObjectBase},) _ZN12vtkExecutive12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkExecutive} NewInstance () _ZNK12vtkExecutive11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -28,6 +30,14 @@ cur_class = vtkExecutive
 @mcall None SetSharedOutputInformation (Ptr{vtkInformationVector},) _ZN12vtkExecutive26SetSharedOutputInformationEP20vtkInformationVector "libvtkFiltering"
 @vcall 7 None Register (Ptr{vtkObjectBase},)
 @vcall 8 None UnRegister (Ptr{vtkObjectBase},)
+@scall Ptr{vtkInformationExecutivePortKey} PRODUCER () _ZN12vtkExecutive8PRODUCEREv "libvtkFiltering"
+@scall Ptr{vtkInformationExecutivePortVectorKey} CONSUMERS () _ZN12vtkExecutive9CONSUMERSEv "libvtkFiltering"
+@scall Ptr{vtkInformationIntegerKey} FROM_OUTPUT_PORT () _ZN12vtkExecutive16FROM_OUTPUT_PORTEv "libvtkFiltering"
+@scall Ptr{vtkInformationIntegerKey} ALGORITHM_BEFORE_FORWARD () _ZN12vtkExecutive24ALGORITHM_BEFORE_FORWARDEv "libvtkFiltering"
+@scall Ptr{vtkInformationIntegerKey} ALGORITHM_AFTER_FORWARD () _ZN12vtkExecutive23ALGORITHM_AFTER_FORWARDEv "libvtkFiltering"
+@scall Ptr{vtkInformationIntegerKey} ALGORITHM_DIRECTION () _ZN12vtkExecutive19ALGORITHM_DIRECTIONEv "libvtkFiltering"
+@scall Ptr{vtkInformationIntegerKey} FORWARD_DIRECTION () _ZN12vtkExecutive17FORWARD_DIRECTIONEv "libvtkFiltering"
+@scall Ptr{vtkInformationKeyVectorKey} KEYS_TO_COPY () _ZN12vtkExecutive12KEYS_TO_COPYEv "libvtkFiltering"
 @vcall 31 Int32 CallAlgorithm (Ptr{vtkInformation}, Int32, Ptr{Ptr{vtkInformationVector}}, Ptr{vtkInformationVector})
 @mcall Int32 InputPortIndexInRange (Int32, Ptr{Uint8}) _ZN12vtkExecutive21InputPortIndexInRangeEiPKc "libvtkFiltering"
 @mcall Int32 OutputPortIndexInRange (Int32, Ptr{Uint8}) _ZN12vtkExecutive22OutputPortIndexInRangeEiPKc "libvtkFiltering"

@@ -1,6 +1,9 @@
 cur_class = vtkQuadraturePointInterpolator
+@scall Ptr{vtkQuadraturePointInterpolator} vtkQuadraturePointInterpolatorNew () _ZN30vtkQuadraturePointInterpolator3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN30vtkQuadraturePointInterpolator8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkQuadraturePointInterpolator} SafeDownCast (Ptr{vtkObjectBase},) _ZN30vtkQuadraturePointInterpolator12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkQuadraturePointInterpolator} NewInstance () _ZNK30vtkQuadraturePointInterpolator11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

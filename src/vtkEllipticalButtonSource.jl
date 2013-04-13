@@ -1,9 +1,12 @@
 cur_class = vtkEllipticalButtonSource
 @vcall 4 None PrintSelf (Void, vtkIndent)
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN25vtkEllipticalButtonSource8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkEllipticalButtonSource} SafeDownCast (Ptr{vtkObjectBase},) _ZN25vtkEllipticalButtonSource12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkEllipticalButtonSource} NewInstance () _ZNK25vtkEllipticalButtonSource11NewInstanceEv "libvtkGraphics"
+@scall Ptr{vtkEllipticalButtonSource} vtkEllipticalButtonSourceNew () _ZN25vtkEllipticalButtonSource3NewEv "libvtkGraphics"
 @vcall 85 None SetWidth (Float64,)
 @vcall 86 Float64 GetWidthMinValue ()
 @vcall 87 Float64 GetWidthMaxValue ()

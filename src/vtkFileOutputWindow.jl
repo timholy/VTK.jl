@@ -1,8 +1,11 @@
 cur_class = vtkFileOutputWindow
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN19vtkFileOutputWindow8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkFileOutputWindow} SafeDownCast (Ptr{vtkObjectBase},) _ZN19vtkFileOutputWindow12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkFileOutputWindow} NewInstance () _ZNK19vtkFileOutputWindow11NewInstanceEv "libvtkCommon"
+@scall Ptr{vtkFileOutputWindow} vtkFileOutputWindowNew () _ZN19vtkFileOutputWindow3NewEv "libvtkCommon"
 @vcall 4 None PrintSelf (Void, vtkIndent)
 @vcall 20 None DisplayText (Ptr{Uint8},)
 @vcall 28 None SetFileName (Ptr{Uint8},)

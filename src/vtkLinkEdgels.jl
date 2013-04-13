@@ -1,9 +1,12 @@
 cur_class = vtkLinkEdgels
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN13vtkLinkEdgels8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkLinkEdgels} SafeDownCast (Ptr{vtkObjectBase},) _ZN13vtkLinkEdgels12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkLinkEdgels} NewInstance () _ZNK13vtkLinkEdgels11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkLinkEdgels} vtkLinkEdgelsNew () _ZN13vtkLinkEdgels3NewEv "libvtkGraphics"
 @vcall 65 None SetLinkThreshold (Float64,)
 @vcall 66 Float64 GetLinkThreshold ()
 @vcall 67 None SetPhiThreshold (Float64,)

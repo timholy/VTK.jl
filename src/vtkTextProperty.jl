@@ -1,9 +1,12 @@
 cur_class = vtkTextProperty
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN15vtkTextProperty8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkTextProperty} SafeDownCast (Ptr{vtkObjectBase},) _ZN15vtkTextProperty12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkTextProperty} NewInstance () _ZNK15vtkTextProperty11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkTextProperty} vtkTextPropertyNew () _ZN15vtkTextProperty3NewEv "libvtkRendering"
 @vcall 20 None SetColor (Float64, Float64, Float64)
 @vcall 21 None SetColor (Ptr{Float64},)
 @vcall 22 Ptr{Float64} GetColor ()
@@ -19,6 +22,8 @@ cur_class = vtkTextProperty
 @mcall None SetFontFamilyToArial () _ZN15vtkTextProperty20SetFontFamilyToArialEv "libvtkRendering"
 @mcall None SetFontFamilyToCourier () _ZN15vtkTextProperty22SetFontFamilyToCourierEv "libvtkRendering"
 @mcall None SetFontFamilyToTimes () _ZN15vtkTextProperty20SetFontFamilyToTimesEv "libvtkRendering"
+@scall Int32 GetFontFamilyFromString (Ptr{Uint8},) _ZN15vtkTextProperty23GetFontFamilyFromStringEPKc "libvtkRendering"
+@scall Ptr{Uint8} GetFontFamilyAsString (Int32,) _ZN15vtkTextProperty21GetFontFamilyAsStringEi "libvtkRendering"
 @vcall 29 None SetFontSize (Int32,)
 @vcall 30 Int32 GetFontSizeMinValue ()
 @vcall 31 Int32 GetFontSizeMaxValue ()

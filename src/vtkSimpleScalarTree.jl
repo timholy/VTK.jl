@@ -1,6 +1,9 @@
 cur_class = vtkSimpleScalarTree
+@scall Ptr{vtkSimpleScalarTree} vtkSimpleScalarTreeNew () _ZN19vtkSimpleScalarTree3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN19vtkSimpleScalarTree8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkSimpleScalarTree} SafeDownCast (Ptr{vtkObjectBase},) _ZN19vtkSimpleScalarTree12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkSimpleScalarTree} NewInstance () _ZNK19vtkSimpleScalarTree11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

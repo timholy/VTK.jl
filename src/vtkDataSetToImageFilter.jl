@@ -1,6 +1,8 @@
 cur_class = vtkDataSetToImageFilter
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN23vtkDataSetToImageFilter8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkDataSetToImageFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN23vtkDataSetToImageFilter12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkDataSetToImageFilter} NewInstance () _ZNK23vtkDataSetToImageFilter11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

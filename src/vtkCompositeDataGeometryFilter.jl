@@ -1,6 +1,9 @@
 cur_class = vtkCompositeDataGeometryFilter
+@scall Ptr{vtkCompositeDataGeometryFilter} vtkCompositeDataGeometryFilterNew () _ZN30vtkCompositeDataGeometryFilter3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN30vtkCompositeDataGeometryFilter8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkCompositeDataGeometryFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN30vtkCompositeDataGeometryFilter12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkCompositeDataGeometryFilter} NewInstance () _ZNK30vtkCompositeDataGeometryFilter11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

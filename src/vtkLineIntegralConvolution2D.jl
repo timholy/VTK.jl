@@ -1,6 +1,9 @@
 cur_class = vtkLineIntegralConvolution2D
+@scall Ptr{vtkLineIntegralConvolution2D} vtkLineIntegralConvolution2DNew () _ZN28vtkLineIntegralConvolution2D3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN28vtkLineIntegralConvolution2D8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkLineIntegralConvolution2D} SafeDownCast (Ptr{vtkObjectBase},) _ZN28vtkLineIntegralConvolution2D12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkLineIntegralConvolution2D} NewInstance () _ZNK28vtkLineIntegralConvolution2D11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -43,6 +46,7 @@ cur_class = vtkLineIntegralConvolution2D
 @vcall 52 Int32 GetMagnificationMaxValue ()
 @vcall 53 Int32 GetMagnification ()
 @mcall None SetVectorShiftScale (Float64, Float64) _ZN28vtkLineIntegralConvolution2D19SetVectorShiftScaleEdd "libvtkRendering"
+@scall Bool IsSupported (Ptr{vtkRenderWindow},) _ZN28vtkLineIntegralConvolution2D11IsSupportedEP15vtkRenderWindow "libvtkRendering"
 @mcall Int32 Execute () _ZN28vtkLineIntegralConvolution2D7ExecuteEv "libvtkRendering"
 @mcall Int32 Execute (Ptr{Uint32},) _ZN28vtkLineIntegralConvolution2D7ExecuteEPj "libvtkRendering"
 @mcall Int32 Execute (Ptr{Int32},) _ZN28vtkLineIntegralConvolution2D7ExecuteEPi "libvtkRendering"

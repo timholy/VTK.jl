@@ -1,9 +1,12 @@
 cur_class = vtkPolyDataNormals
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN18vtkPolyDataNormals8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkPolyDataNormals} SafeDownCast (Ptr{vtkObjectBase},) _ZN18vtkPolyDataNormals12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkPolyDataNormals} NewInstance () _ZNK18vtkPolyDataNormals11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkPolyDataNormals} vtkPolyDataNormalsNew () _ZN18vtkPolyDataNormals3NewEv "libvtkGraphics"
 @vcall 65 None SetFeatureAngle (Float64,)
 @vcall 66 Float64 GetFeatureAngleMinValue ()
 @vcall 67 Float64 GetFeatureAngleMaxValue ()

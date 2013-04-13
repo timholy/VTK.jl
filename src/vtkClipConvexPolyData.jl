@@ -1,6 +1,9 @@
 cur_class = vtkClipConvexPolyData
+@scall Ptr{vtkClipConvexPolyData} vtkClipConvexPolyDataNew () _ZN21vtkClipConvexPolyData3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN21vtkClipConvexPolyData8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkClipConvexPolyData} SafeDownCast (Ptr{vtkObjectBase},) _ZN21vtkClipConvexPolyData12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkClipConvexPolyData} NewInstance () _ZNK21vtkClipConvexPolyData11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

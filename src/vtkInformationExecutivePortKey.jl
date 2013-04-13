@@ -1,6 +1,8 @@
 cur_class = vtkInformationExecutivePortKey
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN30vtkInformationExecutivePortKey8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkInformationExecutivePortKey} SafeDownCast (Ptr{vtkObjectBase},) _ZN30vtkInformationExecutivePortKey12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkInformationExecutivePortKey} NewInstance () _ZNK30vtkInformationExecutivePortKey11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

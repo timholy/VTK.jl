@@ -1,6 +1,9 @@
 cur_class = vtkContourValues
+@scall Ptr{vtkContourValues} vtkContourValuesNew () _ZN16vtkContourValues3NewEv "libvtkCommon"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN16vtkContourValues8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkContourValues} SafeDownCast (Ptr{vtkObjectBase},) _ZN16vtkContourValues12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkContourValues} NewInstance () _ZNK16vtkContourValues11NewInstanceEv "libvtkCommon"
 @vcall 4 None PrintSelf (Void, vtkIndent)

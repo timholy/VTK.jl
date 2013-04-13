@@ -1,9 +1,12 @@
 cur_class = vtkMarchingContourFilter
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN24vtkMarchingContourFilter8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkMarchingContourFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN24vtkMarchingContourFilter12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkMarchingContourFilter} NewInstance () _ZNK24vtkMarchingContourFilter11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkMarchingContourFilter} vtkMarchingContourFilterNew () _ZN24vtkMarchingContourFilter3NewEv "libvtkGraphics"
 @mcall None SetValue (Int32, Float64) _ZN24vtkMarchingContourFilter8SetValueEid "libvtkGraphics"
 @mcall Float64 GetValue (Int32,) _ZN24vtkMarchingContourFilter8GetValueEi "libvtkGraphics"
 @mcall Ptr{Float64} GetValues () _ZN24vtkMarchingContourFilter9GetValuesEv "libvtkGraphics"

@@ -1,9 +1,12 @@
 cur_class = vtkClipVolume
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN13vtkClipVolume8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkClipVolume} SafeDownCast (Ptr{vtkObjectBase},) _ZN13vtkClipVolume12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkClipVolume} NewInstance () _ZNK13vtkClipVolume11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkClipVolume} vtkClipVolumeNew () _ZN13vtkClipVolume3NewEv "libvtkGraphics"
 @vcall 65 None SetValue (Float64,)
 @vcall 66 Float64 GetValue ()
 @vcall 67 None SetInsideOut (Int32,)

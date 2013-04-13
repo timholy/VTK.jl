@@ -1,9 +1,12 @@
 cur_class = vtkDataSetToDataObjectFilter
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN28vtkDataSetToDataObjectFilter8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkDataSetToDataObjectFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN28vtkDataSetToDataObjectFilter12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkDataSetToDataObjectFilter} NewInstance () _ZNK28vtkDataSetToDataObjectFilter11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkDataSetToDataObjectFilter} vtkDataSetToDataObjectFilterNew () _ZN28vtkDataSetToDataObjectFilter3NewEv "libvtkGraphics"
 @vcall 66 None SetGeometry (Int32,)
 @vcall 67 Int32 GetGeometry ()
 @vcall 68 None GeometryOn ()

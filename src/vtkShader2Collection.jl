@@ -1,6 +1,9 @@
 cur_class = vtkShader2Collection
+@scall Ptr{vtkShader2Collection} vtkShader2CollectionNew () _ZN20vtkShader2Collection3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN20vtkShader2Collection8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkShader2Collection} SafeDownCast (Ptr{vtkObjectBase},) _ZN20vtkShader2Collection12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkShader2Collection} NewInstance () _ZNK20vtkShader2Collection11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

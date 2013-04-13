@@ -1,6 +1,9 @@
 cur_class = vtkPointLocator
+@scall Ptr{vtkPointLocator} vtkPointLocatorNew () _ZN15vtkPointLocator3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN15vtkPointLocator8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkPointLocator} SafeDownCast (Ptr{vtkObjectBase},) _ZN15vtkPointLocator12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkPointLocator} NewInstance () _ZNK15vtkPointLocator11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

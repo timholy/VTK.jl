@@ -1,6 +1,9 @@
 cur_class = vtkQuadraticLinearWedge
+@scall Ptr{vtkQuadraticLinearWedge} vtkQuadraticLinearWedgeNew () _ZN23vtkQuadraticLinearWedge3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN23vtkQuadraticLinearWedge8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkQuadraticLinearWedge} SafeDownCast (Ptr{vtkObjectBase},) _ZN23vtkQuadraticLinearWedge12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkQuadraticLinearWedge} NewInstance () _ZNK23vtkQuadraticLinearWedge11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -20,7 +23,11 @@ cur_class = vtkQuadraticLinearWedge
 @vcall 39 None Clip (Float64, Ptr{vtkDataArray}, Ptr{vtkIncrementalPointLocator}, Ptr{vtkCellArray}, Ptr{vtkPointData}, Ptr{vtkPointData}, Ptr{vtkCellData}, vtkIdType, Ptr{vtkCellData}, Int32)
 @vcall 40 Int32 IntersectWithLine (Ptr{Float64}, Ptr{Float64}, Float64, Void, Ptr{Float64}, Ptr{Float64}, Void)
 @vcall 43 Int32 GetParametricCenter (Ptr{Float64},)
+@scall None InterpolationFunctions (Ptr{Float64}, Ptr{Float64}) _ZN23vtkQuadraticLinearWedge22InterpolationFunctionsEPdS0_ "libvtkFiltering"
+@scall None InterpolationDerivs (Ptr{Float64}, Ptr{Float64}) _ZN23vtkQuadraticLinearWedge19InterpolationDerivsEPdS0_ "libvtkFiltering"
 @vcall 47 None InterpolateFunctions (Ptr{Float64}, Ptr{Float64})
 @vcall 48 None InterpolateDerivs (Ptr{Float64}, Ptr{Float64})
+@scall Ptr{Int32} GetEdgeArray (Int32,) _ZN23vtkQuadraticLinearWedge12GetEdgeArrayEi "libvtkFiltering"
+@scall Ptr{Int32} GetFaceArray (Int32,) _ZN23vtkQuadraticLinearWedge12GetFaceArrayEi "libvtkFiltering"
 @mcall None JacobianInverse (Ptr{Float64}, Ptr{Ptr{Float64}}, Ptr{Float64}) _ZN23vtkQuadraticLinearWedge15JacobianInverseEPdPS0_S0_ "libvtkFiltering"
 @mcall None vtkQuadraticLinearWedge_eq (Void,) _ZN23vtkQuadraticLinearWedgeaSERKS_ "libvtkFiltering"

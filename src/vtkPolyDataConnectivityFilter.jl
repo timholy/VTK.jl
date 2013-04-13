@@ -1,10 +1,13 @@
 cur_class = vtkPolyDataConnectivityFilter
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN29vtkPolyDataConnectivityFilter8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkPolyDataConnectivityFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN29vtkPolyDataConnectivityFilter12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkPolyDataConnectivityFilter} NewInstance () _ZNK29vtkPolyDataConnectivityFilter11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
 @vcall 65 Ptr{vtkIdTypeArray} GetRegionSizes ()
+@scall Ptr{vtkPolyDataConnectivityFilter} vtkPolyDataConnectivityFilterNew () _ZN29vtkPolyDataConnectivityFilter3NewEv "libvtkGraphics"
 @vcall 66 None SetScalarConnectivity (Int32,)
 @vcall 67 Int32 GetScalarConnectivity ()
 @vcall 68 None ScalarConnectivityOn ()

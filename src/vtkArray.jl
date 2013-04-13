@@ -1,9 +1,12 @@
 cur_class = vtkArray
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN8vtkArray8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkArray} SafeDownCast (Ptr{vtkObjectBase},) _ZN8vtkArray12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkArray} NewInstance () _ZNK8vtkArray11NewInstanceEv "libvtkCommon"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkArray} CreateArray (Int32, Int32) _ZN8vtkArray11CreateArrayEii "libvtkCommon"
 @vcall 20 Bool IsDense ()
 @mcall None Resize (CoordinateT,) _ZN8vtkArray6ResizeEx "libvtkCommon"
 @mcall None Resize (CoordinateT, CoordinateT) _ZN8vtkArray6ResizeExx "libvtkCommon"

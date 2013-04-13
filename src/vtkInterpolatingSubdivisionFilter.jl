@@ -1,6 +1,8 @@
 cur_class = vtkInterpolatingSubdivisionFilter
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN33vtkInterpolatingSubdivisionFilter8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkInterpolatingSubdivisionFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN33vtkInterpolatingSubdivisionFilter12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkInterpolatingSubdivisionFilter} NewInstance () _ZNK33vtkInterpolatingSubdivisionFilter11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

@@ -1,9 +1,12 @@
 cur_class = vtkConeSource
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN13vtkConeSource8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkConeSource} SafeDownCast (Ptr{vtkObjectBase},) _ZN13vtkConeSource12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkConeSource} NewInstance () _ZNK13vtkConeSource11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkConeSource} vtkConeSourceNew () _ZN13vtkConeSource3NewEv "libvtkGraphics"
 @vcall 65 None SetHeight (Float64,)
 @vcall 66 Float64 GetHeightMinValue ()
 @vcall 67 Float64 GetHeightMaxValue ()

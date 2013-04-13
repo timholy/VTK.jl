@@ -1,6 +1,9 @@
 cur_class = vtkGenericOpenGLRenderWindow
+@scall Ptr{vtkGenericOpenGLRenderWindow} vtkGenericOpenGLRenderWindowNew () _ZN28vtkGenericOpenGLRenderWindow3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN28vtkGenericOpenGLRenderWindow8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkGenericOpenGLRenderWindow} SafeDownCast (Ptr{vtkObjectBase},) _ZN28vtkGenericOpenGLRenderWindow12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkGenericOpenGLRenderWindow} NewInstance () _ZNK28vtkGenericOpenGLRenderWindow11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

@@ -1,6 +1,9 @@
 cur_class = vtkOutEdgeIterator
+@scall Ptr{vtkOutEdgeIterator} vtkOutEdgeIteratorNew () _ZN18vtkOutEdgeIterator3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN18vtkOutEdgeIterator8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkOutEdgeIterator} SafeDownCast (Ptr{vtkObjectBase},) _ZN18vtkOutEdgeIterator12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkOutEdgeIterator} NewInstance () _ZNK18vtkOutEdgeIterator11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

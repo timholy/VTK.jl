@@ -1,6 +1,9 @@
 cur_class = vtkColorTransferFunction
+@scall Ptr{vtkColorTransferFunction} vtkColorTransferFunctionNew () _ZN24vtkColorTransferFunction3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN24vtkColorTransferFunction8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkColorTransferFunction} SafeDownCast (Ptr{vtkObjectBase},) _ZN24vtkColorTransferFunction12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkColorTransferFunction} NewInstance () _ZNK24vtkColorTransferFunction11NewInstanceEv "libvtkFiltering"
 @vcall 38 None DeepCopy (Ptr{vtkScalarsToColors},)

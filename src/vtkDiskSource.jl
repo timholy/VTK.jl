@@ -1,6 +1,9 @@
 cur_class = vtkDiskSource
+@scall Ptr{vtkDiskSource} vtkDiskSourceNew () _ZN13vtkDiskSource3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN13vtkDiskSource8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkDiskSource} SafeDownCast (Ptr{vtkObjectBase},) _ZN13vtkDiskSource12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkDiskSource} NewInstance () _ZNK13vtkDiskSource11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

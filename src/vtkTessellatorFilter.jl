@@ -1,9 +1,12 @@
 cur_class = vtkTessellatorFilter
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN20vtkTessellatorFilter8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkTessellatorFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN20vtkTessellatorFilter12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkTessellatorFilter} NewInstance () _ZNK20vtkTessellatorFilter11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkTessellatorFilter} vtkTessellatorFilterNew () _ZN20vtkTessellatorFilter3NewEv "libvtkGraphics"
 @vcall 65 None SetTessellator (Ptr{vtkStreamingTessellator},)
 @vcall 66 Ptr{vtkStreamingTessellator} GetTessellator ()
 @vcall 67 None SetSubdivider (Ptr{vtkDataSetEdgeSubdivisionCriterion},)
@@ -29,6 +32,10 @@ cur_class = vtkTessellatorFilter
 @mcall None MergeOutputPoints (Ptr{vtkUnstructuredGrid}, Ptr{vtkUnstructuredGrid}) _ZN20vtkTessellatorFilter17MergeOutputPointsEP19vtkUnstructuredGridS1_ "libvtkGraphics"
 @mcall None Teardown () _ZN20vtkTessellatorFilter8TeardownEv "libvtkGraphics"
 @vcall 61 Int32 RequestData (Ptr{vtkInformation}, Ptr{Ptr{vtkInformationVector}}, Ptr{vtkInformationVector})
+@scall None AddAPoint (Ptr{Float64}, Ptr{vtkEdgeSubdivisionCriterion}, Ptr{None}, Ptr{None}) _ZN20vtkTessellatorFilter9AddAPointEPKdP27vtkEdgeSubdivisionCriterionPvPKv "libvtkGraphics"
+@scall None AddALine (Ptr{Float64}, Ptr{Float64}, Ptr{vtkEdgeSubdivisionCriterion}, Ptr{None}, Ptr{None}) _ZN20vtkTessellatorFilter8AddALineEPKdS1_P27vtkEdgeSubdivisionCriterionPvPKv "libvtkGraphics"
+@scall None AddATriangle (Ptr{Float64}, Ptr{Float64}, Ptr{Float64}, Ptr{vtkEdgeSubdivisionCriterion}, Ptr{None}, Ptr{None}) _ZN20vtkTessellatorFilter12AddATriangleEPKdS1_S1_P27vtkEdgeSubdivisionCriterionPvPKv "libvtkGraphics"
+@scall None AddATetrahedron (Ptr{Float64}, Ptr{Float64}, Ptr{Float64}, Ptr{Float64}, Ptr{vtkEdgeSubdivisionCriterion}, Ptr{None}, Ptr{None}) _ZN20vtkTessellatorFilter15AddATetrahedronEPKdS1_S1_S1_P27vtkEdgeSubdivisionCriterionPvPKv "libvtkGraphics"
 @mcall None OutputPoint (Ptr{Float64},) _ZN20vtkTessellatorFilter11OutputPointEPKd "libvtkGraphics"
 @mcall None OutputLine (Ptr{Float64}, Ptr{Float64}) _ZN20vtkTessellatorFilter10OutputLineEPKdS1_ "libvtkGraphics"
 @mcall None OutputTriangle (Ptr{Float64}, Ptr{Float64}, Ptr{Float64}) _ZN20vtkTessellatorFilter14OutputTriangleEPKdS1_S1_ "libvtkGraphics"

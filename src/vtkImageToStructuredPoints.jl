@@ -1,6 +1,9 @@
 cur_class = vtkImageToStructuredPoints
+@scall Ptr{vtkImageToStructuredPoints} vtkImageToStructuredPointsNew () _ZN26vtkImageToStructuredPoints3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN26vtkImageToStructuredPoints8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkImageToStructuredPoints} SafeDownCast (Ptr{vtkObjectBase},) _ZN26vtkImageToStructuredPoints12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkImageToStructuredPoints} NewInstance () _ZNK26vtkImageToStructuredPoints11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

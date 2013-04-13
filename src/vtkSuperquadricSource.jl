@@ -1,6 +1,9 @@
 cur_class = vtkSuperquadricSource
+@scall Ptr{vtkSuperquadricSource} vtkSuperquadricSourceNew () _ZN21vtkSuperquadricSource3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN21vtkSuperquadricSource8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkSuperquadricSource} SafeDownCast (Ptr{vtkObjectBase},) _ZN21vtkSuperquadricSource12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkSuperquadricSource} NewInstance () _ZNK21vtkSuperquadricSource11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

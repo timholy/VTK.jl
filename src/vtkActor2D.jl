@@ -1,9 +1,12 @@
 cur_class = vtkActor2D
 @vcall 4 None PrintSelf (Void, vtkIndent)
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN10vtkActor2D8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkActor2D} SafeDownCast (Ptr{vtkObjectBase},) _ZN10vtkActor2D12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkActor2D} NewInstance () _ZNK10vtkActor2D11NewInstanceEv "libvtkFiltering"
+@scall Ptr{vtkActor2D} vtkActor2DNew () _ZN10vtkActor2D3NewEv "libvtkFiltering"
 @vcall 54 Int32 RenderOverlay (Ptr{vtkViewport},)
 @vcall 51 Int32 RenderOpaqueGeometry (Ptr{vtkViewport},)
 @vcall 52 Int32 RenderTranslucentPolygonalGeometry (Ptr{vtkViewport},)

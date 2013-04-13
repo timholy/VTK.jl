@@ -1,9 +1,12 @@
 cur_class = vtkSpherePuzzleArrows
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN21vtkSpherePuzzleArrows8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkSpherePuzzleArrows} SafeDownCast (Ptr{vtkObjectBase},) _ZN21vtkSpherePuzzleArrows12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkSpherePuzzleArrows} NewInstance () _ZNK21vtkSpherePuzzleArrows11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkSpherePuzzleArrows} vtkSpherePuzzleArrowsNew () _ZN21vtkSpherePuzzleArrows3NewEv "libvtkGraphics"
 @vcall 65 None SetPermutation (Ptr{Int32},)
 @vcall 66 Ptr{Int32} GetPermutation ()
 @vcall 67 None GetPermutation (Ptr{Int32},)

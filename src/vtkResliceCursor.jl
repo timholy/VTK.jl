@@ -1,8 +1,11 @@
 cur_class = vtkResliceCursor
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN16vtkResliceCursor8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkResliceCursor} SafeDownCast (Ptr{vtkObjectBase},) _ZN16vtkResliceCursor12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkResliceCursor} NewInstance () _ZNK16vtkResliceCursor11NewInstanceEv "libvtkGraphics"
+@scall Ptr{vtkResliceCursor} vtkResliceCursorNew () _ZN16vtkResliceCursor3NewEv "libvtkGraphics"
 @vcall 20 None SetImage (Ptr{vtkImageData},)
 @vcall 21 Ptr{vtkImageData} GetImage ()
 @vcall 22 None SetCenter (Float64, Float64, Float64)

@@ -1,6 +1,9 @@
 cur_class = vtkLongLongArray
+@scall Ptr{vtkLongLongArray} vtkLongLongArrayNew () _ZN16vtkLongLongArray3NewEv "libvtkCommon"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN16vtkLongLongArray8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkLongLongArray} SafeDownCast (Ptr{vtkObjectBase},) _ZN16vtkLongLongArray12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkLongLongArray} NewInstance () _ZNK16vtkLongLongArray11NewInstanceEv "libvtkCommon"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -18,6 +21,8 @@ cur_class = vtkLongLongArray
 @mcall None GetValueRange (Ptr{Int64}, Int32) _ZN16vtkLongLongArray13GetValueRangeEPxi "libvtkCommon"
 @mcall Ptr{Int64} GetValueRange () _ZN16vtkLongLongArray13GetValueRangeEv "libvtkCommon"
 @mcall None GetValueRange (Ptr{Int64},) _ZN16vtkLongLongArray13GetValueRangeEPx "libvtkCommon"
+@scall Int64 GetDataTypeValueMin () _ZN16vtkLongLongArray19GetDataTypeValueMinEv "libvtkCommon"
+@scall Int64 GetDataTypeValueMax () _ZN16vtkLongLongArray19GetDataTypeValueMaxEv "libvtkCommon"
 @mcall Ptr{Int64} WritePointer (vtkIdType, vtkIdType) _ZN16vtkLongLongArray12WritePointerExx "libvtkCommon"
 @mcall Ptr{Int64} GetPointer (vtkIdType,) _ZN16vtkLongLongArray10GetPointerEx "libvtkCommon"
 @mcall None SetArray (Ptr{Int64}, vtkIdType, Int32) _ZN16vtkLongLongArray8SetArrayEPxxi "libvtkCommon"

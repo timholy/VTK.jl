@@ -1,6 +1,9 @@
 cur_class = vtkReflectionFilter
+@scall Ptr{vtkReflectionFilter} vtkReflectionFilterNew () _ZN19vtkReflectionFilter3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN19vtkReflectionFilter8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkReflectionFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN19vtkReflectionFilter12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkReflectionFilter} NewInstance () _ZNK19vtkReflectionFilter11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

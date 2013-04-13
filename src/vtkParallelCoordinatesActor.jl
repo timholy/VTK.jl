@@ -1,9 +1,12 @@
 cur_class = vtkParallelCoordinatesActor
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN27vtkParallelCoordinatesActor8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkParallelCoordinatesActor} SafeDownCast (Ptr{vtkObjectBase},) _ZN27vtkParallelCoordinatesActor12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkParallelCoordinatesActor} NewInstance () _ZNK27vtkParallelCoordinatesActor11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkParallelCoordinatesActor} vtkParallelCoordinatesActorNew () _ZN27vtkParallelCoordinatesActor3NewEv "libvtkRendering"
 @vcall 87 None SetIndependentVariables (Int32,)
 @vcall 88 Int32 GetIndependentVariablesMinValue ()
 @vcall 89 Int32 GetIndependentVariablesMaxValue ()

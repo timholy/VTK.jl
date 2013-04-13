@@ -1,6 +1,9 @@
 cur_class = vtkPiecewiseFunctionAlgorithm
+@scall Ptr{vtkPiecewiseFunctionAlgorithm} vtkPiecewiseFunctionAlgorithmNew () _ZN29vtkPiecewiseFunctionAlgorithm3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN29vtkPiecewiseFunctionAlgorithm8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkPiecewiseFunctionAlgorithm} SafeDownCast (Ptr{vtkObjectBase},) _ZN29vtkPiecewiseFunctionAlgorithm12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkPiecewiseFunctionAlgorithm} NewInstance () _ZNK29vtkPiecewiseFunctionAlgorithm11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

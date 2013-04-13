@@ -1,9 +1,14 @@
 cur_class = vtkShadowMapBakerPass
+@scall Ptr{vtkShadowMapBakerPass} vtkShadowMapBakerPassNew () _ZN21vtkShadowMapBakerPass3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN21vtkShadowMapBakerPass8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkShadowMapBakerPass} SafeDownCast (Ptr{vtkObjectBase},) _ZN21vtkShadowMapBakerPass12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkShadowMapBakerPass} NewInstance () _ZNK21vtkShadowMapBakerPass11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkInformationIntegerKey} OCCLUDER () _ZN21vtkShadowMapBakerPass8OCCLUDEREv "libvtkRendering"
+@scall Ptr{vtkInformationIntegerKey} RECEIVER () _ZN21vtkShadowMapBakerPass8RECEIVEREv "libvtkRendering"
 @vcall 20 None Render (Ptr{vtkRenderState},)
 @vcall 22 None ReleaseGraphicsResources (Ptr{vtkWindow},)
 @vcall 23 Ptr{vtkRenderPass} GetOpaquePass ()

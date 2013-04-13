@@ -1,6 +1,9 @@
 cur_class = vtkInteractorStyleTrackballActor
+@scall Ptr{vtkInteractorStyleTrackballActor} vtkInteractorStyleTrackballActorNew () _ZN32vtkInteractorStyleTrackballActor3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN32vtkInteractorStyleTrackballActor8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkInteractorStyleTrackballActor} SafeDownCast (Ptr{vtkObjectBase},) _ZN32vtkInteractorStyleTrackballActor12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkInteractorStyleTrackballActor} NewInstance () _ZNK32vtkInteractorStyleTrackballActor11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

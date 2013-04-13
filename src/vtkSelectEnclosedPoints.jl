@@ -1,9 +1,12 @@
 cur_class = vtkSelectEnclosedPoints
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN23vtkSelectEnclosedPoints8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkSelectEnclosedPoints} SafeDownCast (Ptr{vtkObjectBase},) _ZN23vtkSelectEnclosedPoints12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkSelectEnclosedPoints} NewInstance () _ZNK23vtkSelectEnclosedPoints11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkSelectEnclosedPoints} vtkSelectEnclosedPointsNew () _ZN23vtkSelectEnclosedPoints3NewEv "libvtkGraphics"
 @mcall None SetSurface (Ptr{vtkPolyData},) _ZN23vtkSelectEnclosedPoints10SetSurfaceEP11vtkPolyData "libvtkGraphics"
 @mcall None SetSurfaceConnection (Ptr{vtkAlgorithmOutput},) _ZN23vtkSelectEnclosedPoints20SetSurfaceConnectionEP18vtkAlgorithmOutput "libvtkGraphics"
 @mcall Ptr{vtkPolyData} GetSurface () _ZN23vtkSelectEnclosedPoints10GetSurfaceEv "libvtkGraphics"

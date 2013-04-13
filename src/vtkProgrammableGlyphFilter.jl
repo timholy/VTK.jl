@@ -1,9 +1,12 @@
 cur_class = vtkProgrammableGlyphFilter
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN26vtkProgrammableGlyphFilter8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkProgrammableGlyphFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN26vtkProgrammableGlyphFilter12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkProgrammableGlyphFilter} NewInstance () _ZNK26vtkProgrammableGlyphFilter11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkProgrammableGlyphFilter} vtkProgrammableGlyphFilterNew () _ZN26vtkProgrammableGlyphFilter3NewEv "libvtkGraphics"
 @mcall None SetSource (Ptr{vtkPolyData},) _ZN26vtkProgrammableGlyphFilter9SetSourceEP11vtkPolyData "libvtkGraphics"
 @mcall Ptr{vtkPolyData} GetSource () _ZN26vtkProgrammableGlyphFilter9GetSourceEv "libvtkGraphics"
 @mcall None SetGlyphMethod (Ptr{Void}, Ptr{None}) _ZN26vtkProgrammableGlyphFilter14SetGlyphMethodEPFvPvES0_ "libvtkGraphics"

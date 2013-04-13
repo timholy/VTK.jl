@@ -1,6 +1,9 @@
 cur_class = vtkTDxWinDevice
+@scall Ptr{vtkTDxWinDevice} vtkTDxWinDeviceNew () _ZN15vtkTDxWinDevice3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN15vtkTDxWinDevice8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkTDxWinDevice} SafeDownCast (Ptr{vtkObjectBase},) _ZN15vtkTDxWinDevice12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkTDxWinDevice} NewInstance () _ZNK15vtkTDxWinDevice11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

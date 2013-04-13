@@ -1,6 +1,9 @@
 cur_class = vtkKdTreeSelector
+@scall Ptr{vtkKdTreeSelector} vtkKdTreeSelectorNew () _ZN17vtkKdTreeSelector3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN17vtkKdTreeSelector8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkKdTreeSelector} SafeDownCast (Ptr{vtkObjectBase},) _ZN17vtkKdTreeSelector12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkKdTreeSelector} NewInstance () _ZNK17vtkKdTreeSelector11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

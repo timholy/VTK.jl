@@ -1,6 +1,9 @@
 cur_class = vtkImageInterpolator
+@scall Ptr{vtkImageInterpolator} vtkImageInterpolatorNew () _ZN20vtkImageInterpolator3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN20vtkImageInterpolator8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkImageInterpolator} SafeDownCast (Ptr{vtkObjectBase},) _ZN20vtkImageInterpolator12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkImageInterpolator} NewInstance () _ZNK20vtkImageInterpolator11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

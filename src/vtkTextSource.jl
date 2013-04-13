@@ -1,9 +1,12 @@
 cur_class = vtkTextSource
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN13vtkTextSource8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkTextSource} SafeDownCast (Ptr{vtkObjectBase},) _ZN13vtkTextSource12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkTextSource} NewInstance () _ZNK13vtkTextSource11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkTextSource} vtkTextSourceNew () _ZN13vtkTextSource3NewEv "libvtkGraphics"
 @vcall 65 None SetText (Ptr{Uint8},)
 @vcall 66 Ptr{Uint8} GetText ()
 @vcall 67 None SetBacking (Int32,)

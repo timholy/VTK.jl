@@ -1,6 +1,8 @@
 cur_class = vtkInformationQuadratureSchemeDefinitionVectorKey
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN49vtkInformationQuadratureSchemeDefinitionVectorKey8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkInformationQuadratureSchemeDefinitionVectorKey} SafeDownCast (Ptr{vtkObjectBase},) _ZN49vtkInformationQuadratureSchemeDefinitionVectorKey12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkInformationQuadratureSchemeDefinitionVectorKey} NewInstance () _ZNK49vtkInformationQuadratureSchemeDefinitionVectorKey11NewInstanceEv "libvtkCommon"
 @vcall 4 None PrintSelf (Void, vtkIndent)

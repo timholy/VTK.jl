@@ -1,6 +1,9 @@
 cur_class = vtkMarchingSquares
+@scall Ptr{vtkMarchingSquares} vtkMarchingSquaresNew () _ZN18vtkMarchingSquares3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN18vtkMarchingSquares8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkMarchingSquares} SafeDownCast (Ptr{vtkObjectBase},) _ZN18vtkMarchingSquares12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkMarchingSquares} NewInstance () _ZNK18vtkMarchingSquares11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

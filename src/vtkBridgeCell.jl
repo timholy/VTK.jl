@@ -1,6 +1,9 @@
 cur_class = vtkBridgeCell
+@scall Ptr{vtkBridgeCell} vtkBridgeCellNew () _ZN13vtkBridgeCell3NewEv "libvtkGenericFiltering/Testing/Cxx"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN13vtkBridgeCell8IsTypeOfEPKc "libvtkGenericFiltering/Testing/Cxx"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkBridgeCell} SafeDownCast (Ptr{vtkObjectBase},) _ZN13vtkBridgeCell12SafeDownCastEP13vtkObjectBase "libvtkGenericFiltering/Testing/Cxx"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkBridgeCell} NewInstance () _ZNK13vtkBridgeCell11NewInstanceEv "libvtkGenericFiltering/Testing/Cxx"
 @vcall 4 None PrintSelf (Void, vtkIndent)

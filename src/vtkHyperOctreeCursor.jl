@@ -1,6 +1,8 @@
 cur_class = vtkHyperOctreeCursor
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN20vtkHyperOctreeCursor8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkHyperOctreeCursor} SafeDownCast (Ptr{vtkObjectBase},) _ZN20vtkHyperOctreeCursor12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkHyperOctreeCursor} NewInstance () _ZNK20vtkHyperOctreeCursor11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

@@ -1,6 +1,9 @@
 cur_class = vtkAppendCompositeDataLeaves
+@scall Ptr{vtkAppendCompositeDataLeaves} vtkAppendCompositeDataLeavesNew () _ZN28vtkAppendCompositeDataLeaves3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN28vtkAppendCompositeDataLeaves8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkAppendCompositeDataLeaves} SafeDownCast (Ptr{vtkObjectBase},) _ZN28vtkAppendCompositeDataLeaves12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkAppendCompositeDataLeaves} NewInstance () _ZNK28vtkAppendCompositeDataLeaves11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

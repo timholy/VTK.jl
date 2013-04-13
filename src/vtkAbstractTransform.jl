@@ -1,6 +1,8 @@
 cur_class = vtkAbstractTransform
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN20vtkAbstractTransform8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkAbstractTransform} SafeDownCast (Ptr{vtkObjectBase},) _ZN20vtkAbstractTransform12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkAbstractTransform} NewInstance () _ZNK20vtkAbstractTransform11NewInstanceEv "libvtkCommon"
 @vcall 4 None PrintSelf (Void, vtkIndent)

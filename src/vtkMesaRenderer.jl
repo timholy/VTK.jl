@@ -1,6 +1,9 @@
 cur_class = vtkMesaRenderer
+@scall Ptr{vtkMesaRenderer} vtkMesaRendererNew () _ZN15vtkMesaRenderer3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN15vtkMesaRenderer8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkMesaRenderer} SafeDownCast (Ptr{vtkObjectBase},) _ZN15vtkMesaRenderer12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkMesaRenderer} NewInstance () _ZNK15vtkMesaRenderer11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

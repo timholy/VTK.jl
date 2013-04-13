@@ -1,6 +1,9 @@
 cur_class = vtkSubPixelPositionEdgels
+@scall Ptr{vtkSubPixelPositionEdgels} vtkSubPixelPositionEdgelsNew () _ZN25vtkSubPixelPositionEdgels3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN25vtkSubPixelPositionEdgels8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkSubPixelPositionEdgels} SafeDownCast (Ptr{vtkObjectBase},) _ZN25vtkSubPixelPositionEdgels12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkSubPixelPositionEdgels} NewInstance () _ZNK25vtkSubPixelPositionEdgels11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

@@ -1,6 +1,9 @@
 cur_class = vtkOverrideInformation
+@scall Ptr{vtkOverrideInformation} vtkOverrideInformationNew () _ZN22vtkOverrideInformation3NewEv "libvtkCommon"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN22vtkOverrideInformation8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkOverrideInformation} SafeDownCast (Ptr{vtkObjectBase},) _ZN22vtkOverrideInformation12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkOverrideInformation} NewInstance () _ZNK22vtkOverrideInformation11NewInstanceEv "libvtkCommon"
 @vcall 4 None PrintSelf (Void, vtkIndent)

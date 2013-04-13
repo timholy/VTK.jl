@@ -1,6 +1,9 @@
 cur_class = vtkDemandDrivenPipeline
+@scall Ptr{vtkDemandDrivenPipeline} vtkDemandDrivenPipelineNew () _ZN23vtkDemandDrivenPipeline3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN23vtkDemandDrivenPipeline8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkDemandDrivenPipeline} SafeDownCast (Ptr{vtkObjectBase},) _ZN23vtkDemandDrivenPipeline12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkDemandDrivenPipeline} NewInstance () _ZNK23vtkDemandDrivenPipeline11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -15,6 +18,14 @@ cur_class = vtkDemandDrivenPipeline
 @vcall 36 Int32 UpdateDataObject ()
 @vcall 42 Int32 UpdateInformation ()
 @vcall 43 Int32 UpdateData (Int32,)
+@scall Ptr{vtkInformationRequestKey} REQUEST_DATA_OBJECT () _ZN23vtkDemandDrivenPipeline19REQUEST_DATA_OBJECTEv "libvtkFiltering"
+@scall Ptr{vtkInformationRequestKey} REQUEST_INFORMATION () _ZN23vtkDemandDrivenPipeline19REQUEST_INFORMATIONEv "libvtkFiltering"
+@scall Ptr{vtkInformationRequestKey} REQUEST_DATA () _ZN23vtkDemandDrivenPipeline12REQUEST_DATAEv "libvtkFiltering"
+@scall Ptr{vtkInformationRequestKey} REQUEST_DATA_NOT_GENERATED () _ZN23vtkDemandDrivenPipeline26REQUEST_DATA_NOT_GENERATEDEv "libvtkFiltering"
+@scall Ptr{vtkInformationIntegerKey} RELEASE_DATA () _ZN23vtkDemandDrivenPipeline12RELEASE_DATAEv "libvtkFiltering"
+@scall Ptr{vtkInformationIntegerKey} DATA_NOT_GENERATED () _ZN23vtkDemandDrivenPipeline18DATA_NOT_GENERATEDEv "libvtkFiltering"
+@scall Ptr{vtkDataObject} NewDataObject (Ptr{Uint8},) _ZN23vtkDemandDrivenPipeline13NewDataObjectEPKc "libvtkFiltering"
+@scall Ptr{vtkInformationIntegerKey} REQUEST_REGENERATE_INFORMATION () _ZN23vtkDemandDrivenPipeline30REQUEST_REGENERATE_INFORMATIONEv "libvtkFiltering"
 @vcall 44 Int32 ExecuteDataObject (Ptr{vtkInformation}, Ptr{Ptr{vtkInformationVector}}, Ptr{vtkInformationVector})
 @vcall 45 Int32 ExecuteInformation (Ptr{vtkInformation}, Ptr{Ptr{vtkInformationVector}}, Ptr{vtkInformationVector})
 @vcall 46 Int32 ExecuteData (Ptr{vtkInformation}, Ptr{Ptr{vtkInformationVector}}, Ptr{vtkInformationVector})

@@ -1,9 +1,12 @@
 cur_class = vtkCamera
 @vcall 4 None PrintSelf (Void, vtkIndent)
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN9vtkCamera8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkCamera} SafeDownCast (Ptr{vtkObjectBase},) _ZN9vtkCamera12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkCamera} NewInstance () _ZNK9vtkCamera11NewInstanceEv "libvtkRendering"
+@scall Ptr{vtkCamera} vtkCameraNew () _ZN9vtkCamera3NewEv "libvtkRendering"
 @mcall None SetPosition (Float64, Float64, Float64) _ZN9vtkCamera11SetPositionEddd "libvtkRendering"
 @mcall None SetPosition (Ptr{Float64},) _ZN9vtkCamera11SetPositionEPKd "libvtkRendering"
 @vcall 20 Ptr{Float64} GetPosition ()

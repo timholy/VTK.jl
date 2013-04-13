@@ -1,6 +1,8 @@
 cur_class = vtkMapper
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN9vtkMapper8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkMapper} SafeDownCast (Ptr{vtkObjectBase},) _ZN9vtkMapper12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkMapper} NewInstance () _ZNK9vtkMapper11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -40,6 +42,10 @@ cur_class = vtkMapper
 @vcall 91 Int32 GetImmediateModeRendering ()
 @vcall 92 None ImmediateModeRenderingOn ()
 @vcall 93 None ImmediateModeRenderingOff ()
+@scall None SetGlobalImmediateModeRendering (Int32,) _ZN9vtkMapper31SetGlobalImmediateModeRenderingEi "libvtkRendering"
+@scall None GlobalImmediateModeRenderingOn () _ZN9vtkMapper30GlobalImmediateModeRenderingOnEv "libvtkRendering"
+@scall None GlobalImmediateModeRenderingOff () _ZN9vtkMapper31GlobalImmediateModeRenderingOffEv "libvtkRendering"
+@scall Int32 GetGlobalImmediateModeRendering () _ZN9vtkMapper31GetGlobalImmediateModeRenderingEv "libvtkRendering"
 @vcall 94 Int32 GetForceCompileOnly ()
 @mcall None SetForceCompileOnly (Int32,) _ZN9vtkMapper19SetForceCompileOnlyEi "libvtkRendering"
 @vcall 95 None SetScalarMode (Int32,)
@@ -59,6 +65,18 @@ cur_class = vtkMapper
 @mcall Int32 GetArrayAccessMode () _ZN9vtkMapper18GetArrayAccessModeEv "libvtkRendering"
 @mcall Int32 GetArrayComponent () _ZN9vtkMapper17GetArrayComponentEv "libvtkRendering"
 @mcall Ptr{Uint8} GetScalarModeAsString () _ZN9vtkMapper21GetScalarModeAsStringEv "libvtkRendering"
+@scall None SetResolveCoincidentTopology (Int32,) _ZN9vtkMapper28SetResolveCoincidentTopologyEi "libvtkRendering"
+@scall Int32 GetResolveCoincidentTopology () _ZN9vtkMapper28GetResolveCoincidentTopologyEv "libvtkRendering"
+@scall None SetResolveCoincidentTopologyToDefault () _ZN9vtkMapper37SetResolveCoincidentTopologyToDefaultEv "libvtkRendering"
+@scall None SetResolveCoincidentTopologyToOff () _ZN9vtkMapper33SetResolveCoincidentTopologyToOffEv "libvtkRendering"
+@scall None SetResolveCoincidentTopologyToPolygonOffset () _ZN9vtkMapper43SetResolveCoincidentTopologyToPolygonOffsetEv "libvtkRendering"
+@scall None SetResolveCoincidentTopologyToShiftZBuffer () _ZN9vtkMapper42SetResolveCoincidentTopologyToShiftZBufferEv "libvtkRendering"
+@scall None SetResolveCoincidentTopologyPolygonOffsetParameters (Float64, Float64) _ZN9vtkMapper51SetResolveCoincidentTopologyPolygonOffsetParametersEdd "libvtkRendering"
+@scall None GetResolveCoincidentTopologyPolygonOffsetParameters (Void, Void) _ZN9vtkMapper51GetResolveCoincidentTopologyPolygonOffsetParametersERdS0_ "libvtkRendering"
+@scall None SetResolveCoincidentTopologyPolygonOffsetFaces (Int32,) _ZN9vtkMapper46SetResolveCoincidentTopologyPolygonOffsetFacesEi "libvtkRendering"
+@scall Int32 GetResolveCoincidentTopologyPolygonOffsetFaces () _ZN9vtkMapper46GetResolveCoincidentTopologyPolygonOffsetFacesEv "libvtkRendering"
+@scall None SetResolveCoincidentTopologyZShift (Float64,) _ZN9vtkMapper34SetResolveCoincidentTopologyZShiftEd "libvtkRendering"
+@scall Float64 GetResolveCoincidentTopologyZShift () _ZN9vtkMapper34GetResolveCoincidentTopologyZShiftEv "libvtkRendering"
 @vcall 63 Ptr{Float64} GetBounds ()
 @vcall 64 None GetBounds (Ptr{Float64},)
 @mcall None SetRenderTime (Float64,) _ZN9vtkMapper13SetRenderTimeEd "libvtkRendering"

@@ -1,6 +1,9 @@
 cur_class = vtkSelectPolyData
+@scall Ptr{vtkSelectPolyData} vtkSelectPolyDataNew () _ZN17vtkSelectPolyData3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN17vtkSelectPolyData8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkSelectPolyData} SafeDownCast (Ptr{vtkObjectBase},) _ZN17vtkSelectPolyData12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkSelectPolyData} NewInstance () _ZNK17vtkSelectPolyData11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

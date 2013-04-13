@@ -1,6 +1,8 @@
 cur_class = vtkGenericCellTessellator
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN25vtkGenericCellTessellator8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkGenericCellTessellator} SafeDownCast (Ptr{vtkObjectBase},) _ZN25vtkGenericCellTessellator12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkGenericCellTessellator} NewInstance () _ZNK25vtkGenericCellTessellator11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

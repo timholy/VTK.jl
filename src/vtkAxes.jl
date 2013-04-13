@@ -1,6 +1,9 @@
 cur_class = vtkAxes
+@scall Ptr{vtkAxes} vtkAxesNew () _ZN7vtkAxes3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN7vtkAxes8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkAxes} SafeDownCast (Ptr{vtkObjectBase},) _ZN7vtkAxes12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkAxes} NewInstance () _ZNK7vtkAxes11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

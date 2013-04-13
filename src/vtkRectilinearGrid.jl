@@ -1,6 +1,9 @@
 cur_class = vtkRectilinearGrid
+@scall Ptr{vtkRectilinearGrid} vtkRectilinearGridNew () _ZN18vtkRectilinearGrid3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN18vtkRectilinearGrid8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkRectilinearGrid} SafeDownCast (Ptr{vtkObjectBase},) _ZN18vtkRectilinearGrid12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkRectilinearGrid} NewInstance () _ZNK18vtkRectilinearGrid11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -49,6 +52,8 @@ cur_class = vtkRectilinearGrid
 @vcall 70 None DeepCopy (Ptr{vtkDataObject},)
 @vcall 71 Int32 GetExtentType ()
 @vcall 72 None Crop ()
+@scall Ptr{vtkRectilinearGrid} GetData (Ptr{vtkInformation},) _ZN18vtkRectilinearGrid7GetDataEP14vtkInformation "libvtkFiltering"
+@scall Ptr{vtkRectilinearGrid} GetData (Ptr{vtkInformationVector}, Int32) _ZN18vtkRectilinearGrid7GetDataEP20vtkInformationVectori "libvtkFiltering"
 @mcall None Cleanup () _ZN18vtkRectilinearGrid7CleanupEv "libvtkFiltering"
 @mcall None GetCellNeighbors (vtkIdType, Void, Void) _ZN18vtkRectilinearGrid16GetCellNeighborsExR9vtkIdListS1_ "libvtkFiltering"
 @mcall None vtkRectilinearGrid_eq (Void,) _ZN18vtkRectilinearGridaSERKS_ "libvtkFiltering"

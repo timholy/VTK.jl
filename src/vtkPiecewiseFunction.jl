@@ -1,6 +1,9 @@
 cur_class = vtkPiecewiseFunction
+@scall Ptr{vtkPiecewiseFunction} vtkPiecewiseFunctionNew () _ZN20vtkPiecewiseFunction3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN20vtkPiecewiseFunction8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkPiecewiseFunction} SafeDownCast (Ptr{vtkObjectBase},) _ZN20vtkPiecewiseFunction12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkPiecewiseFunction} NewInstance () _ZNK20vtkPiecewiseFunction11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -32,6 +35,8 @@ cur_class = vtkPiecewiseFunction
 @mcall Ptr{Uint8} GetType () _ZN20vtkPiecewiseFunction7GetTypeEv "libvtkFiltering"
 @mcall Float64 GetFirstNonZeroValue () _ZN20vtkPiecewiseFunction20GetFirstNonZeroValueEv "libvtkFiltering"
 @vcall 26 None Initialize ()
+@scall Ptr{vtkPiecewiseFunction} GetData (Ptr{vtkInformation},) _ZN20vtkPiecewiseFunction7GetDataEP14vtkInformation "libvtkFiltering"
+@scall Ptr{vtkPiecewiseFunction} GetData (Ptr{vtkInformationVector}, Int32) _ZN20vtkPiecewiseFunction7GetDataEP20vtkInformationVectori "libvtkFiltering"
 @vcall 84 None SetAllowDuplicateScalars (Int32,)
 @vcall 85 Int32 GetAllowDuplicateScalars ()
 @vcall 86 None AllowDuplicateScalarsOn ()

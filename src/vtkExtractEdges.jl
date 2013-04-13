@@ -1,6 +1,9 @@
 cur_class = vtkExtractEdges
+@scall Ptr{vtkExtractEdges} vtkExtractEdgesNew () _ZN15vtkExtractEdges3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN15vtkExtractEdges8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkExtractEdges} SafeDownCast (Ptr{vtkObjectBase},) _ZN15vtkExtractEdges12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkExtractEdges} NewInstance () _ZNK15vtkExtractEdges11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

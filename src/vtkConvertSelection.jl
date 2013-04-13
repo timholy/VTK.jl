@@ -1,6 +1,9 @@
 cur_class = vtkConvertSelection
+@scall Ptr{vtkConvertSelection} vtkConvertSelectionNew () _ZN19vtkConvertSelection3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN19vtkConvertSelection8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkConvertSelection} SafeDownCast (Ptr{vtkObjectBase},) _ZN19vtkConvertSelection12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkConvertSelection} NewInstance () _ZNK19vtkConvertSelection11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -19,6 +22,18 @@ cur_class = vtkConvertSelection
 @vcall 71 Bool GetMatchAnyValues ()
 @vcall 72 None MatchAnyValuesOn ()
 @vcall 73 None MatchAnyValuesOff ()
+@scall Ptr{vtkSelection} ToIndexSelection (Ptr{vtkSelection}, Ptr{vtkDataObject}) _ZN19vtkConvertSelection16ToIndexSelectionEP12vtkSelectionP13vtkDataObject "libvtkGraphics"
+@scall Ptr{vtkSelection} ToGlobalIdSelection (Ptr{vtkSelection}, Ptr{vtkDataObject}) _ZN19vtkConvertSelection19ToGlobalIdSelectionEP12vtkSelectionP13vtkDataObject "libvtkGraphics"
+@scall Ptr{vtkSelection} ToPedigreeIdSelection (Ptr{vtkSelection}, Ptr{vtkDataObject}) _ZN19vtkConvertSelection21ToPedigreeIdSelectionEP12vtkSelectionP13vtkDataObject "libvtkGraphics"
+@scall Ptr{vtkSelection} ToValueSelection (Ptr{vtkSelection}, Ptr{vtkDataObject}, Ptr{Uint8}) _ZN19vtkConvertSelection16ToValueSelectionEP12vtkSelectionP13vtkDataObjectPKc "libvtkGraphics"
+@scall Ptr{vtkSelection} ToValueSelection (Ptr{vtkSelection}, Ptr{vtkDataObject}, Ptr{vtkStringArray}) _ZN19vtkConvertSelection16ToValueSelectionEP12vtkSelectionP13vtkDataObjectP14vtkStringArray "libvtkGraphics"
+@scall None GetSelectedItems (Ptr{vtkSelection}, Ptr{vtkDataObject}, Int32, Ptr{vtkIdTypeArray}) _ZN19vtkConvertSelection16GetSelectedItemsEP12vtkSelectionP13vtkDataObjectiP14vtkIdTypeArray "libvtkGraphics"
+@scall None GetSelectedVertices (Ptr{vtkSelection}, Ptr{vtkGraph}, Ptr{vtkIdTypeArray}) _ZN19vtkConvertSelection19GetSelectedVerticesEP12vtkSelectionP8vtkGraphP14vtkIdTypeArray "libvtkGraphics"
+@scall None GetSelectedEdges (Ptr{vtkSelection}, Ptr{vtkGraph}, Ptr{vtkIdTypeArray}) _ZN19vtkConvertSelection16GetSelectedEdgesEP12vtkSelectionP8vtkGraphP14vtkIdTypeArray "libvtkGraphics"
+@scall None GetSelectedPoints (Ptr{vtkSelection}, Ptr{vtkDataSet}, Ptr{vtkIdTypeArray}) _ZN19vtkConvertSelection17GetSelectedPointsEP12vtkSelectionP10vtkDataSetP14vtkIdTypeArray "libvtkGraphics"
+@scall None GetSelectedCells (Ptr{vtkSelection}, Ptr{vtkDataSet}, Ptr{vtkIdTypeArray}) _ZN19vtkConvertSelection16GetSelectedCellsEP12vtkSelectionP10vtkDataSetP14vtkIdTypeArray "libvtkGraphics"
+@scall None GetSelectedRows (Ptr{vtkSelection}, Ptr{vtkTable}, Ptr{vtkIdTypeArray}) _ZN19vtkConvertSelection15GetSelectedRowsEP12vtkSelectionP8vtkTableP14vtkIdTypeArray "libvtkGraphics"
+@scall Ptr{vtkSelection} ToSelectionType (Ptr{vtkSelection}, Ptr{vtkDataObject}, Int32, Ptr{vtkStringArray}, Int32) _ZN19vtkConvertSelection15ToSelectionTypeEP12vtkSelectionP13vtkDataObjectiP14vtkStringArrayi "libvtkGraphics"
 @vcall 60 Int32 RequestData (Ptr{vtkInformation}, Ptr{Ptr{vtkInformationVector}}, Ptr{vtkInformationVector})
 @mcall Int32 Convert (Ptr{vtkSelection}, Ptr{vtkDataObject}, Ptr{vtkSelection}) _ZN19vtkConvertSelection7ConvertEP12vtkSelectionP13vtkDataObjectS1_ "libvtkGraphics"
 @mcall Int32 ConvertCompositeDataSet (Ptr{vtkSelection}, Ptr{vtkCompositeDataSet}, Ptr{vtkSelection}) _ZN19vtkConvertSelection23ConvertCompositeDataSetEP12vtkSelectionP19vtkCompositeDataSetS1_ "libvtkGraphics"

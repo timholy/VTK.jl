@@ -1,9 +1,14 @@
 cur_class = vtkQuadratureSchemeDefinition
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN29vtkQuadratureSchemeDefinition8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkQuadratureSchemeDefinition} SafeDownCast (Ptr{vtkObjectBase},) _ZN29vtkQuadratureSchemeDefinition12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkQuadratureSchemeDefinition} NewInstance () _ZNK29vtkQuadratureSchemeDefinition11NewInstanceEv "libvtkCommon"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkInformationQuadratureSchemeDefinitionVectorKey} DICTIONARY () _ZN29vtkQuadratureSchemeDefinition10DICTIONARYEv "libvtkCommon"
+@scall Ptr{vtkInformationStringKey} QUADRATURE_OFFSET_ARRAY_NAME () _ZN29vtkQuadratureSchemeDefinition28QUADRATURE_OFFSET_ARRAY_NAMEEv "libvtkCommon"
+@scall Ptr{vtkQuadratureSchemeDefinition} vtkQuadratureSchemeDefinitionNew () _ZN29vtkQuadratureSchemeDefinition3NewEv "libvtkCommon"
 @mcall Int32 DeepCopy (Ptr{vtkQuadratureSchemeDefinition},) _ZN29vtkQuadratureSchemeDefinition8DeepCopyEPKS_ "libvtkCommon"
 @mcall Int32 SaveState (Ptr{vtkXMLDataElement},) _ZN29vtkQuadratureSchemeDefinition9SaveStateEP17vtkXMLDataElement "libvtkCommon"
 @mcall Int32 RestoreState (Ptr{vtkXMLDataElement},) _ZN29vtkQuadratureSchemeDefinition12RestoreStateEP17vtkXMLDataElement "libvtkCommon"

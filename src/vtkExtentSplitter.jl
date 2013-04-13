@@ -1,9 +1,12 @@
 cur_class = vtkExtentSplitter
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN17vtkExtentSplitter8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkExtentSplitter} SafeDownCast (Ptr{vtkObjectBase},) _ZN17vtkExtentSplitter12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkExtentSplitter} NewInstance () _ZNK17vtkExtentSplitter11NewInstanceEv "libvtkCommon"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkExtentSplitter} vtkExtentSplitterNew () _ZN17vtkExtentSplitter3NewEv "libvtkCommon"
 @mcall None AddExtentSource (Int32, Int32, Int32, Int32, Int32, Int32, Int32, Int32) _ZN17vtkExtentSplitter15AddExtentSourceEiiiiiiii "libvtkCommon"
 @mcall None AddExtentSource (Int32, Int32, Ptr{Int32}) _ZN17vtkExtentSplitter15AddExtentSourceEiiPi "libvtkCommon"
 @mcall None RemoveExtentSource (Int32,) _ZN17vtkExtentSplitter18RemoveExtentSourceEi "libvtkCommon"

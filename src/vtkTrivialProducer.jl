@@ -1,6 +1,9 @@
 cur_class = vtkTrivialProducer
+@scall Ptr{vtkTrivialProducer} vtkTrivialProducerNew () _ZN18vtkTrivialProducer3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN18vtkTrivialProducer8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkTrivialProducer} SafeDownCast (Ptr{vtkObjectBase},) _ZN18vtkTrivialProducer12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkTrivialProducer} NewInstance () _ZNK18vtkTrivialProducer11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

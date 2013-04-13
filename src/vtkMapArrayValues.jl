@@ -1,9 +1,12 @@
 cur_class = vtkMapArrayValues
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN17vtkMapArrayValues8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkMapArrayValues} SafeDownCast (Ptr{vtkObjectBase},) _ZN17vtkMapArrayValues12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkMapArrayValues} NewInstance () _ZNK17vtkMapArrayValues11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkMapArrayValues} vtkMapArrayValuesNew () _ZN17vtkMapArrayValues3NewEv "libvtkRendering"
 @vcall 63 None SetFieldType (Int32,)
 @vcall 64 Int32 GetFieldType ()
 @vcall 65 None SetPassArray (Int32,)

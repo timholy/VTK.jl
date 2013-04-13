@@ -1,6 +1,9 @@
 cur_class = vtkPointSource
+@scall Ptr{vtkPointSource} vtkPointSourceNew () _ZN14vtkPointSource3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN14vtkPointSource8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkPointSource} SafeDownCast (Ptr{vtkObjectBase},) _ZN14vtkPointSource12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkPointSource} NewInstance () _ZNK14vtkPointSource11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

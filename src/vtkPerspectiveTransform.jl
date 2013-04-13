@@ -1,6 +1,9 @@
 cur_class = vtkPerspectiveTransform
+@scall Ptr{vtkPerspectiveTransform} vtkPerspectiveTransformNew () _ZN23vtkPerspectiveTransform3NewEv "libvtkCommon"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN23vtkPerspectiveTransform8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkPerspectiveTransform} SafeDownCast (Ptr{vtkObjectBase},) _ZN23vtkPerspectiveTransform12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkPerspectiveTransform} NewInstance () _ZNK23vtkPerspectiveTransform11NewInstanceEv "libvtkCommon"
 @vcall 4 None PrintSelf (Void, vtkIndent)

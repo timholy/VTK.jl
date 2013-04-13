@@ -1,6 +1,9 @@
 cur_class = vtkMatrixToLinearTransform
+@scall Ptr{vtkMatrixToLinearTransform} vtkMatrixToLinearTransformNew () _ZN26vtkMatrixToLinearTransform3NewEv "libvtkCommon"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN26vtkMatrixToLinearTransform8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkMatrixToLinearTransform} SafeDownCast (Ptr{vtkObjectBase},) _ZN26vtkMatrixToLinearTransform12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkMatrixToLinearTransform} NewInstance () _ZNK26vtkMatrixToLinearTransform11NewInstanceEv "libvtkCommon"
 @vcall 4 None PrintSelf (Void, vtkIndent)

@@ -1,14 +1,24 @@
 cur_class = vtkPlanesIntersection
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN21vtkPlanesIntersection8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkPlanesIntersection} SafeDownCast (Ptr{vtkObjectBase},) _ZN21vtkPlanesIntersection12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkPlanesIntersection} NewInstance () _ZNK21vtkPlanesIntersection11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkPlanesIntersection} vtkPlanesIntersectionNew () _ZN21vtkPlanesIntersection3NewEv "libvtkFiltering"
 @mcall None SetRegionVertices (Ptr{vtkPoints},) _ZN21vtkPlanesIntersection17SetRegionVerticesEP9vtkPoints "libvtkFiltering"
 @mcall None SetRegionVertices (Ptr{Float64}, Int32) _ZN21vtkPlanesIntersection17SetRegionVerticesEPdi "libvtkFiltering"
 @mcall Int32 GetNumRegionVertices () _ZN21vtkPlanesIntersection20GetNumRegionVerticesEv "libvtkFiltering"
 @mcall Int32 GetRegionVertices (Ptr{Float64}, Int32) _ZN21vtkPlanesIntersection17GetRegionVerticesEPdi "libvtkFiltering"
 @mcall Int32 IntersectsRegion (Ptr{vtkPoints},) _ZN21vtkPlanesIntersection16IntersectsRegionEP9vtkPoints "libvtkFiltering"
+@scall Int32 PolygonIntersectsBBox (Ptr{Float64}, Ptr{vtkPoints}) _ZN21vtkPlanesIntersection21PolygonIntersectsBBoxEPdP9vtkPoints "libvtkFiltering"
+@scall Ptr{vtkPlanesIntersection} Convert3DCell (Ptr{vtkCell},) _ZN21vtkPlanesIntersection13Convert3DCellEP7vtkCell "libvtkFiltering"
+@scall None ComputeNormal (Ptr{Float64}, Ptr{Float64}, Ptr{Float64}, Ptr{Float64}) _ZN21vtkPlanesIntersection13ComputeNormalEPdS0_S0_S0_ "libvtkFiltering"
+@scall Float64 EvaluatePlaneEquation (Ptr{Float64}, Ptr{Float64}) _ZN21vtkPlanesIntersection21EvaluatePlaneEquationEPdS0_ "libvtkFiltering"
+@scall None PlaneEquation (Ptr{Float64}, Ptr{Float64}, Ptr{Float64}) _ZN21vtkPlanesIntersection13PlaneEquationEPdS0_S0_ "libvtkFiltering"
+@scall Int32 GoodNormal (Ptr{Float64},) _ZN21vtkPlanesIntersection10GoodNormalEPd "libvtkFiltering"
+@scall Int32 Invert3x3 (Ptr{Void},) _ZN21vtkPlanesIntersection9Invert3x3EPA3_d "libvtkFiltering"
 @mcall Int32 IntersectsBoundingBox (Ptr{vtkPoints},) _ZN21vtkPlanesIntersection21IntersectsBoundingBoxEP9vtkPoints "libvtkFiltering"
 @mcall Int32 EnclosesBoundingBox (Ptr{vtkPoints},) _ZN21vtkPlanesIntersection19EnclosesBoundingBoxEP9vtkPoints "libvtkFiltering"
 @mcall Int32 EvaluateFacePlane (Int32, Ptr{vtkPoints}) _ZN21vtkPlanesIntersection17EvaluateFacePlaneEiP9vtkPoints "libvtkFiltering"

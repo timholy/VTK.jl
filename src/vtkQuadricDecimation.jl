@@ -1,9 +1,12 @@
 cur_class = vtkQuadricDecimation
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN20vtkQuadricDecimation8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkQuadricDecimation} SafeDownCast (Ptr{vtkObjectBase},) _ZN20vtkQuadricDecimation12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkQuadricDecimation} NewInstance () _ZNK20vtkQuadricDecimation11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkQuadricDecimation} vtkQuadricDecimationNew () _ZN20vtkQuadricDecimation3NewEv "libvtkGraphics"
 @vcall 65 None SetTargetReduction (Float64,)
 @vcall 66 Float64 GetTargetReductionMinValue ()
 @vcall 67 Float64 GetTargetReductionMaxValue ()

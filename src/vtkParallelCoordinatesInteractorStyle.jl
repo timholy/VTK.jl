@@ -1,6 +1,9 @@
 cur_class = vtkParallelCoordinatesInteractorStyle
+@scall Ptr{vtkParallelCoordinatesInteractorStyle} vtkParallelCoordinatesInteractorStyleNew () _ZN37vtkParallelCoordinatesInteractorStyle3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN37vtkParallelCoordinatesInteractorStyle8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkParallelCoordinatesInteractorStyle} SafeDownCast (Ptr{vtkObjectBase},) _ZN37vtkParallelCoordinatesInteractorStyle12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkParallelCoordinatesInteractorStyle} NewInstance () _ZNK37vtkParallelCoordinatesInteractorStyle11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

@@ -1,6 +1,9 @@
 cur_class = vtkLookupTableWithEnabling
+@scall Ptr{vtkLookupTableWithEnabling} vtkLookupTableWithEnablingNew () _ZN26vtkLookupTableWithEnabling3NewEv "libvtkCommon"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN26vtkLookupTableWithEnabling8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkLookupTableWithEnabling} SafeDownCast (Ptr{vtkObjectBase},) _ZN26vtkLookupTableWithEnabling12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkLookupTableWithEnabling} NewInstance () _ZNK26vtkLookupTableWithEnabling11NewInstanceEv "libvtkCommon"
 @vcall 4 None PrintSelf (Void, vtkIndent)

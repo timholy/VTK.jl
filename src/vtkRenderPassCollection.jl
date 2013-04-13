@@ -1,6 +1,9 @@
 cur_class = vtkRenderPassCollection
+@scall Ptr{vtkRenderPassCollection} vtkRenderPassCollectionNew () _ZN23vtkRenderPassCollection3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN23vtkRenderPassCollection8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkRenderPassCollection} SafeDownCast (Ptr{vtkObjectBase},) _ZN23vtkRenderPassCollection12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkRenderPassCollection} NewInstance () _ZNK23vtkRenderPassCollection11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

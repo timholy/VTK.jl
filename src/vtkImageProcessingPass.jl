@@ -1,6 +1,8 @@
 cur_class = vtkImageProcessingPass
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN22vtkImageProcessingPass8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkImageProcessingPass} SafeDownCast (Ptr{vtkObjectBase},) _ZN22vtkImageProcessingPass12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkImageProcessingPass} NewInstance () _ZNK22vtkImageProcessingPass11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

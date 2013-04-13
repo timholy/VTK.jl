@@ -1,6 +1,9 @@
 cur_class = vtkYoungsMaterialInterface
+@scall Ptr{vtkYoungsMaterialInterface} vtkYoungsMaterialInterfaceNew () _ZN26vtkYoungsMaterialInterface3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN26vtkYoungsMaterialInterface8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkYoungsMaterialInterface} SafeDownCast (Ptr{vtkObjectBase},) _ZN26vtkYoungsMaterialInterface12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkYoungsMaterialInterface} NewInstance () _ZNK26vtkYoungsMaterialInterface11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

@@ -1,6 +1,9 @@
 cur_class = vtkWin32OpenGLRenderWindow
+@scall Ptr{vtkWin32OpenGLRenderWindow} vtkWin32OpenGLRenderWindowNew () _ZN26vtkWin32OpenGLRenderWindow3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN26vtkWin32OpenGLRenderWindow8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkWin32OpenGLRenderWindow} SafeDownCast (Ptr{vtkObjectBase},) _ZN26vtkWin32OpenGLRenderWindow12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkWin32OpenGLRenderWindow} NewInstance () _ZNK26vtkWin32OpenGLRenderWindow11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -59,6 +62,7 @@ cur_class = vtkWin32OpenGLRenderWindow
 @vcall 82 None SetCurrentCursor (Int32,)
 @vcall 58 None SetOffScreenRendering (Int32,)
 @mcall Int32 MessageProc (Int32, Int32, Int32, Int32) _ZN26vtkWin32OpenGLRenderWindow11MessageProcEiiii "libvtkRendering"
+@scall Int32 WndProc (Int32, Int32, Int32, Int32) _ZN26vtkWin32OpenGLRenderWindow7WndProcEiiii "libvtkRendering"
 @mcall None ResizeWhileOffscreen (Int32, Int32) _ZN26vtkWin32OpenGLRenderWindow20ResizeWhileOffscreenEii "libvtkRendering"
 @vcall 204 None CreateAWindow ()
 @vcall 205 None DestroyWindow ()

@@ -1,9 +1,14 @@
 cur_class = vtkPolyLine
+@scall Ptr{vtkPolyLine} vtkPolyLineNew () _ZN11vtkPolyLine3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN11vtkPolyLine8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkPolyLine} SafeDownCast (Ptr{vtkObjectBase},) _ZN11vtkPolyLine12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkPolyLine} NewInstance () _ZNK11vtkPolyLine11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Int32 GenerateSlidingNormals (Ptr{vtkPoints}, Ptr{vtkCellArray}, Ptr{vtkDataArray}) _ZN11vtkPolyLine22GenerateSlidingNormalsEP9vtkPointsP12vtkCellArrayP12vtkDataArray "libvtkFiltering"
+@scall Int32 GenerateSlidingNormals (Ptr{vtkPoints}, Ptr{vtkCellArray}, Ptr{vtkDataArray}, Ptr{Float64}) _ZN11vtkPolyLine22GenerateSlidingNormalsEP9vtkPointsP12vtkCellArrayP12vtkDataArrayPd "libvtkFiltering"
 @vcall 22 Int32 GetCellType ()
 @vcall 23 Int32 GetCellDimension ()
 @vcall 31 Int32 GetNumberOfEdges ()

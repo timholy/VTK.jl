@@ -1,6 +1,9 @@
 cur_class = vtkClipClosedSurface
+@scall Ptr{vtkClipClosedSurface} vtkClipClosedSurfaceNew () _ZN20vtkClipClosedSurface3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN20vtkClipClosedSurface8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkClipClosedSurface} SafeDownCast (Ptr{vtkObjectBase},) _ZN20vtkClipClosedSurface12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkClipClosedSurface} NewInstance () _ZNK20vtkClipClosedSurface11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -57,6 +60,12 @@ cur_class = vtkClipClosedSurface
 @vcall 61 Int32 RequestData (Ptr{vtkInformation}, Ptr{Ptr{vtkInformationVector}}, Ptr{vtkInformationVector})
 @mcall None ClipLines (Ptr{vtkPoints}, Ptr{vtkDoubleArray}, Ptr{vtkPointData}, Ptr{vtkCCSEdgeLocator}, Ptr{vtkCellArray}, Ptr{vtkCellArray}, Ptr{vtkCellData}, Ptr{vtkCellData}) _ZN20vtkClipClosedSurface9ClipLinesEP9vtkPointsP14vtkDoubleArrayP12vtkPointDataP17vtkCCSEdgeLocatorP12vtkCellArrayS9_P11vtkCellDataSB_ "libvtkGraphics"
 @mcall None ClipAndContourPolys (Ptr{vtkPoints}, Ptr{vtkDoubleArray}, Ptr{vtkPointData}, Ptr{vtkCCSEdgeLocator}, Int32, Ptr{vtkCellArray}, Ptr{vtkCellArray}, Ptr{vtkCellArray}, Ptr{vtkCellData}, Ptr{vtkCellData}, Ptr{vtkCellData}) _ZN20vtkClipClosedSurface19ClipAndContourPolysEP9vtkPointsP14vtkDoubleArrayP12vtkPointDataP17vtkCCSEdgeLocatoriP12vtkCellArrayS9_S9_P11vtkCellDataSB_SB_ "libvtkGraphics"
+@scall Int32 InterpolateEdge (Ptr{vtkPoints}, Ptr{vtkPointData}, Ptr{vtkCCSEdgeLocator}, Float64, vtkIdType, vtkIdType, Float64, Float64, Void) _ZN20vtkClipClosedSurface15InterpolateEdgeEP9vtkPointsP12vtkPointDataP17vtkCCSEdgeLocatordxxddRx "libvtkGraphics"
 @mcall Int32 TriangulatePolygon (Ptr{vtkIdList}, Ptr{vtkPoints}, Ptr{vtkCellArray}) _ZN20vtkClipClosedSurface18TriangulatePolygonEP9vtkIdListP9vtkPointsP12vtkCellArray "libvtkGraphics"
 @mcall None MakePolysFromContours (Ptr{vtkPolyData}, vtkIdType, vtkIdType, Ptr{vtkCellArray}, Ptr{Float64}) _ZN20vtkClipClosedSurface21MakePolysFromContoursEP11vtkPolyDataxxP12vtkCellArrayPKd "libvtkGraphics"
+@scall None BreakPolylines (Ptr{vtkCellArray}, Ptr{vtkCellArray}, Ptr{vtkUnsignedCharArray}, vtkIdType, Ptr{vtkUnsignedCharArray}, Ptr{Uint8}) _ZN20vtkClipClosedSurface14BreakPolylinesEP12vtkCellArrayS1_P20vtkUnsignedCharArrayxS3_PKh "libvtkGraphics"
+@scall None CopyPolygons (Ptr{vtkCellArray}, Ptr{vtkCellArray}, Ptr{vtkUnsignedCharArray}, vtkIdType, Ptr{vtkUnsignedCharArray}, Ptr{Uint8}) _ZN20vtkClipClosedSurface12CopyPolygonsEP12vtkCellArrayS1_P20vtkUnsignedCharArrayxS3_PKh "libvtkGraphics"
+@scall None BreakTriangleStrips (Ptr{vtkCellArray}, Ptr{vtkCellArray}, Ptr{vtkUnsignedCharArray}, vtkIdType, Ptr{vtkUnsignedCharArray}, Ptr{Uint8}) _ZN20vtkClipClosedSurface19BreakTriangleStripsEP12vtkCellArrayS1_P20vtkUnsignedCharArrayxS3_PKh "libvtkGraphics"
+@scall None SqueezeOutputPoints (Ptr{vtkPolyData}, Ptr{vtkPoints}, Ptr{vtkPointData}, Int32) _ZN20vtkClipClosedSurface19SqueezeOutputPointsEP11vtkPolyDataP9vtkPointsP12vtkPointDatai "libvtkGraphics"
+@scall None CreateColorValues (Ptr{Float64}, Ptr{Float64}, Ptr{Float64}, Ptr{Void}) _ZN20vtkClipClosedSurface17CreateColorValuesEPKdS1_S1_PA3_h "libvtkGraphics"
 @mcall None vtkClipClosedSurface_eq (Void,) _ZN20vtkClipClosedSurfaceaSERKS_ "libvtkGraphics"

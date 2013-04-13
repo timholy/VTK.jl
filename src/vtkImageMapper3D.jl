@@ -1,6 +1,8 @@
 cur_class = vtkImageMapper3D
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN16vtkImageMapper3D8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkImageMapper3D} SafeDownCast (Ptr{vtkObjectBase},) _ZN16vtkImageMapper3D12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkImageMapper3D} NewInstance () _ZNK16vtkImageMapper3D11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -35,6 +37,7 @@ cur_class = vtkImageMapper3D
 @vcall 51 Int32 FillInputPortInformation (Int32, Ptr{vtkInformation})
 @vcall 52 Int32 FillOutputPortInformation (Int32, Ptr{vtkInformation})
 @vcall 21 Int32 ProcessRequest (Ptr{vtkInformation}, Ptr{Ptr{vtkInformationVector}}, Ptr{vtkInformationVector})
+@scall None CheckerboardRGBA (Ptr{Uint8}, Int32, Int32, Float64, Float64, Float64, Float64) _ZN16vtkImageMapper3D16CheckerboardRGBAEPhiidddd "libvtkRendering"
 @mcall Ptr{Uint8} MakeTextureData (Ptr{vtkImageProperty}, Ptr{vtkImageData}, Ptr{Int32}, Void, Void, Void, Void, Void) _ZN16vtkImageMapper3D15MakeTextureDataEP16vtkImagePropertyP12vtkImageDataPiRiS5_S5_RbS6_ "libvtkRendering"
 @mcall None MakeTextureGeometry (Ptr{Int32}, Ptr{Float64}, Ptr{Float64}) _ZN16vtkImageMapper3D19MakeTextureGeometryEPKiPdS2_ "libvtkRendering"
 @vcall 90 None ComputeTextureSize (Ptr{Int32}, Void, Void, Ptr{Int32}, Ptr{Int32})

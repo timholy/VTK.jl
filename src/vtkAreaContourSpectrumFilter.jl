@@ -1,6 +1,9 @@
 cur_class = vtkAreaContourSpectrumFilter
+@scall Ptr{vtkAreaContourSpectrumFilter} vtkAreaContourSpectrumFilterNew () _ZN28vtkAreaContourSpectrumFilter3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN28vtkAreaContourSpectrumFilter8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkAreaContourSpectrumFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN28vtkAreaContourSpectrumFilter12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkAreaContourSpectrumFilter} NewInstance () _ZNK28vtkAreaContourSpectrumFilter11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

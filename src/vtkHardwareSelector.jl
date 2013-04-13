@@ -1,6 +1,9 @@
 cur_class = vtkHardwareSelector
+@scall Ptr{vtkHardwareSelector} vtkHardwareSelectorNew () _ZN19vtkHardwareSelector3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN19vtkHardwareSelector8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkHardwareSelector} SafeDownCast (Ptr{vtkObjectBase},) _ZN19vtkHardwareSelector12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkHardwareSelector} NewInstance () _ZNK19vtkHardwareSelector11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -32,6 +35,7 @@ cur_class = vtkHardwareSelector
 @vcall 33 Ptr{vtkSelection} GenerateSelection (Ptr{Uint32},)
 @vcall 34 Ptr{vtkSelection} GenerateSelection (Uint32, Uint32, Uint32, Uint32)
 @mcall Ptr{vtkProp} GetPropFromID (Int32,) _ZN19vtkHardwareSelector13GetPropFromIDEi "libvtkRendering"
+@scall None Convert (Int32, Ptr{Float32}) _ZN19vtkHardwareSelector7ConvertEiPf "libvtkRendering"
 @mcall Int32 Convert (Uint64, Ptr{Uint8}) _ZN19vtkHardwareSelector7ConvertEmPh "libvtkRendering"
 @mcall Int32 Convert (Ptr{Uint32}, Ptr{Uint8}) _ZN19vtkHardwareSelector7ConvertEPjPh "libvtkRendering"
 @mcall Int32 Convert (Int32, Int32, Ptr{Uint8}) _ZN19vtkHardwareSelector7ConvertEiiPh "libvtkRendering"

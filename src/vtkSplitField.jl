@@ -1,9 +1,12 @@
 cur_class = vtkSplitField
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN13vtkSplitField8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkSplitField} SafeDownCast (Ptr{vtkObjectBase},) _ZN13vtkSplitField12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkSplitField} NewInstance () _ZNK13vtkSplitField11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkSplitField} vtkSplitFieldNew () _ZN13vtkSplitField3NewEv "libvtkGraphics"
 @mcall None SetInputField (Int32, Int32) _ZN13vtkSplitField13SetInputFieldEii "libvtkGraphics"
 @mcall None SetInputField (Ptr{Uint8}, Int32) _ZN13vtkSplitField13SetInputFieldEPKci "libvtkGraphics"
 @mcall None SetInputField (Ptr{Uint8}, Ptr{Uint8}) _ZN13vtkSplitField13SetInputFieldEPKcS1_ "libvtkGraphics"

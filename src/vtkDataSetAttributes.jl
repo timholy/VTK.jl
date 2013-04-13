@@ -1,6 +1,9 @@
 cur_class = vtkDataSetAttributes
+@scall Ptr{vtkDataSetAttributes} vtkDataSetAttributesNew () _ZN20vtkDataSetAttributes3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN20vtkDataSetAttributes8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkDataSetAttributes} SafeDownCast (Ptr{vtkObjectBase},) _ZN20vtkDataSetAttributes12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkDataSetAttributes} NewInstance () _ZNK20vtkDataSetAttributes11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -44,6 +47,8 @@ cur_class = vtkDataSetAttributes
 @mcall Ptr{vtkAbstractArray} GetAbstractAttribute (Int32,) _ZN20vtkDataSetAttributes20GetAbstractAttributeEi "libvtkFiltering"
 @vcall 21 None RemoveArray (Ptr{Uint8},)
 @vcall 28 None RemoveArray (Int32,)
+@scall Ptr{Uint8} GetAttributeTypeAsString (Int32,) _ZN20vtkDataSetAttributes24GetAttributeTypeAsStringEi "libvtkFiltering"
+@scall Ptr{Uint8} GetLongAttributeTypeAsString (Int32,) _ZN20vtkDataSetAttributes28GetLongAttributeTypeAsStringEi "libvtkFiltering"
 @mcall None SetCopyAttribute (Int32, Int32, Int32) _ZN20vtkDataSetAttributes16SetCopyAttributeEiii "libvtkFiltering"
 @mcall None SetCopyScalars (Int32, Int32) _ZN20vtkDataSetAttributes14SetCopyScalarsEii "libvtkFiltering"
 @mcall Int32 GetCopyScalars (Int32,) _ZN20vtkDataSetAttributes14GetCopyScalarsEi "libvtkFiltering"
@@ -94,5 +99,6 @@ cur_class = vtkDataSetAttributes
 @mcall None InternalCopyAllocate (Void, Int32, vtkIdType, vtkIdType) _ZN20vtkDataSetAttributes20InternalCopyAllocateERNS_9FieldListEixx "libvtkFiltering"
 @vcall 29 None InitializeFields ()
 @mcall Int32 SetAttribute (Ptr{vtkAbstractArray}, Int32) _ZN20vtkDataSetAttributes12SetAttributeEP16vtkAbstractArrayi "libvtkFiltering"
+@scall Int32 CheckNumberOfComponents (Ptr{vtkAbstractArray}, Int32) _ZN20vtkDataSetAttributes23CheckNumberOfComponentsEP16vtkAbstractArrayi "libvtkFiltering"
 @mcall Void ComputeRequiredArrays (Ptr{vtkDataSetAttributes}, Int32) _ZN20vtkDataSetAttributes21ComputeRequiredArraysEPS_i "libvtkFiltering"
 @mcall None vtkDataSetAttributes_eq (Void,) _ZN20vtkDataSetAttributesaSERKS_ "libvtkFiltering"

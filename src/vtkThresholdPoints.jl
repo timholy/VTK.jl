@@ -1,6 +1,9 @@
 cur_class = vtkThresholdPoints
+@scall Ptr{vtkThresholdPoints} vtkThresholdPointsNew () _ZN18vtkThresholdPoints3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN18vtkThresholdPoints8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkThresholdPoints} SafeDownCast (Ptr{vtkObjectBase},) _ZN18vtkThresholdPoints12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkThresholdPoints} NewInstance () _ZNK18vtkThresholdPoints11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

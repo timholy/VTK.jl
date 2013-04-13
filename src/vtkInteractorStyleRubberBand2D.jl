@@ -1,6 +1,9 @@
 cur_class = vtkInteractorStyleRubberBand2D
+@scall Ptr{vtkInteractorStyleRubberBand2D} vtkInteractorStyleRubberBand2DNew () _ZN30vtkInteractorStyleRubberBand2D3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN30vtkInteractorStyleRubberBand2D8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkInteractorStyleRubberBand2D} SafeDownCast (Ptr{vtkObjectBase},) _ZN30vtkInteractorStyleRubberBand2D12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkInteractorStyleRubberBand2D} NewInstance () _ZNK30vtkInteractorStyleRubberBand2D11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

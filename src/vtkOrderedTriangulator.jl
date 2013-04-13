@@ -1,9 +1,12 @@
 cur_class = vtkOrderedTriangulator
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN22vtkOrderedTriangulator8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkOrderedTriangulator} SafeDownCast (Ptr{vtkObjectBase},) _ZN22vtkOrderedTriangulator12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkOrderedTriangulator} NewInstance () _ZNK22vtkOrderedTriangulator11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkOrderedTriangulator} vtkOrderedTriangulatorNew () _ZN22vtkOrderedTriangulator3NewEv "libvtkFiltering"
 @mcall None InitTriangulation (Float64, Float64, Float64, Float64, Float64, Float64, Int32) _ZN22vtkOrderedTriangulator17InitTriangulationEddddddi "libvtkFiltering"
 @mcall None InitTriangulation (Ptr{Float64}, Int32) _ZN22vtkOrderedTriangulator17InitTriangulationEPdi "libvtkFiltering"
 @mcall vtkIdType InsertPoint (vtkIdType, Ptr{Float64}, Ptr{Float64}, Int32) _ZN22vtkOrderedTriangulator11InsertPointExPdS0_i "libvtkFiltering"

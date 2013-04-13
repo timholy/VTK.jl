@@ -1,6 +1,9 @@
 cur_class = vtkTreeAlgorithm
+@scall Ptr{vtkTreeAlgorithm} vtkTreeAlgorithmNew () _ZN16vtkTreeAlgorithm3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN16vtkTreeAlgorithm8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkTreeAlgorithm} SafeDownCast (Ptr{vtkObjectBase},) _ZN16vtkTreeAlgorithm12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkTreeAlgorithm} NewInstance () _ZNK16vtkTreeAlgorithm11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

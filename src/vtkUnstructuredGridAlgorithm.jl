@@ -1,6 +1,9 @@
 cur_class = vtkUnstructuredGridAlgorithm
+@scall Ptr{vtkUnstructuredGridAlgorithm} vtkUnstructuredGridAlgorithmNew () _ZN28vtkUnstructuredGridAlgorithm3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN28vtkUnstructuredGridAlgorithm8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkUnstructuredGridAlgorithm} SafeDownCast (Ptr{vtkObjectBase},) _ZN28vtkUnstructuredGridAlgorithm12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkUnstructuredGridAlgorithm} NewInstance () _ZNK28vtkUnstructuredGridAlgorithm11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

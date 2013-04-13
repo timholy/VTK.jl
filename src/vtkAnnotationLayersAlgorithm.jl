@@ -1,6 +1,9 @@
 cur_class = vtkAnnotationLayersAlgorithm
+@scall Ptr{vtkAnnotationLayersAlgorithm} vtkAnnotationLayersAlgorithmNew () _ZN28vtkAnnotationLayersAlgorithm3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN28vtkAnnotationLayersAlgorithm8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkAnnotationLayersAlgorithm} SafeDownCast (Ptr{vtkObjectBase},) _ZN28vtkAnnotationLayersAlgorithm12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkAnnotationLayersAlgorithm} NewInstance () _ZNK28vtkAnnotationLayersAlgorithm11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

@@ -1,9 +1,12 @@
 cur_class = vtkLinearSelector
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN17vtkLinearSelector8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkLinearSelector} SafeDownCast (Ptr{vtkObjectBase},) _ZN17vtkLinearSelector12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkLinearSelector} NewInstance () _ZNK17vtkLinearSelector11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkLinearSelector} vtkLinearSelectorNew () _ZN17vtkLinearSelector3NewEv "libvtkFiltering"
 @vcall 62 None SetStartPoint (Float64, Float64, Float64)
 @vcall 63 None SetStartPoint (Ptr{Float64},)
 @vcall 64 Ptr{Float64} GetStartPoint ()

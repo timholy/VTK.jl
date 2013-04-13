@@ -1,6 +1,8 @@
 cur_class = vtkAbstractInterpolatedVelocityField
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN36vtkAbstractInterpolatedVelocityField8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkAbstractInterpolatedVelocityField} SafeDownCast (Ptr{vtkObjectBase},) _ZN36vtkAbstractInterpolatedVelocityField12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkAbstractInterpolatedVelocityField} NewInstance () _ZNK36vtkAbstractInterpolatedVelocityField11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

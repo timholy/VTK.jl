@@ -1,6 +1,8 @@
 cur_class = vtkGenericDataSetAlgorithm
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN26vtkGenericDataSetAlgorithm8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkGenericDataSetAlgorithm} SafeDownCast (Ptr{vtkObjectBase},) _ZN26vtkGenericDataSetAlgorithm12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkGenericDataSetAlgorithm} NewInstance () _ZNK26vtkGenericDataSetAlgorithm11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

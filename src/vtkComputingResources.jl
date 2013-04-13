@@ -1,6 +1,9 @@
 cur_class = vtkComputingResources
+@scall Ptr{vtkComputingResources} vtkComputingResourcesNew () _ZN21vtkComputingResources3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN21vtkComputingResources8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkComputingResources} SafeDownCast (Ptr{vtkObjectBase},) _ZN21vtkComputingResources12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkComputingResources} NewInstance () _ZNK21vtkComputingResources11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

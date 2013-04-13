@@ -1,7 +1,10 @@
 cur_class = vtkLabelSizeCalculator
+@scall Ptr{vtkLabelSizeCalculator} vtkLabelSizeCalculatorNew () _ZN22vtkLabelSizeCalculator3NewEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN22vtkLabelSizeCalculator8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkLabelSizeCalculator} SafeDownCast (Ptr{vtkObjectBase},) _ZN22vtkLabelSizeCalculator12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkLabelSizeCalculator} NewInstance () _ZNK22vtkLabelSizeCalculator11NewInstanceEv "libvtkRendering"
 @vcall 63 None SetFontProperty (Ptr{vtkTextProperty}, Int32)

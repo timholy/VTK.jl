@@ -1,9 +1,12 @@
 cur_class = vtkTableBasedClipDataSet
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN24vtkTableBasedClipDataSet8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkTableBasedClipDataSet} SafeDownCast (Ptr{vtkObjectBase},) _ZN24vtkTableBasedClipDataSet12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkTableBasedClipDataSet} NewInstance () _ZNK24vtkTableBasedClipDataSet11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkTableBasedClipDataSet} vtkTableBasedClipDataSetNew () _ZN24vtkTableBasedClipDataSet3NewEv "libvtkGraphics"
 @vcall 19 Uint64 GetMTime ()
 @vcall 65 None SetInsideOut (Int32,)
 @vcall 66 Int32 GetInsideOut ()
@@ -42,5 +45,6 @@ cur_class = vtkTableBasedClipDataSet
 @mcall None ClipRectilinearGridData (Ptr{vtkDataSet}, Ptr{vtkDataArray}, Float64, Ptr{vtkUnstructuredGrid}) _ZN24vtkTableBasedClipDataSet23ClipRectilinearGridDataEP10vtkDataSetP12vtkDataArraydP19vtkUnstructuredGrid "libvtkGraphics"
 @mcall None ClipStructuredGridData (Ptr{vtkDataSet}, Ptr{vtkDataArray}, Float64, Ptr{vtkUnstructuredGrid}) _ZN24vtkTableBasedClipDataSet22ClipStructuredGridDataEP10vtkDataSetP12vtkDataArraydP19vtkUnstructuredGrid "libvtkGraphics"
 @mcall None ClipUnstructuredGridData (Ptr{vtkDataSet}, Ptr{vtkDataArray}, Float64, Ptr{vtkUnstructuredGrid}) _ZN24vtkTableBasedClipDataSet24ClipUnstructuredGridDataEP10vtkDataSetP12vtkDataArraydP19vtkUnstructuredGrid "libvtkGraphics"
+@scall None InternalProgressCallbackFunction (Ptr{vtkObject}, Uint64, Ptr{None}, Ptr{None}) _ZN24vtkTableBasedClipDataSet32InternalProgressCallbackFunctionEP9vtkObjectmPvS2_ "libvtkGraphics"
 @mcall None InternalProgressCallback (Ptr{vtkAlgorithm},) _ZN24vtkTableBasedClipDataSet24InternalProgressCallbackEP12vtkAlgorithm "libvtkGraphics"
 @mcall None vtkTableBasedClipDataSet_eq (Void,) _ZN24vtkTableBasedClipDataSetaSERKS_ "libvtkGraphics"

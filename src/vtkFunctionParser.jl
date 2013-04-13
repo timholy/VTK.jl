@@ -1,6 +1,9 @@
 cur_class = vtkFunctionParser
+@scall Ptr{vtkFunctionParser} vtkFunctionParserNew () _ZN17vtkFunctionParser3NewEv "libvtkCommon"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN17vtkFunctionParser8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkFunctionParser} SafeDownCast (Ptr{vtkObjectBase},) _ZN17vtkFunctionParser12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkFunctionParser} NewInstance () _ZNK17vtkFunctionParser11NewInstanceEv "libvtkCommon"
 @vcall 4 None PrintSelf (Void, vtkIndent)

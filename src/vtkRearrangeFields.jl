@@ -1,9 +1,12 @@
 cur_class = vtkRearrangeFields
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN18vtkRearrangeFields8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkRearrangeFields} SafeDownCast (Ptr{vtkObjectBase},) _ZN18vtkRearrangeFields12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkRearrangeFields} NewInstance () _ZNK18vtkRearrangeFields11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkRearrangeFields} vtkRearrangeFieldsNew () _ZN18vtkRearrangeFields3NewEv "libvtkGraphics"
 @mcall Int32 AddOperation (Int32, Int32, Int32, Int32) _ZN18vtkRearrangeFields12AddOperationEiiii "libvtkGraphics"
 @mcall Int32 AddOperation (Int32, Ptr{Uint8}, Int32, Int32) _ZN18vtkRearrangeFields12AddOperationEiPKcii "libvtkGraphics"
 @mcall Int32 AddOperation (Ptr{Uint8}, Ptr{Uint8}, Ptr{Uint8}, Ptr{Uint8}) _ZN18vtkRearrangeFields12AddOperationEPKcS1_S1_S1_ "libvtkGraphics"

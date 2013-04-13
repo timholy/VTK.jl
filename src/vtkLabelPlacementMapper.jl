@@ -1,6 +1,9 @@
 cur_class = vtkLabelPlacementMapper
+@scall Ptr{vtkLabelPlacementMapper} vtkLabelPlacementMapperNew () _ZN23vtkLabelPlacementMapper3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN23vtkLabelPlacementMapper8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkLabelPlacementMapper} SafeDownCast (Ptr{vtkObjectBase},) _ZN23vtkLabelPlacementMapper12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkLabelPlacementMapper} NewInstance () _ZNK23vtkLabelPlacementMapper11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

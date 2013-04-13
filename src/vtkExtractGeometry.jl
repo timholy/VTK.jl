@@ -1,9 +1,12 @@
 cur_class = vtkExtractGeometry
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN18vtkExtractGeometry8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkExtractGeometry} SafeDownCast (Ptr{vtkObjectBase},) _ZN18vtkExtractGeometry12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkExtractGeometry} NewInstance () _ZNK18vtkExtractGeometry11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkExtractGeometry} vtkExtractGeometryNew () _ZN18vtkExtractGeometry3NewEv "libvtkGraphics"
 @vcall 19 Uint64 GetMTime ()
 @vcall 65 None SetImplicitFunction (Ptr{vtkImplicitFunction},)
 @vcall 66 Ptr{vtkImplicitFunction} GetImplicitFunction ()

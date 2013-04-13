@@ -1,6 +1,9 @@
 cur_class = vtkDataObjectAlgorithm
+@scall Ptr{vtkDataObjectAlgorithm} vtkDataObjectAlgorithmNew () _ZN22vtkDataObjectAlgorithm3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN22vtkDataObjectAlgorithm8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkDataObjectAlgorithm} SafeDownCast (Ptr{vtkObjectBase},) _ZN22vtkDataObjectAlgorithm12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkDataObjectAlgorithm} NewInstance () _ZNK22vtkDataObjectAlgorithm11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

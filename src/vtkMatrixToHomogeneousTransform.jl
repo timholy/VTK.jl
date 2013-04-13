@@ -1,6 +1,9 @@
 cur_class = vtkMatrixToHomogeneousTransform
+@scall Ptr{vtkMatrixToHomogeneousTransform} vtkMatrixToHomogeneousTransformNew () _ZN31vtkMatrixToHomogeneousTransform3NewEv "libvtkCommon"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN31vtkMatrixToHomogeneousTransform8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkMatrixToHomogeneousTransform} SafeDownCast (Ptr{vtkObjectBase},) _ZN31vtkMatrixToHomogeneousTransform12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkMatrixToHomogeneousTransform} NewInstance () _ZNK31vtkMatrixToHomogeneousTransform11NewInstanceEv "libvtkCommon"
 @vcall 4 None PrintSelf (Void, vtkIndent)

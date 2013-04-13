@@ -1,6 +1,9 @@
 cur_class = vtkQuadraticHexahedron
+@scall Ptr{vtkQuadraticHexahedron} vtkQuadraticHexahedronNew () _ZN22vtkQuadraticHexahedron3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN22vtkQuadraticHexahedron8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkQuadraticHexahedron} SafeDownCast (Ptr{vtkObjectBase},) _ZN22vtkQuadraticHexahedron12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkQuadraticHexahedron} NewInstance () _ZNK22vtkQuadraticHexahedron11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -19,8 +22,12 @@ cur_class = vtkQuadraticHexahedron
 @vcall 46 Ptr{Float64} GetParametricCoords ()
 @vcall 39 None Clip (Float64, Ptr{vtkDataArray}, Ptr{vtkIncrementalPointLocator}, Ptr{vtkCellArray}, Ptr{vtkPointData}, Ptr{vtkPointData}, Ptr{vtkCellData}, vtkIdType, Ptr{vtkCellData}, Int32)
 @vcall 40 Int32 IntersectWithLine (Ptr{Float64}, Ptr{Float64}, Float64, Void, Ptr{Float64}, Ptr{Float64}, Void)
+@scall None InterpolationFunctions (Ptr{Float64}, Ptr{Float64}) _ZN22vtkQuadraticHexahedron22InterpolationFunctionsEPdS0_ "libvtkFiltering"
+@scall None InterpolationDerivs (Ptr{Float64}, Ptr{Float64}) _ZN22vtkQuadraticHexahedron19InterpolationDerivsEPdS0_ "libvtkFiltering"
 @vcall 47 None InterpolateFunctions (Ptr{Float64}, Ptr{Float64})
 @vcall 48 None InterpolateDerivs (Ptr{Float64}, Ptr{Float64})
+@scall Ptr{Int32} GetEdgeArray (Int32,) _ZN22vtkQuadraticHexahedron12GetEdgeArrayEi "libvtkFiltering"
+@scall Ptr{Int32} GetFaceArray (Int32,) _ZN22vtkQuadraticHexahedron12GetFaceArrayEi "libvtkFiltering"
 @mcall None JacobianInverse (Ptr{Float64}, Ptr{Ptr{Float64}}, Ptr{Float64}) _ZN22vtkQuadraticHexahedron15JacobianInverseEPdPS0_S0_ "libvtkFiltering"
 @mcall None Subdivide (Ptr{vtkPointData}, Ptr{vtkCellData}, vtkIdType, Ptr{vtkDataArray}) _ZN22vtkQuadraticHexahedron9SubdivideEP12vtkPointDataP11vtkCellDataxP12vtkDataArray "libvtkFiltering"
 @mcall None vtkQuadraticHexahedron_eq (Void,) _ZN22vtkQuadraticHexahedronaSERKS_ "libvtkFiltering"

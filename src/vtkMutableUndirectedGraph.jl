@@ -1,6 +1,9 @@
 cur_class = vtkMutableUndirectedGraph
+@scall Ptr{vtkMutableUndirectedGraph} vtkMutableUndirectedGraphNew () _ZN25vtkMutableUndirectedGraph3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN25vtkMutableUndirectedGraph8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkMutableUndirectedGraph} SafeDownCast (Ptr{vtkObjectBase},) _ZN25vtkMutableUndirectedGraph12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkMutableUndirectedGraph} NewInstance () _ZNK25vtkMutableUndirectedGraph11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

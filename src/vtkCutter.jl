@@ -1,9 +1,12 @@
 cur_class = vtkCutter
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN9vtkCutter8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkCutter} SafeDownCast (Ptr{vtkObjectBase},) _ZN9vtkCutter12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkCutter} NewInstance () _ZNK9vtkCutter11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkCutter} vtkCutterNew () _ZN9vtkCutter3NewEv "libvtkGraphics"
 @mcall None SetValue (Int32, Float64) _ZN9vtkCutter8SetValueEid "libvtkGraphics"
 @mcall Float64 GetValue (Int32,) _ZN9vtkCutter8GetValueEi "libvtkGraphics"
 @mcall Ptr{Float64} GetValues () _ZN9vtkCutter9GetValuesEv "libvtkGraphics"
@@ -29,6 +32,7 @@ cur_class = vtkCutter
 @mcall None SetSortByToSortByCell () _ZN9vtkCutter21SetSortByToSortByCellEv "libvtkGraphics"
 @mcall Ptr{Uint8} GetSortByAsString () _ZN9vtkCutter17GetSortByAsStringEv "libvtkGraphics"
 @mcall None CreateDefaultLocator () _ZN9vtkCutter20CreateDefaultLocatorEv "libvtkGraphics"
+@scall None GetCellTypeDimensions (Ptr{Uint8},) _ZN9vtkCutter21GetCellTypeDimensionsEPh "libvtkGraphics"
 @vcall 21 Int32 ProcessRequest (Ptr{vtkInformation}, Ptr{Ptr{vtkInformationVector}}, Ptr{vtkInformationVector})
 @vcall 61 Int32 RequestData (Ptr{vtkInformation}, Ptr{Ptr{vtkInformationVector}}, Ptr{vtkInformationVector})
 @vcall 62 Int32 RequestUpdateExtent (Ptr{vtkInformation}, Ptr{Ptr{vtkInformationVector}}, Ptr{vtkInformationVector})

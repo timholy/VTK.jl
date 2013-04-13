@@ -1,9 +1,12 @@
 cur_class = vtkContourGrid
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN14vtkContourGrid8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkContourGrid} SafeDownCast (Ptr{vtkObjectBase},) _ZN14vtkContourGrid12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkContourGrid} NewInstance () _ZNK14vtkContourGrid11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkContourGrid} vtkContourGridNew () _ZN14vtkContourGrid3NewEv "libvtkGraphics"
 @mcall None SetValue (Int32, Float64) _ZN14vtkContourGrid8SetValueEid "libvtkGraphics"
 @mcall Float64 GetValue (Int32,) _ZN14vtkContourGrid8GetValueEi "libvtkGraphics"
 @mcall Ptr{Float64} GetValues () _ZN14vtkContourGrid9GetValuesEv "libvtkGraphics"

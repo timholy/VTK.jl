@@ -1,6 +1,9 @@
 cur_class = vtkGridSynchronizedTemplates3D
+@scall Ptr{vtkGridSynchronizedTemplates3D} vtkGridSynchronizedTemplates3DNew () _ZN30vtkGridSynchronizedTemplates3D3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN30vtkGridSynchronizedTemplates3D8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkGridSynchronizedTemplates3D} SafeDownCast (Ptr{vtkObjectBase},) _ZN30vtkGridSynchronizedTemplates3D12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkGridSynchronizedTemplates3D} NewInstance () _ZNK30vtkGridSynchronizedTemplates3D11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

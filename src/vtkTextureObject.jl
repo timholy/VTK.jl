@@ -1,6 +1,9 @@
 cur_class = vtkTextureObject
+@scall Ptr{vtkTextureObject} vtkTextureObjectNew () _ZN16vtkTextureObject3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN16vtkTextureObject8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkTextureObject} SafeDownCast (Ptr{vtkObjectBase},) _ZN16vtkTextureObject12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkTextureObject} NewInstance () _ZNK16vtkTextureObject11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -65,6 +68,7 @@ cur_class = vtkTextureObject
 @vcall 57 None SetDepthTextureMode (Int32,)
 @vcall 58 Bool GetGenerateMipmap ()
 @vcall 59 None SetGenerateMipmap (Bool,)
+@scall Bool IsSupported (Ptr{vtkRenderWindow},) _ZN16vtkTextureObject11IsSupportedEP15vtkRenderWindow "libvtkRendering"
 @mcall None CopyToFrameBuffer (Int32, Int32, Int32, Int32, Int32, Int32, Int32, Int32) _ZN16vtkTextureObject17CopyToFrameBufferEiiiiiiii "libvtkRendering"
 @mcall None CopyFromFrameBuffer (Int32, Int32, Int32, Int32, Int32, Int32) _ZN16vtkTextureObject19CopyFromFrameBufferEiiiiii "libvtkRendering"
 @mcall Bool LoadRequiredExtensions (Ptr{vtkOpenGLExtensionManager},) _ZN16vtkTextureObject22LoadRequiredExtensionsEP25vtkOpenGLExtensionManager "libvtkRendering"

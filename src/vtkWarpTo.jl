@@ -1,6 +1,9 @@
 cur_class = vtkWarpTo
+@scall Ptr{vtkWarpTo} vtkWarpToNew () _ZN9vtkWarpTo3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN9vtkWarpTo8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkWarpTo} SafeDownCast (Ptr{vtkObjectBase},) _ZN9vtkWarpTo12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkWarpTo} NewInstance () _ZNK9vtkWarpTo11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

@@ -1,6 +1,9 @@
 cur_class = vtkDynamic2DLabelMapper
+@scall Ptr{vtkDynamic2DLabelMapper} vtkDynamic2DLabelMapperNew () _ZN23vtkDynamic2DLabelMapper3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN23vtkDynamic2DLabelMapper8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkDynamic2DLabelMapper} SafeDownCast (Ptr{vtkObjectBase},) _ZN23vtkDynamic2DLabelMapper12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkDynamic2DLabelMapper} NewInstance () _ZNK23vtkDynamic2DLabelMapper11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

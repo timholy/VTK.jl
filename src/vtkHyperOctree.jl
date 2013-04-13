@@ -1,6 +1,12 @@
 cur_class = vtkHyperOctree
+@scall Ptr{vtkInformationIntegerKey} LEVELS () _ZN14vtkHyperOctree6LEVELSEv "libvtkFiltering"
+@scall Ptr{vtkInformationIntegerKey} DIMENSION () _ZN14vtkHyperOctree9DIMENSIONEv "libvtkFiltering"
+@scall Ptr{vtkInformationDoubleVectorKey} SIZES () _ZN14vtkHyperOctree5SIZESEv "libvtkFiltering"
+@scall Ptr{vtkHyperOctree} vtkHyperOctreeNew () _ZN14vtkHyperOctree3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN14vtkHyperOctree8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkHyperOctree} SafeDownCast (Ptr{vtkObjectBase},) _ZN14vtkHyperOctree12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkHyperOctree} NewInstance () _ZNK14vtkHyperOctree11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -54,6 +60,8 @@ cur_class = vtkHyperOctree
 @mcall None SetDualGridFlag (Int32,) _ZN14vtkHyperOctree15SetDualGridFlagEi "libvtkFiltering"
 @vcall 112 Int32 GetDualGridFlag ()
 @vcall 45 Uint64 GetActualMemorySize ()
+@scall Ptr{vtkHyperOctree} GetData (Ptr{vtkInformation},) _ZN14vtkHyperOctree7GetDataEP14vtkInformation "libvtkFiltering"
+@scall Ptr{vtkHyperOctree} GetData (Ptr{vtkInformationVector}, Int32) _ZN14vtkHyperOctree7GetDataEP20vtkInformationVectori "libvtkFiltering"
 @vcall 96 None ComputeBounds ()
 @mcall None UpdateDualArrays () _ZN14vtkHyperOctree16UpdateDualArraysEv "libvtkFiltering"
 @mcall Ptr{vtkPoints} GetLeafCenters () _ZN14vtkHyperOctree14GetLeafCentersEv "libvtkFiltering"

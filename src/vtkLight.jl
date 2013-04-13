@@ -1,9 +1,12 @@
 cur_class = vtkLight
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN8vtkLight8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkLight} SafeDownCast (Ptr{vtkObjectBase},) _ZN8vtkLight12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkLight} NewInstance () _ZNK8vtkLight11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkLight} vtkLightNew () _ZN8vtkLight3NewEv "libvtkRendering"
 @vcall 20 Ptr{vtkLight} ShallowClone ()
 @vcall 21 None Render (Ptr{vtkRenderer}, Int32)
 @vcall 22 None SetAmbientColor (Float64, Float64, Float64)

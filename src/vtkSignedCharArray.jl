@@ -1,6 +1,9 @@
 cur_class = vtkSignedCharArray
+@scall Ptr{vtkSignedCharArray} vtkSignedCharArrayNew () _ZN18vtkSignedCharArray3NewEv "libvtkCommon"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN18vtkSignedCharArray8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkSignedCharArray} SafeDownCast (Ptr{vtkObjectBase},) _ZN18vtkSignedCharArray12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkSignedCharArray} NewInstance () _ZNK18vtkSignedCharArray11NewInstanceEv "libvtkCommon"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -18,6 +21,8 @@ cur_class = vtkSignedCharArray
 @mcall None GetValueRange (Ptr{Uint8}, Int32) _ZN18vtkSignedCharArray13GetValueRangeEPai "libvtkCommon"
 @mcall Ptr{Uint8} GetValueRange () _ZN18vtkSignedCharArray13GetValueRangeEv "libvtkCommon"
 @mcall None GetValueRange (Ptr{Uint8},) _ZN18vtkSignedCharArray13GetValueRangeEPa "libvtkCommon"
+@scall Uint8 GetDataTypeValueMin () _ZN18vtkSignedCharArray19GetDataTypeValueMinEv "libvtkCommon"
+@scall Uint8 GetDataTypeValueMax () _ZN18vtkSignedCharArray19GetDataTypeValueMaxEv "libvtkCommon"
 @mcall Ptr{Uint8} WritePointer (vtkIdType, vtkIdType) _ZN18vtkSignedCharArray12WritePointerExx "libvtkCommon"
 @mcall Ptr{Uint8} GetPointer (vtkIdType,) _ZN18vtkSignedCharArray10GetPointerEx "libvtkCommon"
 @mcall None SetArray (Ptr{Uint8}, vtkIdType, Int32) _ZN18vtkSignedCharArray8SetArrayEPaxi "libvtkCommon"

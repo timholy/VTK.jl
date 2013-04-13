@@ -1,6 +1,8 @@
 cur_class = vtkGenericAdaptorCell
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN21vtkGenericAdaptorCell8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkGenericAdaptorCell} SafeDownCast (Ptr{vtkObjectBase},) _ZN21vtkGenericAdaptorCell12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkGenericAdaptorCell} NewInstance () _ZNK21vtkGenericAdaptorCell11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

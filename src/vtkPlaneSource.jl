@@ -1,9 +1,12 @@
 cur_class = vtkPlaneSource
 @vcall 4 None PrintSelf (Void, vtkIndent)
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN14vtkPlaneSource8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkPlaneSource} SafeDownCast (Ptr{vtkObjectBase},) _ZN14vtkPlaneSource12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkPlaneSource} NewInstance () _ZNK14vtkPlaneSource11NewInstanceEv "libvtkGraphics"
+@scall Ptr{vtkPlaneSource} vtkPlaneSourceNew () _ZN14vtkPlaneSource3NewEv "libvtkGraphics"
 @vcall 65 None SetXResolution (Int32,)
 @vcall 66 Int32 GetXResolution ()
 @vcall 67 None SetYResolution (Int32,)

@@ -1,6 +1,8 @@
 cur_class = vtkEdgeSubdivisionCriterion
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN27vtkEdgeSubdivisionCriterion8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkEdgeSubdivisionCriterion} SafeDownCast (Ptr{vtkObjectBase},) _ZN27vtkEdgeSubdivisionCriterion12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkEdgeSubdivisionCriterion} NewInstance () _ZNK27vtkEdgeSubdivisionCriterion11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

@@ -1,6 +1,9 @@
 cur_class = vtkSphericalTransform
+@scall Ptr{vtkSphericalTransform} vtkSphericalTransformNew () _ZN21vtkSphericalTransform3NewEv "libvtkCommon"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN21vtkSphericalTransform8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkSphericalTransform} SafeDownCast (Ptr{vtkObjectBase},) _ZN21vtkSphericalTransform12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkSphericalTransform} NewInstance () _ZNK21vtkSphericalTransform11NewInstanceEv "libvtkCommon"
 @vcall 4 None PrintSelf (Void, vtkIndent)

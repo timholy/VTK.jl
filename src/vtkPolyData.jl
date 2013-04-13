@@ -1,6 +1,9 @@
 cur_class = vtkPolyData
+@scall Ptr{vtkPolyData} vtkPolyDataNew () _ZN11vtkPolyData3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN11vtkPolyData8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkPolyData} SafeDownCast (Ptr{vtkObjectBase},) _ZN11vtkPolyData12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkPolyData} NewInstance () _ZNK11vtkPolyData11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -72,6 +75,8 @@ cur_class = vtkPolyData
 @vcall 69 None ShallowCopy (Ptr{vtkDataObject},)
 @vcall 70 None DeepCopy (Ptr{vtkDataObject},)
 @mcall None RemoveGhostCells (Int32,) _ZN11vtkPolyData16RemoveGhostCellsEi "libvtkFiltering"
+@scall Ptr{vtkPolyData} GetData (Ptr{vtkInformation},) _ZN11vtkPolyData7GetDataEP14vtkInformation "libvtkFiltering"
+@scall Ptr{vtkPolyData} GetData (Ptr{vtkInformationVector}, Int32) _ZN11vtkPolyData7GetDataEP20vtkInformationVectori "libvtkFiltering"
 @mcall Int32 GetScalarFieldCriticalIndex (vtkIdType, Ptr{vtkDataArray}) _ZN11vtkPolyData27GetScalarFieldCriticalIndexExP12vtkDataArray "libvtkFiltering"
 @mcall Int32 GetScalarFieldCriticalIndex (vtkIdType, Int32) _ZN11vtkPolyData27GetScalarFieldCriticalIndexExi "libvtkFiltering"
 @mcall Int32 GetScalarFieldCriticalIndex (vtkIdType, Ptr{Uint8}) _ZN11vtkPolyData27GetScalarFieldCriticalIndexExPKc "libvtkFiltering"

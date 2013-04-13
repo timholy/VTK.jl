@@ -1,6 +1,9 @@
 cur_class = vtkIconGlyphFilter
+@scall Ptr{vtkIconGlyphFilter} vtkIconGlyphFilterNew () _ZN18vtkIconGlyphFilter3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN18vtkIconGlyphFilter8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkIconGlyphFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN18vtkIconGlyphFilter12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkIconGlyphFilter} NewInstance () _ZNK18vtkIconGlyphFilter11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

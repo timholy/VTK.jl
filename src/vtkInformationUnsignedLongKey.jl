@@ -1,6 +1,8 @@
 cur_class = vtkInformationUnsignedLongKey
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN29vtkInformationUnsignedLongKey8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkInformationUnsignedLongKey} SafeDownCast (Ptr{vtkObjectBase},) _ZN29vtkInformationUnsignedLongKey12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkInformationUnsignedLongKey} NewInstance () _ZNK29vtkInformationUnsignedLongKey11NewInstanceEv "libvtkCommon"
 @vcall 4 None PrintSelf (Void, vtkIndent)

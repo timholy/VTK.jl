@@ -1,9 +1,12 @@
 cur_class = vtkCollection
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN13vtkCollection8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkCollection} SafeDownCast (Ptr{vtkObjectBase},) _ZN13vtkCollection12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkCollection} NewInstance () _ZNK13vtkCollection11NewInstanceEv "libvtkCommon"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkCollection} vtkCollectionNew () _ZN13vtkCollection3NewEv "libvtkCommon"
 @mcall None AddItem (Ptr{vtkObject},) _ZN13vtkCollection7AddItemEP9vtkObject "libvtkCommon"
 @mcall None InsertItem (Int32, Ptr{vtkObject}) _ZN13vtkCollection10InsertItemEiP9vtkObject "libvtkCommon"
 @mcall None ReplaceItem (Int32, Ptr{vtkObject}) _ZN13vtkCollection11ReplaceItemEiP9vtkObject "libvtkCommon"

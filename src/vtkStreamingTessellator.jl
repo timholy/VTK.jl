@@ -1,8 +1,11 @@
 cur_class = vtkStreamingTessellator
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN23vtkStreamingTessellator8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkStreamingTessellator} SafeDownCast (Ptr{vtkObjectBase},) _ZN23vtkStreamingTessellator12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkStreamingTessellator} NewInstance () _ZNK23vtkStreamingTessellator11NewInstanceEv "libvtkGraphics"
+@scall Ptr{vtkStreamingTessellator} vtkStreamingTessellatorNew () _ZN23vtkStreamingTessellator3NewEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
 @vcall 20 None SetTetrahedronCallback (TetrahedronProcessorFunction,)
 @vcall 21 TetrahedronProcessorFunction GetTetrahedronCallback ()

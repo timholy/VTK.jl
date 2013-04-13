@@ -1,6 +1,9 @@
 cur_class = vtkRInterface
+@scall Ptr{vtkRInterface} vtkRInterfaceNew () _ZN13vtkRInterface3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN13vtkRInterface8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkRInterface} SafeDownCast (Ptr{vtkObjectBase},) _ZN13vtkRInterface12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkRInterface} NewInstance () _ZNK13vtkRInterface11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

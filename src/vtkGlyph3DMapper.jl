@@ -1,6 +1,9 @@
 cur_class = vtkGlyph3DMapper
+@scall Ptr{vtkGlyph3DMapper} vtkGlyph3DMapperNew () _ZN16vtkGlyph3DMapper3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN16vtkGlyph3DMapper8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkGlyph3DMapper} SafeDownCast (Ptr{vtkObjectBase},) _ZN16vtkGlyph3DMapper12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkGlyph3DMapper} NewInstance () _ZNK16vtkGlyph3DMapper11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

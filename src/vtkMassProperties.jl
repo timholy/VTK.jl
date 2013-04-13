@@ -1,6 +1,9 @@
 cur_class = vtkMassProperties
+@scall Ptr{vtkMassProperties} vtkMassPropertiesNew () _ZN17vtkMassProperties3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN17vtkMassProperties8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkMassProperties} SafeDownCast (Ptr{vtkObjectBase},) _ZN17vtkMassProperties12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkMassProperties} NewInstance () _ZNK17vtkMassProperties11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

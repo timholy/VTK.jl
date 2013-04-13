@@ -1,6 +1,9 @@
 cur_class = vtkCubeSource
+@scall Ptr{vtkCubeSource} vtkCubeSourceNew () _ZN13vtkCubeSource3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN13vtkCubeSource8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkCubeSource} SafeDownCast (Ptr{vtkObjectBase},) _ZN13vtkCubeSource12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkCubeSource} NewInstance () _ZNK13vtkCubeSource11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

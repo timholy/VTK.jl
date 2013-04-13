@@ -1,6 +1,9 @@
 cur_class = vtkTDxInteractorStyleSettings
+@scall Ptr{vtkTDxInteractorStyleSettings} vtkTDxInteractorStyleSettingsNew () _ZN29vtkTDxInteractorStyleSettings3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN29vtkTDxInteractorStyleSettings8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkTDxInteractorStyleSettings} SafeDownCast (Ptr{vtkObjectBase},) _ZN29vtkTDxInteractorStyleSettings12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkTDxInteractorStyleSettings} NewInstance () _ZNK29vtkTDxInteractorStyleSettings11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

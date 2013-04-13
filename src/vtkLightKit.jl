@@ -1,6 +1,9 @@
 cur_class = vtkLightKit
+@scall Ptr{vtkLightKit} vtkLightKitNew () _ZN11vtkLightKit3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN11vtkLightKit8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkLightKit} SafeDownCast (Ptr{vtkObjectBase},) _ZN11vtkLightKit12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkLightKit} NewInstance () _ZNK11vtkLightKit11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -70,6 +73,10 @@ cur_class = vtkLightKit
 @mcall None DeepCopy (Ptr{vtkLightKit},) _ZN11vtkLightKit8DeepCopyEPS_ "libvtkRendering"
 @vcall 18 None Modified ()
 @mcall None Update () _ZN11vtkLightKit6UpdateEv "libvtkRendering"
+@scall Ptr{Uint8} GetStringFromType (Int32,) _ZN11vtkLightKit17GetStringFromTypeEi "libvtkRendering"
+@scall Ptr{Uint8} GetStringFromSubType (Int32,) _ZN11vtkLightKit20GetStringFromSubTypeEi "libvtkRendering"
+@scall Ptr{Uint8} GetShortStringFromSubType (Int32,) _ZN11vtkLightKit25GetShortStringFromSubTypeEi "libvtkRendering"
+@scall Int32 GetSubType (Int32, Int32) _ZN11vtkLightKit10GetSubTypeENS_12LightKitTypeEi "libvtkRendering"
 @mcall None WarmthToRGBI (Float64, Ptr{Float64}, Void) _ZN11vtkLightKit12WarmthToRGBIEdPdRd "libvtkRendering"
 @mcall None WarmthToRGB (Float64, Ptr{Float64}) _ZN11vtkLightKit11WarmthToRGBEdPd "libvtkRendering"
 @mcall None InitializeWarmthFunctions () _ZN11vtkLightKit25InitializeWarmthFunctionsEv "libvtkRendering"

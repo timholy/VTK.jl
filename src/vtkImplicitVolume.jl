@@ -1,9 +1,12 @@
 cur_class = vtkImplicitVolume
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN17vtkImplicitVolume8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkImplicitVolume} SafeDownCast (Ptr{vtkObjectBase},) _ZN17vtkImplicitVolume12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkImplicitVolume} NewInstance () _ZNK17vtkImplicitVolume11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkImplicitVolume} vtkImplicitVolumeNew () _ZN17vtkImplicitVolume3NewEv "libvtkFiltering"
 @vcall 19 Uint64 GetMTime ()
 @vcall 23 Float64 EvaluateFunction (Ptr{Float64},)
 @mcall Float64 EvaluateFunction (Float64, Float64, Float64) _ZN17vtkImplicitVolume16EvaluateFunctionEddd "libvtkFiltering"

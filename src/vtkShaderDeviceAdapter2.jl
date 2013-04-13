@@ -1,6 +1,8 @@
 cur_class = vtkShaderDeviceAdapter2
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN23vtkShaderDeviceAdapter28IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkShaderDeviceAdapter2} SafeDownCast (Ptr{vtkObjectBase},) _ZN23vtkShaderDeviceAdapter212SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkShaderDeviceAdapter2} NewInstance () _ZNK23vtkShaderDeviceAdapter211NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

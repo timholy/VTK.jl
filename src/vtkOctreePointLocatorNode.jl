@@ -1,9 +1,12 @@
 cur_class = vtkOctreePointLocatorNode
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN25vtkOctreePointLocatorNode8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkOctreePointLocatorNode} SafeDownCast (Ptr{vtkObjectBase},) _ZN25vtkOctreePointLocatorNode12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkOctreePointLocatorNode} NewInstance () _ZNK25vtkOctreePointLocatorNode11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkOctreePointLocatorNode} vtkOctreePointLocatorNodeNew () _ZN25vtkOctreePointLocatorNode3NewEv "libvtkFiltering"
 @mcall None SetNumberOfPoints (Int32,) _ZN25vtkOctreePointLocatorNode17SetNumberOfPointsEi "libvtkFiltering"
 @vcall 20 Int32 GetNumberOfPoints ()
 @mcall None SetBounds (Float64, Float64, Float64, Float64, Float64, Float64) _ZN25vtkOctreePointLocatorNode9SetBoundsEdddddd "libvtkFiltering"

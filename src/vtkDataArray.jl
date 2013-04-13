@@ -1,6 +1,8 @@
 cur_class = vtkDataArray
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN12vtkDataArray8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkDataArray} SafeDownCast (Ptr{vtkObjectBase},) _ZN12vtkDataArray12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkDataArray} NewInstance () _ZNK12vtkDataArray11NewInstanceEv "libvtkCommon"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -64,7 +66,14 @@ cur_class = vtkDataArray
 @mcall None GetDataTypeRange (Ptr{Float64},) _ZN12vtkDataArray16GetDataTypeRangeEPd "libvtkCommon"
 @mcall Float64 GetDataTypeMin () _ZN12vtkDataArray14GetDataTypeMinEv "libvtkCommon"
 @mcall Float64 GetDataTypeMax () _ZN12vtkDataArray14GetDataTypeMaxEv "libvtkCommon"
+@scall None GetDataTypeRange (Int32, Ptr{Float64}) _ZN12vtkDataArray16GetDataTypeRangeEiPd "libvtkCommon"
+@scall Float64 GetDataTypeMin (Int32,) _ZN12vtkDataArray14GetDataTypeMinEi "libvtkCommon"
+@scall Float64 GetDataTypeMax (Int32,) _ZN12vtkDataArray14GetDataTypeMaxEi "libvtkCommon"
 @vcall 78 Float64 GetMaxNorm ()
+@scall Ptr{vtkDataArray} CreateDataArray (Int32,) _ZN12vtkDataArray15CreateDataArrayEi "libvtkCommon"
+@scall Ptr{vtkInformationInformationVectorKey} PER_COMPONENT () _ZN12vtkDataArray13PER_COMPONENTEv "libvtkCommon"
+@scall Ptr{vtkInformationDoubleVectorKey} COMPONENT_RANGE () _ZN12vtkDataArray15COMPONENT_RANGEEv "libvtkCommon"
+@scall Ptr{vtkInformationDoubleVectorKey} L2_NORM_RANGE () _ZN12vtkDataArray13L2_NORM_RANGEEv "libvtkCommon"
 @vcall 56 Int32 CopyInformation (Ptr{vtkInformation}, Int32)
 @vcall 79 None ComputeRange (Int32,)
 @vcall 80 None ComputeScalarRange (Int32,)

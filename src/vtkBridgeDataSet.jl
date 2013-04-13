@@ -1,6 +1,9 @@
 cur_class = vtkBridgeDataSet
+@scall Ptr{vtkBridgeDataSet} vtkBridgeDataSetNew () _ZN16vtkBridgeDataSet3NewEv "libvtkGenericFiltering/Testing/Cxx"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN16vtkBridgeDataSet8IsTypeOfEPKc "libvtkGenericFiltering/Testing/Cxx"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkBridgeDataSet} SafeDownCast (Ptr{vtkObjectBase},) _ZN16vtkBridgeDataSet12SafeDownCastEP13vtkObjectBase "libvtkGenericFiltering/Testing/Cxx"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkBridgeDataSet} NewInstance () _ZNK16vtkBridgeDataSet11NewInstanceEv "libvtkGenericFiltering/Testing/Cxx"
 @vcall 4 None PrintSelf (Void, vtkIndent)

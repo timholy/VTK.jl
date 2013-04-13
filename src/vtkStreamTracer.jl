@@ -1,9 +1,12 @@
 cur_class = vtkStreamTracer
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN15vtkStreamTracer8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkStreamTracer} SafeDownCast (Ptr{vtkObjectBase},) _ZN15vtkStreamTracer12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkStreamTracer} NewInstance () _ZNK15vtkStreamTracer11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkStreamTracer} vtkStreamTracerNew () _ZN15vtkStreamTracer3NewEv "libvtkGraphics"
 @vcall 65 None SetStartPosition (Float64, Float64, Float64)
 @vcall 66 None SetStartPosition (Ptr{Float64},)
 @vcall 67 Ptr{Float64} GetStartPosition ()
@@ -60,6 +63,8 @@ cur_class = vtkStreamTracer
 @mcall Int32 CheckInputs (Void, Ptr{Int32}) _ZN15vtkStreamTracer11CheckInputsERP36vtkAbstractInterpolatedVelocityFieldPi "libvtkGraphics"
 @mcall None GenerateNormals (Ptr{vtkPolyData}, Ptr{Float64}, Ptr{Uint8}) _ZN15vtkStreamTracer15GenerateNormalsEP11vtkPolyDataPdPKc "libvtkGraphics"
 @mcall None ConvertIntervals (Void, Void, Void, Int32, Float64) _ZN15vtkStreamTracer16ConvertIntervalsERdS0_S0_id "libvtkGraphics"
+@scall Float64 ConvertToLength (Float64, Int32, Float64) _ZN15vtkStreamTracer15ConvertToLengthEdid "libvtkGraphics"
+@scall Float64 ConvertToLength (Void, Float64) _ZN15vtkStreamTracer15ConvertToLengthERNS_19IntervalInformationEd "libvtkGraphics"
 @mcall Int32 SetupOutput (Ptr{vtkInformation}, Ptr{vtkInformation}) _ZN15vtkStreamTracer11SetupOutputEP14vtkInformationS1_ "libvtkGraphics"
 @mcall None InitializeSeeds (Void, Void, Void, Ptr{vtkDataSet}) _ZN15vtkStreamTracer15InitializeSeedsERP12vtkDataArrayRP9vtkIdListRP11vtkIntArrayP10vtkDataSet "libvtkGraphics"
 @mcall None vtkStreamTracer_eq (Void,) _ZN15vtkStreamTraceraSERKS_ "libvtkGraphics"

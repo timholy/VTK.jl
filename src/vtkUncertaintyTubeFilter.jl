@@ -1,9 +1,12 @@
 cur_class = vtkUncertaintyTubeFilter
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN24vtkUncertaintyTubeFilter8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkUncertaintyTubeFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN24vtkUncertaintyTubeFilter12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkUncertaintyTubeFilter} NewInstance () _ZNK24vtkUncertaintyTubeFilter11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkUncertaintyTubeFilter} vtkUncertaintyTubeFilterNew () _ZN24vtkUncertaintyTubeFilter3NewEv "libvtkGraphics"
 @vcall 65 None SetNumberOfSides (Int32,)
 @vcall 66 Int32 GetNumberOfSidesMinValue ()
 @vcall 67 Int32 GetNumberOfSidesMaxValue ()

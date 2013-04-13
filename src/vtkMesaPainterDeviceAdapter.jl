@@ -1,8 +1,11 @@
 cur_class = vtkMesaPainterDeviceAdapter
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN27vtkMesaPainterDeviceAdapter8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkMesaPainterDeviceAdapter} SafeDownCast (Ptr{vtkObjectBase},) _ZN27vtkMesaPainterDeviceAdapter12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkMesaPainterDeviceAdapter} NewInstance () _ZNK27vtkMesaPainterDeviceAdapter11NewInstanceEv "libvtkRendering"
+@scall Ptr{vtkMesaPainterDeviceAdapter} vtkMesaPainterDeviceAdapterNew () _ZN27vtkMesaPainterDeviceAdapter3NewEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
 @vcall 20 None BeginPrimitive (Int32,)
 @vcall 21 None EndPrimitive ()

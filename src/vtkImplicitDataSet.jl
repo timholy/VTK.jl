@@ -1,9 +1,12 @@
 cur_class = vtkImplicitDataSet
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN18vtkImplicitDataSet8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkImplicitDataSet} SafeDownCast (Ptr{vtkObjectBase},) _ZN18vtkImplicitDataSet12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkImplicitDataSet} NewInstance () _ZNK18vtkImplicitDataSet11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkImplicitDataSet} vtkImplicitDataSetNew () _ZN18vtkImplicitDataSet3NewEv "libvtkFiltering"
 @vcall 19 Uint64 GetMTime ()
 @vcall 23 Float64 EvaluateFunction (Ptr{Float64},)
 @mcall Float64 EvaluateFunction (Float64, Float64, Float64) _ZN18vtkImplicitDataSet16EvaluateFunctionEddd "libvtkFiltering"

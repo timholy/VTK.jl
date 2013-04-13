@@ -1,6 +1,9 @@
 cur_class = vtkPixelBufferObject
+@scall Ptr{vtkPixelBufferObject} vtkPixelBufferObjectNew () _ZN20vtkPixelBufferObject3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN20vtkPixelBufferObject8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkPixelBufferObject} SafeDownCast (Ptr{vtkObjectBase},) _ZN20vtkPixelBufferObject12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkPixelBufferObject} NewInstance () _ZNK20vtkPixelBufferObject11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -23,6 +26,7 @@ cur_class = vtkPixelBufferObject
 @mcall None Bind (Int32,) _ZN20vtkPixelBufferObject4BindENS_10BufferTypeE "libvtkRendering"
 @mcall None Allocate (Uint32, Int32) _ZN20vtkPixelBufferObject8AllocateEji "libvtkRendering"
 @mcall None ReleaseMemory () _ZN20vtkPixelBufferObject13ReleaseMemoryEv "libvtkRendering"
+@scall Bool IsSupported (Ptr{vtkRenderWindow},) _ZN20vtkPixelBufferObject11IsSupportedEP15vtkRenderWindow "libvtkRendering"
 @mcall Bool LoadRequiredExtensions (Ptr{vtkOpenGLExtensionManager},) _ZN20vtkPixelBufferObject22LoadRequiredExtensionsEP25vtkOpenGLExtensionManager "libvtkRendering"
 @mcall None CreateBuffer () _ZN20vtkPixelBufferObject12CreateBufferEv "libvtkRendering"
 @mcall None DestroyBuffer () _ZN20vtkPixelBufferObject13DestroyBufferEv "libvtkRendering"

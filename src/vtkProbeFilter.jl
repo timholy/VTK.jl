@@ -1,6 +1,9 @@
 cur_class = vtkProbeFilter
+@scall Ptr{vtkProbeFilter} vtkProbeFilterNew () _ZN14vtkProbeFilter3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN14vtkProbeFilter8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkProbeFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN14vtkProbeFilter12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkProbeFilter} NewInstance () _ZNK14vtkProbeFilter11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

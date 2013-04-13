@@ -1,9 +1,12 @@
 cur_class = vtkBandedPolyDataContourFilter
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN30vtkBandedPolyDataContourFilter8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkBandedPolyDataContourFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN30vtkBandedPolyDataContourFilter12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkBandedPolyDataContourFilter} NewInstance () _ZNK30vtkBandedPolyDataContourFilter11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkBandedPolyDataContourFilter} vtkBandedPolyDataContourFilterNew () _ZN30vtkBandedPolyDataContourFilter3NewEv "libvtkGraphics"
 @mcall None SetValue (Int32, Float64) _ZN30vtkBandedPolyDataContourFilter8SetValueEid "libvtkGraphics"
 @mcall Float64 GetValue (Int32,) _ZN30vtkBandedPolyDataContourFilter8GetValueEi "libvtkGraphics"
 @mcall Ptr{Float64} GetValues () _ZN30vtkBandedPolyDataContourFilter9GetValuesEv "libvtkGraphics"

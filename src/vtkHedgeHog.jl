@@ -1,6 +1,9 @@
 cur_class = vtkHedgeHog
+@scall Ptr{vtkHedgeHog} vtkHedgeHogNew () _ZN11vtkHedgeHog3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN11vtkHedgeHog8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkHedgeHog} SafeDownCast (Ptr{vtkObjectBase},) _ZN11vtkHedgeHog12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkHedgeHog} NewInstance () _ZNK11vtkHedgeHog11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

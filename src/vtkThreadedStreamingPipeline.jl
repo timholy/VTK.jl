@@ -1,9 +1,24 @@
 cur_class = vtkThreadedStreamingPipeline
+@scall Ptr{vtkThreadedStreamingPipeline} vtkThreadedStreamingPipelineNew () _ZN28vtkThreadedStreamingPipeline3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN28vtkThreadedStreamingPipeline8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkThreadedStreamingPipeline} SafeDownCast (Ptr{vtkObjectBase},) _ZN28vtkThreadedStreamingPipeline12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkThreadedStreamingPipeline} NewInstance () _ZNK28vtkThreadedStreamingPipeline11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkInformationIntegerKey} AUTO_PROPAGATE () _ZN28vtkThreadedStreamingPipeline14AUTO_PROPAGATEEv "libvtkFiltering"
+@scall Ptr{vtkInformationObjectBaseKey} EXTRA_INFORMATION () _ZN28vtkThreadedStreamingPipeline17EXTRA_INFORMATIONEv "libvtkFiltering"
+@scall None SetMultiThreadedEnabled (Bool,) _ZN28vtkThreadedStreamingPipeline23SetMultiThreadedEnabledEb "libvtkFiltering"
+@scall None SetAutoPropagatePush (Bool,) _ZN28vtkThreadedStreamingPipeline20SetAutoPropagatePushEb "libvtkFiltering"
+@scall None Pull (Ptr{vtkExecutiveCollection},) _ZN28vtkThreadedStreamingPipeline4PullEP22vtkExecutiveCollection "libvtkFiltering"
+@scall None Pull (Ptr{vtkExecutiveCollection}, Ptr{vtkInformation}) _ZN28vtkThreadedStreamingPipeline4PullEP22vtkExecutiveCollectionP14vtkInformation "libvtkFiltering"
+@scall None Push (Ptr{vtkExecutiveCollection},) _ZN28vtkThreadedStreamingPipeline4PushEP22vtkExecutiveCollection "libvtkFiltering"
+@scall None Push (Ptr{vtkExecutiveCollection}, Ptr{vtkInformation}) _ZN28vtkThreadedStreamingPipeline4PushEP22vtkExecutiveCollectionP14vtkInformation "libvtkFiltering"
+@scall None Pull (Ptr{vtkExecutive},) _ZN28vtkThreadedStreamingPipeline4PullEP12vtkExecutive "libvtkFiltering"
+@scall None Pull (Ptr{vtkExecutive}, Ptr{vtkInformation}) _ZN28vtkThreadedStreamingPipeline4PullEP12vtkExecutiveP14vtkInformation "libvtkFiltering"
+@scall None Push (Ptr{vtkExecutive},) _ZN28vtkThreadedStreamingPipeline4PushEP12vtkExecutive "libvtkFiltering"
+@scall None Push (Ptr{vtkExecutive}, Ptr{vtkInformation}) _ZN28vtkThreadedStreamingPipeline4PushEP12vtkExecutiveP14vtkInformation "libvtkFiltering"
 @mcall None Pull () _ZN28vtkThreadedStreamingPipeline4PullEv "libvtkFiltering"
 @mcall None Pull (Ptr{vtkInformation},) _ZN28vtkThreadedStreamingPipeline4PullEP14vtkInformation "libvtkFiltering"
 @mcall None Push () _ZN28vtkThreadedStreamingPipeline4PushEv "libvtkFiltering"

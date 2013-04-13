@@ -1,9 +1,13 @@
 cur_class = vtkMesaRenderWindow
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN19vtkMesaRenderWindow8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkMesaRenderWindow} SafeDownCast (Ptr{vtkObjectBase},) _ZN19vtkMesaRenderWindow12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkMesaRenderWindow} NewInstance () _ZNK19vtkMesaRenderWindow11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall None SetGlobalMaximumNumberOfMultiSamples (Int32,) _ZN19vtkMesaRenderWindow36SetGlobalMaximumNumberOfMultiSamplesEi "libvtkRendering"
+@scall Int32 GetGlobalMaximumNumberOfMultiSamples () _ZN19vtkMesaRenderWindow36GetGlobalMaximumNumberOfMultiSamplesEv "libvtkRendering"
 @vcall 184 None SetMultiSamples (Int32,)
 @vcall 185 Int32 GetMultiSamples ()
 @vcall 117 None StereoUpdate ()

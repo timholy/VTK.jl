@@ -1,12 +1,20 @@
 cur_class = vtkCompositeDataPipeline
+@scall Ptr{vtkCompositeDataPipeline} vtkCompositeDataPipelineNew () _ZN24vtkCompositeDataPipeline3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN24vtkCompositeDataPipeline8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkCompositeDataPipeline} SafeDownCast (Ptr{vtkObjectBase},) _ZN24vtkCompositeDataPipeline12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkCompositeDataPipeline} NewInstance () _ZNK24vtkCompositeDataPipeline11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
 @vcall 20 Int32 ProcessRequest (Ptr{vtkInformation}, Ptr{Ptr{vtkInformationVector}}, Ptr{vtkInformationVector})
 @mcall Ptr{vtkDataObject} GetCompositeOutputData (Int32,) _ZN24vtkCompositeDataPipeline22GetCompositeOutputDataEi "libvtkFiltering"
 @mcall Ptr{vtkDataObject} GetCompositeInputData (Int32, Int32, Ptr{Ptr{vtkInformationVector}}) _ZN24vtkCompositeDataPipeline21GetCompositeInputDataEiiPP20vtkInformationVector "libvtkFiltering"
+@scall Ptr{vtkInformationIntegerKey} REQUIRES_TIME_DOWNSTREAM () _ZN24vtkCompositeDataPipeline24REQUIRES_TIME_DOWNSTREAMEv "libvtkFiltering"
+@scall Ptr{vtkInformationObjectBaseKey} COMPOSITE_DATA_META_DATA () _ZN24vtkCompositeDataPipeline24COMPOSITE_DATA_META_DATAEv "libvtkFiltering"
+@scall Ptr{vtkInformationIntegerVectorKey} UPDATE_COMPOSITE_INDICES () _ZN24vtkCompositeDataPipeline24UPDATE_COMPOSITE_INDICESEv "libvtkFiltering"
+@scall Ptr{vtkInformationIntegerVectorKey} COMPOSITE_INDICES () _ZN24vtkCompositeDataPipeline17COMPOSITE_INDICESEv "libvtkFiltering"
+@scall Ptr{vtkInformationIntegerKey} COMPOSITE_INDEX () _ZN24vtkCompositeDataPipeline15COMPOSITE_INDEXEv "libvtkFiltering"
 @vcall 33 Int32 ForwardUpstream (Ptr{vtkInformation},)
 @vcall 60 Int32 ForwardUpstream (Int32, Int32, Ptr{vtkInformation})
 @vcall 34 None CopyDefaultInformation (Ptr{vtkInformation}, Int32, Ptr{Ptr{vtkInformationVector}}, Ptr{vtkInformationVector})

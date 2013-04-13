@@ -1,6 +1,9 @@
 cur_class = vtkAppendFilter
+@scall Ptr{vtkAppendFilter} vtkAppendFilterNew () _ZN15vtkAppendFilter3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN15vtkAppendFilter8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkAppendFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN15vtkAppendFilter12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkAppendFilter} NewInstance () _ZNK15vtkAppendFilter11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

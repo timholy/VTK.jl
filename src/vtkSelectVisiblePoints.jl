@@ -1,9 +1,12 @@
 cur_class = vtkSelectVisiblePoints
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN22vtkSelectVisiblePoints8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkSelectVisiblePoints} SafeDownCast (Ptr{vtkObjectBase},) _ZN22vtkSelectVisiblePoints12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkSelectVisiblePoints} NewInstance () _ZNK22vtkSelectVisiblePoints11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkSelectVisiblePoints} vtkSelectVisiblePointsNew () _ZN22vtkSelectVisiblePoints3NewEv "libvtkRendering"
 @mcall None SetRenderer (Ptr{vtkRenderer},) _ZN22vtkSelectVisiblePoints11SetRendererEP11vtkRenderer "libvtkRendering"
 @mcall Ptr{vtkRenderer} GetRenderer () _ZN22vtkSelectVisiblePoints11GetRendererEv "libvtkRendering"
 @vcall 65 None SetSelectionWindow (Int32,)

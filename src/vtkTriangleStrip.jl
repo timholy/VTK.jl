@@ -1,6 +1,9 @@
 cur_class = vtkTriangleStrip
+@scall Ptr{vtkTriangleStrip} vtkTriangleStripNew () _ZN16vtkTriangleStrip3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN16vtkTriangleStrip8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkTriangleStrip} SafeDownCast (Ptr{vtkObjectBase},) _ZN16vtkTriangleStrip12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkTriangleStrip} NewInstance () _ZNK16vtkTriangleStrip11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -20,6 +23,7 @@ cur_class = vtkTriangleStrip
 @vcall 42 None Derivatives (Int32, Ptr{Float64}, Ptr{Float64}, Int32, Ptr{Float64})
 @vcall 45 Int32 IsPrimaryCell ()
 @vcall 43 Int32 GetParametricCenter (Ptr{Float64},)
+@scall None DecomposeStrip (Int32, Ptr{vtkIdType}, Ptr{vtkCellArray}) _ZN16vtkTriangleStrip14DecomposeStripEiPxP12vtkCellArray "libvtkFiltering"
 @vcall 47 None InterpolateFunctions (Ptr{Float64}, Ptr{Float64})
 @vcall 48 None InterpolateDerivs (Ptr{Float64}, Ptr{Float64})
 @mcall None vtkTriangleStrip_eq (Void,) _ZN16vtkTriangleStripaSERKS_ "libvtkFiltering"

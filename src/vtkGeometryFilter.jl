@@ -1,6 +1,9 @@
 cur_class = vtkGeometryFilter
+@scall Ptr{vtkGeometryFilter} vtkGeometryFilterNew () _ZN17vtkGeometryFilter3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN17vtkGeometryFilter8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkGeometryFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN17vtkGeometryFilter12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkGeometryFilter} NewInstance () _ZNK17vtkGeometryFilter11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

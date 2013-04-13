@@ -1,9 +1,12 @@
 cur_class = vtkRibbonFilter
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN15vtkRibbonFilter8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkRibbonFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN15vtkRibbonFilter12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkRibbonFilter} NewInstance () _ZNK15vtkRibbonFilter11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkRibbonFilter} vtkRibbonFilterNew () _ZN15vtkRibbonFilter3NewEv "libvtkGraphics"
 @vcall 65 None SetWidth (Float64,)
 @vcall 66 Float64 GetWidthMinValue ()
 @vcall 67 Float64 GetWidthMaxValue ()

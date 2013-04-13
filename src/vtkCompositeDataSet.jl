@@ -1,6 +1,8 @@
 cur_class = vtkCompositeDataSet
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN19vtkCompositeDataSet8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkCompositeDataSet} SafeDownCast (Ptr{vtkObjectBase},) _ZN19vtkCompositeDataSet12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkCompositeDataSet} NewInstance () _ZNK19vtkCompositeDataSet11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -13,10 +15,13 @@ cur_class = vtkCompositeDataSet
 @vcall 81 Ptr{vtkInformation} GetMetaData (Ptr{vtkCompositeDataIterator},)
 @vcall 82 Int32 HasMetaData (Ptr{vtkCompositeDataIterator},)
 @vcall 45 Uint64 GetActualMemorySize ()
+@scall Ptr{vtkCompositeDataSet} GetData (Ptr{vtkInformation},) _ZN19vtkCompositeDataSet7GetDataEP14vtkInformation "libvtkFiltering"
+@scall Ptr{vtkCompositeDataSet} GetData (Ptr{vtkInformationVector}, Int32) _ZN19vtkCompositeDataSet7GetDataEP20vtkInformationVectori "libvtkFiltering"
 @vcall 26 None Initialize ()
 @vcall 69 None ShallowCopy (Ptr{vtkDataObject},)
 @vcall 70 None DeepCopy (Ptr{vtkDataObject},)
 @vcall 83 vtkIdType GetNumberOfPoints ()
+@scall Ptr{vtkInformationStringKey} NAME () _ZN19vtkCompositeDataSet4NAMEEv "libvtkFiltering"
 @mcall None SetNumberOfChildren (Uint32,) _ZN19vtkCompositeDataSet19SetNumberOfChildrenEj "libvtkFiltering"
 @mcall Uint32 GetNumberOfChildren () _ZN19vtkCompositeDataSet19GetNumberOfChildrenEv "libvtkFiltering"
 @mcall None SetChild (Uint32, Ptr{vtkDataObject}) _ZN19vtkCompositeDataSet8SetChildEjP13vtkDataObject "libvtkFiltering"

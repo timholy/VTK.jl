@@ -1,9 +1,12 @@
 cur_class = vtkBSPIntersections
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN19vtkBSPIntersections8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkBSPIntersections} SafeDownCast (Ptr{vtkObjectBase},) _ZN19vtkBSPIntersections12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkBSPIntersections} NewInstance () _ZNK19vtkBSPIntersections11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkBSPIntersections} vtkBSPIntersectionsNew () _ZN19vtkBSPIntersections3NewEv "libvtkFiltering"
 @mcall None SetCuts (Ptr{vtkBSPCuts},) _ZN19vtkBSPIntersections7SetCutsEP10vtkBSPCuts "libvtkFiltering"
 @vcall 20 Ptr{vtkBSPCuts} GetCuts ()
 @mcall Int32 GetBounds (Ptr{Float64},) _ZN19vtkBSPIntersections9GetBoundsEPd "libvtkFiltering"
@@ -25,7 +28,10 @@ cur_class = vtkBSPIntersections
 @vcall 22 Uint64 GetRegionListBuildTime ()
 @mcall Int32 BuildRegionList () _ZN19vtkBSPIntersections15BuildRegionListEv "libvtkFiltering"
 @mcall Ptr{Ptr{vtkKdNode}} GetRegionList () _ZN19vtkBSPIntersections13GetRegionListEv "libvtkFiltering"
+@scall Int32 NumberOfLeafNodes (Ptr{vtkKdNode},) _ZN19vtkBSPIntersections17NumberOfLeafNodesEP9vtkKdNode "libvtkFiltering"
+@scall None SetIDRanges (Ptr{vtkKdNode}, Void, Void) _ZN19vtkBSPIntersections11SetIDRangesEP9vtkKdNodeRiS2_ "libvtkFiltering"
 @mcall Int32 SelfRegister (Ptr{vtkKdNode},) _ZN19vtkBSPIntersections12SelfRegisterEP9vtkKdNode "libvtkFiltering"
+@scall None SetCellBounds (Ptr{vtkCell}, Ptr{Float64}) _ZN19vtkBSPIntersections13SetCellBoundsEP7vtkCellPd "libvtkFiltering"
 @mcall Int32 _IntersectsBox (Ptr{vtkKdNode}, Ptr{Int32}, Int32, Float64, Float64, Float64, Float64, Float64, Float64) _ZN19vtkBSPIntersections14_IntersectsBoxEP9vtkKdNodePiidddddd "libvtkFiltering"
 @mcall Int32 _IntersectsSphere2 (Ptr{vtkKdNode}, Ptr{Int32}, Int32, Float64, Float64, Float64, Float64) _ZN19vtkBSPIntersections18_IntersectsSphere2EP9vtkKdNodePiidddd "libvtkFiltering"
 @mcall Int32 _IntersectsCell (Ptr{vtkKdNode}, Ptr{Int32}, Int32, Ptr{vtkCell}, Int32) _ZN19vtkBSPIntersections15_IntersectsCellEP9vtkKdNodePiiP7vtkCelli "libvtkFiltering"

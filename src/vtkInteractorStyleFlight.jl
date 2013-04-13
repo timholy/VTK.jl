@@ -1,6 +1,9 @@
 cur_class = vtkInteractorStyleFlight
+@scall Ptr{vtkInteractorStyleFlight} vtkInteractorStyleFlightNew () _ZN24vtkInteractorStyleFlight3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN24vtkInteractorStyleFlight8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkInteractorStyleFlight} SafeDownCast (Ptr{vtkObjectBase},) _ZN24vtkInteractorStyleFlight12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkInteractorStyleFlight} NewInstance () _ZNK24vtkInteractorStyleFlight11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

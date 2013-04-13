@@ -1,6 +1,9 @@
 cur_class = vtkSelectionAlgorithm
+@scall Ptr{vtkSelectionAlgorithm} vtkSelectionAlgorithmNew () _ZN21vtkSelectionAlgorithm3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN21vtkSelectionAlgorithm8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkSelectionAlgorithm} SafeDownCast (Ptr{vtkObjectBase},) _ZN21vtkSelectionAlgorithm12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkSelectionAlgorithm} NewInstance () _ZNK21vtkSelectionAlgorithm11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

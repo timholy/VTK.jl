@@ -1,9 +1,12 @@
 cur_class = vtkQuadricClustering
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN20vtkQuadricClustering8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkQuadricClustering} SafeDownCast (Ptr{vtkObjectBase},) _ZN20vtkQuadricClustering12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkQuadricClustering} NewInstance () _ZNK20vtkQuadricClustering11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkQuadricClustering} vtkQuadricClusteringNew () _ZN20vtkQuadricClustering3NewEv "libvtkGraphics"
 @mcall None SetNumberOfXDivisions (Int32,) _ZN20vtkQuadricClustering21SetNumberOfXDivisionsEi "libvtkGraphics"
 @mcall None SetNumberOfYDivisions (Int32,) _ZN20vtkQuadricClustering21SetNumberOfYDivisionsEi "libvtkGraphics"
 @mcall None SetNumberOfZDivisions (Int32,) _ZN20vtkQuadricClustering21SetNumberOfZDivisionsEi "libvtkGraphics"

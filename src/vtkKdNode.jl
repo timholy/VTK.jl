@@ -1,9 +1,12 @@
 cur_class = vtkKdNode
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN9vtkKdNode8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkKdNode} SafeDownCast (Ptr{vtkObjectBase},) _ZN9vtkKdNode12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkKdNode} NewInstance () _ZNK9vtkKdNode11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkKdNode} vtkKdNodeNew () _ZN9vtkKdNode3NewEv "libvtkFiltering"
 @vcall 20 None SetDim (Int32,)
 @vcall 21 Int32 GetDim ()
 @vcall 22 Float64 GetDivisionPosition ()

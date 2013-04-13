@@ -1,6 +1,9 @@
 cur_class = vtkCardinalSpline
+@scall Ptr{vtkCardinalSpline} vtkCardinalSplineNew () _ZN17vtkCardinalSpline3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN17vtkCardinalSpline8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkCardinalSpline} SafeDownCast (Ptr{vtkObjectBase},) _ZN17vtkCardinalSpline12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkCardinalSpline} NewInstance () _ZNK17vtkCardinalSpline11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

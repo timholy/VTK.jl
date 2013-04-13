@@ -1,7 +1,9 @@
 cur_class = vtkButtonSource
 @vcall 4 None PrintSelf (Void, vtkIndent)
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN15vtkButtonSource8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkButtonSource} SafeDownCast (Ptr{vtkObjectBase},) _ZN15vtkButtonSource12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkButtonSource} NewInstance () _ZNK15vtkButtonSource11NewInstanceEv "libvtkGraphics"
 @vcall 65 None SetCenter (Float64, Float64, Float64)

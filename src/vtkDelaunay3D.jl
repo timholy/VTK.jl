@@ -1,9 +1,12 @@
 cur_class = vtkDelaunay3D
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN13vtkDelaunay3D8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkDelaunay3D} SafeDownCast (Ptr{vtkObjectBase},) _ZN13vtkDelaunay3D12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkDelaunay3D} NewInstance () _ZNK13vtkDelaunay3D11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkDelaunay3D} vtkDelaunay3DNew () _ZN13vtkDelaunay3D3NewEv "libvtkGraphics"
 @vcall 65 None SetAlpha (Float64,)
 @vcall 66 Float64 GetAlphaMinValue ()
 @vcall 67 Float64 GetAlphaMaxValue ()

@@ -1,9 +1,12 @@
 cur_class = vtkParametricFunctionSource
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN27vtkParametricFunctionSource8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkParametricFunctionSource} SafeDownCast (Ptr{vtkObjectBase},) _ZN27vtkParametricFunctionSource12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkParametricFunctionSource} NewInstance () _ZNK27vtkParametricFunctionSource11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkParametricFunctionSource} vtkParametricFunctionSourceNew () _ZN27vtkParametricFunctionSource3NewEv "libvtkGraphics"
 @vcall 65 None SetParametricFunction (Ptr{vtkParametricFunction},)
 @vcall 66 Ptr{vtkParametricFunction} GetParametricFunction ()
 @vcall 67 None SetUResolution (Int32,)

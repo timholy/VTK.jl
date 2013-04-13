@@ -1,6 +1,9 @@
 cur_class = vtkFrustumCoverageCuller
+@scall Ptr{vtkFrustumCoverageCuller} vtkFrustumCoverageCullerNew () _ZN24vtkFrustumCoverageCuller3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN24vtkFrustumCoverageCuller8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkFrustumCoverageCuller} SafeDownCast (Ptr{vtkObjectBase},) _ZN24vtkFrustumCoverageCuller12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkFrustumCoverageCuller} NewInstance () _ZNK24vtkFrustumCoverageCuller11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

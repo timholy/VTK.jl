@@ -1,6 +1,9 @@
 cur_class = vtkPolyDataAlgorithm
+@scall Ptr{vtkPolyDataAlgorithm} vtkPolyDataAlgorithmNew () _ZN20vtkPolyDataAlgorithm3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN20vtkPolyDataAlgorithm8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkPolyDataAlgorithm} SafeDownCast (Ptr{vtkObjectBase},) _ZN20vtkPolyDataAlgorithm12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkPolyDataAlgorithm} NewInstance () _ZNK20vtkPolyDataAlgorithm11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

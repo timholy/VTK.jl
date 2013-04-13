@@ -1,9 +1,12 @@
 cur_class = vtkTextActor
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN12vtkTextActor8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkTextActor} SafeDownCast (Ptr{vtkObjectBase},) _ZN12vtkTextActor12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkTextActor} NewInstance () _ZNK12vtkTextActor11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkTextActor} vtkTextActorNew () _ZN12vtkTextActor3NewEv "libvtkRendering"
 @vcall 42 None ShallowCopy (Ptr{vtkProp},)
 @mcall None SetMapper (Ptr{vtkPolyDataMapper2D},) _ZN12vtkTextActor9SetMapperEP19vtkPolyDataMapper2D "libvtkRendering"
 @mcall None SetInput (Ptr{Uint8},) _ZN12vtkTextActor8SetInputEPKc "libvtkRendering"
@@ -41,6 +44,7 @@ cur_class = vtkTextActor
 @mcall None DisplayToSpecified (Ptr{Float64}, Ptr{vtkViewport}, Int32) _ZN12vtkTextActor18DisplayToSpecifiedEPdP11vtkViewporti "libvtkRendering"
 @vcall 105 None ComputeScaledFont (Ptr{vtkViewport},)
 @vcall 106 Ptr{vtkTextProperty} GetScaledTextProperty ()
+@scall Float32 GetFontScale (Ptr{vtkViewport},) _ZN12vtkTextActor12GetFontScaleEP11vtkViewport "libvtkRendering"
 @vcall 60 None ReleaseGraphicsResources (Ptr{vtkWindow},)
 @vcall 51 Int32 RenderOpaqueGeometry (Ptr{vtkViewport},)
 @vcall 52 Int32 RenderTranslucentPolygonalGeometry (Ptr{vtkViewport},)

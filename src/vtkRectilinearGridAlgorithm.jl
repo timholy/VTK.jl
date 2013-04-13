@@ -1,6 +1,9 @@
 cur_class = vtkRectilinearGridAlgorithm
+@scall Ptr{vtkRectilinearGridAlgorithm} vtkRectilinearGridAlgorithmNew () _ZN27vtkRectilinearGridAlgorithm3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN27vtkRectilinearGridAlgorithm8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkRectilinearGridAlgorithm} SafeDownCast (Ptr{vtkObjectBase},) _ZN27vtkRectilinearGridAlgorithm12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkRectilinearGridAlgorithm} NewInstance () _ZNK27vtkRectilinearGridAlgorithm11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

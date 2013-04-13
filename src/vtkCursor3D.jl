@@ -1,9 +1,12 @@
 cur_class = vtkCursor3D
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN11vtkCursor3D8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkCursor3D} SafeDownCast (Ptr{vtkObjectBase},) _ZN11vtkCursor3D12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkCursor3D} NewInstance () _ZNK11vtkCursor3D11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkCursor3D} vtkCursor3DNew () _ZN11vtkCursor3D3NewEv "libvtkGraphics"
 @mcall None SetModelBounds (Float64, Float64, Float64, Float64, Float64, Float64) _ZN11vtkCursor3D14SetModelBoundsEdddddd "libvtkGraphics"
 @mcall None SetModelBounds (Ptr{Float64},) _ZN11vtkCursor3D14SetModelBoundsEPd "libvtkGraphics"
 @vcall 65 Ptr{Float64} GetModelBounds ()

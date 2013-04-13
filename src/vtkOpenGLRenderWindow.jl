@@ -1,9 +1,13 @@
 cur_class = vtkOpenGLRenderWindow
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN21vtkOpenGLRenderWindow8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkOpenGLRenderWindow} SafeDownCast (Ptr{vtkObjectBase},) _ZN21vtkOpenGLRenderWindow12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkOpenGLRenderWindow} NewInstance () _ZNK21vtkOpenGLRenderWindow11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall None SetGlobalMaximumNumberOfMultiSamples (Int32,) _ZN21vtkOpenGLRenderWindow36SetGlobalMaximumNumberOfMultiSamplesEi "libvtkRendering"
+@scall Int32 GetGlobalMaximumNumberOfMultiSamples () _ZN21vtkOpenGLRenderWindow36GetGlobalMaximumNumberOfMultiSamplesEv "libvtkRendering"
 @vcall 117 None StereoUpdate ()
 @vcall 52 Ptr{Uint8} GetPixelData (Int32, Int32, Int32, Int32, Int32)
 @vcall 53 Int32 GetPixelData (Int32, Int32, Int32, Int32, Int32, Ptr{vtkUnsignedCharArray})

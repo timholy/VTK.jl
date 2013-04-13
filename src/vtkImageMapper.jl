@@ -1,8 +1,11 @@
 cur_class = vtkImageMapper
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN14vtkImageMapper8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkImageMapper} SafeDownCast (Ptr{vtkObjectBase},) _ZN14vtkImageMapper12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkImageMapper} NewInstance () _ZNK14vtkImageMapper11NewInstanceEv "libvtkRendering"
+@scall Ptr{vtkImageMapper} vtkImageMapperNew () _ZN14vtkImageMapper3NewEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
 @vcall 19 Uint64 GetMTime ()
 @vcall 67 None SetColorWindow (Float64,)

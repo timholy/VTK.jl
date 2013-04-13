@@ -1,8 +1,11 @@
 cur_class = vtkPolyDataMapper2D
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN19vtkPolyDataMapper2D8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkPolyDataMapper2D} SafeDownCast (Ptr{vtkObjectBase},) _ZN19vtkPolyDataMapper2D12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkPolyDataMapper2D} NewInstance () _ZNK19vtkPolyDataMapper2D11NewInstanceEv "libvtkRendering"
+@scall Ptr{vtkPolyDataMapper2D} vtkPolyDataMapper2DNew () _ZN19vtkPolyDataMapper2D3NewEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
 @mcall None SetInput (Ptr{vtkPolyData},) _ZN19vtkPolyDataMapper2D8SetInputEP11vtkPolyData "libvtkRendering"
 @mcall Ptr{vtkPolyData} GetInput () _ZN19vtkPolyDataMapper2D8GetInputEv "libvtkRendering"

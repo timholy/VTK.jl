@@ -1,9 +1,12 @@
 cur_class = vtkReverseSense
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN15vtkReverseSense8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkReverseSense} SafeDownCast (Ptr{vtkObjectBase},) _ZN15vtkReverseSense12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkReverseSense} NewInstance () _ZNK15vtkReverseSense11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkReverseSense} vtkReverseSenseNew () _ZN15vtkReverseSense3NewEv "libvtkGraphics"
 @vcall 65 None SetReverseCells (Int32,)
 @vcall 66 Int32 GetReverseCells ()
 @vcall 67 None ReverseCellsOn ()

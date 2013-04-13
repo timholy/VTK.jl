@@ -1,6 +1,9 @@
 cur_class = vtkSocketCollection
+@scall Ptr{vtkSocketCollection} vtkSocketCollectionNew () _ZN19vtkSocketCollection3NewEv "libvtkCommon"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN19vtkSocketCollection8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkSocketCollection} SafeDownCast (Ptr{vtkObjectBase},) _ZN19vtkSocketCollection12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkSocketCollection} NewInstance () _ZNK19vtkSocketCollection11NewInstanceEv "libvtkCommon"
 @vcall 4 None PrintSelf (Void, vtkIndent)

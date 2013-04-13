@@ -1,6 +1,9 @@
 cur_class = vtkOpenGLCoincidentTopologyResolutionPainter
+@scall Ptr{vtkOpenGLCoincidentTopologyResolutionPainter} vtkOpenGLCoincidentTopologyResolutionPainterNew () _ZN44vtkOpenGLCoincidentTopologyResolutionPainter3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN44vtkOpenGLCoincidentTopologyResolutionPainter8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkOpenGLCoincidentTopologyResolutionPainter} SafeDownCast (Ptr{vtkObjectBase},) _ZN44vtkOpenGLCoincidentTopologyResolutionPainter12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkOpenGLCoincidentTopologyResolutionPainter} NewInstance () _ZNK44vtkOpenGLCoincidentTopologyResolutionPainter11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

@@ -1,6 +1,9 @@
 cur_class = vtkInteractorStyleJoystickActor
+@scall Ptr{vtkInteractorStyleJoystickActor} vtkInteractorStyleJoystickActorNew () _ZN31vtkInteractorStyleJoystickActor3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN31vtkInteractorStyleJoystickActor8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkInteractorStyleJoystickActor} SafeDownCast (Ptr{vtkObjectBase},) _ZN31vtkInteractorStyleJoystickActor12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkInteractorStyleJoystickActor} NewInstance () _ZNK31vtkInteractorStyleJoystickActor11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

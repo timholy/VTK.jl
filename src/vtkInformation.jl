@@ -1,6 +1,9 @@
 cur_class = vtkInformation
+@scall Ptr{vtkInformation} vtkInformationNew () _ZN14vtkInformation3NewEv "libvtkCommon"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN14vtkInformation8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkInformation} SafeDownCast (Ptr{vtkObjectBase},) _ZN14vtkInformation12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkInformation} NewInstance () _ZNK14vtkInformation11NewInstanceEv "libvtkCommon"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -127,6 +130,18 @@ cur_class = vtkInformation
 @mcall Ptr{vtkDataObject} Get (Ptr{vtkInformationDataObjectKey},) _ZN14vtkInformation3GetEP27vtkInformationDataObjectKey "libvtkCommon"
 @mcall None Remove (Ptr{vtkInformationDataObjectKey},) _ZN14vtkInformation6RemoveEP27vtkInformationDataObjectKey "libvtkCommon"
 @mcall Int32 Has (Ptr{vtkInformationDataObjectKey},) _ZN14vtkInformation3HasEP27vtkInformationDataObjectKey "libvtkCommon"
+@scall Ptr{vtkInformationKey} GetKey (Ptr{vtkInformationDataObjectKey},) _ZN14vtkInformation6GetKeyEP27vtkInformationDataObjectKey "libvtkCommon"
+@scall Ptr{vtkInformationKey} GetKey (Ptr{vtkInformationDoubleKey},) _ZN14vtkInformation6GetKeyEP23vtkInformationDoubleKey "libvtkCommon"
+@scall Ptr{vtkInformationKey} GetKey (Ptr{vtkInformationDoubleVectorKey},) _ZN14vtkInformation6GetKeyEP29vtkInformationDoubleVectorKey "libvtkCommon"
+@scall Ptr{vtkInformationKey} GetKey (Ptr{vtkInformationInformationKey},) _ZN14vtkInformation6GetKeyEP28vtkInformationInformationKey "libvtkCommon"
+@scall Ptr{vtkInformationKey} GetKey (Ptr{vtkInformationInformationVectorKey},) _ZN14vtkInformation6GetKeyEP34vtkInformationInformationVectorKey "libvtkCommon"
+@scall Ptr{vtkInformationKey} GetKey (Ptr{vtkInformationIntegerKey},) _ZN14vtkInformation6GetKeyEP24vtkInformationIntegerKey "libvtkCommon"
+@scall Ptr{vtkInformationKey} GetKey (Ptr{vtkInformationIntegerVectorKey},) _ZN14vtkInformation6GetKeyEP30vtkInformationIntegerVectorKey "libvtkCommon"
+@scall Ptr{vtkInformationKey} GetKey (Ptr{vtkInformationRequestKey},) _ZN14vtkInformation6GetKeyEP24vtkInformationRequestKey "libvtkCommon"
+@scall Ptr{vtkInformationKey} GetKey (Ptr{vtkInformationStringKey},) _ZN14vtkInformation6GetKeyEP23vtkInformationStringKey "libvtkCommon"
+@scall Ptr{vtkInformationKey} GetKey (Ptr{vtkInformationStringVectorKey},) _ZN14vtkInformation6GetKeyEP29vtkInformationStringVectorKey "libvtkCommon"
+@scall Ptr{vtkInformationKey} GetKey (Ptr{vtkInformationKey},) _ZN14vtkInformation6GetKeyEP17vtkInformationKey "libvtkCommon"
+@scall Ptr{vtkInformationKey} GetKey (Ptr{vtkInformationUnsignedLongKey},) _ZN14vtkInformation6GetKeyEP29vtkInformationUnsignedLongKey "libvtkCommon"
 @vcall 7 None Register (Ptr{vtkObjectBase},)
 @vcall 8 None UnRegister (Ptr{vtkObjectBase},)
 @mcall None SetRequest (Ptr{vtkInformationRequestKey},) _ZN14vtkInformation10SetRequestEP24vtkInformationRequestKey "libvtkCommon"
@@ -149,6 +164,7 @@ cur_class = vtkInformation
 @mcall Int32 Length (Ptr{vtkInformationExecutivePortVectorKey},) _ZN14vtkInformation6LengthEP36vtkInformationExecutivePortVectorKey "libvtkCommon"
 @mcall None Remove (Ptr{vtkInformationExecutivePortVectorKey},) _ZN14vtkInformation6RemoveEP36vtkInformationExecutivePortVectorKey "libvtkCommon"
 @mcall Int32 Has (Ptr{vtkInformationExecutivePortVectorKey},) _ZN14vtkInformation3HasEP36vtkInformationExecutivePortVectorKey "libvtkCommon"
+@scall Ptr{vtkInformationKey} GetKey (Ptr{vtkInformationExecutivePortKey},) _ZN14vtkInformation6GetKeyEP30vtkInformationExecutivePortKey "libvtkCommon"
 @mcall None SetAsObjectBase (Ptr{vtkInformationKey}, Ptr{vtkObjectBase}) _ZN14vtkInformation15SetAsObjectBaseEP17vtkInformationKeyP13vtkObjectBase "libvtkCommon"
 @mcall Ptr{vtkObjectBase} GetAsObjectBase (Ptr{vtkInformationKey},) _ZN14vtkInformation15GetAsObjectBaseEP17vtkInformationKey "libvtkCommon"
 @vcall 14 None ReportReferences (Ptr{vtkGarbageCollector},)

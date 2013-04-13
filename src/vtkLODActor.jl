@@ -1,9 +1,12 @@
 cur_class = vtkLODActor
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN11vtkLODActor8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkLODActor} SafeDownCast (Ptr{vtkObjectBase},) _ZN11vtkLODActor12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkLODActor} NewInstance () _ZNK11vtkLODActor11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkLODActor} vtkLODActorNew () _ZN11vtkLODActor3NewEv "libvtkRendering"
 @vcall 89 None Render (Ptr{vtkRenderer}, Ptr{vtkMapper})
 @vcall 51 Int32 RenderOpaqueGeometry (Ptr{vtkViewport},)
 @vcall 60 None ReleaseGraphicsResources (Ptr{vtkWindow},)

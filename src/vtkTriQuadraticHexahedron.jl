@@ -1,6 +1,9 @@
 cur_class = vtkTriQuadraticHexahedron
+@scall Ptr{vtkTriQuadraticHexahedron} vtkTriQuadraticHexahedronNew () _ZN25vtkTriQuadraticHexahedron3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN25vtkTriQuadraticHexahedron8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkTriQuadraticHexahedron} SafeDownCast (Ptr{vtkObjectBase},) _ZN25vtkTriQuadraticHexahedron12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkTriQuadraticHexahedron} NewInstance () _ZNK25vtkTriQuadraticHexahedron11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -19,7 +22,11 @@ cur_class = vtkTriQuadraticHexahedron
 @vcall 46 Ptr{Float64} GetParametricCoords ()
 @vcall 39 None Clip (Float64, Ptr{vtkDataArray}, Ptr{vtkIncrementalPointLocator}, Ptr{vtkCellArray}, Ptr{vtkPointData}, Ptr{vtkPointData}, Ptr{vtkCellData}, vtkIdType, Ptr{vtkCellData}, Int32)
 @vcall 40 Int32 IntersectWithLine (Ptr{Float64}, Ptr{Float64}, Float64, Void, Ptr{Float64}, Ptr{Float64}, Void)
+@scall None InterpolationFunctions (Ptr{Float64}, Ptr{Float64}) _ZN25vtkTriQuadraticHexahedron22InterpolationFunctionsEPdS0_ "libvtkFiltering"
+@scall None InterpolationDerivs (Ptr{Float64}, Ptr{Float64}) _ZN25vtkTriQuadraticHexahedron19InterpolationDerivsEPdS0_ "libvtkFiltering"
 @vcall 47 None InterpolateFunctions (Ptr{Float64}, Ptr{Float64})
 @vcall 48 None InterpolateDerivs (Ptr{Float64}, Ptr{Float64})
+@scall Ptr{Int32} GetEdgeArray (Int32,) _ZN25vtkTriQuadraticHexahedron12GetEdgeArrayEi "libvtkFiltering"
+@scall Ptr{Int32} GetFaceArray (Int32,) _ZN25vtkTriQuadraticHexahedron12GetFaceArrayEi "libvtkFiltering"
 @mcall None JacobianInverse (Ptr{Float64}, Ptr{Ptr{Float64}}, Ptr{Float64}) _ZN25vtkTriQuadraticHexahedron15JacobianInverseEPdPS0_S0_ "libvtkFiltering"
 @mcall None vtkTriQuadraticHexahedron_eq (Void,) _ZN25vtkTriQuadraticHexahedronaSERKS_ "libvtkFiltering"

@@ -1,6 +1,9 @@
 cur_class = vtkInterpolateDataSetAttributes
+@scall Ptr{vtkInterpolateDataSetAttributes} vtkInterpolateDataSetAttributesNew () _ZN31vtkInterpolateDataSetAttributes3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN31vtkInterpolateDataSetAttributes8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkInterpolateDataSetAttributes} SafeDownCast (Ptr{vtkObjectBase},) _ZN31vtkInterpolateDataSetAttributes12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkInterpolateDataSetAttributes} NewInstance () _ZNK31vtkInterpolateDataSetAttributes11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

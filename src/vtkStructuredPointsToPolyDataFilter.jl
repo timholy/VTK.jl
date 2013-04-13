@@ -1,6 +1,8 @@
 cur_class = vtkStructuredPointsToPolyDataFilter
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN35vtkStructuredPointsToPolyDataFilter8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkStructuredPointsToPolyDataFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN35vtkStructuredPointsToPolyDataFilter12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkStructuredPointsToPolyDataFilter} NewInstance () _ZNK35vtkStructuredPointsToPolyDataFilter11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

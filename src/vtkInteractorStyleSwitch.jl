@@ -1,6 +1,9 @@
 cur_class = vtkInteractorStyleSwitch
+@scall Ptr{vtkInteractorStyleSwitch} vtkInteractorStyleSwitchNew () _ZN24vtkInteractorStyleSwitch3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN24vtkInteractorStyleSwitch8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkInteractorStyleSwitch} SafeDownCast (Ptr{vtkObjectBase},) _ZN24vtkInteractorStyleSwitch12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkInteractorStyleSwitch} NewInstance () _ZNK24vtkInteractorStyleSwitch11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

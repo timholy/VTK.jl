@@ -1,9 +1,12 @@
 cur_class = vtkMergeCells
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN13vtkMergeCells8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkMergeCells} SafeDownCast (Ptr{vtkObjectBase},) _ZN13vtkMergeCells12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkMergeCells} NewInstance () _ZNK13vtkMergeCells11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkMergeCells} vtkMergeCellsNew () _ZN13vtkMergeCells3NewEv "libvtkGraphics"
 @vcall 20 None SetUnstructuredGrid (Ptr{vtkUnstructuredGrid},)
 @vcall 21 Ptr{vtkUnstructuredGrid} GetUnstructuredGrid ()
 @vcall 22 None SetTotalNumberOfCells (vtkIdType,)

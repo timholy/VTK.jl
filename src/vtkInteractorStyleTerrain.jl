@@ -1,6 +1,9 @@
 cur_class = vtkInteractorStyleTerrain
+@scall Ptr{vtkInteractorStyleTerrain} vtkInteractorStyleTerrainNew () _ZN25vtkInteractorStyleTerrain3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN25vtkInteractorStyleTerrain8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkInteractorStyleTerrain} SafeDownCast (Ptr{vtkObjectBase},) _ZN25vtkInteractorStyleTerrain12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkInteractorStyleTerrain} NewInstance () _ZNK25vtkInteractorStyleTerrain11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

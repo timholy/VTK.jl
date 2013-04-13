@@ -1,6 +1,8 @@
 cur_class = vtkInteractorObserver
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN21vtkInteractorObserver8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkInteractorObserver} SafeDownCast (Ptr{vtkObjectBase},) _ZN21vtkInteractorObserver12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkInteractorObserver} NewInstance () _ZNK21vtkInteractorObserver11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -27,10 +29,13 @@ cur_class = vtkInteractorObserver
 @vcall 35 Ptr{vtkRenderer} GetCurrentRenderer ()
 @vcall 36 None SetCurrentRenderer (Ptr{vtkRenderer},)
 @vcall 37 None OnChar ()
+@scall None ComputeDisplayToWorld (Ptr{vtkRenderer}, Float64, Float64, Float64, Ptr{Float64}) _ZN21vtkInteractorObserver21ComputeDisplayToWorldEP11vtkRendererdddPd "libvtkRendering"
+@scall None ComputeWorldToDisplay (Ptr{vtkRenderer}, Float64, Float64, Float64, Ptr{Float64}) _ZN21vtkInteractorObserver21ComputeWorldToDisplayEP11vtkRendererdddPd "libvtkRendering"
 @mcall None GrabFocus (Ptr{vtkCommand}, Ptr{vtkCommand}) _ZN21vtkInteractorObserver9GrabFocusEP10vtkCommandS1_ "libvtkRendering"
 @mcall None ReleaseFocus () _ZN21vtkInteractorObserver12ReleaseFocusEv "libvtkRendering"
 @vcall 38 None StartInteraction ()
 @vcall 39 None EndInteraction ()
+@scall None ProcessEvents (Ptr{vtkObject}, Uint64, Ptr{None}, Ptr{None}) _ZN21vtkInteractorObserver13ProcessEventsEP9vtkObjectmPvS2_ "libvtkRendering"
 @mcall None ComputeDisplayToWorld (Float64, Float64, Float64, Ptr{Float64}) _ZN21vtkInteractorObserver21ComputeDisplayToWorldEdddPd "libvtkRendering"
 @mcall None ComputeWorldToDisplay (Float64, Float64, Float64, Ptr{Float64}) _ZN21vtkInteractorObserver21ComputeWorldToDisplayEdddPd "libvtkRendering"
 @mcall Int32 RequestCursorShape (Int32,) _ZN21vtkInteractorObserver18RequestCursorShapeEi "libvtkRendering"

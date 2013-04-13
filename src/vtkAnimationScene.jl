@@ -1,9 +1,12 @@
 cur_class = vtkAnimationScene
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN17vtkAnimationScene8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkAnimationScene} SafeDownCast (Ptr{vtkObjectBase},) _ZN17vtkAnimationScene12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkAnimationScene} NewInstance () _ZNK17vtkAnimationScene11NewInstanceEv "libvtkCommon"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkAnimationScene} vtkAnimationSceneNew () _ZN17vtkAnimationScene3NewEv "libvtkCommon"
 @vcall 35 None SetPlayMode (Int32,)
 @mcall None SetModeToSequence () _ZN17vtkAnimationScene17SetModeToSequenceEv "libvtkCommon"
 @mcall None SetModeToRealTime () _ZN17vtkAnimationScene17SetModeToRealTimeEv "libvtkCommon"

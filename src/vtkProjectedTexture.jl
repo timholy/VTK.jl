@@ -1,6 +1,9 @@
 cur_class = vtkProjectedTexture
+@scall Ptr{vtkProjectedTexture} vtkProjectedTextureNew () _ZN19vtkProjectedTexture3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN19vtkProjectedTexture8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkProjectedTexture} SafeDownCast (Ptr{vtkObjectBase},) _ZN19vtkProjectedTexture12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkProjectedTexture} NewInstance () _ZNK19vtkProjectedTexture11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

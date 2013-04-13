@@ -1,9 +1,14 @@
 cur_class = vtkFreeTypeUtilities
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN20vtkFreeTypeUtilities8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkFreeTypeUtilities} SafeDownCast (Ptr{vtkObjectBase},) _ZN20vtkFreeTypeUtilities12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkFreeTypeUtilities} NewInstance () _ZNK20vtkFreeTypeUtilities11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkFreeTypeUtilities} vtkFreeTypeUtilitiesNew () _ZN20vtkFreeTypeUtilities3NewEv "libvtkRendering"
+@scall Ptr{vtkFreeTypeUtilities} GetInstance () _ZN20vtkFreeTypeUtilities11GetInstanceEv "libvtkRendering"
+@scall None SetInstance (Ptr{vtkFreeTypeUtilities},) _ZN20vtkFreeTypeUtilities11SetInstanceEPS_ "libvtkRendering"
 @mcall Ptr{Int32} GetLibrary () _ZN20vtkFreeTypeUtilities10GetLibraryEv "libvtkRendering"
 @vcall 20 None SetMaximumNumberOfFaces (Uint32,)
 @vcall 21 Uint32 GetMaximumNumberOfFacesMinValue ()

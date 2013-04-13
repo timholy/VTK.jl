@@ -1,6 +1,9 @@
 cur_class = vtkCompositeDataIterator
+@scall Ptr{vtkCompositeDataIterator} vtkCompositeDataIteratorNew () _ZN24vtkCompositeDataIterator3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN24vtkCompositeDataIterator8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkCompositeDataIterator} SafeDownCast (Ptr{vtkObjectBase},) _ZN24vtkCompositeDataIterator12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkCompositeDataIterator} NewInstance () _ZNK24vtkCompositeDataIterator11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

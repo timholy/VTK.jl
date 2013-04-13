@@ -1,6 +1,8 @@
 cur_class = vtkStreamer
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN11vtkStreamer8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkStreamer} SafeDownCast (Ptr{vtkObjectBase},) _ZN11vtkStreamer12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkStreamer} NewInstance () _ZNK11vtkStreamer11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -53,6 +55,7 @@ cur_class = vtkStreamer
 @vcall 98 None SetEpsilon (Float64,)
 @vcall 99 Float64 GetEpsilon ()
 @mcall None Integrate (Ptr{vtkDataSet}, Ptr{vtkDataSet}) _ZN11vtkStreamer9IntegrateEP10vtkDataSetS1_ "libvtkGraphics"
+@scall Ptr{None} ThreadedIntegrate (Ptr{None},) _ZN11vtkStreamer17ThreadedIntegrateEPv "libvtkGraphics"
 @vcall 100 vtkIdType GetNumberOfStreamers ()
 @mcall Ptr{StreamArray} GetStreamers () _ZN11vtkStreamer12GetStreamersEv "libvtkGraphics"
 @mcall None InitializeThreadedIntegrate () _ZN11vtkStreamer27InitializeThreadedIntegrateEv "libvtkGraphics"

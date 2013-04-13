@@ -1,9 +1,12 @@
 cur_class = vtkTransformTextureCoords
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN25vtkTransformTextureCoords8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkTransformTextureCoords} SafeDownCast (Ptr{vtkObjectBase},) _ZN25vtkTransformTextureCoords12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkTransformTextureCoords} NewInstance () _ZNK25vtkTransformTextureCoords11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkTransformTextureCoords} vtkTransformTextureCoordsNew () _ZN25vtkTransformTextureCoords3NewEv "libvtkGraphics"
 @vcall 63 None SetPosition (Float64, Float64, Float64)
 @vcall 64 None SetPosition (Ptr{Float64},)
 @vcall 65 Ptr{Float64} GetPosition ()

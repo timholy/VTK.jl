@@ -1,9 +1,12 @@
 cur_class = vtkHyperOctreeSampleFunction
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN28vtkHyperOctreeSampleFunction8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkHyperOctreeSampleFunction} SafeDownCast (Ptr{vtkObjectBase},) _ZN28vtkHyperOctreeSampleFunction12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkHyperOctreeSampleFunction} NewInstance () _ZNK28vtkHyperOctreeSampleFunction11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkHyperOctreeSampleFunction} vtkHyperOctreeSampleFunctionNew () _ZN28vtkHyperOctreeSampleFunction3NewEv "libvtkGraphics"
 @mcall Int32 GetLevels () _ZN28vtkHyperOctreeSampleFunction9GetLevelsEv "libvtkGraphics"
 @mcall None SetLevels (Int32,) _ZN28vtkHyperOctreeSampleFunction9SetLevelsEi "libvtkGraphics"
 @mcall Int32 GetMinLevels () _ZN28vtkHyperOctreeSampleFunction12GetMinLevelsEv "libvtkGraphics"

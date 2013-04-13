@@ -1,9 +1,12 @@
 cur_class = vtkCameraInterpolator
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN21vtkCameraInterpolator8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkCameraInterpolator} SafeDownCast (Ptr{vtkObjectBase},) _ZN21vtkCameraInterpolator12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkCameraInterpolator} NewInstance () _ZNK21vtkCameraInterpolator11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkCameraInterpolator} vtkCameraInterpolatorNew () _ZN21vtkCameraInterpolator3NewEv "libvtkRendering"
 @mcall Int32 GetNumberOfCameras () _ZN21vtkCameraInterpolator18GetNumberOfCamerasEv "libvtkRendering"
 @mcall Float64 GetMinimumT () _ZN21vtkCameraInterpolator11GetMinimumTEv "libvtkRendering"
 @mcall Float64 GetMaximumT () _ZN21vtkCameraInterpolator11GetMaximumTEv "libvtkRendering"

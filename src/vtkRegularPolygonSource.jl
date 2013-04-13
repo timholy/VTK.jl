@@ -1,6 +1,9 @@
 cur_class = vtkRegularPolygonSource
+@scall Ptr{vtkRegularPolygonSource} vtkRegularPolygonSourceNew () _ZN23vtkRegularPolygonSource3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN23vtkRegularPolygonSource8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkRegularPolygonSource} SafeDownCast (Ptr{vtkObjectBase},) _ZN23vtkRegularPolygonSource12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkRegularPolygonSource} NewInstance () _ZNK23vtkRegularPolygonSource11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

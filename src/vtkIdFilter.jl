@@ -1,9 +1,12 @@
 cur_class = vtkIdFilter
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN11vtkIdFilter8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkIdFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN11vtkIdFilter12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkIdFilter} NewInstance () _ZNK11vtkIdFilter11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkIdFilter} vtkIdFilterNew () _ZN11vtkIdFilter3NewEv "libvtkGraphics"
 @vcall 63 None SetPointIds (Int32,)
 @vcall 64 Int32 GetPointIds ()
 @vcall 65 None PointIdsOn ()

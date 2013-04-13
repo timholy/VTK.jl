@@ -1,9 +1,12 @@
 cur_class = vtkGlyph3D
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN10vtkGlyph3D8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkGlyph3D} SafeDownCast (Ptr{vtkObjectBase},) _ZN10vtkGlyph3D12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkGlyph3D} NewInstance () _ZNK10vtkGlyph3D11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkGlyph3D} vtkGlyph3DNew () _ZN10vtkGlyph3D3NewEv "libvtkGraphics"
 @mcall None SetSource (Ptr{vtkPolyData},) _ZN10vtkGlyph3D9SetSourceEP11vtkPolyData "libvtkGraphics"
 @mcall None SetSource (Int32, Ptr{vtkPolyData}) _ZN10vtkGlyph3D9SetSourceEiP11vtkPolyData "libvtkGraphics"
 @mcall None SetSourceConnection (Int32, Ptr{vtkAlgorithmOutput}) _ZN10vtkGlyph3D19SetSourceConnectionEiP18vtkAlgorithmOutput "libvtkGraphics"

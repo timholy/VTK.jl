@@ -1,8 +1,11 @@
 cur_class = vtkDataSetEdgeSubdivisionCriterion
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN34vtkDataSetEdgeSubdivisionCriterion8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkDataSetEdgeSubdivisionCriterion} SafeDownCast (Ptr{vtkObjectBase},) _ZN34vtkDataSetEdgeSubdivisionCriterion12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkDataSetEdgeSubdivisionCriterion} NewInstance () _ZNK34vtkDataSetEdgeSubdivisionCriterion11NewInstanceEv "libvtkGraphics"
+@scall Ptr{vtkDataSetEdgeSubdivisionCriterion} vtkDataSetEdgeSubdivisionCriterionNew () _ZN34vtkDataSetEdgeSubdivisionCriterion3NewEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
 @vcall 24 None SetMesh (Ptr{vtkDataSet},)
 @mcall Ptr{vtkDataSet} GetMesh () _ZN34vtkDataSetEdgeSubdivisionCriterion7GetMeshEv "libvtkGraphics"

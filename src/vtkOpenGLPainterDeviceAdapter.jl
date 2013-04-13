@@ -1,8 +1,11 @@
 cur_class = vtkOpenGLPainterDeviceAdapter
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN29vtkOpenGLPainterDeviceAdapter8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkOpenGLPainterDeviceAdapter} SafeDownCast (Ptr{vtkObjectBase},) _ZN29vtkOpenGLPainterDeviceAdapter12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkOpenGLPainterDeviceAdapter} NewInstance () _ZNK29vtkOpenGLPainterDeviceAdapter11NewInstanceEv "libvtkRendering"
+@scall Ptr{vtkOpenGLPainterDeviceAdapter} vtkOpenGLPainterDeviceAdapterNew () _ZN29vtkOpenGLPainterDeviceAdapter3NewEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
 @vcall 20 None BeginPrimitive (Int32,)
 @vcall 21 None EndPrimitive ()

@@ -1,9 +1,14 @@
 cur_class = vtkShaderProgram2
+@scall Ptr{vtkShaderProgram2} vtkShaderProgram2New () _ZN17vtkShaderProgram23NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN17vtkShaderProgram28IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkShaderProgram2} SafeDownCast (Ptr{vtkObjectBase},) _ZN17vtkShaderProgram212SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkShaderProgram2} NewInstance () _ZNK17vtkShaderProgram211NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Bool IsSupported (Ptr{vtkOpenGLRenderWindow},) _ZN17vtkShaderProgram211IsSupportedEP21vtkOpenGLRenderWindow "libvtkRendering"
+@scall Bool LoadExtensions (Ptr{vtkOpenGLRenderWindow},) _ZN17vtkShaderProgram214LoadExtensionsEP21vtkOpenGLRenderWindow "libvtkRendering"
 @vcall 20 Bool GetPrintErrors ()
 @vcall 21 None SetPrintErrors (Bool,)
 @mcall None SetContext (Ptr{vtkOpenGLRenderWindow},) _ZN17vtkShaderProgram210SetContextEP21vtkOpenGLRenderWindow "libvtkRendering"

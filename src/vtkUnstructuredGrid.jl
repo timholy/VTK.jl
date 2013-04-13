@@ -1,6 +1,9 @@
 cur_class = vtkUnstructuredGrid
+@scall Ptr{vtkUnstructuredGrid} vtkUnstructuredGridNew () _ZN19vtkUnstructuredGrid3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN19vtkUnstructuredGrid8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkUnstructuredGrid} SafeDownCast (Ptr{vtkObjectBase},) _ZN19vtkUnstructuredGrid12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkUnstructuredGrid} NewInstance () _ZNK19vtkUnstructuredGrid11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -52,10 +55,17 @@ cur_class = vtkUnstructuredGrid
 @mcall None GetIdsOfCellsOfType (Int32, Ptr{vtkIdTypeArray}) _ZN19vtkUnstructuredGrid19GetIdsOfCellsOfTypeEiP14vtkIdTypeArray "libvtkFiltering"
 @mcall Int32 IsHomogeneous () _ZN19vtkUnstructuredGrid13IsHomogeneousEv "libvtkFiltering"
 @mcall None RemoveGhostCells (Int32,) _ZN19vtkUnstructuredGrid16RemoveGhostCellsEi "libvtkFiltering"
+@scall Ptr{vtkUnstructuredGrid} GetData (Ptr{vtkInformation},) _ZN19vtkUnstructuredGrid7GetDataEP14vtkInformation "libvtkFiltering"
+@scall Ptr{vtkUnstructuredGrid} GetData (Ptr{vtkInformationVector}, Int32) _ZN19vtkUnstructuredGrid7GetDataEP20vtkInformationVectori "libvtkFiltering"
 @mcall Ptr{vtkIdType} GetFaces (vtkIdType,) _ZN19vtkUnstructuredGrid8GetFacesEx "libvtkFiltering"
 @mcall Ptr{vtkIdTypeArray} GetFaces () _ZN19vtkUnstructuredGrid8GetFacesEv "libvtkFiltering"
 @mcall Ptr{vtkIdTypeArray} GetFaceLocations () _ZN19vtkUnstructuredGrid16GetFaceLocationsEv "libvtkFiltering"
 @mcall Int32 InitializeFacesRepresentation (vtkIdType,) _ZN19vtkUnstructuredGrid29InitializeFacesRepresentationEx "libvtkFiltering"
+@scall None DecomposeAPolyhedronCell (Ptr{vtkCellArray}, Void, Void, Ptr{vtkCellArray}, Ptr{vtkIdTypeArray}) _ZN19vtkUnstructuredGrid24DecomposeAPolyhedronCellEP12vtkCellArrayRxS2_S1_P14vtkIdTypeArray "libvtkFiltering"
+@scall None DecomposeAPolyhedronCell (Ptr{vtkIdType}, Void, Void, Ptr{vtkCellArray}, Ptr{vtkIdTypeArray}) _ZN19vtkUnstructuredGrid24DecomposeAPolyhedronCellEPxRxS1_P12vtkCellArrayP14vtkIdTypeArray "libvtkFiltering"
+@scall None DecomposeAPolyhedronCell (vtkIdType, Ptr{vtkIdType}, Void, Ptr{vtkCellArray}, Ptr{vtkIdTypeArray}) _ZN19vtkUnstructuredGrid24DecomposeAPolyhedronCellExPxRxP12vtkCellArrayP14vtkIdTypeArray "libvtkFiltering"
+@scall None ConvertFaceStreamPointIds (Ptr{vtkIdList}, Ptr{vtkIdType}) _ZN19vtkUnstructuredGrid25ConvertFaceStreamPointIdsEP9vtkIdListPx "libvtkFiltering"
+@scall None ConvertFaceStreamPointIds (vtkIdType, Ptr{vtkIdType}, Ptr{vtkIdType}) _ZN19vtkUnstructuredGrid25ConvertFaceStreamPointIdsExPxS0_ "libvtkFiltering"
 @mcall None vtkUnstructuredGrid_eq (Void,) _ZN19vtkUnstructuredGridaSERKS_ "libvtkFiltering"
 @mcall None Cleanup () _ZN19vtkUnstructuredGrid7CleanupEv "libvtkFiltering"
 @mcall None GetCellNeighbors (vtkIdType, Void, Void) _ZN19vtkUnstructuredGrid16GetCellNeighborsExR9vtkIdListS1_ "libvtkFiltering"

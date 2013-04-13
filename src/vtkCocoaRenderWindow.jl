@@ -1,6 +1,9 @@
 cur_class = vtkCocoaRenderWindow
+@scall Ptr{vtkCocoaRenderWindow} vtkCocoaRenderWindowNew () _ZN20vtkCocoaRenderWindow3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN20vtkCocoaRenderWindow8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkCocoaRenderWindow} SafeDownCast (Ptr{vtkObjectBase},) _ZN20vtkCocoaRenderWindow12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkCocoaRenderWindow} NewInstance () _ZNK20vtkCocoaRenderWindow11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

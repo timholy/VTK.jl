@@ -1,9 +1,12 @@
 cur_class = vtkImageSlice
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN13vtkImageSlice8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkImageSlice} SafeDownCast (Ptr{vtkObjectBase},) _ZN13vtkImageSlice12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkImageSlice} NewInstance () _ZNK13vtkImageSlice11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkImageSlice} vtkImageSliceNew () _ZN13vtkImageSlice3NewEv "libvtkRendering"
 @mcall None SetMapper (Ptr{vtkImageMapper3D},) _ZN13vtkImageSlice9SetMapperEP16vtkImageMapper3D "libvtkRendering"
 @vcall 89 Ptr{vtkImageMapper3D} GetMapper ()
 @mcall None SetProperty (Ptr{vtkImageProperty},) _ZN13vtkImageSlice11SetPropertyEP16vtkImageProperty "libvtkRendering"

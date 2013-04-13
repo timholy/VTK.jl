@@ -1,6 +1,8 @@
 cur_class = vtkInformationDoubleKey
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN23vtkInformationDoubleKey8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkInformationDoubleKey} SafeDownCast (Ptr{vtkObjectBase},) _ZN23vtkInformationDoubleKey12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkInformationDoubleKey} NewInstance () _ZNK23vtkInformationDoubleKey11NewInstanceEv "libvtkCommon"
 @vcall 4 None PrintSelf (Void, vtkIndent)

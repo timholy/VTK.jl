@@ -1,9 +1,12 @@
 cur_class = vtkArrayCalculator
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN18vtkArrayCalculator8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkArrayCalculator} SafeDownCast (Ptr{vtkObjectBase},) _ZN18vtkArrayCalculator12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkArrayCalculator} NewInstance () _ZNK18vtkArrayCalculator11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkArrayCalculator} vtkArrayCalculatorNew () _ZN18vtkArrayCalculator3NewEv "libvtkGraphics"
 @vcall 63 None SetFunction (Ptr{Uint8},)
 @vcall 64 Ptr{Uint8} GetFunction ()
 @mcall None AddScalarArrayName (Ptr{Uint8}, Int32) _ZN18vtkArrayCalculator18AddScalarArrayNameEPKci "libvtkGraphics"

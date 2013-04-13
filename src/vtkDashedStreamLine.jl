@@ -1,6 +1,9 @@
 cur_class = vtkDashedStreamLine
+@scall Ptr{vtkDashedStreamLine} vtkDashedStreamLineNew () _ZN19vtkDashedStreamLine3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN19vtkDashedStreamLine8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkDashedStreamLine} SafeDownCast (Ptr{vtkObjectBase},) _ZN19vtkDashedStreamLine12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkDashedStreamLine} NewInstance () _ZNK19vtkDashedStreamLine11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

@@ -1,6 +1,9 @@
 cur_class = vtkInteractorStyleTrackballCamera
+@scall Ptr{vtkInteractorStyleTrackballCamera} vtkInteractorStyleTrackballCameraNew () _ZN33vtkInteractorStyleTrackballCamera3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN33vtkInteractorStyleTrackballCamera8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkInteractorStyleTrackballCamera} SafeDownCast (Ptr{vtkObjectBase},) _ZN33vtkInteractorStyleTrackballCamera12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkInteractorStyleTrackballCamera} NewInstance () _ZNK33vtkInteractorStyleTrackballCamera11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

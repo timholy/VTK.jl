@@ -1,6 +1,9 @@
 cur_class = vtkLookupTable
+@scall Ptr{vtkLookupTable} vtkLookupTableNew () _ZN14vtkLookupTable3NewEv "libvtkCommon"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN14vtkLookupTable8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkLookupTable} SafeDownCast (Ptr{vtkObjectBase},) _ZN14vtkLookupTable12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkLookupTable} NewInstance () _ZNK14vtkLookupTable11NewInstanceEv "libvtkCommon"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -61,6 +64,8 @@ cur_class = vtkLookupTable
 @vcall 22 Ptr{Float64} GetRange ()
 @vcall 23 None SetRange (Float64, Float64)
 @mcall None SetRange (Ptr{Float64},) _ZN14vtkLookupTable8SetRangeEPd "libvtkCommon"
+@scall None GetLogRange (Ptr{Float64}, Ptr{Float64}) _ZN14vtkLookupTable11GetLogRangeEPKdPd "libvtkCommon"
+@scall Float64 ApplyLogScale (Float64, Ptr{Float64}, Ptr{Float64}) _ZN14vtkLookupTable13ApplyLogScaleEdPKdS1_ "libvtkCommon"
 @vcall 70 None SetNumberOfColors (vtkIdType,)
 @vcall 71 vtkIdType GetNumberOfColorsMinValue ()
 @vcall 72 vtkIdType GetNumberOfColorsMaxValue ()

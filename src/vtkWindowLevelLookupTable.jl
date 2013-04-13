@@ -1,6 +1,9 @@
 cur_class = vtkWindowLevelLookupTable
+@scall Ptr{vtkWindowLevelLookupTable} vtkWindowLevelLookupTableNew () _ZN25vtkWindowLevelLookupTable3NewEv "libvtkCommon"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN25vtkWindowLevelLookupTable8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkWindowLevelLookupTable} SafeDownCast (Ptr{vtkObjectBase},) _ZN25vtkWindowLevelLookupTable12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkWindowLevelLookupTable} NewInstance () _ZNK25vtkWindowLevelLookupTable11NewInstanceEv "libvtkCommon"
 @vcall 4 None PrintSelf (Void, vtkIndent)

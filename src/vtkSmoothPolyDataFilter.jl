@@ -1,9 +1,12 @@
 cur_class = vtkSmoothPolyDataFilter
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN23vtkSmoothPolyDataFilter8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkSmoothPolyDataFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN23vtkSmoothPolyDataFilter12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkSmoothPolyDataFilter} NewInstance () _ZNK23vtkSmoothPolyDataFilter11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkSmoothPolyDataFilter} vtkSmoothPolyDataFilterNew () _ZN23vtkSmoothPolyDataFilter3NewEv "libvtkGraphics"
 @vcall 65 None SetConvergence (Float64,)
 @vcall 66 Float64 GetConvergenceMinValue ()
 @vcall 67 Float64 GetConvergenceMaxValue ()

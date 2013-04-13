@@ -1,6 +1,9 @@
 cur_class = vtkGenericCell
+@scall Ptr{vtkGenericCell} vtkGenericCellNew () _ZN14vtkGenericCell3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN14vtkGenericCell8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkGenericCell} SafeDownCast (Ptr{vtkObjectBase},) _ZN14vtkGenericCell12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkGenericCell} NewInstance () _ZNK14vtkGenericCell11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -66,4 +69,5 @@ cur_class = vtkGenericCell
 @mcall None SetCellTypeToBiQuadraticQuadraticWedge () _ZN14vtkGenericCell38SetCellTypeToBiQuadraticQuadraticWedgeEv "libvtkFiltering"
 @mcall None SetCellTypeToTriQuadraticHexahedron () _ZN14vtkGenericCell35SetCellTypeToTriQuadraticHexahedronEv "libvtkFiltering"
 @mcall None SetCellTypeToBiQuadraticQuadraticHexahedron () _ZN14vtkGenericCell43SetCellTypeToBiQuadraticQuadraticHexahedronEv "libvtkFiltering"
+@scall Ptr{vtkCell} InstantiateCell (Int32,) _ZN14vtkGenericCell15InstantiateCellEi "libvtkFiltering"
 @mcall None vtkGenericCell_eq (Void,) _ZN14vtkGenericCellaSERKS_ "libvtkFiltering"

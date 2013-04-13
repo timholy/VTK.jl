@@ -1,6 +1,9 @@
 cur_class = vtkLabelHierarchy
+@scall Ptr{vtkLabelHierarchy} vtkLabelHierarchyNew () _ZN17vtkLabelHierarchy3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN17vtkLabelHierarchy8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkLabelHierarchy} SafeDownCast (Ptr{vtkObjectBase},) _ZN17vtkLabelHierarchy12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkLabelHierarchy} NewInstance () _ZNK17vtkLabelHierarchy11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -26,6 +29,7 @@ cur_class = vtkLabelHierarchy
 @vcall 121 Ptr{vtkDataArray} GetBoundedSizes ()
 @mcall Ptr{vtkLabelHierarchyIterator} NewIterator (Int32, Ptr{vtkRenderer}, Ptr{vtkCamera}, Ptr{Float64}, Bool, Ptr{Float32}) _ZN17vtkLabelHierarchy11NewIteratorEiP11vtkRendererP9vtkCameraPdbPf "libvtkRendering"
 @mcall None GetDiscreteNodeCoordinatesFromWorldPoint (Ptr{Int32}, Ptr{Float64}, Int32) _ZN17vtkLabelHierarchy40GetDiscreteNodeCoordinatesFromWorldPointEPiPdi "libvtkRendering"
+@scall Bool GetPathForNodalCoordinates (Ptr{Int32}, Ptr{Int32}, Int32) _ZN17vtkLabelHierarchy26GetPathForNodalCoordinatesEPiS0_i "libvtkRendering"
 @vcall 80 vtkIdType GetNumberOfCells ()
 @vcall 83 Ptr{vtkCell} GetCell (vtkIdType,)
 @vcall 84 None GetCell (vtkIdType, Ptr{vtkGenericCell})

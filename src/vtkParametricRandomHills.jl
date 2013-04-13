@@ -1,10 +1,13 @@
 cur_class = vtkParametricRandomHills
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN24vtkParametricRandomHills8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkParametricRandomHills} SafeDownCast (Ptr{vtkObjectBase},) _ZN24vtkParametricRandomHills12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkParametricRandomHills} NewInstance () _ZNK24vtkParametricRandomHills11NewInstanceEv "libvtkCommon"
 @vcall 4 None PrintSelf (Void, vtkIndent)
 @vcall 20 Int32 GetDimension ()
+@scall Ptr{vtkParametricRandomHills} vtkParametricRandomHillsNew () _ZN24vtkParametricRandomHills3NewEv "libvtkCommon"
 @vcall 59 None SetNumberOfHills (Int32,)
 @vcall 60 Int32 GetNumberOfHills ()
 @vcall 61 None SetHillXVariance (Float64,)

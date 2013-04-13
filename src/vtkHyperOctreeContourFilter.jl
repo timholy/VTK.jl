@@ -1,9 +1,12 @@
 cur_class = vtkHyperOctreeContourFilter
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN27vtkHyperOctreeContourFilter8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkHyperOctreeContourFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN27vtkHyperOctreeContourFilter12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkHyperOctreeContourFilter} NewInstance () _ZNK27vtkHyperOctreeContourFilter11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkHyperOctreeContourFilter} vtkHyperOctreeContourFilterNew () _ZN27vtkHyperOctreeContourFilter3NewEv "libvtkGraphics"
 @mcall None SetValue (Int32, Float64) _ZN27vtkHyperOctreeContourFilter8SetValueEid "libvtkGraphics"
 @mcall Float64 GetValue (Int32,) _ZN27vtkHyperOctreeContourFilter8GetValueEi "libvtkGraphics"
 @mcall Ptr{Float64} GetValues () _ZN27vtkHyperOctreeContourFilter9GetValuesEv "libvtkGraphics"

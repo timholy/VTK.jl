@@ -1,6 +1,9 @@
 cur_class = vtkMesaPolyDataMapper
+@scall Ptr{vtkMesaPolyDataMapper} vtkMesaPolyDataMapperNew () _ZN21vtkMesaPolyDataMapper3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN21vtkMesaPolyDataMapper8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkMesaPolyDataMapper} SafeDownCast (Ptr{vtkObjectBase},) _ZN21vtkMesaPolyDataMapper12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkMesaPolyDataMapper} NewInstance () _ZNK21vtkMesaPolyDataMapper11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

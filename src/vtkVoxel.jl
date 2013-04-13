@@ -1,6 +1,9 @@
 cur_class = vtkVoxel
+@scall Ptr{vtkVoxel} vtkVoxelNew () _ZN8vtkVoxel3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN8vtkVoxel8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkVoxel} SafeDownCast (Ptr{vtkObjectBase},) _ZN8vtkVoxel12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkVoxel} NewInstance () _ZNK8vtkVoxel11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -20,6 +23,10 @@ cur_class = vtkVoxel
 @vcall 40 Int32 IntersectWithLine (Ptr{Float64}, Ptr{Float64}, Float64, Void, Ptr{Float64}, Ptr{Float64}, Void)
 @vcall 41 Int32 Triangulate (Int32, Ptr{vtkIdList}, Ptr{vtkPoints})
 @vcall 42 None Derivatives (Int32, Ptr{Float64}, Ptr{Float64}, Int32, Ptr{Float64})
+@scall None InterpolationDerivs (Ptr{Float64}, Ptr{Float64}) _ZN8vtkVoxel19InterpolationDerivsEPdS0_ "libvtkFiltering"
 @vcall 47 None InterpolateFunctions (Ptr{Float64}, Ptr{Float64})
 @vcall 48 None InterpolateDerivs (Ptr{Float64}, Ptr{Float64})
+@scall None InterpolationFunctions (Ptr{Float64}, Ptr{Float64}) _ZN8vtkVoxel22InterpolationFunctionsEPdS0_ "libvtkFiltering"
+@scall Ptr{Int32} GetEdgeArray (Int32,) _ZN8vtkVoxel12GetEdgeArrayEi "libvtkFiltering"
+@scall Ptr{Int32} GetFaceArray (Int32,) _ZN8vtkVoxel12GetFaceArrayEi "libvtkFiltering"
 @mcall None vtkVoxel_eq (Void,) _ZN8vtkVoxelaSERKS_ "libvtkFiltering"

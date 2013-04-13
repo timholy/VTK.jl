@@ -1,9 +1,12 @@
 cur_class = vtkClipHyperOctree
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN18vtkClipHyperOctree8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkClipHyperOctree} SafeDownCast (Ptr{vtkObjectBase},) _ZN18vtkClipHyperOctree12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkClipHyperOctree} NewInstance () _ZNK18vtkClipHyperOctree11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkClipHyperOctree} vtkClipHyperOctreeNew () _ZN18vtkClipHyperOctree3NewEv "libvtkGraphics"
 @vcall 65 None SetValue (Float64,)
 @vcall 66 Float64 GetValue ()
 @vcall 67 None SetInsideOut (Int32,)

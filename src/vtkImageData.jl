@@ -1,6 +1,9 @@
 cur_class = vtkImageData
+@scall Ptr{vtkImageData} vtkImageDataNew () _ZN12vtkImageData3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN12vtkImageData8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkImageData} SafeDownCast (Ptr{vtkObjectBase},) _ZN12vtkImageData12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkImageData} NewInstance () _ZNK12vtkImageData11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -104,6 +107,8 @@ cur_class = vtkImageData
 @mcall None GetArrayIncrements (Ptr{vtkDataArray}, Ptr{vtkIdType}) _ZN12vtkImageData18GetArrayIncrementsEP12vtkDataArrayPx "libvtkFiltering"
 @mcall None ComputeInternalExtent (Ptr{Int32}, Ptr{Int32}, Ptr{Int32}) _ZN12vtkImageData21ComputeInternalExtentEPiS0_S0_ "libvtkFiltering"
 @vcall 71 Int32 GetExtentType ()
+@scall Ptr{vtkImageData} GetData (Ptr{vtkInformation},) _ZN12vtkImageData7GetDataEP14vtkInformation "libvtkFiltering"
+@scall Ptr{vtkImageData} GetData (Ptr{vtkInformationVector}, Int32) _ZN12vtkImageData7GetDataEP20vtkInformationVectori "libvtkFiltering"
 @mcall None ComputeIncrements () _ZN12vtkImageData17ComputeIncrementsEv "libvtkFiltering"
 @mcall None ComputeIncrements (Int32,) _ZN12vtkImageData17ComputeIncrementsEi "libvtkFiltering"
 @mcall None ComputeIncrements (Ptr{vtkDataArray},) _ZN12vtkImageData17ComputeIncrementsEP12vtkDataArray "libvtkFiltering"

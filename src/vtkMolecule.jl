@@ -1,6 +1,9 @@
 cur_class = vtkMolecule
+@scall Ptr{vtkMolecule} vtkMoleculeNew () _ZN11vtkMolecule3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN11vtkMolecule8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkMolecule} SafeDownCast (Ptr{vtkObjectBase},) _ZN11vtkMolecule12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkMolecule} NewInstance () _ZNK11vtkMolecule11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -33,6 +36,8 @@ cur_class = vtkMolecule
 @vcall 107 None DeepCopyStructure (Ptr{vtkMolecule},)
 @vcall 108 None ShallowCopyAttributes (Ptr{vtkMolecule},)
 @vcall 109 None DeepCopyAttributes (Ptr{vtkMolecule},)
+@scall Bool GetPlaneFromBond (Void, Void, Ptr{vtkPlane}) _ZN11vtkMolecule16GetPlaneFromBondERK7vtkBondRK11vtkVector3fP8vtkPlane "libvtkFiltering"
+@scall Bool GetPlaneFromBond (Void, Void, Void, Ptr{vtkPlane}) _ZN11vtkMolecule16GetPlaneFromBondERK7vtkAtomS2_RK11vtkVector3fP8vtkPlane "libvtkFiltering"
 @vcall 110 None CopyStructureInternal (Ptr{vtkMolecule}, Bool)
 @vcall 111 None CopyAttributesInternal (Ptr{vtkMolecule}, Bool)
 @mcall None SetBondListDirty () _ZN11vtkMolecule16SetBondListDirtyEv "libvtkFiltering"

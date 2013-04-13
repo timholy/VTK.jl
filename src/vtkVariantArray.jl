@@ -1,6 +1,9 @@
 cur_class = vtkVariantArray
+@scall Ptr{vtkVariantArray} vtkVariantArrayNew () _ZN15vtkVariantArray3NewEv "libvtkCommon"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN15vtkVariantArray8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkVariantArray} SafeDownCast (Ptr{vtkObjectBase},) _ZN15vtkVariantArray12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkVariantArray} NewInstance () _ZNK15vtkVariantArray11NewInstanceEv "libvtkCommon"
 @vcall 4 None PrintSelf (Void, vtkIndent)

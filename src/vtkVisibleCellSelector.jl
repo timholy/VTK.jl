@@ -1,9 +1,12 @@
 cur_class = vtkVisibleCellSelector
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN22vtkVisibleCellSelector8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkVisibleCellSelector} SafeDownCast (Ptr{vtkObjectBase},) _ZN22vtkVisibleCellSelector12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkVisibleCellSelector} NewInstance () _ZNK22vtkVisibleCellSelector11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkVisibleCellSelector} vtkVisibleCellSelectorNew () _ZN22vtkVisibleCellSelector3NewEv "libvtkRendering"
 @vcall 20 None SetRenderer (Ptr{vtkRenderer},)
 @mcall None SetArea (Uint32, Uint32, Uint32, Uint32) _ZN22vtkVisibleCellSelector7SetAreaEjjjj "libvtkRendering"
 @mcall None GetArea (Void, Void, Void, Void) _ZN22vtkVisibleCellSelector7GetAreaERjS0_S0_S0_ "libvtkRendering"

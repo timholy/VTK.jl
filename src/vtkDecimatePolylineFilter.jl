@@ -1,9 +1,12 @@
 cur_class = vtkDecimatePolylineFilter
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN25vtkDecimatePolylineFilter8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkDecimatePolylineFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN25vtkDecimatePolylineFilter12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkDecimatePolylineFilter} NewInstance () _ZNK25vtkDecimatePolylineFilter11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkDecimatePolylineFilter} vtkDecimatePolylineFilterNew () _ZN25vtkDecimatePolylineFilter3NewEv "libvtkGraphics"
 @vcall 65 None SetTargetReduction (Float64,)
 @vcall 66 Float64 GetTargetReductionMinValue ()
 @vcall 67 Float64 GetTargetReductionMaxValue ()

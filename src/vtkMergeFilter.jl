@@ -1,6 +1,9 @@
 cur_class = vtkMergeFilter
+@scall Ptr{vtkMergeFilter} vtkMergeFilterNew () _ZN14vtkMergeFilter3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN14vtkMergeFilter8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkMergeFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN14vtkMergeFilter12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkMergeFilter} NewInstance () _ZNK14vtkMergeFilter11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

@@ -1,6 +1,9 @@
 cur_class = vtkRecursiveDividingCubes
+@scall Ptr{vtkRecursiveDividingCubes} vtkRecursiveDividingCubesNew () _ZN25vtkRecursiveDividingCubes3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN25vtkRecursiveDividingCubes8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkRecursiveDividingCubes} SafeDownCast (Ptr{vtkObjectBase},) _ZN25vtkRecursiveDividingCubes12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkRecursiveDividingCubes} NewInstance () _ZNK25vtkRecursiveDividingCubes11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

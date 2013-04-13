@@ -1,9 +1,12 @@
 cur_class = vtkVolume
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN9vtkVolume8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkVolume} SafeDownCast (Ptr{vtkObjectBase},) _ZN9vtkVolume12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkVolume} NewInstance () _ZNK9vtkVolume11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkVolume} vtkVolumeNew () _ZN9vtkVolume3NewEv "libvtkRendering"
 @mcall None SetMapper (Ptr{vtkAbstractVolumeMapper},) _ZN9vtkVolume9SetMapperEP23vtkAbstractVolumeMapper "libvtkRendering"
 @vcall 89 Ptr{vtkAbstractVolumeMapper} GetMapper ()
 @mcall None SetProperty (Ptr{vtkVolumeProperty},) _ZN9vtkVolume11SetPropertyEP17vtkVolumeProperty "libvtkRendering"

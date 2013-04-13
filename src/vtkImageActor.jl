@@ -1,9 +1,12 @@
 cur_class = vtkImageActor
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN13vtkImageActor8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkImageActor} SafeDownCast (Ptr{vtkObjectBase},) _ZN13vtkImageActor12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkImageActor} NewInstance () _ZNK13vtkImageActor11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkImageActor} vtkImageActorNew () _ZN13vtkImageActor3NewEv "libvtkRendering"
 @vcall 92 None SetInput (Ptr{vtkImageData},)
 @vcall 93 Ptr{vtkImageData} GetInput ()
 @vcall 94 None SetInterpolate (Int32,)
@@ -30,4 +33,5 @@ cur_class = vtkImageActor
 @mcall Int32 GetWholeZMin () _ZN13vtkImageActor12GetWholeZMinEv "libvtkRendering"
 @mcall Int32 GetWholeZMax () _ZN13vtkImageActor12GetWholeZMaxEv "libvtkRendering"
 @vcall 59 Int32 HasTranslucentPolygonalGeometry ()
+@scall Int32 GetOrientationFromExtent (Ptr{Int32},) _ZN13vtkImageActor24GetOrientationFromExtentEPKi "libvtkRendering"
 @mcall None vtkImageActor_eq (Void,) _ZN13vtkImageActoraSERKS_ "libvtkRendering"

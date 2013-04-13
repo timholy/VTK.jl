@@ -1,6 +1,9 @@
 cur_class = vtkGenericProbeFilter
+@scall Ptr{vtkGenericProbeFilter} vtkGenericProbeFilterNew () _ZN21vtkGenericProbeFilter3NewEv "libvtkGenericFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN21vtkGenericProbeFilter8IsTypeOfEPKc "libvtkGenericFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkGenericProbeFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN21vtkGenericProbeFilter12SafeDownCastEP13vtkObjectBase "libvtkGenericFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkGenericProbeFilter} NewInstance () _ZNK21vtkGenericProbeFilter11NewInstanceEv "libvtkGenericFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

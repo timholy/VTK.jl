@@ -1,6 +1,9 @@
 cur_class = vtkPriorityQueue
+@scall Ptr{vtkPriorityQueue} vtkPriorityQueueNew () _ZN16vtkPriorityQueue3NewEv "libvtkCommon"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN16vtkPriorityQueue8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkPriorityQueue} SafeDownCast (Ptr{vtkObjectBase},) _ZN16vtkPriorityQueue12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkPriorityQueue} NewInstance () _ZNK16vtkPriorityQueue11NewInstanceEv "libvtkCommon"
 @vcall 4 None PrintSelf (Void, vtkIndent)

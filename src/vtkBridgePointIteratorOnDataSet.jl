@@ -1,6 +1,9 @@
 cur_class = vtkBridgePointIteratorOnDataSet
+@scall Ptr{vtkBridgePointIteratorOnDataSet} vtkBridgePointIteratorOnDataSetNew () _ZN31vtkBridgePointIteratorOnDataSet3NewEv "libvtkGenericFiltering/Testing/Cxx"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN31vtkBridgePointIteratorOnDataSet8IsTypeOfEPKc "libvtkGenericFiltering/Testing/Cxx"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkBridgePointIteratorOnDataSet} SafeDownCast (Ptr{vtkObjectBase},) _ZN31vtkBridgePointIteratorOnDataSet12SafeDownCastEP13vtkObjectBase "libvtkGenericFiltering/Testing/Cxx"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkBridgePointIteratorOnDataSet} NewInstance () _ZNK31vtkBridgePointIteratorOnDataSet11NewInstanceEv "libvtkGenericFiltering/Testing/Cxx"
 @vcall 4 None PrintSelf (Void, vtkIndent)

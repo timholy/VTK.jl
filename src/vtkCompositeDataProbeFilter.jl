@@ -1,6 +1,9 @@
 cur_class = vtkCompositeDataProbeFilter
+@scall Ptr{vtkCompositeDataProbeFilter} vtkCompositeDataProbeFilterNew () _ZN27vtkCompositeDataProbeFilter3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN27vtkCompositeDataProbeFilter8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkCompositeDataProbeFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN27vtkCompositeDataProbeFilter12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkCompositeDataProbeFilter} NewInstance () _ZNK27vtkCompositeDataProbeFilter11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

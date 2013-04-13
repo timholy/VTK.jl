@@ -1,9 +1,12 @@
 cur_class = vtkLeaderActor2D
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN16vtkLeaderActor2D8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkLeaderActor2D} SafeDownCast (Ptr{vtkObjectBase},) _ZN16vtkLeaderActor2D12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkLeaderActor2D} NewInstance () _ZNK16vtkLeaderActor2D11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkLeaderActor2D} vtkLeaderActor2DNew () _ZN16vtkLeaderActor2D3NewEv "libvtkRendering"
 @vcall 87 None SetRadius (Float64,)
 @vcall 88 Float64 GetRadius ()
 @vcall 89 None SetLabel (Ptr{Uint8},)

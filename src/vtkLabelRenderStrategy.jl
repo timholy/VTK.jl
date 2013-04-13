@@ -1,7 +1,9 @@
 cur_class = vtkLabelRenderStrategy
 @vcall 4 None PrintSelf (Void, vtkIndent)
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN22vtkLabelRenderStrategy8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkLabelRenderStrategy} SafeDownCast (Ptr{vtkObjectBase},) _ZN22vtkLabelRenderStrategy12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkLabelRenderStrategy} NewInstance () _ZNK22vtkLabelRenderStrategy11NewInstanceEv "libvtkRendering"
 @vcall 20 Bool SupportsRotation ()

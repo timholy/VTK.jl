@@ -1,6 +1,9 @@
 cur_class = vtkTransform
+@scall Ptr{vtkTransform} vtkTransformNew () _ZN12vtkTransform3NewEv "libvtkCommon"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN12vtkTransform8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkTransform} SafeDownCast (Ptr{vtkObjectBase},) _ZN12vtkTransform12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkTransform} NewInstance () _ZNK12vtkTransform11NewInstanceEv "libvtkCommon"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -30,6 +33,7 @@ cur_class = vtkTransform
 @mcall None GetOrientation (Ptr{Float64},) _ZN12vtkTransform14GetOrientationEPd "libvtkCommon"
 @mcall None GetOrientation (Ptr{Float32},) _ZN12vtkTransform14GetOrientationEPf "libvtkCommon"
 @mcall Ptr{Float64} GetOrientation () _ZN12vtkTransform14GetOrientationEv "libvtkCommon"
+@scall None GetOrientation (Ptr{Float64}, Ptr{vtkMatrix4x4}) _ZN12vtkTransform14GetOrientationEPdP12vtkMatrix4x4 "libvtkCommon"
 @mcall None GetOrientationWXYZ (Ptr{Float64},) _ZN12vtkTransform18GetOrientationWXYZEPd "libvtkCommon"
 @mcall None GetOrientationWXYZ (Ptr{Float32},) _ZN12vtkTransform18GetOrientationWXYZEPf "libvtkCommon"
 @mcall Ptr{Float64} GetOrientationWXYZ () _ZN12vtkTransform18GetOrientationWXYZEv "libvtkCommon"

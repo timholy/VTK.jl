@@ -1,9 +1,12 @@
 cur_class = vtkTupleInterpolator
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN20vtkTupleInterpolator8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkTupleInterpolator} SafeDownCast (Ptr{vtkObjectBase},) _ZN20vtkTupleInterpolator12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkTupleInterpolator} NewInstance () _ZNK20vtkTupleInterpolator11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkTupleInterpolator} vtkTupleInterpolatorNew () _ZN20vtkTupleInterpolator3NewEv "libvtkRendering"
 @mcall None SetNumberOfComponents (Int32,) _ZN20vtkTupleInterpolator21SetNumberOfComponentsEi "libvtkRendering"
 @vcall 20 Int32 GetNumberOfComponents ()
 @mcall Int32 GetNumberOfTuples () _ZN20vtkTupleInterpolator17GetNumberOfTuplesEv "libvtkRendering"

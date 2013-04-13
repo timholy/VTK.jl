@@ -1,6 +1,9 @@
 cur_class = vtkCellDataToPointData
+@scall Ptr{vtkCellDataToPointData} vtkCellDataToPointDataNew () _ZN22vtkCellDataToPointData3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN22vtkCellDataToPointData8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkCellDataToPointData} SafeDownCast (Ptr{vtkObjectBase},) _ZN22vtkCellDataToPointData12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkCellDataToPointData} NewInstance () _ZNK22vtkCellDataToPointData11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

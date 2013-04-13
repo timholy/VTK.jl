@@ -1,6 +1,9 @@
 cur_class = vtkCellTypes
+@scall Ptr{vtkCellTypes} vtkCellTypesNew () _ZN12vtkCellTypes3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN12vtkCellTypes8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkCellTypes} SafeDownCast (Ptr{vtkObjectBase},) _ZN12vtkCellTypes12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkCellTypes} NewInstance () _ZNK12vtkCellTypes11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -18,4 +21,7 @@ cur_class = vtkCellTypes
 @mcall None Reset () _ZN12vtkCellTypes5ResetEv "libvtkFiltering"
 @mcall Uint64 GetActualMemorySize () _ZN12vtkCellTypes19GetActualMemorySizeEv "libvtkFiltering"
 @mcall None DeepCopy (Ptr{vtkCellTypes},) _ZN12vtkCellTypes8DeepCopyEPS_ "libvtkFiltering"
+@scall Ptr{Uint8} GetClassNameFromTypeId (Int32,) _ZN12vtkCellTypes22GetClassNameFromTypeIdEi "libvtkFiltering"
+@scall Int32 GetTypeIdFromClassName (Ptr{Uint8},) _ZN12vtkCellTypes22GetTypeIdFromClassNameEPKc "libvtkFiltering"
+@scall Int32 IsLinear (Uint8,) _ZN12vtkCellTypes8IsLinearEh "libvtkFiltering"
 @mcall None vtkCellTypes_eq (Void,) _ZN12vtkCellTypesaSERKS_ "libvtkFiltering"

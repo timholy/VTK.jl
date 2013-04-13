@@ -1,6 +1,9 @@
 cur_class = vtkOutlineSource
+@scall Ptr{vtkOutlineSource} vtkOutlineSourceNew () _ZN16vtkOutlineSource3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN16vtkOutlineSource8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkOutlineSource} SafeDownCast (Ptr{vtkObjectBase},) _ZN16vtkOutlineSource12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkOutlineSource} NewInstance () _ZNK16vtkOutlineSource11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

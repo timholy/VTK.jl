@@ -1,9 +1,12 @@
 cur_class = vtkIncrementalOctreeNode
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN24vtkIncrementalOctreeNode8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkIncrementalOctreeNode} SafeDownCast (Ptr{vtkObjectBase},) _ZN24vtkIncrementalOctreeNode12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkIncrementalOctreeNode} NewInstance () _ZNK24vtkIncrementalOctreeNode11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkIncrementalOctreeNode} vtkIncrementalOctreeNodeNew () _ZN24vtkIncrementalOctreeNode3NewEv "libvtkFiltering"
 @vcall 20 Int32 GetNumberOfPoints ()
 @vcall 21 Ptr{vtkIdList} GetPointIdSet ()
 @mcall None DeleteChildNodes () _ZN24vtkIncrementalOctreeNode16DeleteChildNodesEv "libvtkFiltering"

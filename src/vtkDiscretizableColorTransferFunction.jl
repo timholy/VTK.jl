@@ -1,6 +1,9 @@
 cur_class = vtkDiscretizableColorTransferFunction
+@scall Ptr{vtkDiscretizableColorTransferFunction} vtkDiscretizableColorTransferFunctionNew () _ZN37vtkDiscretizableColorTransferFunction3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN37vtkDiscretizableColorTransferFunction8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkDiscretizableColorTransferFunction} SafeDownCast (Ptr{vtkObjectBase},) _ZN37vtkDiscretizableColorTransferFunction12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkDiscretizableColorTransferFunction} NewInstance () _ZNK37vtkDiscretizableColorTransferFunction11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

@@ -1,9 +1,12 @@
 cur_class = vtkCellLocatorInterpolatedVelocityField
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN39vtkCellLocatorInterpolatedVelocityField8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkCellLocatorInterpolatedVelocityField} SafeDownCast (Ptr{vtkObjectBase},) _ZN39vtkCellLocatorInterpolatedVelocityField12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkCellLocatorInterpolatedVelocityField} NewInstance () _ZNK39vtkCellLocatorInterpolatedVelocityField11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkCellLocatorInterpolatedVelocityField} vtkCellLocatorInterpolatedVelocityFieldNew () _ZN39vtkCellLocatorInterpolatedVelocityField3NewEv "libvtkGraphics"
 @vcall 39 Ptr{vtkAbstractCellLocator} GetLastCellLocator ()
 @vcall 40 Ptr{vtkAbstractCellLocator} GetCellLocatorPrototype ()
 @mcall None SetCellLocatorPrototype (Ptr{vtkAbstractCellLocator},) _ZN39vtkCellLocatorInterpolatedVelocityField23SetCellLocatorPrototypeEP22vtkAbstractCellLocator "libvtkGraphics"

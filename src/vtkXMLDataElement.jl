@@ -1,9 +1,12 @@
 cur_class = vtkXMLDataElement
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN17vtkXMLDataElement8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkXMLDataElement} SafeDownCast (Ptr{vtkObjectBase},) _ZN17vtkXMLDataElement12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkXMLDataElement} NewInstance () _ZNK17vtkXMLDataElement11NewInstanceEv "libvtkCommon"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkXMLDataElement} vtkXMLDataElementNew () _ZN17vtkXMLDataElement3NewEv "libvtkCommon"
 @vcall 20 Ptr{Uint8} GetName ()
 @vcall 21 None SetName (Ptr{Uint8},)
 @vcall 22 Ptr{Uint8} GetId ()
@@ -69,5 +72,7 @@ cur_class = vtkXMLDataElement
 @vcall 42 None SetInlineDataPosition (Uint64,)
 @mcall Ptr{vtkXMLDataElement} LookupElementInScope (Ptr{Uint8},) _ZN17vtkXMLDataElement20LookupElementInScopeEPKc "libvtkCommon"
 @mcall Ptr{vtkXMLDataElement} LookupElementUpScope (Ptr{Uint8},) _ZN17vtkXMLDataElement20LookupElementUpScopeEPKc "libvtkCommon"
+@scall Int32 IsSpace (Uint8,) _ZN17vtkXMLDataElement7IsSpaceEc "libvtkCommon"
 @mcall None PrintCharacterData (Void, vtkIndent) _ZN17vtkXMLDataElement18PrintCharacterDataERSo9vtkIndent "libvtkCommon"
+@scall None PrintWithEscapedData (Void, Ptr{Uint8}) _ZN17vtkXMLDataElement20PrintWithEscapedDataERSoPKc "libvtkCommon"
 @mcall None vtkXMLDataElement_eq (Void,) _ZN17vtkXMLDataElementaSERKS_ "libvtkCommon"

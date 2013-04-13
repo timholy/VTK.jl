@@ -1,9 +1,12 @@
 cur_class = vtkPropAssembly
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN15vtkPropAssembly8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkPropAssembly} SafeDownCast (Ptr{vtkObjectBase},) _ZN15vtkPropAssembly12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkPropAssembly} NewInstance () _ZNK15vtkPropAssembly11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkPropAssembly} vtkPropAssemblyNew () _ZN15vtkPropAssembly3NewEv "libvtkFiltering"
 @mcall None AddPart (Ptr{vtkProp},) _ZN15vtkPropAssembly7AddPartEP7vtkProp "libvtkFiltering"
 @mcall None RemovePart (Ptr{vtkProp},) _ZN15vtkPropAssembly10RemovePartEP7vtkProp "libvtkFiltering"
 @mcall Ptr{vtkPropCollection} GetParts () _ZN15vtkPropAssembly8GetPartsEv "libvtkFiltering"

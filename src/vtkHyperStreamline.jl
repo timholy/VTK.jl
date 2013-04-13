@@ -1,9 +1,12 @@
 cur_class = vtkHyperStreamline
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN18vtkHyperStreamline8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkHyperStreamline} SafeDownCast (Ptr{vtkObjectBase},) _ZN18vtkHyperStreamline12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkHyperStreamline} NewInstance () _ZNK18vtkHyperStreamline11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkHyperStreamline} vtkHyperStreamlineNew () _ZN18vtkHyperStreamline3NewEv "libvtkGraphics"
 @mcall None SetStartLocation (vtkIdType, Int32, Ptr{Float64}) _ZN18vtkHyperStreamline16SetStartLocationExiPd "libvtkGraphics"
 @mcall None SetStartLocation (vtkIdType, Int32, Float64, Float64, Float64) _ZN18vtkHyperStreamline16SetStartLocationExiddd "libvtkGraphics"
 @mcall vtkIdType GetStartLocation (Void, Ptr{Float64}) _ZN18vtkHyperStreamline16GetStartLocationERiPd "libvtkGraphics"

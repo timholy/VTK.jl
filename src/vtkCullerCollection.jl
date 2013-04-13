@@ -1,6 +1,9 @@
 cur_class = vtkCullerCollection
+@scall Ptr{vtkCullerCollection} vtkCullerCollectionNew () _ZN19vtkCullerCollection3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN19vtkCullerCollection8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkCullerCollection} SafeDownCast (Ptr{vtkObjectBase},) _ZN19vtkCullerCollection12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkCullerCollection} NewInstance () _ZNK19vtkCullerCollection11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

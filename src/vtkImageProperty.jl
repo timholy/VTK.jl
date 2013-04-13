@@ -1,9 +1,12 @@
 cur_class = vtkImageProperty
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN16vtkImageProperty8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkImageProperty} SafeDownCast (Ptr{vtkObjectBase},) _ZN16vtkImageProperty12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkImageProperty} NewInstance () _ZNK16vtkImageProperty11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkImageProperty} vtkImagePropertyNew () _ZN16vtkImageProperty3NewEv "libvtkRendering"
 @mcall None DeepCopy (Ptr{vtkImageProperty},) _ZN16vtkImageProperty8DeepCopyEPS_ "libvtkRendering"
 @vcall 20 None SetColorWindow (Float64,)
 @vcall 21 Float64 GetColorWindow ()

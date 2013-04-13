@@ -1,6 +1,9 @@
 cur_class = vtkCylinderSource
+@scall Ptr{vtkCylinderSource} vtkCylinderSourceNew () _ZN17vtkCylinderSource3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN17vtkCylinderSource8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkCylinderSource} SafeDownCast (Ptr{vtkObjectBase},) _ZN17vtkCylinderSource12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkCylinderSource} NewInstance () _ZNK17vtkCylinderSource11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

@@ -1,6 +1,8 @@
 cur_class = vtkGraph
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN8vtkGraph8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkGraph} SafeDownCast (Ptr{vtkObjectBase},) _ZN8vtkGraph12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkGraph} NewInstance () _ZNK8vtkGraph11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -39,6 +41,8 @@ cur_class = vtkGraph
 @vcall 95 Bool CheckedShallowCopy (Ptr{vtkGraph},)
 @vcall 96 Bool CheckedDeepCopy (Ptr{vtkGraph},)
 @vcall 97 None Squeeze ()
+@scall Ptr{vtkGraph} GetData (Ptr{vtkInformation},) _ZN8vtkGraph7GetDataEP14vtkInformation "libvtkFiltering"
+@scall Ptr{vtkGraph} GetData (Ptr{vtkInformationVector}, Int32) _ZN8vtkGraph7GetDataEP20vtkInformationVectori "libvtkFiltering"
 @mcall None ReorderOutVertices (vtkIdType, Ptr{vtkIdTypeArray}) _ZN8vtkGraph18ReorderOutVerticesExP14vtkIdTypeArray "libvtkFiltering"
 @mcall Bool IsSameStructure (Ptr{vtkGraph},) _ZN8vtkGraph15IsSameStructureEPS_ "libvtkFiltering"
 @mcall vtkIdType GetSourceVertex (vtkIdType,) _ZN8vtkGraph15GetSourceVertexEx "libvtkFiltering"

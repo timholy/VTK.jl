@@ -1,9 +1,12 @@
 cur_class = vtkParametricSpline
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN19vtkParametricSpline8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkParametricSpline} SafeDownCast (Ptr{vtkObjectBase},) _ZN19vtkParametricSpline12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkParametricSpline} NewInstance () _ZNK19vtkParametricSpline11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkParametricSpline} vtkParametricSplineNew () _ZN19vtkParametricSpline3NewEv "libvtkFiltering"
 @vcall 20 Int32 GetDimension ()
 @vcall 21 None Evaluate (Ptr{Float64}, Ptr{Float64}, Ptr{Float64})
 @vcall 22 Float64 EvaluateScalar (Ptr{Float64}, Ptr{Float64}, Ptr{Float64})

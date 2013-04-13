@@ -1,6 +1,8 @@
 cur_class = vtkAbstractArray
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN16vtkAbstractArray8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkAbstractArray} SafeDownCast (Ptr{vtkObjectBase},) _ZN16vtkAbstractArray12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkAbstractArray} NewInstance () _ZNK16vtkAbstractArray11NewInstanceEv "libvtkCommon"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -8,6 +10,7 @@ cur_class = vtkAbstractArray
 @vcall 21 None Initialize ()
 @vcall 22 Int32 GetDataType ()
 @vcall 23 Int32 GetDataTypeSize ()
+@scall Int32 GetDataTypeSize (Int32,) _ZN16vtkAbstractArray15GetDataTypeSizeEi "libvtkCommon"
 @vcall 24 Int32 GetElementComponentSize ()
 @vcall 25 None SetNumberOfComponents (Int32,)
 @vcall 26 Int32 GetNumberOfComponentsMinValue ()
@@ -39,6 +42,7 @@ cur_class = vtkAbstractArray
 @vcall 43 None SetName (Ptr{Uint8},)
 @vcall 44 Ptr{Uint8} GetName ()
 @vcall 45 Ptr{Uint8} GetDataTypeAsString ()
+@scall Ptr{vtkAbstractArray} CreateArray (Int32,) _ZN16vtkAbstractArray11CreateArrayEi "libvtkCommon"
 @vcall 46 Int32 IsNumeric ()
 @vcall 47 Ptr{vtkArrayIterator} NewIterator ()
 @vcall 48 vtkIdType GetDataSize ()
@@ -52,5 +56,6 @@ cur_class = vtkAbstractArray
 @mcall Ptr{vtkInformation} GetInformation () _ZN16vtkAbstractArray14GetInformationEv "libvtkCommon"
 @mcall Bool HasInformation () _ZN16vtkAbstractArray14HasInformationEv "libvtkCommon"
 @vcall 56 Int32 CopyInformation (Ptr{vtkInformation}, Int32)
+@scall Ptr{vtkInformationIntegerKey} GUI_HIDE () _ZN16vtkAbstractArray8GUI_HIDEEv "libvtkCommon"
 @vcall 57 None SetInformation (Ptr{vtkInformation},)
 @mcall None vtkAbstractArray_eq (Void,) _ZN16vtkAbstractArrayaSERKS_ "libvtkCommon"

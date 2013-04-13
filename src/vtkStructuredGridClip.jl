@@ -1,6 +1,9 @@
 cur_class = vtkStructuredGridClip
+@scall Ptr{vtkStructuredGridClip} vtkStructuredGridClipNew () _ZN21vtkStructuredGridClip3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN21vtkStructuredGridClip8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkStructuredGridClip} SafeDownCast (Ptr{vtkObjectBase},) _ZN21vtkStructuredGridClip12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkStructuredGridClip} NewInstance () _ZNK21vtkStructuredGridClip11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

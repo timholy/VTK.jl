@@ -1,9 +1,12 @@
 cur_class = vtkKochanekSpline
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN17vtkKochanekSpline8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkKochanekSpline} SafeDownCast (Ptr{vtkObjectBase},) _ZN17vtkKochanekSpline12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkKochanekSpline} NewInstance () _ZNK17vtkKochanekSpline11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkKochanekSpline} vtkKochanekSplineNew () _ZN17vtkKochanekSpline3NewEv "libvtkFiltering"
 @vcall 24 None Compute ()
 @vcall 25 Float64 Evaluate (Float64,)
 @vcall 43 None SetDefaultBias (Float64,)

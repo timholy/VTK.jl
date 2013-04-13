@@ -1,6 +1,9 @@
 cur_class = vtkRandomAttributeGenerator
+@scall Ptr{vtkRandomAttributeGenerator} vtkRandomAttributeGeneratorNew () _ZN27vtkRandomAttributeGenerator3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN27vtkRandomAttributeGenerator8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkRandomAttributeGenerator} SafeDownCast (Ptr{vtkObjectBase},) _ZN27vtkRandomAttributeGenerator12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkRandomAttributeGenerator} NewInstance () _ZNK27vtkRandomAttributeGenerator11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

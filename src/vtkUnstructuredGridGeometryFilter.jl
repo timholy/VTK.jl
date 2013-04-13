@@ -1,6 +1,9 @@
 cur_class = vtkUnstructuredGridGeometryFilter
+@scall Ptr{vtkUnstructuredGridGeometryFilter} vtkUnstructuredGridGeometryFilterNew () _ZN33vtkUnstructuredGridGeometryFilter3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN33vtkUnstructuredGridGeometryFilter8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkUnstructuredGridGeometryFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN33vtkUnstructuredGridGeometryFilter12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkUnstructuredGridGeometryFilter} NewInstance () _ZNK33vtkUnstructuredGridGeometryFilter11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

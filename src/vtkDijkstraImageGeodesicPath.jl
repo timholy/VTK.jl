@@ -1,6 +1,9 @@
 cur_class = vtkDijkstraImageGeodesicPath
+@scall Ptr{vtkDijkstraImageGeodesicPath} vtkDijkstraImageGeodesicPathNew () _ZN28vtkDijkstraImageGeodesicPath3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN28vtkDijkstraImageGeodesicPath8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkDijkstraImageGeodesicPath} SafeDownCast (Ptr{vtkObjectBase},) _ZN28vtkDijkstraImageGeodesicPath12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkDijkstraImageGeodesicPath} NewInstance () _ZNK28vtkDijkstraImageGeodesicPath11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

@@ -1,9 +1,12 @@
 cur_class = vtkSpherePuzzle
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN15vtkSpherePuzzle8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkSpherePuzzle} SafeDownCast (Ptr{vtkObjectBase},) _ZN15vtkSpherePuzzle12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkSpherePuzzle} NewInstance () _ZNK15vtkSpherePuzzle11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkSpherePuzzle} vtkSpherePuzzleNew () _ZN15vtkSpherePuzzle3NewEv "libvtkGraphics"
 @mcall None Reset () _ZN15vtkSpherePuzzle5ResetEv "libvtkGraphics"
 @mcall None MoveHorizontal (Int32, Int32, Int32) _ZN15vtkSpherePuzzle14MoveHorizontalEiii "libvtkGraphics"
 @mcall None MoveVertical (Int32, Int32, Int32) _ZN15vtkSpherePuzzle12MoveVerticalEiii "libvtkGraphics"

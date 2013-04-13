@@ -1,9 +1,12 @@
 cur_class = vtkGlyphSource2D
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN16vtkGlyphSource2D8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkGlyphSource2D} SafeDownCast (Ptr{vtkObjectBase},) _ZN16vtkGlyphSource2D12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkGlyphSource2D} NewInstance () _ZNK16vtkGlyphSource2D11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkGlyphSource2D} vtkGlyphSource2DNew () _ZN16vtkGlyphSource2D3NewEv "libvtkGraphics"
 @vcall 65 None SetCenter (Float64, Float64, Float64)
 @vcall 66 None SetCenter (Ptr{Float64},)
 @vcall 67 Ptr{Float64} GetCenter ()

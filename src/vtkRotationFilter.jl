@@ -1,6 +1,9 @@
 cur_class = vtkRotationFilter
+@scall Ptr{vtkRotationFilter} vtkRotationFilterNew () _ZN17vtkRotationFilter3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN17vtkRotationFilter8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkRotationFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN17vtkRotationFilter12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkRotationFilter} NewInstance () _ZNK17vtkRotationFilter11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

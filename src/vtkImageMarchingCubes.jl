@@ -1,6 +1,9 @@
 cur_class = vtkImageMarchingCubes
+@scall Ptr{vtkImageMarchingCubes} vtkImageMarchingCubesNew () _ZN21vtkImageMarchingCubes3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN21vtkImageMarchingCubes8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkImageMarchingCubes} SafeDownCast (Ptr{vtkObjectBase},) _ZN21vtkImageMarchingCubes12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkImageMarchingCubes} NewInstance () _ZNK21vtkImageMarchingCubes11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

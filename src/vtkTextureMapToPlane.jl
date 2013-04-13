@@ -1,9 +1,12 @@
 cur_class = vtkTextureMapToPlane
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN20vtkTextureMapToPlane8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkTextureMapToPlane} SafeDownCast (Ptr{vtkObjectBase},) _ZN20vtkTextureMapToPlane12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkTextureMapToPlane} NewInstance () _ZNK20vtkTextureMapToPlane11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkTextureMapToPlane} vtkTextureMapToPlaneNew () _ZN20vtkTextureMapToPlane3NewEv "libvtkGraphics"
 @vcall 63 None SetOrigin (Float64, Float64, Float64)
 @vcall 64 None SetOrigin (Ptr{Float64},)
 @vcall 65 Ptr{Float64} GetOrigin ()

@@ -1,6 +1,9 @@
 cur_class = vtkReebGraphSurfaceSkeletonFilter
+@scall Ptr{vtkReebGraphSurfaceSkeletonFilter} vtkReebGraphSurfaceSkeletonFilterNew () _ZN33vtkReebGraphSurfaceSkeletonFilter3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN33vtkReebGraphSurfaceSkeletonFilter8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkReebGraphSurfaceSkeletonFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN33vtkReebGraphSurfaceSkeletonFilter12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkReebGraphSurfaceSkeletonFilter} NewInstance () _ZNK33vtkReebGraphSurfaceSkeletonFilter11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

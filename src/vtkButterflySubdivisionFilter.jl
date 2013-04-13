@@ -1,6 +1,9 @@
 cur_class = vtkButterflySubdivisionFilter
+@scall Ptr{vtkButterflySubdivisionFilter} vtkButterflySubdivisionFilterNew () _ZN29vtkButterflySubdivisionFilter3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN29vtkButterflySubdivisionFilter8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkButterflySubdivisionFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN29vtkButterflySubdivisionFilter12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkButterflySubdivisionFilter} NewInstance () _ZNK29vtkButterflySubdivisionFilter11NewInstanceEv "libvtkGraphics"
 @vcall 67 None GenerateSubdivisionPoints (Ptr{vtkPolyData}, Ptr{vtkIntArray}, Ptr{vtkPoints}, Ptr{vtkPointData})

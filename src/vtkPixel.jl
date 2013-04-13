@@ -1,6 +1,9 @@
 cur_class = vtkPixel
+@scall Ptr{vtkPixel} vtkPixelNew () _ZN8vtkPixel3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN8vtkPixel8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkPixel} SafeDownCast (Ptr{vtkObjectBase},) _ZN8vtkPixel12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkPixel} NewInstance () _ZNK8vtkPixel11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -20,6 +23,8 @@ cur_class = vtkPixel
 @vcall 41 Int32 Triangulate (Int32, Ptr{vtkIdList}, Ptr{vtkPoints})
 @vcall 42 None Derivatives (Int32, Ptr{Float64}, Ptr{Float64}, Int32, Ptr{Float64})
 @vcall 46 Ptr{Float64} GetParametricCoords ()
+@scall None InterpolationFunctions (Ptr{Float64}, Ptr{Float64}) _ZN8vtkPixel22InterpolationFunctionsEPdS0_ "libvtkFiltering"
+@scall None InterpolationDerivs (Ptr{Float64}, Ptr{Float64}) _ZN8vtkPixel19InterpolationDerivsEPdS0_ "libvtkFiltering"
 @vcall 47 None InterpolateFunctions (Ptr{Float64}, Ptr{Float64})
 @vcall 48 None InterpolateDerivs (Ptr{Float64}, Ptr{Float64})
 @mcall None vtkPixel_eq (Void,) _ZN8vtkPixelaSERKS_ "libvtkFiltering"

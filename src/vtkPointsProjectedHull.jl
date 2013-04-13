@@ -1,9 +1,12 @@
 cur_class = vtkPointsProjectedHull
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN22vtkPointsProjectedHull8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkPointsProjectedHull} SafeDownCast (Ptr{vtkObjectBase},) _ZN22vtkPointsProjectedHull12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkPointsProjectedHull} NewInstance () _ZNK22vtkPointsProjectedHull11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkPointsProjectedHull} vtkPointsProjectedHullNew () _ZN22vtkPointsProjectedHull3NewEv "libvtkFiltering"
 @mcall Int32 RectangleIntersectionX (Ptr{vtkPoints},) _ZN22vtkPointsProjectedHull22RectangleIntersectionXEP9vtkPoints "libvtkFiltering"
 @mcall Int32 RectangleIntersectionX (Float32, Float32, Float32, Float32) _ZN22vtkPointsProjectedHull22RectangleIntersectionXEffff "libvtkFiltering"
 @mcall Int32 RectangleIntersectionX (Float64, Float64, Float64, Float64) _ZN22vtkPointsProjectedHull22RectangleIntersectionXEdddd "libvtkFiltering"
@@ -33,4 +36,10 @@ cur_class = vtkPointsProjectedHull
 @mcall Int32 RectangleOutside1DPolygon (Float64, Float64, Float64, Float64, Int32) _ZN22vtkPointsProjectedHull25RectangleOutside1DPolygonEddddi "libvtkFiltering"
 @mcall None InitFlags () _ZN22vtkPointsProjectedHull9InitFlagsEv "libvtkFiltering"
 @mcall None ClearAllocations () _ZN22vtkPointsProjectedHull16ClearAllocationsEv "libvtkFiltering"
+@scall Int32 RemoveExtras (Ptr{Float64}, Int32) _ZN22vtkPointsProjectedHull12RemoveExtrasEPdi "libvtkFiltering"
+@scall Float64 Distance (Ptr{Float64}, Ptr{Float64}) _ZN22vtkPointsProjectedHull8DistanceEPdS0_ "libvtkFiltering"
+@scall Int32 PositionInHull (Ptr{Float64}, Ptr{Float64}, Ptr{Float64}) _ZN22vtkPointsProjectedHull14PositionInHullEPdS0_S0_ "libvtkFiltering"
+@scall Int32 OutsideLine (Float64, Float64, Float64, Float64, Ptr{Float64}, Ptr{Float64}, Ptr{Float64}) _ZN22vtkPointsProjectedHull11OutsideLineEddddPdS0_S0_ "libvtkFiltering"
+@scall Int32 OutsideHorizontalLine (Float64, Float64, Ptr{Float64}, Ptr{Float64}, Ptr{Float64}) _ZN22vtkPointsProjectedHull21OutsideHorizontalLineEddPdS0_S0_ "libvtkFiltering"
+@scall Int32 OutsideVerticalLine (Float64, Float64, Ptr{Float64}, Ptr{Float64}, Ptr{Float64}) _ZN22vtkPointsProjectedHull19OutsideVerticalLineEddPdS0_S0_ "libvtkFiltering"
 @mcall None vtkPointsProjectedHull_eq (Void,) _ZN22vtkPointsProjectedHullaSERKS_ "libvtkFiltering"

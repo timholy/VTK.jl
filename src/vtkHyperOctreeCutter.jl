@@ -1,9 +1,12 @@
 cur_class = vtkHyperOctreeCutter
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN20vtkHyperOctreeCutter8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkHyperOctreeCutter} SafeDownCast (Ptr{vtkObjectBase},) _ZN20vtkHyperOctreeCutter12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkHyperOctreeCutter} NewInstance () _ZNK20vtkHyperOctreeCutter11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkHyperOctreeCutter} vtkHyperOctreeCutterNew () _ZN20vtkHyperOctreeCutter3NewEv "libvtkGraphics"
 @mcall None SetValue (Int32, Float64) _ZN20vtkHyperOctreeCutter8SetValueEid "libvtkGraphics"
 @mcall Float64 GetValue (Int32,) _ZN20vtkHyperOctreeCutter8GetValueEi "libvtkGraphics"
 @mcall Ptr{Float64} GetValues () _ZN20vtkHyperOctreeCutter9GetValuesEv "libvtkGraphics"

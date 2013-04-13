@@ -1,6 +1,8 @@
 cur_class = vtkDataSet
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN10vtkDataSet8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkDataSet} SafeDownCast (Ptr{vtkObjectBase},) _ZN10vtkDataSet12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkDataSet} NewInstance () _ZNK10vtkDataSet11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -43,6 +45,8 @@ cur_class = vtkDataSet
 @vcall 70 None DeepCopy (Ptr{vtkDataObject},)
 @mcall Int32 CheckAttributes () _ZN10vtkDataSet15CheckAttributesEv "libvtkFiltering"
 @vcall 99 None GenerateGhostLevelArray ()
+@scall Ptr{vtkDataSet} GetData (Ptr{vtkInformation},) _ZN10vtkDataSet7GetDataEP14vtkInformation "libvtkFiltering"
+@scall Ptr{vtkDataSet} GetData (Ptr{vtkInformationVector}, Int32) _ZN10vtkDataSet7GetDataEP20vtkInformationVectori "libvtkFiltering"
 @vcall 74 Ptr{vtkFieldData} GetAttributesAsFieldData (Int32,)
 @vcall 76 vtkIdType GetNumberOfElements (Int32,)
 @vcall 100 None ComputeScalarRange ()

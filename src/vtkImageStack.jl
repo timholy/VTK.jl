@@ -1,9 +1,12 @@
 cur_class = vtkImageStack
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN13vtkImageStack8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkImageStack} SafeDownCast (Ptr{vtkObjectBase},) _ZN13vtkImageStack12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkImageStack} NewInstance () _ZNK13vtkImageStack11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkImageStack} vtkImageStackNew () _ZN13vtkImageStack3NewEv "libvtkRendering"
 @mcall None AddImage (Ptr{vtkImageSlice},) _ZN13vtkImageStack8AddImageEP13vtkImageSlice "libvtkRendering"
 @mcall None RemoveImage (Ptr{vtkImageSlice},) _ZN13vtkImageStack11RemoveImageEP13vtkImageSlice "libvtkRendering"
 @mcall Int32 HasImage (Ptr{vtkImageSlice},) _ZN13vtkImageStack8HasImageEP13vtkImageSlice "libvtkRendering"

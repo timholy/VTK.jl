@@ -1,9 +1,12 @@
 cur_class = vtkCellQuality
 @vcall 4 None PrintSelf (Void, vtkIndent)
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN14vtkCellQuality8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkCellQuality} SafeDownCast (Ptr{vtkObjectBase},) _ZN14vtkCellQuality12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkCellQuality} NewInstance () _ZNK14vtkCellQuality11NewInstanceEv "libvtkGraphics"
+@scall Ptr{vtkCellQuality} vtkCellQualityNew () _ZN14vtkCellQuality3NewEv "libvtkGraphics"
 @vcall 63 None SetQualityMeasure (Int32,)
 @vcall 64 Int32 GetQualityMeasure ()
 @mcall None SetQualityMeasureToArea () _ZN14vtkCellQuality23SetQualityMeasureToAreaEv "libvtkGraphics"
@@ -49,4 +52,5 @@ cur_class = vtkCellQuality
 @mcall Float64 ComputeTriangleStripQuality (Ptr{vtkCell},) _ZN14vtkCellQuality27ComputeTriangleStripQualityEP7vtkCell "libvtkGraphics"
 @mcall Float64 ComputePixelQuality (Ptr{vtkCell},) _ZN14vtkCellQuality19ComputePixelQualityEP7vtkCell "libvtkGraphics"
 @vcall 62 Int32 RequestData (Ptr{vtkInformation}, Ptr{Ptr{vtkInformationVector}}, Ptr{vtkInformationVector})
+@scall Int32 GetCurrentTriangleNormal (Ptr{Float64}, Ptr{Float64}) _ZN14vtkCellQuality24GetCurrentTriangleNormalEPdS0_ "libvtkGraphics"
 @mcall None vtkCellQuality_eq (Void,) _ZN14vtkCellQualityaSERKS_ "libvtkGraphics"

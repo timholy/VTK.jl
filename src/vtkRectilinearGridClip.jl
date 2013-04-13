@@ -1,6 +1,9 @@
 cur_class = vtkRectilinearGridClip
+@scall Ptr{vtkRectilinearGridClip} vtkRectilinearGridClipNew () _ZN22vtkRectilinearGridClip3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN22vtkRectilinearGridClip8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkRectilinearGridClip} SafeDownCast (Ptr{vtkObjectBase},) _ZN22vtkRectilinearGridClip12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkRectilinearGridClip} NewInstance () _ZNK22vtkRectilinearGridClip11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

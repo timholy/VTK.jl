@@ -1,6 +1,9 @@
 cur_class = vtkStructuredGrid
+@scall Ptr{vtkStructuredGrid} vtkStructuredGridNew () _ZN17vtkStructuredGrid3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN17vtkStructuredGrid8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkStructuredGrid} SafeDownCast (Ptr{vtkObjectBase},) _ZN17vtkStructuredGrid12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkStructuredGrid} NewInstance () _ZNK17vtkStructuredGrid11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -48,6 +51,8 @@ cur_class = vtkStructuredGrid
 @mcall Uint8 GetPointBlanking () _ZN17vtkStructuredGrid16GetPointBlankingEv "libvtkFiltering"
 @mcall Uint8 GetCellBlanking () _ZN17vtkStructuredGrid15GetCellBlankingEv "libvtkFiltering"
 @vcall 72 None Crop ()
+@scall Ptr{vtkStructuredGrid} GetData (Ptr{vtkInformation},) _ZN17vtkStructuredGrid7GetDataEP14vtkInformation "libvtkFiltering"
+@scall Ptr{vtkStructuredGrid} GetData (Ptr{vtkInformationVector}, Int32) _ZN17vtkStructuredGrid7GetDataEP20vtkInformationVectori "libvtkFiltering"
 @mcall None GetPoint (Int32, Int32, Int32, Ptr{Float64}, Bool) _ZN17vtkStructuredGrid8GetPointEiiiPdb "libvtkFiltering"
 @mcall None SetPointVisibility (Ptr{vtkStructuredVisibilityConstraint},) _ZN17vtkStructuredGrid18SetPointVisibilityEP33vtkStructuredVisibilityConstraint "libvtkFiltering"
 @vcall 108 Ptr{vtkStructuredVisibilityConstraint} GetPointVisibility ()

@@ -1,6 +1,9 @@
 cur_class = vtkAssemblyPaths
+@scall Ptr{vtkAssemblyPaths} vtkAssemblyPathsNew () _ZN16vtkAssemblyPaths3NewEv "libvtkCommon"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN16vtkAssemblyPaths8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkAssemblyPaths} SafeDownCast (Ptr{vtkObjectBase},) _ZN16vtkAssemblyPaths12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkAssemblyPaths} NewInstance () _ZNK16vtkAssemblyPaths11NewInstanceEv "libvtkCommon"
 @mcall None AddItem (Ptr{vtkAssemblyPath},) _ZN16vtkAssemblyPaths7AddItemEP15vtkAssemblyPath "libvtkCommon"

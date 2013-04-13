@@ -1,6 +1,8 @@
 cur_class = vtkShaderProgram
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN16vtkShaderProgram8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkShaderProgram} SafeDownCast (Ptr{vtkObjectBase},) _ZN16vtkShaderProgram12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkShaderProgram} NewInstance () _ZNK16vtkShaderProgram11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -11,6 +13,7 @@ cur_class = vtkShaderProgram
 @mcall None RemoveShader (Ptr{vtkShader},) _ZN16vtkShaderProgram12RemoveShaderEP9vtkShader "libvtkRendering"
 @mcall Ptr{vtkCollectionIterator} NewShaderIterator () _ZN16vtkShaderProgram17NewShaderIteratorEv "libvtkRendering"
 @mcall Int32 GetNumberOfShaders () _ZN16vtkShaderProgram18GetNumberOfShadersEv "libvtkRendering"
+@scall Ptr{vtkShaderProgram} CreateShaderProgram (Int32,) _ZN16vtkShaderProgram19CreateShaderProgramEi "libvtkRendering"
 @vcall 22 None ReadMaterial ()
 @vcall 23 None Render (Ptr{vtkActor}, Ptr{vtkRenderer})
 @vcall 24 None AddShaderVariable (Ptr{Uint8}, Int32, Ptr{Int32})

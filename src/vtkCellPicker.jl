@@ -1,6 +1,9 @@
 cur_class = vtkCellPicker
+@scall Ptr{vtkCellPicker} vtkCellPickerNew () _ZN13vtkCellPicker3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN13vtkCellPicker8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkCellPicker} SafeDownCast (Ptr{vtkObjectBase},) _ZN13vtkCellPicker12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkCellPicker} NewInstance () _ZNK13vtkCellPicker11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -48,6 +51,14 @@ cur_class = vtkCellPicker
 @vcall 82 Float64 IntersectVolumeWithLine (Ptr{Float64}, Ptr{Float64}, Float64, Float64, Ptr{vtkProp3D}, Ptr{vtkAbstractVolumeMapper})
 @vcall 83 Float64 IntersectImageWithLine (Ptr{Float64}, Ptr{Float64}, Float64, Float64, Ptr{vtkProp3D}, Ptr{vtkImageMapper3D})
 @vcall 84 Float64 IntersectProp3DWithLine (Ptr{Float64}, Ptr{Float64}, Float64, Float64, Float64, Ptr{vtkProp3D}, Ptr{vtkAbstractMapper3D})
+@scall Int32 ClipLineWithPlanes (Ptr{vtkAbstractMapper3D}, Ptr{vtkMatrix4x4}, Ptr{Float64}, Ptr{Float64}, Void, Void, Void) _ZN13vtkCellPicker18ClipLineWithPlanesEP19vtkAbstractMapper3DP12vtkMatrix4x4PKdS5_RdS6_Ri "libvtkRendering"
+@scall Int32 ClipLineWithExtent (Ptr{Int32}, Ptr{Float64}, Ptr{Float64}, Void, Void, Void) _ZN13vtkCellPicker18ClipLineWithExtentEPKiPKdS3_RdS4_Ri "libvtkRendering"
+@scall Int32 ComputeSurfaceNormal (Ptr{vtkDataSet}, Ptr{vtkCell}, Ptr{Float64}, Ptr{Float64}) _ZN13vtkCellPicker20ComputeSurfaceNormalEP10vtkDataSetP7vtkCellPKdPd "libvtkRendering"
+@scall Int32 ComputeSurfaceTCoord (Ptr{vtkDataSet}, Ptr{vtkCell}, Ptr{Float64}, Ptr{Float64}) _ZN13vtkCellPicker20ComputeSurfaceTCoordEP10vtkDataSetP7vtkCellPKdPd "libvtkRendering"
+@scall Int32 HasSubCells (Int32,) _ZN13vtkCellPicker11HasSubCellsEi "libvtkRendering"
+@scall Int32 GetNumberOfSubCells (Ptr{vtkIdList}, Int32) _ZN13vtkCellPicker19GetNumberOfSubCellsEP9vtkIdListi "libvtkRendering"
+@scall None GetSubCell (Ptr{vtkDataSet}, Ptr{vtkIdList}, Int32, Int32, Ptr{vtkGenericCell}) _ZN13vtkCellPicker10GetSubCellEP10vtkDataSetP9vtkIdListiiP14vtkGenericCell "libvtkRendering"
+@scall None SubCellFromCell (Ptr{vtkGenericCell}, Int32) _ZN13vtkCellPicker15SubCellFromCellEP14vtkGenericCelli "libvtkRendering"
 @mcall None SetImageDataPickInfo (Ptr{Float64}, Ptr{Int32}) _ZN13vtkCellPicker20SetImageDataPickInfoEPKdPKi "libvtkRendering"
 @mcall Float64 ComputeVolumeOpacity (Ptr{Int32}, Ptr{Float64}, Ptr{vtkImageData}, Ptr{vtkDataArray}, Ptr{vtkPiecewiseFunction}, Ptr{vtkPiecewiseFunction}) _ZN13vtkCellPicker20ComputeVolumeOpacityEPKiPKdP12vtkImageDataP12vtkDataArrayP20vtkPiecewiseFunctionS9_ "libvtkRendering"
 @mcall None ResetCellPickerInfo () _ZN13vtkCellPicker19ResetCellPickerInfoEv "libvtkRendering"

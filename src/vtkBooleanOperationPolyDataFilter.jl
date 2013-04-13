@@ -1,6 +1,9 @@
 cur_class = vtkBooleanOperationPolyDataFilter
+@scall Ptr{vtkBooleanOperationPolyDataFilter} vtkBooleanOperationPolyDataFilterNew () _ZN33vtkBooleanOperationPolyDataFilter3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN33vtkBooleanOperationPolyDataFilter8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkBooleanOperationPolyDataFilter} SafeDownCast (Ptr{vtkObjectBase},) _ZN33vtkBooleanOperationPolyDataFilter12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkBooleanOperationPolyDataFilter} NewInstance () _ZNK33vtkBooleanOperationPolyDataFilter11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

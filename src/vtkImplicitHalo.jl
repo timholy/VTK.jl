@@ -1,6 +1,9 @@
 cur_class = vtkImplicitHalo
+@scall Ptr{vtkImplicitHalo} vtkImplicitHaloNew () _ZN15vtkImplicitHalo3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN15vtkImplicitHalo8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkImplicitHalo} SafeDownCast (Ptr{vtkObjectBase},) _ZN15vtkImplicitHalo12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkImplicitHalo} NewInstance () _ZNK15vtkImplicitHalo11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

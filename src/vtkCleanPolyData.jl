@@ -1,7 +1,10 @@
 cur_class = vtkCleanPolyData
+@scall Ptr{vtkCleanPolyData} vtkCleanPolyDataNew () _ZN16vtkCleanPolyData3NewEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN16vtkCleanPolyData8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkCleanPolyData} SafeDownCast (Ptr{vtkObjectBase},) _ZN16vtkCleanPolyData12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkCleanPolyData} NewInstance () _ZNK16vtkCleanPolyData11NewInstanceEv "libvtkGraphics"
 @vcall 65 None SetToleranceIsAbsolute (Int32,)

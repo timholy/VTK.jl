@@ -1,6 +1,9 @@
 cur_class = vtkTemporalDataSetAlgorithm
+@scall Ptr{vtkTemporalDataSetAlgorithm} vtkTemporalDataSetAlgorithmNew () _ZN27vtkTemporalDataSetAlgorithm3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN27vtkTemporalDataSetAlgorithm8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkTemporalDataSetAlgorithm} SafeDownCast (Ptr{vtkObjectBase},) _ZN27vtkTemporalDataSetAlgorithm12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkTemporalDataSetAlgorithm} NewInstance () _ZNK27vtkTemporalDataSetAlgorithm11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

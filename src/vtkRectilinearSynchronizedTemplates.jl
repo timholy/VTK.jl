@@ -1,6 +1,9 @@
 cur_class = vtkRectilinearSynchronizedTemplates
+@scall Ptr{vtkRectilinearSynchronizedTemplates} vtkRectilinearSynchronizedTemplatesNew () _ZN35vtkRectilinearSynchronizedTemplates3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN35vtkRectilinearSynchronizedTemplates8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkRectilinearSynchronizedTemplates} SafeDownCast (Ptr{vtkObjectBase},) _ZN35vtkRectilinearSynchronizedTemplates12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkRectilinearSynchronizedTemplates} NewInstance () _ZNK35vtkRectilinearSynchronizedTemplates11NewInstanceEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)

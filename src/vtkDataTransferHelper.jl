@@ -1,6 +1,9 @@
 cur_class = vtkDataTransferHelper
+@scall Ptr{vtkDataTransferHelper} vtkDataTransferHelperNew () _ZN21vtkDataTransferHelper3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN21vtkDataTransferHelper8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkDataTransferHelper} SafeDownCast (Ptr{vtkObjectBase},) _ZN21vtkDataTransferHelper12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkDataTransferHelper} NewInstance () _ZNK21vtkDataTransferHelper11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
@@ -37,6 +40,7 @@ cur_class = vtkDataTransferHelper
 @mcall Bool DownloadAsync2 () _ZN21vtkDataTransferHelper14DownloadAsync2Ev "libvtkRendering"
 @mcall Bool GetShaderSupportsTextureInt () _ZN21vtkDataTransferHelper27GetShaderSupportsTextureIntEv "libvtkRendering"
 @mcall None SetShaderSupportsTextureInt (Bool,) _ZN21vtkDataTransferHelper27SetShaderSupportsTextureIntEb "libvtkRendering"
+@scall Bool IsSupported (Ptr{vtkRenderWindow},) _ZN21vtkDataTransferHelper11IsSupportedEP15vtkRenderWindow "libvtkRendering"
 @mcall Bool LoadRequiredExtensions (Ptr{vtkOpenGLExtensionManager},) _ZN21vtkDataTransferHelper22LoadRequiredExtensionsEP25vtkOpenGLExtensionManager "libvtkRendering"
 @mcall Ptr{vtkPixelBufferObject} GetPBO () _ZN21vtkDataTransferHelper6GetPBOEv "libvtkRendering"
 @mcall None vtkDataTransferHelper_eq (Void,) _ZN21vtkDataTransferHelperaSERKS_ "libvtkRendering"

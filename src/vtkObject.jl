@@ -1,15 +1,23 @@
 cur_class = vtkObject
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN9vtkObject8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkObject} SafeDownCast (Ptr{vtkObjectBase},) _ZN9vtkObject12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkObject} NewInstance () _ZNK9vtkObject11NewInstanceEv "libvtkCommon"
+@scall Ptr{vtkObject} vtkObjectNew () _ZN9vtkObject3NewEv "libvtkCommon"
 @vcall 16 None DebugOn ()
 @vcall 17 None DebugOff ()
 @mcall Uint8 GetDebug () _ZN9vtkObject8GetDebugEv "libvtkCommon"
 @mcall None SetDebug (Uint8,) _ZN9vtkObject8SetDebugEh "libvtkCommon"
+@scall None BreakOnError () _ZN9vtkObject12BreakOnErrorEv "libvtkCommon"
 @vcall 18 None Modified ()
 @vcall 19 Uint64 GetMTime ()
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall None SetGlobalWarningDisplay (Int32,) _ZN9vtkObject23SetGlobalWarningDisplayEi "libvtkCommon"
+@scall None GlobalWarningDisplayOn () _ZN9vtkObject22GlobalWarningDisplayOnEv "libvtkCommon"
+@scall None GlobalWarningDisplayOff () _ZN9vtkObject23GlobalWarningDisplayOffEv "libvtkCommon"
+@scall Int32 GetGlobalWarningDisplay () _ZN9vtkObject23GetGlobalWarningDisplayEv "libvtkCommon"
 @mcall Uint64 AddObserver (Uint64, Ptr{vtkCommand}, Float32) _ZN9vtkObject11AddObserverEmP10vtkCommandf "libvtkCommon"
 @mcall Uint64 AddObserver (Ptr{Uint8}, Ptr{vtkCommand}, Float32) _ZN9vtkObject11AddObserverEPKcP10vtkCommandf "libvtkCommon"
 @mcall Ptr{vtkCommand} GetCommand (Uint64,) _ZN9vtkObject10GetCommandEm "libvtkCommon"

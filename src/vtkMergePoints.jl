@@ -1,6 +1,9 @@
 cur_class = vtkMergePoints
+@scall Ptr{vtkMergePoints} vtkMergePointsNew () _ZN14vtkMergePoints3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN14vtkMergePoints8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkMergePoints} SafeDownCast (Ptr{vtkObjectBase},) _ZN14vtkMergePoints12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkMergePoints} NewInstance () _ZNK14vtkMergePoints11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

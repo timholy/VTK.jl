@@ -1,6 +1,9 @@
 cur_class = vtkGeometricErrorMetric
+@scall Ptr{vtkGeometricErrorMetric} vtkGeometricErrorMetricNew () _ZN23vtkGeometricErrorMetric3NewEv "libvtkFiltering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN23vtkGeometricErrorMetric8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkGeometricErrorMetric} SafeDownCast (Ptr{vtkObjectBase},) _ZN23vtkGeometricErrorMetric12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkGeometricErrorMetric} NewInstance () _ZNK23vtkGeometricErrorMetric11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

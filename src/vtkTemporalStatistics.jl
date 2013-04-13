@@ -1,8 +1,11 @@
 cur_class = vtkTemporalStatistics
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN21vtkTemporalStatistics8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkTemporalStatistics} SafeDownCast (Ptr{vtkObjectBase},) _ZN21vtkTemporalStatistics12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkTemporalStatistics} NewInstance () _ZNK21vtkTemporalStatistics11NewInstanceEv "libvtkGraphics"
+@scall Ptr{vtkTemporalStatistics} vtkTemporalStatisticsNew () _ZN21vtkTemporalStatistics3NewEv "libvtkGraphics"
 @vcall 4 None PrintSelf (Void, vtkIndent)
 @vcall 63 Int32 GetComputeAverage ()
 @vcall 64 None SetComputeAverage (Int32,)

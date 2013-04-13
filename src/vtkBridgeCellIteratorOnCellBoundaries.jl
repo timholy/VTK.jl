@@ -1,6 +1,9 @@
 cur_class = vtkBridgeCellIteratorOnCellBoundaries
+@scall Ptr{vtkBridgeCellIteratorOnCellBoundaries} vtkBridgeCellIteratorOnCellBoundariesNew () _ZN37vtkBridgeCellIteratorOnCellBoundaries3NewEv "libvtkGenericFiltering/Testing/Cxx"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN37vtkBridgeCellIteratorOnCellBoundaries8IsTypeOfEPKc "libvtkGenericFiltering/Testing/Cxx"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkBridgeCellIteratorOnCellBoundaries} SafeDownCast (Ptr{vtkObjectBase},) _ZN37vtkBridgeCellIteratorOnCellBoundaries12SafeDownCastEP13vtkObjectBase "libvtkGenericFiltering/Testing/Cxx"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkBridgeCellIteratorOnCellBoundaries} NewInstance () _ZNK37vtkBridgeCellIteratorOnCellBoundaries11NewInstanceEv "libvtkGenericFiltering/Testing/Cxx"
 @vcall 4 None PrintSelf (Void, vtkIndent)

@@ -1,6 +1,10 @@
 cur_class = vtkPoints2D
+@scall Ptr{vtkPoints2D} vtkPoints2DNew (Int32,) _ZN11vtkPoints2D3NewEi "libvtkCommon"
+@scall Ptr{vtkPoints2D} vtkPoints2DNew () _ZN11vtkPoints2D3NewEv "libvtkCommon"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN11vtkPoints2D8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkPoints2D} SafeDownCast (Ptr{vtkObjectBase},) _ZN11vtkPoints2D12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkPoints2D} NewInstance () _ZNK11vtkPoints2D11NewInstanceEv "libvtkCommon"
 @vcall 4 None PrintSelf (Void, vtkIndent)

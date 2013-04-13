@@ -1,6 +1,8 @@
 cur_class = vtkAbstractMapper3D
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN19vtkAbstractMapper3D8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkAbstractMapper3D} SafeDownCast (Ptr{vtkObjectBase},) _ZN19vtkAbstractMapper3D12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkAbstractMapper3D} NewInstance () _ZNK19vtkAbstractMapper3D11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

@@ -1,9 +1,12 @@
 cur_class = vtkDataArraySelection
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN21vtkDataArraySelection8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkDataArraySelection} SafeDownCast (Ptr{vtkObjectBase},) _ZN21vtkDataArraySelection12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkDataArraySelection} NewInstance () _ZNK21vtkDataArraySelection11NewInstanceEv "libvtkCommon"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkDataArraySelection} vtkDataArraySelectionNew () _ZN21vtkDataArraySelection3NewEv "libvtkCommon"
 @mcall None EnableArray (Ptr{Uint8},) _ZN21vtkDataArraySelection11EnableArrayEPKc "libvtkCommon"
 @mcall None DisableArray (Ptr{Uint8},) _ZN21vtkDataArraySelection12DisableArrayEPKc "libvtkCommon"
 @mcall Int32 ArrayIsEnabled (Ptr{Uint8},) _ZN21vtkDataArraySelection14ArrayIsEnabledEPKc "libvtkCommon"

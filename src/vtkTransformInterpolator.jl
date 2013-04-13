@@ -1,9 +1,12 @@
 cur_class = vtkTransformInterpolator
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN24vtkTransformInterpolator8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkTransformInterpolator} SafeDownCast (Ptr{vtkObjectBase},) _ZN24vtkTransformInterpolator12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkTransformInterpolator} NewInstance () _ZNK24vtkTransformInterpolator11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkTransformInterpolator} vtkTransformInterpolatorNew () _ZN24vtkTransformInterpolator3NewEv "libvtkRendering"
 @mcall Int32 GetNumberOfTransforms () _ZN24vtkTransformInterpolator21GetNumberOfTransformsEv "libvtkRendering"
 @mcall Float64 GetMinimumT () _ZN24vtkTransformInterpolator11GetMinimumTEv "libvtkRendering"
 @mcall Float64 GetMaximumT () _ZN24vtkTransformInterpolator11GetMaximumTEv "libvtkRendering"

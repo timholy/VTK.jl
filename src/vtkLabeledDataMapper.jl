@@ -1,6 +1,9 @@
 cur_class = vtkLabeledDataMapper
+@scall Ptr{vtkLabeledDataMapper} vtkLabeledDataMapperNew () _ZN20vtkLabeledDataMapper3NewEv "libvtkRendering"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN20vtkLabeledDataMapper8IsTypeOfEPKc "libvtkRendering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkLabeledDataMapper} SafeDownCast (Ptr{vtkObjectBase},) _ZN20vtkLabeledDataMapper12SafeDownCastEP13vtkObjectBase "libvtkRendering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkLabeledDataMapper} NewInstance () _ZNK20vtkLabeledDataMapper11NewInstanceEv "libvtkRendering"
 @vcall 4 None PrintSelf (Void, vtkIndent)

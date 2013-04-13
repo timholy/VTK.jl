@@ -1,9 +1,12 @@
 cur_class = vtkParametricSuperEllipsoid
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN27vtkParametricSuperEllipsoid8IsTypeOfEPKc "libvtkCommon"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkParametricSuperEllipsoid} SafeDownCast (Ptr{vtkObjectBase},) _ZN27vtkParametricSuperEllipsoid12SafeDownCastEP13vtkObjectBase "libvtkCommon"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkParametricSuperEllipsoid} NewInstance () _ZNK27vtkParametricSuperEllipsoid11NewInstanceEv "libvtkCommon"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkParametricSuperEllipsoid} vtkParametricSuperEllipsoidNew () _ZN27vtkParametricSuperEllipsoid3NewEv "libvtkCommon"
 @vcall 20 Int32 GetDimension ()
 @vcall 59 None SetXRadius (Float64,)
 @vcall 60 Float64 GetXRadius ()

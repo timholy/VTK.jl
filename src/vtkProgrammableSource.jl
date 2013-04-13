@@ -1,6 +1,9 @@
 cur_class = vtkProgrammableSource
+@scall Ptr{vtkProgrammableSource} vtkProgrammableSourceNew () _ZN21vtkProgrammableSource3NewEv "libvtkGraphics"
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN21vtkProgrammableSource8IsTypeOfEPKc "libvtkGraphics"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkProgrammableSource} SafeDownCast (Ptr{vtkObjectBase},) _ZN21vtkProgrammableSource12SafeDownCastEP13vtkObjectBase "libvtkGraphics"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkProgrammableSource} NewInstance () _ZNK21vtkProgrammableSource11NewInstanceEv "libvtkGraphics"
 @mcall None SetExecuteMethod (Ptr{Void}, Ptr{None}) _ZN21vtkProgrammableSource16SetExecuteMethodEPFvPvES0_ "libvtkGraphics"

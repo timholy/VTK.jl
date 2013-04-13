@@ -1,9 +1,12 @@
 cur_class = vtkIncrementalOctreePointLocator
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN32vtkIncrementalOctreePointLocator8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkIncrementalOctreePointLocator} SafeDownCast (Ptr{vtkObjectBase},) _ZN32vtkIncrementalOctreePointLocator12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkIncrementalOctreePointLocator} NewInstance () _ZNK32vtkIncrementalOctreePointLocator11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkIncrementalOctreePointLocator} vtkIncrementalOctreePointLocatorNew () _ZN32vtkIncrementalOctreePointLocator3NewEv "libvtkFiltering"
 @vcall 55 None SetMaxPointsPerLeaf (Int32,)
 @vcall 56 Int32 GetMaxPointsPerLeafMinValue ()
 @vcall 57 Int32 GetMaxPointsPerLeafMaxValue ()
@@ -38,6 +41,8 @@ cur_class = vtkIncrementalOctreePointLocator
 @vcall 53 None InsertPoint (vtkIdType, Ptr{Float64})
 @vcall 54 vtkIdType InsertNextPoint (Ptr{Float64},)
 @mcall None InsertPointWithoutChecking (Ptr{Float64}, Void, Int32) _ZN32vtkIncrementalOctreePointLocator26InsertPointWithoutCheckingEPKdRxi "libvtkFiltering"
+@scall None DeleteAllDescendants (Ptr{vtkIncrementalOctreeNode},) _ZN32vtkIncrementalOctreePointLocator20DeleteAllDescendantsEP24vtkIncrementalOctreeNode "libvtkFiltering"
+@scall None AddPolys (Ptr{vtkIncrementalOctreeNode}, Ptr{vtkPoints}, Ptr{vtkCellArray}) _ZN32vtkIncrementalOctreePointLocator8AddPolysEP24vtkIncrementalOctreeNodeP9vtkPointsP12vtkCellArray "libvtkFiltering"
 @mcall Ptr{vtkIncrementalOctreeNode} GetLeafContainer (Ptr{vtkIncrementalOctreeNode}, Ptr{Float64}) _ZN32vtkIncrementalOctreePointLocator16GetLeafContainerEP24vtkIncrementalOctreeNodePKd "libvtkFiltering"
 @mcall vtkIdType FindClosestPointInLeafNode (Ptr{vtkIncrementalOctreeNode}, Ptr{Float64}, Ptr{Float64}) _ZN32vtkIncrementalOctreePointLocator26FindClosestPointInLeafNodeEP24vtkIncrementalOctreeNodePKdPd "libvtkFiltering"
 @mcall vtkIdType FindClosestPointInSphere (Ptr{Float64}, Float64, Ptr{vtkIncrementalOctreeNode}, Ptr{Float64}, Ptr{Float64}) _ZN32vtkIncrementalOctreePointLocator24FindClosestPointInSphereEPKddP24vtkIncrementalOctreeNodePdS1_ "libvtkFiltering"

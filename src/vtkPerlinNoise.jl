@@ -1,9 +1,12 @@
 cur_class = vtkPerlinNoise
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN14vtkPerlinNoise8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkPerlinNoise} SafeDownCast (Ptr{vtkObjectBase},) _ZN14vtkPerlinNoise12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkPerlinNoise} NewInstance () _ZNK14vtkPerlinNoise11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkPerlinNoise} vtkPerlinNoiseNew () _ZN14vtkPerlinNoise3NewEv "libvtkFiltering"
 @vcall 23 Float64 EvaluateFunction (Ptr{Float64},)
 @mcall Float64 EvaluateFunction (Float64, Float64, Float64) _ZN14vtkPerlinNoise16EvaluateFunctionEddd "libvtkFiltering"
 @vcall 24 None EvaluateGradient (Ptr{Float64}, Ptr{Float64})

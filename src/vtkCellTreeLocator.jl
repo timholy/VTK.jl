@@ -1,9 +1,12 @@
 cur_class = vtkCellTreeLocator
 @vcall 0 Ptr{Uint8} GetClassNameInternal ()
+@scall Int32 IsTypeOf (Ptr{Uint8},) _ZN18vtkCellTreeLocator8IsTypeOfEPKc "libvtkFiltering"
 @vcall 1 Int32 IsA (Ptr{Uint8},)
+@scall Ptr{vtkCellTreeLocator} SafeDownCast (Ptr{vtkObjectBase},) _ZN18vtkCellTreeLocator12SafeDownCastEP13vtkObjectBase "libvtkFiltering"
 @vcall 15 Ptr{vtkObjectBase} NewInstanceInternal ()
 @mcall Ptr{vtkCellTreeLocator} NewInstance () _ZNK18vtkCellTreeLocator11NewInstanceEv "libvtkFiltering"
 @vcall 4 None PrintSelf (Void, vtkIndent)
+@scall Ptr{vtkCellTreeLocator} vtkCellTreeLocatorNew () _ZN18vtkCellTreeLocator3NewEv "libvtkFiltering"
 @vcall 73 vtkIdType FindCell (Ptr{Float64}, Float64, Ptr{vtkGenericCell}, Ptr{Float64}, Ptr{Float64})
 @vcall 63 Int32 IntersectWithLine (Ptr{Float64}, Ptr{Float64}, Float64, Void, Ptr{Float64}, Ptr{Float64}, Void, Void, Ptr{vtkGenericCell})
 @vcall 70 None FindCellsWithinBounds (Ptr{Float64}, Ptr{vtkIdList})

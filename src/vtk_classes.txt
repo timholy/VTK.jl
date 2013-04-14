@@ -1,7 +1,7 @@
 vtkObject vtkObjectBase
 vtkPropCollection vtkCollection
 vtkBitArrayIterator vtkArrayIterator
-vtkShortArray vtkDataArrayTemplate<short>
+vtkShortArray vtkDataArray
 vtkCollectionIterator vtkObject
 vtkInformationRequestKey vtkInformationKey
 vtkInformationObjectBaseKey vtkInformationKey
@@ -14,7 +14,7 @@ vtkParametricFigure8Klein vtkParametricFunction
 vtkLookupTableWithEnabling vtkLookupTable
 vtkTimePointUtility vtkObject
 vtkInformationInformationKey vtkInformationKey
-vtkUnsignedShortArray vtkDataArrayTemplate<unsigned short>
+vtkUnsignedShortArray vtkDataArray
 vtkInformationObjectBaseVectorKey vtkInformationKey
 vtkParametricBoy vtkParametricFunction
 vtkRungeKutta45 vtkInitialValueProblemSolver
@@ -39,7 +39,7 @@ vtkImplicitFunctionCollection vtkCollection
 vtkAbstractTransform vtkObject
 vtkInformationUnsignedLongKey vtkInformationKey
 vtkMutexLock vtkObject
-vtkLongLongArray vtkDataArrayTemplate<long long>
+vtkLongLongArray vtkDataArray
 vtkObjectFactoryCollection vtkCollection
 vtkOverrideInformationCollection vtkCollection
 vtkMultiThreader vtkObject
@@ -76,7 +76,7 @@ vtkByteSwap vtkObject
 vtkOverrideInformation vtkObject
 vtkAbstractArray vtkObject
 vtkExtentTranslator vtkObject
-vtkUnsignedIntArray vtkDataArrayTemplate<unsigned int>
+vtkUnsignedIntArray vtkDataArray
 vtkExtentSplitter vtkObject
 vtkInitialValueProblemSolver vtkObject
 vtkIdList vtkObject
@@ -89,9 +89,9 @@ vtkArrayIterator vtkObject
 vtkTableExtentTranslator vtkExtentTranslator
 vtkStructuredData vtkObject
 vtkInstantiator vtkObject
-vtkFloatArray vtkDataArrayTemplate<float>
+vtkFloatArray vtkDataArray
 vtkEdgeTable vtkObject
-vtkUnsignedLongArray vtkDataArrayTemplate<unsigned long>
+vtkUnsignedLongArray vtkDataArray
 vtkMinimalStandardRandomSequence vtkRandomSequence
 vtkBox vtkImplicitFunction
 vtkTestNewVar vtkObject
@@ -119,10 +119,10 @@ vtkDebugLeaks vtkObject
 vtkParametricConicSpiral vtkParametricFunction
 vtkVariantArray vtkAbstractArray
 vtkArray vtkObject
-vtkCharArray vtkDataArrayTemplate<char>
+vtkCharArray vtkDataArray
 vtkRandomSequence vtkObject
 vtkThreadMessager vtkObject
-vtkUnsignedLongLongArray vtkDataArrayTemplate<unsigned long long>
+vtkUnsignedLongLongArray vtkDataArray
 vtkPlanes vtkImplicitFunction
 vtkCriticalSection vtkObject
 vtkGarbageCollector vtkObject
@@ -135,28 +135,28 @@ vtkMath vtkObject
 vtkDataArrayCollection vtkCollection
 vtkSocketCollection vtkCollection
 vtkImplicitFunction vtkObject
-vtkIntArray vtkDataArrayTemplate<int>
+vtkIntArray vtkDataArray
 vtkAssemblyPaths vtkCollection
 vtkPerspectiveTransform vtkHomogeneousTransform
 vtkCylindricalTransform vtkWarpTransform
-vtkLongArray vtkDataArrayTemplate<long>
+vtkLongArray vtkDataArray
 vtkPolynomialSolversUnivariate vtkObject
 vtkIdentityTransform vtkLinearTransform
 vtkDataArray vtkAbstractArray
-vtkIdTypeArray vtkDataArrayTemplate<long long>
+vtkIdTypeArray vtkDataArray
 vtkSortDataArray vtkObject
 vtkInformationIdTypeKey vtkInformationKey
 vtkPlaneCollection vtkCollection
 vtkGaussianRandomSequence vtkRandomSequence
 vtkInformationIntegerPointerKey vtkInformationKey
-vtkDoubleArray vtkDataArrayTemplate<double>
+vtkDoubleArray vtkDataArray
 vtkMatrixToLinearTransform vtkLinearTransform
 vtkTransform vtkLinearTransform
 vtkParametricMobius vtkParametricFunction
 vtkMatrix4x4 vtkObject
 vtkMatrixToHomogeneousTransform vtkHomogeneousTransform
-vtkSignedCharArray vtkDataArrayTemplate<signed char>
-vtkUnsignedCharArray vtkDataArrayTemplate<unsigned char>
+vtkSignedCharArray vtkDataArray
+vtkUnsignedCharArray vtkDataArray
 vtkPlane vtkImplicitFunction
 vtkParametricEllipsoid vtkParametricFunction
 vtkWin32ProcessOutputWindow vtkOutputWindow

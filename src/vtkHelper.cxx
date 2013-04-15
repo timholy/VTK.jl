@@ -1,3 +1,4 @@
+#include <iostream>
 #include "vtkObject.h"
 
 // Compile:
@@ -5,10 +6,20 @@
 // Julie:
 //    vtkPrint{T<:vtkObject}(ptr::Ptr{T}) = ccall(dlsym("vtkHelper", :vtkPrint), Void, (Ptr{Void},), ptr)
 extern "C" {
- 
+
+void* getStdCout()
+{
+  return (void*)&std::cout;
+}
+
 void vtkPrint(vtkObject* obj)
 {
   reinterpret_cast<vtkObject*>(obj)->Print(std::cout);
+}
+
+void vtkPrint2(ostream &strm, vtkObject* obj)
+{
+  reinterpret_cast<vtkObject*>(obj)->Print(strm);
 }
 
 }

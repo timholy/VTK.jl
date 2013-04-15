@@ -6,7 +6,7 @@ cur_class = vtkObjectBase
 @vcall 2 None Delete ()
 @vcall 3 None FastDelete ()
 @scall Ptr{vtkObjectBase} vtkObjectBaseNew () _ZN13vtkObjectBase3NewEv "libvtkCommon"
-@mcall None Print (Void,) _ZN13vtkObjectBase5PrintERSo "libvtkCommon"
+@mcall None Print (Ptr{Void},) _ZN13vtkObjectBase5PrintERSo "libvtkCommon"
 @vcall 4 None PrintSelf (Void, vtkIndent)
 @vcall 5 None PrintHeader (Void, vtkIndent)
 @vcall 6 None PrintTrailer (Void, vtkIndent)

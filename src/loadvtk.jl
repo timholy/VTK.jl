@@ -17,6 +17,8 @@ macro mcall(ret_type, func, arg_types, sym, lib)
   larg_types = :((Ptr{Void}, $(arg_types.args...)))
   hdl = dlopen(string(lib))
   fptr = dlsym_e(hdl,sym)
+  if(fptr==C_NULL) return end
+  #println(fptr)
   quote
     function $(esc(func)){T <: $cur_class}(thisptr::Ptr{T}, $(_args_in...))
       ccall( $(fptr), thiscall, $(esc(ret_type)), $(esc(larg_types)), thisptr, $(_args_in...) )
@@ -30,7 +32,8 @@ macro vcall(vtidx, ret_type, func, arg_types)
   larg_types = :((Ptr{$(cur_class)}, $(arg_types.args...)))
   quote
     function $(esc(func)){T <: $cur_class}(thisptr::Ptr{T}, $(_args_in...))
-      local fptr =  unsafe_ref(unsafe_ref(pointer(Ptr{Ptr{Void}},thisptr)), $(vtidx)+1)
+      local fptr =  unsafe_load(unsafe_load(pointer(Ptr{Ptr{Void}},thisptr)), $(vtidx)+1)
+      #println(fptr)
       ccall( fptr, thiscall, $(esc(ret_type)), $(esc(larg_types)), thisptr, $(_args_in...) )
     end
   end

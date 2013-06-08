@@ -42,9 +42,12 @@ end
 # Root of type tree
 abstract vtkObjectBase
 
+# Determine the absolute path of this directory
+const _vtksrcdir = dirname(task_local_storage()[:SOURCE_PATH])
+
 # Map of class inheritance
 const classmap = Dict{ASCIIString,ASCIIString}()
-map( x -> setindex!(classmap, x[2], x[1]), [ split(chomp(y)) for y in readlines(open("vtk_classes.txt", "r")) ])
+map( x -> setindex!(classmap, x[2], x[1]), [ split(chomp(y)) for y in readlines(open(joinpath(_vtksrcdir, "vtk_classes.txt"), "r")) ])
 
 tree = [Set{ASCIIString}() for i in 1:20]
 
@@ -99,9 +102,10 @@ macro vtkload(libs)
     # (Run this after the abstract type definitions due to inter-dependencies)
     for ($set_) in $(esc(tree))
       for ($klass) in $(set_)
-        require($klass)
+        vtkloadsrcfile($klass)
       end
     end
   end
 end
 
+vtkloadsrcfile(filename) = require(joinpath(_vtksrcdir, filename*".jl"))

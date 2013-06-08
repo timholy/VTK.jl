@@ -1,4 +1,4 @@
-require("loadvtk.jl")
+require("../src/loadvtk.jl")
 
 @vtkload begin
   vtkSphereSource

@@ -1,6 +1,8 @@
 Proof of concept: Julia wrapper for VTK
 ======================================
 
+**Update**: this was for an *ancient* (and very outdated) version of Julia. These bindings are unlikely to be of use, so the repository has been archived. If you're interested in wrapping VTK for modern Julia, see https://github.com/JuliaPackaging/BinaryBuilder.jl, https://github.com/JuliaInterop/Clang.jl, and perhaps others. There's also a `#binarybuilder` channel on the [Julia Slack](https://julialang.org/slack/).
+
 Background
 ==========
 
